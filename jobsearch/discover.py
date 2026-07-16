@@ -195,8 +195,10 @@ def score_candidate(cand: dict, org: dict) -> tuple[int, list[str]]:
     if not (name_match or acro_match or domain_known or on_ats):
         # An unrelated domain with a careers-shaped path is the classic false
         # positive: a real jobs page belonging to somebody else entirely.
-        score -= 6
-        why.append("domain unrelated to this org (-6)")
+        # brussels.be/current-vacancies was being handed to eleven different
+        # organisations, including communes outside Brussels.
+        score -= 10
+        why.append("domain unrelated to this org (-10)")
 
     # 4. Geography. A foreign-office careers page is a real page for the wrong
     # city, and scores identically on every other signal - so penalise it hard
@@ -207,7 +209,10 @@ def score_candidate(cand: dict, org: dict) -> tuple[int, list[str]]:
         if not any(f in org_base for f in FOREIGN_HINTS):
             score -= 8
             why.append("looks like a non-Brussels office (-8)")
-    if any(b in low for b in BRUSSELS_HINTS):
+    # Only a bonus once the domain is established as this org's: otherwise it
+    # just rewards every .be site for being Belgian.
+    if (name_match or acro_match or domain_known) and \
+            any(b in low for b in BRUSSELS_HINTS):
         score += 2
         why.append("Brussels/EU domain signal (+2)")
 

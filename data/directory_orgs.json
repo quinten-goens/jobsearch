@@ -128,7 +128,7 @@
     "source_directory": "CNCD-11.11.11 member organisations"
   },
   {
-    "organisation": "Logo du Collectif stratégies alimentaires (CSA)",
+    "organisation": "du Collectif stratégies alimentaires (CSA)",
     "homepage": "https://csa-be.org",
     "category": "Development & humanitarian",
     "type": "NGO (Belgian, FR)",
@@ -368,7 +368,7 @@
     "source_directory": "CNCD-11.11.11 member organisations"
   },
   {
-    "organisation": "Le Logo de LHAC",
+    "organisation": "LHAC",
     "homepage": "https://lhac.be",
     "category": "Development & humanitarian",
     "type": "NGO (Belgian, FR)",
@@ -434,14 +434,6 @@
   {
     "organisation": "Quinoa",
     "homepage": "https://quinoa.be",
-    "category": "Development & humanitarian",
-    "type": "NGO (Belgian, FR)",
-    "base": "Belgium",
-    "source_directory": "CNCD-11.11.11 member organisations"
-  },
-  {
-    "organisation": "Qu<P><",
-    "homepage": "https://qu<p><",
     "category": "Development & humanitarian",
     "type": "NGO (Belgian, FR)",
     "base": "Belgium",
@@ -542,30 +534,6 @@
     "type": "NGO (Belgian, NL)",
     "base": "Belgium",
     "source_directory": "ngo-federatie member organisations"
-  },
-  {
-    "organisation": "En savoir plus sur ces finalités",
-    "homepage": "https://cookiedatabase.org",
-    "category": "Civil society & grassroots",
-    "type": "NGO (Brussels, FR)",
-    "base": "Belgium",
-    "source_directory": "CBCS - Brussels social sector"
-  },
-  {
-    "organisation": "Outlook 365",
-    "homepage": "https://outlook.office.com",
-    "category": "Civil society & grassroots",
-    "type": "NGO (Brussels, FR)",
-    "base": "Belgium",
-    "source_directory": "CBCS - Brussels social sector"
-  },
-  {
-    "organisation": "Outlook Live",
-    "homepage": "https://outlook.live.com",
-    "category": "Civil society & grassroots",
-    "type": "NGO (Brussels, FR)",
-    "base": "Belgium",
-    "source_directory": "CBCS - Brussels social sector"
   },
   {
     "organisation": "Banlieues",

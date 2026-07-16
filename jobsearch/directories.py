@@ -102,13 +102,33 @@ def _is_member_link(href: str, base_host: str) -> bool:
     host = urllib.parse.urlparse(href).netloc.lower()
     if not host or base_host in host:
         return False
+    # Malformed markup can yield a "host" full of HTML; a real one is just
+    # letters, digits, dots and hyphens.
+    if not re.fullmatch(r"[a-z0-9.-]+\.[a-z]{2,}", host):
+        return False
     return not any(s in host for s in SKIP_HOSTS)
+
+
+# Link text that is chrome rather than an organisation name.
+JUNK_NAME = re.compile(
+    r"^(en savoir plus|lire (la suite|plus)|cliquez|plus d[’']info|voir plus|"
+    r"read more|meer info|lees meer|learn more|click here|site web|website)",
+    re.I,
+)
 
 
 def _tidy_name(name: str, host: str) -> str:
     """Directories often use the URL as the link text; make that readable."""
     name = _clean(name)
-    if re.match(r"^https?://", name) or name.lower().lstrip("w.").startswith(host[:8]):
+    # Logo alt text: "Le logo de LHAC" / "Logo of Oxfam" -> the org itself.
+    m = re.match(r"^(?:le\s+)?logo\s+(?:de\s+la\s+|de\s+|d[’']|of\s+|van\s+)?(.+)$",
+                 name, re.I)
+    if m:
+        name = _clean(m.group(1))
+    if JUNK_NAME.match(name):
+        name = ""
+    if not name or re.match(r"^https?://", name) or \
+            name.lower().lstrip("w.").startswith(host[:8]):
         stem = host.split(".")[0]
         return stem.replace("-", " ").replace("_", " ").title()
     if len(name) > MAX_NAME:

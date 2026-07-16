@@ -21,9 +21,12 @@ from .config import DATA, ORGS_JSON
 from .directories import DIRECTORY_JSON
 from .registry import (
     BELGIAN_COLLEGES,
+    BELGIAN_HOSPITALS,
+    BELGIAN_PUBLIC_BODIES,
     BELGIAN_UNIVERSITIES,
     BRUSSELS_COMMUNES,
     BRUSSELS_PERIPHERY,
+    INTERNATIONAL_REMOTE,
 )
 
 CATALOGUE_JSON = DATA / "catalogue.json"
@@ -31,6 +34,9 @@ CATALOGUE_JSON = DATA / "catalogue.json"
 # Sector is the top-level facet in the UI: it answers "what kind of place is
 # this?", which is the question the sheet's 15 overlapping categories didn't.
 SECTOR_RULES = [
+    ("Hospital & healthcare", ("hospital", "hôpital", "hopital", "ziekenhuis",
+                               "clinique", "cliniques", "chu ", "uz ", "huderf",
+                               "bordet", "sciensano", "iriscare")),
     ("Commune / local government", ("commune", "gemeente", "stad brussel", "ville de")),
     ("University & research", ("universit", "hogeschool", "haute école", "college",
                                "school of arts", "academy", "institute of tropical")),
@@ -110,7 +116,8 @@ def _record(**kw) -> dict:
         "eu_nationality": "", "homepage": "", "careers_url": "",
         "careers_confidence": "", "last_updated": "", "last_updated_source": "",
         "last_updated_trust": "", "sources": [], "phd_relevant": False,
-        "latam_relevant": False,
+        "latam_relevant": False, "remote_friendly": False,
+        "careers_score": 0, "careers_reasons": [],
     }
     base.update(kw)
     return base
@@ -190,6 +197,35 @@ def from_registry() -> list[dict]:
             base=city, languages=lang, size=students, description=note,
             target_roles="Lecturing, project support, administration",
             sources=["Regional registry: Belgian university colleges"],
+        ))
+    for name, city, lang, staff, note in BELGIAN_HOSPITALS:
+        out.append(_record(
+            organisation=name, sector="Hospital & healthcare",
+            category="Health", type="Hospital",
+            base=city, languages=lang, size=staff, description=note,
+            target_roles=("Intercultural mediation, social work, patient "
+                          "services, communications, research administration"),
+            sources=["Regional registry: Belgian hospitals"],
+        ))
+    for name, hq, lang, staff, note, remote in INTERNATIONAL_REMOTE:
+        out.append(_record(
+            organisation=name, sector="International organisation",
+            category="International org", type="International organisation",
+            base=hq, languages=lang, size=staff, description=note,
+            target_roles=("Policy, programme, research; consultancy and roster "
+                          "contracts" if remote else "Policy, programme, research"),
+            remote_friendly=remote,
+            sources=["Regional registry: international organisations"],
+        ))
+    for name, level, lang, note in BELGIAN_PUBLIC_BODIES:
+        out.append(_record(
+            organisation=name, sector="Belgian public sector",
+            category="Belgian public", type=f"Public body ({level})",
+            base="Brussels" if "Brussels" in level or level.startswith("Federal")
+            else "Belgium",
+            languages=lang, description=note,
+            target_roles="Policy, research, international relations, comms",
+            sources=["Regional registry: Belgian public bodies"],
         ))
     return out
 

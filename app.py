@@ -47,6 +47,7 @@ def load_catalogue() -> pd.DataFrame:
     if "sources" not in df:
         df["sources"] = [[] for _ in range(len(df))]
     for col, default in (("phd_relevant", False), ("latam_relevant", False),
+                         ("remote_friendly", False),
                          ("priority", None), ("size", None),
                          ("last_updated_age_days", None)):
         if col not in df:
@@ -115,6 +116,7 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
     st.sidebar.caption("Themes")
     phd = st.sidebar.checkbox("Anthropology / PhD route")
     latam = st.sidebar.checkbox("Latin America / Spanish")
+    remote = st.sidebar.checkbox("Hires remote / worldwide")
 
     st.sidebar.caption("Careers page")
     conf = st.sidebar.multiselect(
@@ -147,6 +149,8 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
         f = f[f["phd_relevant"]]
     if latam:
         f = f[f["latam_relevant"]]
+    if remote:
+        f = f[f["remote_friendly"]]
     if conf:
         f = f[f["careers_confidence"].replace("", "none").isin(conf)]
     if min_score > lo:
@@ -160,11 +164,12 @@ if page == "Organisations":
     f = org_filters(cat)
     st.caption(f"{len(f)} of {len(cat)} organisations")
 
-    k1, k2, k3, k4 = st.columns(4)
+    k1, k2, k3, k4, k5 = st.columns(5)
     k1.metric("Shown", len(f))
     k2.metric("With careers page", int(f["has_careers"].sum()))
     k3.metric("Anthropology / PhD", int(f["phd_relevant"].sum()))
     k4.metric("Latin America", int(f["latam_relevant"].sum()))
+    k5.metric("Remote-friendly", int(f["remote_friendly"].sum()))
     st.divider()
 
     if f.empty:
@@ -239,6 +244,8 @@ if page == "Organisations":
             tags.append("🎓 anthropology / PhD route")
         if r["latam_relevant"]:
             tags.append("🌎 Latin America / Spanish")
+        if r["remote_friendly"]:
+            tags.append("🏠 hires remote / worldwide")
         if tags:
             st.markdown(" · ".join(tags))
     with c2:
