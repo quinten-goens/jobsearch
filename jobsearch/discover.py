@@ -53,7 +53,17 @@ AGGREGATORS = (
     "linkedin.com", "glassdoor", "indeed.", "facebook.com", "twitter.com",
     "x.com", "youtube.com", "instagram.com", "wikipedia.org", "crunchbase",
     "jooble", "neuvoo", "talent.com", "jobrapido", "trovit", "adzuna",
+    # National/regional job portals. They list jobs for everyone, so they're
+    # never a specific organisation's careers page -- Drogenbos was resolving
+    # to vdab.be, which serves all of Flanders.
+    "vdab.be", "leforem.be", "actiris.brussels/fr/citoyens", "stepstone",
+    "monster.", "jobat.be", "references.lesoic.be", "references.be",
+    "unjobs.org", "impactpool.org", "devex.com", "jobsin.brussels",
+    "eurobrussels.com", "euractiv.com", "ngojobboard", "reliefweb.int",
 )
+# Not listed above on purpose: talentfinder.be and similar white-label portals
+# host a *specific* commune's vacancies on their own subdomain
+# (evere.talentfinder.be), so they are that commune's real careers page.
 
 # Known ATS platforms - if a search lands here it's almost certainly correct,
 # and the scraper has an exact adapter for it.
