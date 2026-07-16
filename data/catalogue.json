@@ -1899,20 +1899,29 @@
     "target_roles": "Social policy, integration, international relations, comms",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
+    "homepage": "https://watermaelboitsfort.talentfinder.be",
+    "careers_url": "https://watermaelboitsfort.talentfinder.be/fr/self-application.aspx",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: 19 Brussels communes"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 13,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "no careers path or ATS — capped below threshold",
+      "page text has 2 job signal(s) (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Commune+Watermael-Boitsfort+%2F+Watermaal-Bosvoorde+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Commune Woluwe-Saint-Lambert / Sint-Lambrechts-Woluwe",
@@ -2293,7 +2302,7 @@
     "eu_nationality": "EU",
     "homepage": "",
     "careers_url": "",
-    "careers_confidence": "none",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -2303,16 +2312,8 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 5,
-    "careers_reasons": [
-      "careers-shaped path (+4)",
-      "domain unrelated to this org (-10)",
-      "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 1 job signal(s) (+2)",
-      "page title says careers (+4)"
-    ],
-    "search_url": "https://www.google.com/search?q=Commune+de+Saint-Josse-ten-Noode+Brussels+jobs+vacancies+careers"
+    "careers_score": 0,
+    "careers_reasons": []
   },
   {
     "organisation": "Commune de Schaerbeek",
@@ -7842,7 +7843,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "CERN",
+    "organisation": "CERN (European Organization for Nuclear Research)",
     "sector": "European & intl institution",
     "category": "International org",
     "type": "Intergovernmental organisation",
@@ -7965,7 +7966,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "EBRD",
+    "organisation": "EBRD (European Bank for Reconstruction and Development)",
     "sector": "European & intl institution",
     "category": "International org",
     "type": "Intergovernmental organisation",
@@ -8049,7 +8050,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "EMBL",
+    "organisation": "EMBL (European Molecular Biology Laboratory)",
     "sector": "European & intl institution",
     "category": "International org",
     "type": "Intergovernmental organisation",
@@ -8133,7 +8134,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "EUMETSAT",
+    "organisation": "EUMETSAT (European Meteorological Satellite Organisation)",
     "sector": "European & intl institution",
     "category": "International org",
     "type": "Intergovernmental organisation",
@@ -8301,7 +8302,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "IAEA",
+    "organisation": "IAEA (International Atomic Energy Agency)",
     "sector": "European & intl institution",
     "category": "International org",
     "type": "Intergovernmental organisation",
@@ -8329,7 +8330,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "ICAO",
+    "organisation": "ICAO (International Civil Aviation Organization)",
     "sector": "European & intl institution",
     "category": "International org",
     "type": "Intergovernmental organisation",
@@ -8357,7 +8358,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "IFAD",
+    "organisation": "IFAD (International Fund for Agricultural Development)",
     "sector": "European & intl institution",
     "category": "International org",
     "type": "Intergovernmental organisation",
@@ -8441,7 +8442,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "IMO",
+    "organisation": "IMO (International Maritime Organization)",
     "sector": "European & intl institution",
     "category": "International org",
     "type": "Intergovernmental organisation",
@@ -8469,7 +8470,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "ITU",
+    "organisation": "ITU (International Telecommunication Union)",
     "sector": "European & intl institution",
     "category": "International org",
     "type": "Intergovernmental organisation",
@@ -8553,7 +8554,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "Interpol",
+    "organisation": "Interpol (International Criminal Police Organization)",
     "sector": "European & intl institution",
     "category": "International org",
     "type": "Intergovernmental organisation",
@@ -8693,7 +8694,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "ODIHR",
+    "organisation": "ODIHR (OSCE Office for Democratic Institutions and Human Rights)",
     "sector": "European & intl institution",
     "category": "International org",
     "type": "Intergovernmental organisation",
@@ -8749,7 +8750,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "OSCE",
+    "organisation": "OSCE (Organization for Security and Co-operation in Europe)",
     "sector": "European & intl institution",
     "category": "International org",
     "type": "Intergovernmental organisation",
@@ -8834,7 +8835,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "UNIDO",
+    "organisation": "UNIDO (UN Industrial Development Organization)",
     "sector": "European & intl institution",
     "category": "International org",
     "type": "Intergovernmental organisation",
@@ -9030,7 +9031,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "WIPO",
+    "organisation": "WIPO (World Intellectual Property Organization)",
     "sector": "European & intl institution",
     "category": "International org",
     "type": "Intergovernmental organisation",
@@ -9058,7 +9059,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "WTO",
+    "organisation": "WTO (World Trade Organization)",
     "sector": "European & intl institution",
     "category": "International org",
     "type": "Intergovernmental organisation",
@@ -9720,7 +9721,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "FAO",
+    "organisation": "FAO (Food and Agriculture Organization)",
     "sector": "International organisation",
     "category": "International org",
     "type": "International organisation",
@@ -9932,7 +9933,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "ILO",
+    "organisation": "ILO (International Labour Organization)",
     "sector": "International organisation",
     "category": "International org",
     "type": "International organisation",
@@ -10275,7 +10276,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "OECD",
+    "organisation": "OECD (Organisation for Economic Co-operation and Development)",
     "sector": "International organisation",
     "category": "International org",
     "type": "International organisation",
@@ -10303,7 +10304,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "OHCHR",
+    "organisation": "OHCHR (UN Human Rights Office)",
     "sector": "International organisation",
     "category": "International org",
     "type": "International organisation",
@@ -10516,7 +10517,7 @@
     "search_url": "https://www.google.com/search?q=site%3Aunwomen.org+jobs+OR+vacancies+OR+careers"
   },
   {
-    "organisation": "UNDP",
+    "organisation": "UNDP (UN Development Programme)",
     "sector": "International organisation",
     "category": "International org",
     "type": "International organisation",
@@ -10579,7 +10580,7 @@
     "search_url": "https://www.google.com/search?q=site%3Ajobs.undp.org+jobs+OR+vacancies+OR+careers"
   },
   {
-    "organisation": "UNESCO",
+    "organisation": "UNESCO (UN Educational, Scientific and Cultural Organization)",
     "sector": "International organisation",
     "category": "International org",
     "type": "International organisation",
@@ -10642,7 +10643,7 @@
     "search_url": "https://www.google.com/search?q=site%3Acareers.unesco.org+jobs+OR+vacancies+OR+careers"
   },
   {
-    "organisation": "UNFPA",
+    "organisation": "UNFPA (UN Population Fund)",
     "sector": "International organisation",
     "category": "International org",
     "type": "International organisation",
@@ -10707,7 +10708,7 @@
     "search_url": "https://www.google.com/search?q=site%3Aunfpa.org+jobs+OR+vacancies+OR+careers"
   },
   {
-    "organisation": "UNHCR",
+    "organisation": "UNHCR (UN Refugee Agency)",
     "sector": "International organisation",
     "category": "International org",
     "type": "International organisation",
@@ -10763,7 +10764,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "UNICEF",
+    "organisation": "UNICEF (UN Children's Fund)",
     "sector": "International organisation",
     "category": "International org",
     "type": "International organisation",
@@ -10827,7 +10828,7 @@
     "search_url": "https://www.google.com/search?q=site%3Aunicef.org+jobs+OR+vacancies+OR+careers"
   },
   {
-    "organisation": "UNODC",
+    "organisation": "UNODC (UN Office on Drugs and Crime)",
     "sector": "International organisation",
     "category": "International org",
     "type": "International organisation",
@@ -10892,7 +10893,7 @@
     "search_url": "https://www.google.com/search?q=site%3Aunric.org+jobs+OR+vacancies+OR+careers"
   },
   {
-    "organisation": "UNRWA",
+    "organisation": "UNRWA (UN Relief and Works Agency for Palestine Refugees)",
     "sector": "International organisation",
     "category": "International org",
     "type": "International organisation",
@@ -10948,7 +10949,7 @@
     "careers_reasons": []
   },
   {
-    "organisation": "WFP",
+    "organisation": "WFP (World Food Programme)",
     "sector": "International organisation",
     "category": "International org",
     "type": "International organisation",
@@ -11012,7 +11013,7 @@
     "search_url": "https://www.google.com/search?q=site%3Awfp.org+jobs+OR+vacancies+OR+careers"
   },
   {
-    "organisation": "WHO",
+    "organisation": "WHO (World Health Organization)",
     "sector": "International organisation",
     "category": "International org",
     "type": "International organisation",

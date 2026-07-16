@@ -311,10 +311,35 @@ def discover_one(org: dict) -> dict:
     # generic one can surface an overseas office while never showing the
     # Brussels HQ, so the second anchors on the city explicitly.
     variants = name_variants(name)
-    queries = [
-        f"{short} Brussels jobs vacancies careers",
-        f"{short} careers page Brussels Belgium",
-    ]
+
+    # Anchoring on "Brussels" helps a local NGO and actively hurts a global
+    # body: searching "WHO Brussels jobs" returns only aggregators, because
+    # who.int isn't a Brussels site (and "WHO" is also just an English word).
+    # Key the query off where the org actually is.
+    base = str(org.get("base") or "").lower()
+    is_brussels = (not base) or any(
+        b in base for b in ("brussels", "bruxelles", "brussel", "belgium",
+                            "belgique", "belgië", "leuven", "antwerp", "ghent",
+                            "liège", "liege", "namur", "mons", "bruges")
+    )
+    if is_brussels:
+        longest = max(variants, key=len)
+        queries = [
+            f"{short} Brussels jobs vacancies careers",
+            f"{short} careers page Brussels Belgium",
+        ]
+        # "Stockholm / Brussels" means an org that is elsewhere but keeps a
+        # Brussels office, so the global query is worth trying too.
+        if "/" in base:
+            queries.append(f"{longest} careers vacancies official site")
+    else:
+        # The long form disambiguates an acronym that collides with a common
+        # word, and the official-site hint pushes past the job aggregators.
+        longest = max(variants, key=len)
+        queries = [
+            f"{longest} careers vacancies official site",
+            f"{longest} jobs vacancies employment",
+        ]
     # A compound name ("DGD (Belgian Development Cooperation, ...)") searches
     # badly in either direction; the expansion often finds what the acronym
     # can't.
