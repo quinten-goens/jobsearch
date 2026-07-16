@@ -1,0 +1,41 @@
+Scraping boards...
+  eurobrussels       30 jobs
+  euractiv           43 jobs
+  -> 73 board jobs
+
+Scraping organisation careers pages...
+  1/276 [generic           ]  1  Selor language exams (Article 7/12)
+  2/276 [generic           ]  2  FPS Foreign Affairs (Belgium)
+  3/276 [generic           ]  1  werkenvoor.be / travaillerpour.be
+  4/276 [rendered:generic  ]  3  Actiris
+  5/276 [no-jobs-found     ]  0  COCOF (Commission communautaire francaise)
+  6/276 [generic           ]  2  Commune d'Evere
+  7/276 [generic           ]  2  Commune de Molenbeek-Saint-Jean
+  8/276 [generic           ]  1  Commune de Saint-Josse-ten-Noode
+  9/276 [no-jobs-found     ]  0  Commune de Schaerbeek
+ 10/276 [generic           ]  1  VGC (Vlaamse Gemeenschapscommissie)
+ 11/276 [rendered:generic  ]  2  talent.brussels
+ 12/276 [no-jobs-found     ]  0  ICF Next
+ 13/276 [rendered:generic  ]  1  Mostra
+ 14/276 [rendered:generic  ] 27  Ogilvy Social.Lab
+ 15/276 [no-jobs-found     ]  0  Tipik (Sword Group)
+ 16/276 [rendered:generic  ] 12  Burson (ex-Hill+Knowlton / BCW)
+ 17/276 [generic           ]  1  Cecoforma
+ 18/276 [no-jobs-found     ]  0  Grayling Brussels
+ 19/276 [no-jobs-found     ]  0  Acumen Public Affairs
+ 20/276 [generic           ] 13  Aula Europe
+ 21/276 [no-jobs-found     ]  0  Deloitte Digital EU
+ 22/276 [no-jobs-found     ]  0  FTI Consulting Brussels
+ 23/276 [generic           ]  1  FleishmanHillard
+ 24/276 [no-jobs-found     ]  0  Interel
+ 25/276 [rendered:generic  ]  2  Kreab
+ 26/276 [no-jobs-found     ]  0  Rud Pedersen Public Affairs
+ 27/276 [empty-page        ]  0  Teneo / Cambre
+ 28/276 [no-jobs-found     ]  0  Wavestone (ex-PwC EU Services)
+ 29/276 [no-jobs-found     ]  0  Weber Shandwick Brussels
+ 30/276 [generic           ]  1  Intercultural training / DEI freelance
+ 31/276 [generic           ]  2  Schaeffler - European operations
+ 32/276 [no-jobs-found     ]  0  British School of Brussels (BSB)
+ 33/276 [generic           ]  1  European Schools (Brussels I-IV)
+ 34/276 [generic           ]  1  International School of Brussels (ISB)
+ 35/276 [jsonld            ] 10  Multinationals with Brussels/EU HQ (LatAm-fa

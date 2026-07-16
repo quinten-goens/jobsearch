@@ -119,6 +119,12 @@ def score_candidate(cand: dict, org: dict) -> tuple[int, list[str]]:
             why.append(f"careers-shaped path (+{pts})")
             break
 
+    # An archive of closed/expired vacancies is a careers-shaped page that
+    # will never contain an applyable job.
+    if re.search(r"/(closed|expired|archive[sd]?|past|previous)\b", path_part):
+        score -= 6
+        why.append("archive of closed vacancies (-6)")
+
     # 2. ATS platform is a strong positive
     on_ats = any(h in low for h in ATS_HOSTS)
     if on_ats:

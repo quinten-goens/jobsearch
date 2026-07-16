@@ -20350,5 +20350,5077 @@
     ],
     "search_url": "https://www.google.com/search?q=site%3Atechnopolis-group.com+jobs+OR+vacancies+OR+careers",
     "method": "search+verify"
+  },
+  {
+    "id": 230,
+    "organisation": "Open Evidence",
+    "category": "Research & evaluation",
+    "priority": 2,
+    "old_url": "https://open-evidence.com",
+    "careers_url": "https://open-evidence.com/careers/",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://open-evidence.com/careers/",
+        "title": "Careers - Open Evidence",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://open-evidence.com/2025/06/11/new-measures-of-wage-adequacy/",
+        "title": "New measures of wage adequacy - Open Evidence",
+        "score": 13,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.ashbyhq.com/openevidence",
+        "title": "OpenEvidence Jobs",
+        "score": 13,
+        "reasons": [
+          "hosted on a known ATS (+6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://open-evidence.com/about/",
+        "title": "About - Open Evidence",
+        "score": 12,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.vub.be/go/EN_ALL-JOBS/3775601/",
+        "title": "All jobs",
+        "score": 4,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aopen-evidence.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 231,
+    "organisation": "PPMI",
+    "category": "Research & evaluation",
+    "priority": 2,
+    "old_url": "https://ppmi.lt/careers",
+    "careers_url": "https://ppmi.lt/more-iv-study-support-data-collection-and-analysis-concerning-mobility-patterns-and-career-paths-of-researchers-841",
+    "confidence": "high",
+    "score": 22,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://ppmi.lt/more-iv-study-support-data-collection-and-analysis-concerning-mobility-patterns-and-career-paths-of-researchers-841",
+        "title": "MORE IV study Support data collection and analysis concerning mobility patterns and career paths of researchers | PPMI",
+        "score": 22,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://ppmi.lt/research-careers-in-europe-707",
+        "title": "Research careers in Europe | PPMI",
+        "score": 21,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://ppmi.lt/news-insights/ppmi-part-verian-group-study-maps-baltic-talent-gaps-and-unlocks-new-pathways-international-partnerships",
+        "title": "PPMI | Part of the Verian Group study maps Baltic talent gaps and unlocks new pathways for international partnerships | PPMI",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 11,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://be.brussels/en/employment/job-brussels/where-look-job",
+        "title": "Where to look for a job | Brussels-Capital Region",
+        "score": 9,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Appmi.lt+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 222,
+    "organisation": "Nonviolent Peaceforce",
+    "category": "Peace & security",
+    "priority": 3,
+    "old_url": "https://nonviolentpeaceforce.org/careers/",
+    "careers_url": "https://jobsin.brussels/jobs/nonviolent-peaceforce-programme-impact-consortium-manager-2025-11/",
+    "confidence": "medium",
+    "score": 16,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 4 job signal(s) (+6)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://jobsin.brussels/jobs/nonviolent-peaceforce-programme-impact-consortium-manager-2025-11/",
+        "title": "Programme Impact & Consortium Manager – Nonviolent Peaceforce | Jobs in Brussels",
+        "score": 16,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 4 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://unjobs.org/non-un-organizations/nonviolent-peaceforce",
+        "title": "Vacancies with Nonviolent Peaceforce International | UNjobs",
+        "score": 1,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://nonviolentpeaceforce.org/wp-content/uploads/2022/04/Feasibility-4.pdf",
+        "title": "Nonviolent Peaceforce Director: Mel Duncan 801 Front Ave.",
+        "score": -36,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://nonviolentpeaceforce.org/6-noteworthy-organizations-advocating-for-peace/",
+        "title": "6 Noteworthy Organizations Advocating For Peace",
+        "score": -37,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://nonviolentpeaceforce.org/new-nonviolent-peaceforce-assessment-highlights-deteriorating-security-widespread-tensions-across-ukraine/",
+        "title": "New Nonviolent Peaceforce Assessment Highlights Civilians' Urgent Needs Across Five Ukraine Regions",
+        "score": -38,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://eujobs.co/career-guides/nonviolent-peaceforce-career-guide",
+        "title": "How to Get a Job at Nonviolent Peaceforce - Complete Career Guide - EUJobs.co",
+        "score": -47,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 522)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Anonviolentpeaceforce.org+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 232,
+    "organisation": "Particip GmbH",
+    "category": "Research & evaluation",
+    "priority": 2,
+    "old_url": "https://www.particip.de",
+    "careers_url": "https://www.particip.de/en/jobs/details?id=709",
+    "confidence": "high",
+    "score": 29,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 3 job signal(s) (+6)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.particip.de/en/jobs/details?id=709",
+        "title": "Particip: Job offers",
+        "score": 29,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 3 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.particip.de/fr/jobs/details/?id=437",
+        "title": "Particip: Offres d'emploi",
+        "score": 26,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/jobs_at/particip/4840",
+        "title": "Jobs at Particip | EuroBrussels",
+        "score": 3,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "http://www.particip.de/extensions/jobs/detail.php?id=836",
+        "title": "Particip",
+        "score": -33,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "fetch failed (HTTP 404)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aparticip.de+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 223,
+    "organisation": "Saferworld Brussels",
+    "category": "Peace & security",
+    "priority": 3,
+    "old_url": "https://www.saferworld.org.uk/jobs",
+    "careers_url": "https://saferworld-global.current-vacancies.com/Careers/Saferworld-vacancy-search-page-3345",
+    "confidence": "high",
+    "score": 22,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 3 job signal(s) (+6)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://saferworld-global.current-vacancies.com/Careers/Saferworld-vacancy-search-page-3345",
+        "title": "Careers",
+        "score": 22,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 3 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/jobs_at/saferworld/562",
+        "title": "Jobs at Saferworld | EuroBrussels",
+        "score": 5,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.saferworld.org.uk/long-reads/spotlighting-women-activists-and-journalists-in-somalia",
+        "title": "16 Days of Activism: spotlighting women activists and journalists in Somalia - Saferworld",
+        "score": -37,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.saferworld.org.uk/resources/publications/693-moving-beyond-promises",
+        "title": "Publications - Saferworld",
+        "score": -38,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.saferworld-global.org/resources/news-and-analysis/post/992-ano-justice-for-women-no-peacea-activists-highlight-the-barriers-women-are-facing-in-somalia",
+        "title": "“No justice for women, no peace”: activists highlight the barriers women are facing in Somalia - News and resources - Saferworld",
+        "score": -41,
+        "reasons": [
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://eujobs.co/career-guides/saferworld-career-guide",
+        "title": "How to Get a Job at Saferworld - Complete Career Guide - EUJobs.co",
+        "score": -47,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 522)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Asaferworld.org.uk+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 234,
+    "organisation": "Ramboll Management Consulting",
+    "category": "Research & evaluation",
+    "priority": 2,
+    "old_url": "https://www.ramboll.com/careers",
+    "careers_url": "https://www.ramboll.com/careers",
+    "confidence": "high",
+    "score": 27,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.ramboll.com/careers",
+        "title": "Careers - Ramboll group - Ramboll",
+        "score": 27,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.ramboll.com/our-recruitment-process",
+        "title": "Our recruitment process - Ramboll",
+        "score": 26,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 3 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.ramboll.com/early-careers",
+        "title": "Early careers - Ramboll",
+        "score": 24,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.euractiv.com/company/ramboll-management-consulting-237835",
+        "title": "Ramboll Management Consulting | Euractiv JobSite",
+        "score": -52,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 404)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aramboll.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 233,
+    "organisation": "Prospex Institute",
+    "category": "Research & evaluation",
+    "priority": 2,
+    "old_url": "https://www.prospex-institute.org",
+    "careers_url": "https://www.prospex-institute.org/allthings-biopro",
+    "confidence": "medium",
+    "score": 14,
+    "reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.prospex-institute.org/allthings-biopro",
+        "title": "AllThings.bioPRO | Prospex Institute",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.prospex-institute.org/post/allthings-biopro-data-value-labs",
+        "title": "Allthings.bioPRO - Data Value Labs on bioeconomy",
+        "score": 13,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.prospex-institute.org/post/stakeholder-engagement-dialogues-creating-impact-through-local-engagement",
+        "title": "Stakeholder Engagement Dialogues - Creating impact through local engagement",
+        "score": 12,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/jobs_at/prospex_institute/8306",
+        "title": "Jobs at Prospex Institute | EuroBrussels",
+        "score": 5,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.euractiv.com/company/prospex-institute-vzw-203833",
+        "title": "Prospex Institute vzw. | EURACTIV JobSite",
+        "score": -52,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 404)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aprospex-institute.org+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 235,
+    "organisation": "Tetra Tech",
+    "category": "Research & evaluation",
+    "priority": 2,
+    "old_url": "https://www.tetratech.com/careers/",
+    "careers_url": "https://www.tetratech.com/careers/",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.tetratech.com/careers/",
+        "title": "Careers - Tetra Tech",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.tetratech.com/europe/work-with-us/",
+        "title": "Work With Us - Tetra Tech",
+        "score": 20,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://tetratech.referrals.selectminds.com/",
+        "title": "Tetra Tech Careers - Jobs",
+        "score": 13,
+        "reasons": [
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://europecareers.tetratech.com/",
+        "title": "Europe Careers - Tetra Tech",
+        "score": 11,
+        "reasons": [
+          "matches the sheet's known domain (+3)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Atetratech.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 227,
+    "organisation": "Ipsos European Public Affairs",
+    "category": "Research & evaluation",
+    "priority": 1,
+    "old_url": "https://www.ipsos.com/en-be/careers",
+    "careers_url": "https://www.ipsos.com/en-be/professional-vacancies",
+    "confidence": "high",
+    "score": 27,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.ipsos.com/en-be/professional-vacancies",
+        "title": "Professional vacancies | Ipsos",
+        "score": 27,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.ipsos.com/en-uk/vacancies-at-ipsos",
+        "title": "Vacancies at Ipsos | Ipsos",
+        "score": 22,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.ipsos.com/en/careers",
+        "title": "Careers | Ipsos",
+        "score": 22,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.interviewercareersipsos.com/vacancies/vacancy-search-results.aspx",
+        "title": "21 Vacancies - Ipsos",
+        "score": 17,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+3)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/jobs/brussels",
+        "title": "European Affairs Jobs in Brussels | EuroBrussels",
+        "score": 12,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://eujobs.co/career-guides/ipsos-career-guide",
+        "title": "How to Get a Job at IPSOS - Complete Career Guide - EUJobs.co",
+        "score": -48,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "fetch failed (HTTP 522)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aipsos.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 237,
+    "organisation": "CSES (Centre for Strategy & Evaluation Services)",
+    "category": "Research & evaluation",
+    "priority": 3,
+    "old_url": "https://cses.co.uk",
+    "careers_url": "https://www.cses.co.uk/recruitment",
+    "confidence": "high",
+    "score": 22,
+    "reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.cses.co.uk/recruitment",
+        "title": "Recruitment — Centre for Strategy & Evaluation Services (CSES)",
+        "score": 22,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.cses.co.uk/news",
+        "title": "News — Centre for Strategy & Evaluation Services (CSES)",
+        "score": 17,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 2 job signal(s) (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 11,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.brussels.be/current-vacancies",
+        "title": "Current vacancies | City of Brussels",
+        "score": 10,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/",
+        "title": "EuroBrussels: Find EU Jobs in Brussels and EU Institutions",
+        "score": 6,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acses.co.uk+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 236,
+    "organisation": "VVA (Valdani Vicari & Associati)",
+    "category": "Research & evaluation",
+    "priority": 2,
+    "old_url": "https://www.vva.it",
+    "careers_url": "https://www.vva.it/en/careers/",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.vva.it/en/careers/",
+        "title": "Careers | VVA",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.vva.it/vacancies/",
+        "title": "Vacancies | VVA",
+        "score": 21,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/jobs_at/vva_valdani_vicari_associati/6646",
+        "title": "Jobs at VVA - Valdani Vicari & Associati | EuroBrussels",
+        "score": 5,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.stepstone.be/cmp/en/VVA-Brussels-73237/jobs",
+        "title": "Your career at VVA Brussels | StepStone.",
+        "score": 4,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://unjobs.org/duty_stations/bru",
+        "title": "Vacancies in Brussels, Belgium | UNjobs",
+        "score": 1,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "http://www.vva.it/vacancies/personal-assistant-junior-milano/",
+        "title": "Personal Assistant Junior (Milano) – VVA",
+        "score": -34,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 404)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Avva.it+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 238,
+    "organisation": "Deloitte - EU Services",
+    "category": "Research & evaluation",
+    "priority": 3,
+    "old_url": "https://www.deloitte.com/be/en/careers.html",
+    "careers_url": "https://www.deloitte.com/be/en/careers/job-search.html",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.deloitte.com/be/en/careers/job-search.html",
+        "title": "Job Search | Careers | Deloitte Belgium",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.deloitte.com/global/en/careers/job-search.html",
+        "title": "Welcome to Careers at Deloitte",
+        "score": 22,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.deloitte.com/be/en/careers/experienced-candidates.html",
+        "title": "Experienced candidates | Deloitte Belgium | Careers",
+        "score": 22,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Adeloitte.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 239,
+    "organisation": "EY - EU Institutions practice",
+    "category": "Research & evaluation",
+    "priority": 3,
+    "old_url": "https://www.ey.com/en_be/careers",
+    "careers_url": "https://www.ey.com/en_be/careers/job-search",
+    "confidence": "high",
+    "score": 20,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.ey.com/en_be/careers/job-search",
+        "title": "Job search | EY - Belgium",
+        "score": 20,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.ey.com/en_gl/careers",
+        "title": "Careers at EY | EY - Global",
+        "score": 19,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://careers.ey.com/",
+        "title": "Careers at EY: search jobs",
+        "score": 14,
+        "reasons": [
+          "matches the sheet's known domain (+3)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://eycareers.be/vacancies/",
+        "title": "Careers at EY Belgium",
+        "score": 13,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 11,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/",
+        "title": "EuroBrussels: Find EU Jobs in Brussels and EU Institutions",
+        "score": 5,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aey.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 242,
+    "organisation": "ICON-INSTITUT",
+    "category": "Research & evaluation",
+    "priority": 3,
+    "old_url": "https://www.icon-institute.de",
+    "careers_url": "https://hp.icon-institute.de/jobs/",
+    "confidence": "medium",
+    "score": 17,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "matches the sheet's known domain (+3)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://hp.icon-institute.de/jobs/",
+        "title": "JOBS - ICON-INSTITUTE GmbH & Co. KG Consulting Gruppe",
+        "score": 17,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+3)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://hp.icon-institute.de/current-jobs/",
+        "title": "Current Jobs - ICON-INSTITUTE GmbH & Co. KG Consulting Gruppe",
+        "score": 11,
+        "reasons": [
+          "matches the sheet's known domain (+3)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 9,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://hp.icon-institute.de/refprojects/technical-vocational-education-and-training-br/",
+        "title": "Technical Vocational Education and Training - ICON-INSTITUTE GmbH & Co. KG Consulting Gruppe",
+        "score": 6,
+        "reasons": [
+          "matches the sheet's known domain (+3)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/jobs_at/icon-institute_consulting_gruppe/916",
+        "title": "Jobs at ICON-INSTITUTE Consulting Gruppe | EuroBrussels",
+        "score": 4,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aicon-institute.de+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 241,
+    "organisation": "Fondazione Giacomo Brodolini",
+    "category": "Research & evaluation",
+    "priority": 3,
+    "old_url": "https://www.fondazionebrodolini.it",
+    "careers_url": "https://www.fondazionebrodolini.it/en/vacancy",
+    "confidence": "high",
+    "score": 21,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #3 (+1)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.fondazionebrodolini.it/en/vacancy",
+        "title": "Work with us | Fondazione Giacomo Brodolini",
+        "score": 21,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.fondazionebrodolini.it/sites/default/files/inline-files/Synthesis-%20paper-Empowering-the-Workforce-Bridging-the-Skills-Gap-Public-Employment-Services_1.pdf",
+        "title": "PES Network Stakeholder Conference Empowering the Workforce, Bridging",
+        "score": 16,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.fondazionebrodolini.it/en/projects/eures-targeted-mobility-scheme-tms-2025-2027",
+        "title": "EURES Targeted Mobility Scheme (TMS) 2025-2027 | Fondazione Giacomo Brodolini",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.fondazionebrodolini.it/en/focus-on/understanding-and-measuring-skill-shortages-europe",
+        "title": "Understanding and measuring skill shortages in Europe | Fondazione Giacomo Brodolini",
+        "score": 13,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/jobs_at/fondazione_giacomo_brodolini/302",
+        "title": "Jobs at FGB - Fondazione Giacomo Brodolini | EuroBrussels",
+        "score": 4,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "http://jobs.euractiv.com/company/fondazione-giacomo-brodolini-96179",
+        "title": "Fondazione Giacomo Brodolini | EURACTIV JobSite",
+        "score": -51,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "fetch failed (HTTP 404)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Afondazionebrodolini.it+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 244,
+    "organisation": "Trinomics",
+    "category": "Research & evaluation",
+    "priority": 3,
+    "old_url": "https://trinomics.eu/vacancies/",
+    "careers_url": "https://trinomics.eu/new-vacancies/",
+    "confidence": "high",
+    "score": 27,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://trinomics.eu/new-vacancies/",
+        "title": "New Vacancies - Trinomics",
+        "score": 27,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://trinomics.eu/recruitment/",
+        "title": "Recruitment - Trinomics",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://trinomics.eu/project-tag/jobs/",
+        "title": "jobs Archives - Trinomics",
+        "score": 21,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://trinomics.eu/news/",
+        "title": "News - Trinomics",
+        "score": 17,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 2 job signal(s) (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/jobs_at/trinomics/7619",
+        "title": "Jobs at Trinomics | EuroBrussels",
+        "score": 3,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Atrinomics.eu+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 240,
+    "organisation": "Empirica",
+    "category": "Research & evaluation",
+    "priority": 3,
+    "old_url": "https://www.empirica.com",
+    "careers_url": "https://empirica.com/about/jobs-career/",
+    "confidence": "high",
+    "score": 27,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://empirica.com/about/jobs-career/",
+        "title": "Jobs and Career - empirica",
+        "score": 27,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://empirica.com/news/ict-workforce-increase-in-europe-e-skills-policy-created-the-right-framework/",
+        "title": "ICT workforce increase in Europe: e-skills policy created the right framework - empirica",
+        "score": 12,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 10,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://bebee.com/be/companies/empiric",
+        "title": "Empiric - Jobs & Salary data | BeBee",
+        "score": -1,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://empirica.com/de/news/eskills-work/single-view/forecasting-the-e-skills-gap-more-than-500000-vacant-ict-jobs-in-europe-by-2015/",
+        "title": "Single view - empirica",
+        "score": -37,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 404)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aempirica.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 245,
+    "organisation": "Visionary Analytics",
+    "category": "Research & evaluation",
+    "priority": 3,
+    "old_url": "https://visionary.lt",
+    "careers_url": "https://www.visionary.lt/vacancies/",
+    "confidence": "high",
+    "score": 25,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.visionary.lt/vacancies/",
+        "title": "Vacancies ⁄ Visionary Analytics",
+        "score": 25,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.visionary.lt/wp-content/uploads/2026/03/study-exploring-the-context-challenges-opportunities-KE0125097ENN.pdf",
+        "title": "December – 2023 Study exploring the context, challenges, opportunities, and",
+        "score": 16,
+        "reasons": [
+          "careers-shaped path (+3)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.visionary.lt/expertises/labour-market-and-social-affairs/",
+        "title": "Labour Market and Social Affairs ⁄ Visionary Analytics",
+        "score": 12,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 11,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.brussels.be/current-vacancies",
+        "title": "Current vacancies | City of Brussels",
+        "score": 11,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Avisionary.lt+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 243,
+    "organisation": "Milieu Consulting",
+    "category": "Research & evaluation",
+    "priority": 3,
+    "old_url": "https://www.milieu.be",
+    "careers_url": "https://www.milieu.be/careers_archive/",
+    "confidence": "high",
+    "score": 25,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.milieu.be/careers_archive/",
+        "title": "Vacancies Archive - Milieu Law & Policy Consulting",
+        "score": 25,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.milieu.be/milieu-support-project-to-the-3-billion-trees-pledge/",
+        "title": "Milieu Support project to the 3 Billion Trees Pledge - Milieu Law & Policy Consulting",
+        "score": 15,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.milieu.be/problem-analysis-and-identification-of-policy-options-2/",
+        "title": "Problem analysis and identification of policy options - Milieu Law & Policy Consulting",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/jobs_at/milieu_consulting_srl/158",
+        "title": "Jobs at Milieu Consulting SRL | EuroBrussels",
+        "score": 5,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://careernext.ceu.edu/resource/milieu-law-policy-consulting-jobs",
+        "title": "Milieu Law & Policy Consulting Jobs | CareerNext - CEU",
+        "score": 4,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Amilieu.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 247,
+    "organisation": "Heinrich-Boll-Stiftung EU",
+    "category": "Think tanks",
+    "priority": 1,
+    "old_url": "https://eu.boell.org",
+    "careers_url": "https://eu.boell.org/en/vacancies",
+    "confidence": "high",
+    "score": 21,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://eu.boell.org/en/vacancies",
+        "title": "Vacancies | Heinrich Böll Stiftung | Brussels office - European Union",
+        "score": 21,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://eu.boell.org/en/opportunities",
+        "title": "Opportunities with the Heinrich-Böll-Stiftung European Union | Global Dialogue | Heinrich Böll Stiftung | Brussels office - European Union",
+        "score": 13,
+        "reasons": [
+          "careers-shaped path (+3)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/organisations/heinrich-boell-stiftung/",
+        "title": "Jobs at Heinrich-Böll-Stiftung in Brussels | Jobs in Brussels",
+        "score": 12,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)",
+          "explicitly lists zero openings — still the right page (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://eu.boell.org/en/jobs-and-internships",
+        "title": "Jobs and internships | Heinrich Böll Stiftung | Brussels office - European Union",
+        "score": -34,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 404)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aeu.boell.org+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 248,
+    "organisation": "Centre Avec",
+    "category": "Think tanks",
+    "priority": 2,
+    "old_url": "https://www.centreavec.be",
+    "careers_url": "https://centreavec.be/dossier/pour-quoi-travaillons-nous/",
+    "confidence": "medium",
+    "score": 16,
+    "reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)"
+    ],
+    "candidates": [
+      {
+        "url": "https://centreavec.be/dossier/pour-quoi-travaillons-nous/",
+        "title": "Centre Avec | POUR QUOI TRAVAILLONS-NOUS ? - Centre Avec %",
+        "score": 16,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://centreavec.be/publication/discussion-croisee-sur-le-sens-du-travail/",
+        "title": "Centre Avec | DISCUSSION CROISéE SUR LE SENS DU TRAVAIL - Centre Avec",
+        "score": 15,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://centreavec.be/dossier/la-quete-de-sens-aux-marges-de-la-societe/",
+        "title": "Centre Avec | La quête de sens aux marges de la société - Centre Avec",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 11,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/",
+        "title": "EuroBrussels: Find EU Jobs in Brussels and EU Institutions",
+        "score": 5,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.vub.be/?locale=en_GB",
+        "title": "Home",
+        "score": 0,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acentreavec.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 250,
+    "organisation": "FEPS (Foundation for European Progressive Studies)",
+    "category": "Think tanks",
+    "priority": 2,
+    "old_url": "https://feps-europe.eu/vacancies/",
+    "careers_url": "https://feps-europe.eu/careers/",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://feps-europe.eu/careers/",
+        "title": "Careers - Foundation for European Progressive Studies",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://feps-europe.eu/publication/852-the-circular-economy-and-green-jobs-in-the-eu-and-beyond/",
+        "title": "The Circular Economy and Green Jobs in the EU and Beyond - Foundation for European Progressive Studies",
+        "score": 18,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://feps-europe.eu/person/heinz-josef-bontrup/",
+        "title": "Heinz-Josef Bontrup - Foundation for European Progressive Studies",
+        "score": 13,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://feps-europe.eu/wp-content/uploads/downloads/events/eso%20contribution%20greenpaper%20on%20ageing%20def.pdf",
+        "title": "1 European Senior Organisation – PES- seniors Guimardstraat, 10 1040 Brussel",
+        "score": 12,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 10,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/jobs/brussels",
+        "title": "European Affairs Jobs in Brussels | EuroBrussels",
+        "score": 10,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Afeps-europe.eu+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 251,
+    "organisation": "Friends of Europe",
+    "category": "Think tanks",
+    "priority": 2,
+    "old_url": "https://www.friendsofeurope.org",
+    "careers_url": "https://friendsoftheearth.eu/jobs/",
+    "confidence": "medium",
+    "score": 16,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://friendsoftheearth.eu/jobs/",
+        "title": "Jobs - Friends of the Earth Europe",
+        "score": 16,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/jobs/friends-of-europe-programme-assistant-2026-02/",
+        "title": "Programme Assistant (Intern) – Friends of Europe | Jobs in Brussels",
+        "score": 15,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.friendsofeurope.org/insights/critical-thinking-tackling-germanys-labour-shortage/",
+        "title": "Tackling Germany’s labour shortage - Friends of Europe",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.friendsofeurope.org/initiatives/european-young-leaders?insights-topic=6&events-date=all&person-country=63&person-eyl=all&person-industry=35",
+        "title": "European Young Leaders (#EYL40) - Friends of Europe",
+        "score": 13,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/organisations/friends-of-europe/",
+        "title": "Jobs at Friends of Europe in Brussels | Jobs in Brussels",
+        "score": 13,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)",
+          "explicitly lists zero openings — still the right page (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.friendsofeurope.org/insights/global-supply-chains-why-are-they-no-longer-working",
+        "title": "Global supply chains: why are they no longer working? - Friends of Europe",
+        "score": 12,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Afriendsofeurope.org+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 254,
+    "organisation": "Bruegel",
+    "category": "Think tanks",
+    "priority": 3,
+    "old_url": "https://www.bruegel.org/vacancies",
+    "careers_url": "https://www.bruegel.org/careers",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.bruegel.org/careers",
+        "title": "Careers",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.bruegel.org/system/files/2024-03/WP%2006.pdf",
+        "title": "WORKING PAPER | ISSUE 06/2024 | 07 MARCH 2024 EXPOSURE TO GENERATIVE",
+        "score": 13,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.bruegel.org/blog-post/cross-border-telework-eu-fab-or-fad",
+        "title": "Cross-border telework in the EU: fab or fad?",
+        "score": 12,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/organisations/bruegel/",
+        "title": "Jobs at Climate-KIC in Brussels | Jobs in Brussels",
+        "score": 12,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)",
+          "explicitly lists zero openings — still the right page (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://unjobs.org/offices/bruegel_bru",
+        "title": "Vacancies with Bruegel in Brussels, Belgium | UNjobs",
+        "score": 1,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Abruegel.org+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 255,
+    "organisation": "CEPS",
+    "category": "Think tanks",
+    "priority": 3,
+    "old_url": "https://www.ceps.eu/about-ceps/jobs/",
+    "careers_url": "https://www.ceps.eu/about-ceps/career-opportunities/",
+    "confidence": "high",
+    "score": 27,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.ceps.eu/about-ceps/career-opportunities/",
+        "title": "Career Opportunities – CEPS",
+        "score": 27,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.ceps.eu/ceps-unit/jobs-and-skills/",
+        "title": "Jobs and Skills – CEPS",
+        "score": 22,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/jobs_at/ceps_centre_for_european_policy_studies/270",
+        "title": "Jobs at CEPS - Centre for European Policy Studies | EuroBrussels",
+        "score": 4,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://cdn.ceps.eu/wp-content/uploads/2022/03/EuroMesCo-Policy_Report_Talent-Partnerships.pdf",
+        "title": "Policy Report TALENT PARTNERSHIPS AND FUTURE SKILLS NEEDS Mattia Di Salvo",
+        "score": -2,
+        "reasons": [
+          "matches the sheet's known domain (+3)",
+          "looks like a non-Brussels office (-8)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aceps.eu+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 256,
+    "organisation": "Carnegie Europe",
+    "category": "Think tanks",
+    "priority": 3,
+    "old_url": "https://carnegieendowment.org/about/employment",
+    "careers_url": "https://carnegieendowment.org/middle-east/employment-opportunities-at-the-malcolm-h-kerr-carnegie-middle-east-center",
+    "confidence": "high",
+    "score": 22,
+    "reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://carnegieendowment.org/middle-east/employment-opportunities-at-the-malcolm-h-kerr-carnegie-middle-east-center",
+        "title": "Employment Opportunities at the Malcolm H. Kerr Carnegie Middle East Center | Carnegie Endowment for International Peace",
+        "score": 22,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/jobs/carnegie-europe-research-assistant-sustainability-climate-and-geopolitics-french-or-german-speaking-2025-12/",
+        "title": "Research Assistant, Sustainability, Climate, and Geopolitics – Carnegie Europe | Jobs in Brussels",
+        "score": 15,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 3 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://carnegieendowment.org/research/2016/09/the-indian-administrative-service-meets-big-data",
+        "title": "The Indian Administrative Service Meets Big Data | Carnegie Endowment for International Peace",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://carnegieendowment.org/posts/2014/05/chinas-dangerous-graduate-glut?center=global",
+        "title": "China’s Dangerous Graduate Glut | Carnegie Endowment for International Peace",
+        "score": 13,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/organisations/carnegie-europe/",
+        "title": "Jobs at Carnegie Europe in Brussels | Jobs in Brussels",
+        "score": 11,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 4 job signal(s) (+6)",
+          "page title says careers (+4)",
+          "explicitly lists zero openings — still the right page (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/jobs_at/carnegie_endowment_for_international_peace/469",
+        "title": "Jobs at Carnegie Endowment for International Peace | EuroBrussels",
+        "score": 5,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acarnegieendowment.org+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 246,
+    "organisation": "Friedrich-Ebert-Stiftung EU Office",
+    "category": "Think tanks",
+    "priority": 1,
+    "old_url": "https://brussels.fes.de",
+    "careers_url": "https://jobsin.brussels/organisations/friedrich-ebert-stiftung/",
+    "confidence": "medium",
+    "score": 13,
+    "reasons": [
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 4 job signal(s) (+6)",
+      "page title says careers (+4)",
+      "explicitly lists zero openings — still the right page (+2)"
+    ],
+    "candidates": [
+      {
+        "url": "https://jobsin.brussels/organisations/friedrich-ebert-stiftung/",
+        "title": "Jobs at Friedrich-Ebert-Stiftung in Brussels | Jobs in Brussels",
+        "score": 13,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 4 job signal(s) (+6)",
+          "page title says careers (+4)",
+          "explicitly lists zero openings — still the right page (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://brussels.fes.de/fileadmin/user_upload/Claus_Schultze_DG_Mare_Blue_Growth_PPTs_3005_2016.pdf",
+        "title": "DG MARE Claus Schultze Maritime Policy Baltic and North Sea",
+        "score": 12,
+        "reasons": [
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://brussels.fes.de/e/refugees-bulgaria",
+        "title": "We have no better opportunity to change policies: FES EU Office Brussels",
+        "score": 11,
+        "reasons": [
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://brussels.fes.de/e/launch-event",
+        "title": "Launch of FES Just Climate & FES Future of Work",
+        "score": 10,
+        "reasons": [
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.euractiv.com/author/friedrich/",
+        "title": "Friedrich-Ebert-Stiftung – Euractiv Jobs",
+        "score": 1,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://eujobs.co/career-guides/friedrich-ebert-stiftung-career-guide",
+        "title": "How to Get a Job at Friedrich-Ebert-Stiftung - Complete Career Guide - EUJobs.co",
+        "score": -47,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 522)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Abrussels.fes.de+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 257,
+    "organisation": "ECFR Brussels",
+    "category": "Think tanks",
+    "priority": 3,
+    "old_url": "https://ecfr.eu/jobs/",
+    "careers_url": "https://ecfr.eu/jobs/",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://ecfr.eu/jobs/",
+        "title": "Help shape European foreign policy | Career opportunities at ECFR - European Council on Foreign Relations",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://ecfr.eu/publication/china_analysis_trump_opportunity_chinese_perceptions_us_administration262/",
+        "title": "The Trump opportunity: Chinese perceptions of the US administration – European Council on Foreign Relations",
+        "score": 16,
+        "reasons": [
+          "careers-shaped path (+3)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://ecfr.eu/publication/the-orbanisation-of-america-hungarys-lessons-for-donald-trump/",
+        "title": "The Orbanisation of America: Hungary’s lessons for Donald Trump – European Council on Foreign Relations",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://ecfr.eu/article/commentary_ukraine_on_the_brink_of_kleptocracy/",
+        "title": "Ukraine on the brink of kleptocracy – European Council on Foreign Relations",
+        "score": 12,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/jobs_at/ecfr_european_council_on_foreign_relations/70",
+        "title": "Jobs at ECFR - European Council on Foreign Relations | EuroBrussels",
+        "score": 4,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://unjobs.org/non-un-organizations/ecfr",
+        "title": "Vacancies with European Council on Foreign Relations (ECFR) | UNjobs",
+        "score": 1,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aecfr.eu+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 249,
+    "organisation": "Egmont Institute",
+    "category": "Think tanks",
+    "priority": 2,
+    "old_url": "https://www.egmontinstitute.be",
+    "careers_url": "https://egmontinstitute.be/jobs-internships-and-opportunities/",
+    "confidence": "high",
+    "score": 29,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://egmontinstitute.be/jobs-internships-and-opportunities/",
+        "title": "Jobs, Internships and Opportunities - Egmont Institute",
+        "score": 29,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://egmontinstitute.be/swipe-right-for-talent-tinder-for-jobseekers-as-the-new-way-to-recruit-non-eu-workers/",
+        "title": "Swipe Right for Talent: Tinder for Jobseekers as the New Way to Recruit Non-EU Workers - Egmont Institute",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://egmontinstitute.be/app/uploads/2022/10/Marcel-Muraille_PolicyBrief288.pdf?type=pdf",
+        "title": "EGMONT POLICY BRIEF 288 – OCTOBER 2022 –",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://eujobs.brussels/egmont-institute",
+        "title": "Egmont Institute | EU Jobs Brussels",
+        "score": 10,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 3 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eujobs.co/career-guides/egmont-institute-career-guide",
+        "title": "How to Get a Job at Egmont Institute - Complete Career Guide - EUJobs.co",
+        "score": -48,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "fetch failed (HTTP 522)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aegmontinstitute.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 259,
+    "organisation": "European Policy Centre (EPC)",
+    "category": "Think tanks",
+    "priority": 3,
+    "old_url": "https://www.epc.eu",
+    "careers_url": "https://www.epc.eu/vacancies/",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.epc.eu/vacancies/",
+        "title": "Vacancies",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.epc.eu/publication/Europes-recruitment-drive-26c5c8/",
+        "title": "Europe’s recruitment drive",
+        "score": 20,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.epc.eu/vacancies/communication-and-events-assistants/",
+        "title": "Communication and Events Assistant(s)",
+        "score": 18,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/organisations/european-policy-centre/",
+        "title": "Jobs at European Policy Centre in Brussels | Jobs in Brussels",
+        "score": 11,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 4 job signal(s) (+6)",
+          "page title says careers (+4)",
+          "explicitly lists zero openings — still the right page (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/",
+        "title": "EuroBrussels: Find EU Jobs in Brussels and EU Institutions",
+        "score": 6,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aepc.eu+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 258,
+    "organisation": "Etopia (Ecolo)",
+    "category": "Think tanks",
+    "priority": 3,
+    "old_url": "https://etopia.be",
+    "careers_url": "https://etopia.be/evenement/grande-conference-avec-celine-marty-travailler-moins-pour-vivre-mieux/",
+    "confidence": "medium",
+    "score": 16,
+    "reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)"
+    ],
+    "candidates": [
+      {
+        "url": "https://etopia.be/evenement/grande-conference-avec-celine-marty-travailler-moins-pour-vivre-mieux/",
+        "title": "Grande conférence avec Céline Marty: « Travailler moins pour vivre mieux ? » | Etopia",
+        "score": 16,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://etopia.be/blog/2019/04/24/des-regles-de-vie-sociale-trop-complexes-et-contradictoires-larriere-decisionnel-une-faute-politique-sociale-et-dequite/",
+        "title": "Des règles de vie sociale trop complexes et contradictoires: L’arriéré décisionnel, une faute politique, sociale et d’équité. | Etopia",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 11,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://eu-careers.europa.eu/en/job-opportunities/open-vacancies/ec_vacancies",
+        "title": "Non-permanent contracts (European Commission) | EU Careers",
+        "score": 11,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/jobs/brussels",
+        "title": "European Affairs Jobs in Brussels | EuroBrussels",
+        "score": 10,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://etopia.be/blog/2008/01/01/de-lisbonne-a-lisbonne-de-la-strategie-au-traite-et-au-dela/",
+        "title": "De Lisbonne à Lisbonne. De la Stratégie au Traité… et au-delà | Etopia",
+        "score": 7,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "looks like a non-Brussels office (-8)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aetopia.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 252,
+    "organisation": "Konrad-Adenauer-Stiftung European Office",
+    "category": "Think tanks",
+    "priority": 2,
+    "old_url": "https://www.kas.de/en/web/bruessel-eu",
+    "careers_url": null,
+    "confidence": "none",
+    "score": -35,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "fetch failed (HTTP 403)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.kas.de/de/web/palaestinensische-gebiete/statische-inhalte-detail/-/content/vacancies-3",
+        "title": "Stellenangebote - Auslandsbüro Palästinensische Gebiete - Konrad-Adenauer-Stiftung",
+        "score": -35,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.kas.de/en/web/rpg/detail/-/content/highly-skilled-migration-to-the-gulf-states-how-do-gcc-countries-fare-in-the-global-competition-for-1",
+        "title": "Highly Skilled Migration from Tunisia to Saudi Arabia, the UAE and Qatar: Trends, Drivers and Policies - Regional Programme Gulf States - Konrad-Adenauer-Stiftung",
+        "score": -41,
+        "reasons": [
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.kas.de/en/statische-inhalte-detail/-/content/stellenausschreibungen-des-europabueros-bruessel",
+        "title": "Vacancies at the European Office Brussels - Konrad-Adenauer-Stiftung",
+        "score": -41,
+        "reasons": [
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.kas.de/c/document_library/get_file?uuid=6df80a4c-4967-8f1f-2499-443bf4f8fb87&groupId=252038",
+        "title": "40 KAS INTERNATIONAL REPORTS 9/10|2011 THE REPUBLIC OF MOLDOVA",
+        "score": -42,
+        "reasons": [
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://eujobs.co/career-guides/konrad-adenauer-stiftung-career-guide",
+        "title": "How to Get a Job at Konrad-Adenauer-Stiftung - Complete Career Guide - EUJobs.co",
+        "score": -46,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "fetch failed (HTTP 522)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "http://jobs.euractiv.com/company/konrad-adenauer-stiftung-brussels-235140",
+        "title": "Konrad-Adenauer-Stiftung, Brussels | Euractiv JobSite",
+        "score": -51,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "fetch failed (HTTP 404)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Akas.de+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 261,
+    "organisation": "German Marshall Fund Brussels",
+    "category": "Think tanks",
+    "priority": 3,
+    "old_url": "https://www.gmfus.org/careers",
+    "careers_url": "https://www.gmfus.org/about/careers",
+    "confidence": "high",
+    "score": 21,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.gmfus.org/about/careers",
+        "title": "Careers | German Marshall Fund of the United States",
+        "score": 21,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/organisations/german-marshall-fund-of-the-united-states/",
+        "title": "Jobs at German Marshall Fund of the United States in Brussels | Jobs in Brussels",
+        "score": 13,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 4 job signal(s) (+6)",
+          "page title says careers (+4)",
+          "explicitly lists zero openings — still the right page (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.gmfus.org/marshall-memorial-fellowship-2026-cohort-announcement",
+        "title": "Marshall Memorial Fellowship 2026 Cohort Announcement | German Marshall Fund of the United States",
+        "score": 9,
+        "reasons": [
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.gmfus.org/2026-transatlantic-inclusion-leaders-network",
+        "title": "2026 Transatlantic Inclusion Leaders Network | German Marshall Fund of the United States",
+        "score": 8,
+        "reasons": [
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/job_display/293204/Senior_Coordinator_Private_Sector_Partnerships_GMF_German_Marshall_Fund_of_the_United_States_Brussels_Belgium",
+        "title": "Senior Coordinator, Private Sector Partnerships - GMF - German Marshall Fund of the United States, Brussels",
+        "score": 3,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 2 job signal(s) (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Agmfus.org+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 262,
+    "organisation": "Green European Foundation",
+    "category": "Think tanks",
+    "priority": 3,
+    "old_url": "https://gef.eu",
+    "careers_url": "https://gef.eu/category/vacancies/",
+    "confidence": "high",
+    "score": 27,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 4 job signal(s) (+6)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://gef.eu/category/vacancies/",
+        "title": "Vacancies Archives - Green European Foundation",
+        "score": 27,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 4 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://gef.eu/vacancy/",
+        "title": "Vacancies and Calls for Tenders",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/jobs/green-european-foundation-operations-intern-2026-02/",
+        "title": "Operations Intern – Green European Foundation | Jobs in Brussels",
+        "score": 16,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 3 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://gef.eu/wp-content/uploads/2025/09/GenderPower_Essay_EN.pdf",
+        "title": "The energy transition through a gender lens Barbara Nicoloso",
+        "score": 13,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/organisations/greens-efa/",
+        "title": "Jobs at Greens/EFA in Brussels | Jobs in Brussels",
+        "score": 10,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Agef.eu+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 253,
+    "organisation": "Rosa-Luxemburg-Stiftung Brussels",
+    "category": "Think tanks",
+    "priority": 2,
+    "old_url": "https://www.rosalux.eu",
+    "careers_url": "https://rosalux.eu/en/topic/job-listings/",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://rosalux.eu/en/topic/job-listings/",
+        "title": "Rosa-Luxemburg-Stiftung Brussels Office | Job Listings",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://rosalux.eu/en/2018/import-1240/",
+        "title": "Rosa-Luxemburg-Stiftung Brussels Office | Social-ecological transformation | Good climate jobs and municipal solutions for a just transition to a low-carbon society",
+        "score": 16,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://rosalux.eu/wp-content/uploads/kontext-import/documents/6/7/51d648.pdf",
+        "title": "Putting cross-border rail traffic on the right track",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://rosalux.eu/en/2026/reclaiming-steel-a-public-path-for-europes-green-industrial-strategy/",
+        "title": "Rosa-Luxemburg-Stiftung Brussels Office | Study | Reclaiming Steel: A Public Path for Europe’s Green Industrial Strategy",
+        "score": 13,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://eujobs.brussels/rosa-luxemburg-stiftung-rls",
+        "title": "Rosa Luxemburg Stiftung (RLS) | EU Jobs Brussels",
+        "score": 7,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eujobs.co/career-guides/rosa-luxemburg-stiftung-career-guide",
+        "title": "How to Get a Job at Rosa-Luxemburg-Stiftung - Complete Career Guide - EUJobs.co",
+        "score": -47,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 522)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Arosalux.eu+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 263,
+    "organisation": "Institut Emile Vandervelde (PS)",
+    "category": "Think tanks",
+    "priority": 3,
+    "old_url": "https://www.iev.be",
+    "careers_url": "https://www.iev.be/jobs",
+    "confidence": "high",
+    "score": 25,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.iev.be/jobs",
+        "title": "Jobs - Institut Emile Vandervelde",
+        "score": 25,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.iev.be/flexi_jobs_ineptie_sociale_economique",
+        "title": "Les flexi-jobs, une ineptie sociale et économique - Institut Emile Vandervelde",
+        "score": 19,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.vub.be/go/EN_ALL-JOBS/3775601/",
+        "title": "All jobs",
+        "score": 3,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.vub.be/?locale=en_GB",
+        "title": "Home",
+        "score": 0,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aiev.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 264,
+    "organisation": "Institut Jacques Delors",
+    "category": "Think tanks",
+    "priority": 3,
+    "old_url": "https://institutdelors.eu",
+    "careers_url": "https://institutdelors.eu/en/about/job-opportunities/",
+    "confidence": "high",
+    "score": 22,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://institutdelors.eu/en/about/job-opportunities/",
+        "title": "Institut Jacques Delors - Job opportunities",
+        "score": 22,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.delorscentre.eu/en/about/vacancies-and-stipends",
+        "title": "Vacancies and Stipends",
+        "score": 20,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://institutdelors.eu/content/uploads/2025/04/labourmobility-dittrichspath-jdib-april16-2.pdf",
+        "title": "1 / 22 POLICY PAPER 161 18 APRIL 2016 DE JURE FREEDOM OF MOVEMENT",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://institutdelors.eu/content/uploads/2025/04/Report_220_Toward-an-individual-right-to-adult-learning-for-all-Europeans_ENG_PP_WEB.pdf",
+        "title": "TOWARDS AN INDIVIDUAL RIGHT TO ADULT LEARNING FOR ALL EUROPEANS by",
+        "score": 13,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.europejacquesdelors.eu/p/join-us",
+        "title": "Join Us",
+        "score": 13,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://institutdelors.eu/content/uploads/2025/04/newstartsocialeurope-rinaldi-jdi-feb16-1.pdf",
+        "title": "A NEW START FOR SOCIAL EUROPE David Rinaldi Foreword by Jacques Delors",
+        "score": 12,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Ainstitutdelors.eu+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 267,
+    "organisation": "Horizon Europe consortia - via CORDIS",
+    "category": "Universities & research",
+    "priority": 1,
+    "old_url": "https://cordis.europa.eu/projects",
+    "careers_url": "https://cordis.europa.eu/article/id/446731-catching-up-with-gemm-uncovering-racial-discrimination-in-job-recruitment-in-europe",
+    "confidence": "high",
+    "score": 22,
+    "reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://cordis.europa.eu/article/id/446731-catching-up-with-gemm-uncovering-racial-discrimination-in-job-recruitment-in-europe",
+        "title": "Catching up with GEMM: Uncovering racial discrimination in job recruitment in Europe | News | CORDIS | European Commission",
+        "score": 22,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://euraxess.ec.europa.eu/jobs",
+        "title": "Jobs and opportunities | EURAXESS - European Union",
+        "score": 19,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+3)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://cordis.europa.eu/project/id/22040",
+        "title": "An integrated platform for multimedia skilled workforce enhancement by providing focused training in digital content | MULTITRAIN | Project | Fact Sheet | IS | CORDIS | European Commission",
+        "score": 16,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://cordis.europa.eu/docs/results/611/611737/final1-garcia-zrc-sazu-poster-november2016.pdf",
+        "title": "Organisational context The GARCIA action plan targets at:",
+        "score": 15,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.imperial.ac.uk/research-and-innovation/research-office/funder-information/european-commission/horizon-europe/participating-in-horizon-europe/early-career-opportunities-in-horizon-europe/",
+        "title": "Early career opportunities in Horizon Europe | Research | Imperial College London",
+        "score": 8,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/",
+        "title": "EuroBrussels: Find EU Jobs in Brussels and EU Institutions",
+        "score": 6,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acordis.europa.eu+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 265,
+    "organisation": "Transform! Europe",
+    "category": "Think tanks",
+    "priority": 3,
+    "old_url": "https://www.transform-network.net",
+    "careers_url": "https://transform-network.net/blog/report/march-of-anger-public-sector-workers-in-poland-say-enough-is-enough/",
+    "confidence": "medium",
+    "score": 14,
+    "reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)"
+    ],
+    "candidates": [
+      {
+        "url": "https://transform-network.net/blog/report/march-of-anger-public-sector-workers-in-poland-say-enough-is-enough/",
+        "title": "March of Anger. Public Sector Workers in Poland Say: Enough is Enough! - transform!europe",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://transform-network.net/blog/article/on-robots-and-sheep/",
+        "title": "On Robots and Sheep - transform!europe",
+        "score": 13,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://transform-network.net/blog/analysis/ai-and-the-class-struggle/",
+        "title": "AI and the Class Struggle - transform!europe",
+        "score": 12,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 11,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://eu-careers.europa.eu/en/job-opportunities/open-vacancies/ec_vacancies",
+        "title": "Non-permanent contracts (European Commission) | EU Careers",
+        "score": 10,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/",
+        "title": "EuroBrussels: Find EU Jobs in Brussels and EU Institutions",
+        "score": 6,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Atransform-network.net+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 266,
+    "organisation": "Wilfried Martens Centre",
+    "category": "Think tanks",
+    "priority": 3,
+    "old_url": "https://www.martenscentre.eu",
+    "careers_url": "https://www.martenscentre.eu/vacancies/communications-internship/",
+    "confidence": "medium",
+    "score": 17,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #3 (+1)",
+      "page text has 1 job signal(s) (+2)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.martenscentre.eu/vacancies/communications-internship/",
+        "title": "Communications Internship | Martens Centre",
+        "score": 17,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.martenscentre.eu/vacancies/general-internship/",
+        "title": "General Internship | Martens Centre",
+        "score": 16,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.martenscentre.eu/join-team/",
+        "title": "Join the Team | Martens Centre",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://eujobs.brussels/wilfried-martens-centre-for-european-studies-martens-centre",
+        "title": "Wilfried Martens Centre for European Studies (Martens Centre) | EU Jobs Brussels",
+        "score": 10,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 3 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Amartenscentre.eu+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 268,
+    "organisation": "Horizon Europe consortia - via Euraxess",
+    "category": "Universities & research",
+    "priority": 1,
+    "old_url": "https://euraxess.ec.europa.eu/jobs/search",
+    "careers_url": "https://euraxess.ec.europa.eu/jobs/search",
+    "confidence": "high",
+    "score": 29,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://euraxess.ec.europa.eu/jobs/search",
+        "title": "Jobs, Career and Funding Opportunities | EURAXESS",
+        "score": 29,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://euraxess.ec.europa.eu/jobs",
+        "title": "Jobs and opportunities | EURAXESS - European Union",
+        "score": 25,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://euraxess.ec.europa.eu/",
+        "title": "EURAXESS | Researchers in motion",
+        "score": 16,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/",
+        "title": "EuroBrussels: Find EU Jobs in Brussels and EU Institutions",
+        "score": 5,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aeuraxess.ec.europa.eu+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 269,
+    "organisation": "KU Leuven - Faculty of Social Sciences",
+    "category": "Universities & research",
+    "priority": 1,
+    "old_url": "https://www.kuleuven.be/personeel/jobsite/",
+    "careers_url": "https://www.kuleuven.be/english/stuvo/working-volunteering-career/transition-to-the-job-market/discover-the-job-market/looking-for-vacancies-in-Begium-and-abroad",
+    "confidence": "high",
+    "score": 27,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.kuleuven.be/english/stuvo/working-volunteering-career/transition-to-the-job-market/discover-the-job-market/looking-for-vacancies-in-Begium-and-abroad",
+        "title": "Looking for vacancies in Belgium and abroad — Working, volunteering & career",
+        "score": 27,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.kuleuven.be/personeel/jobsite/jobs/staff?lang=en",
+        "title": "KU Leuven Vacancies",
+        "score": 25,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.kuleuven.be/personeel/jobsite/en/jobs-at-ku-leuven/jobs-for-academics-at-ku-leuven",
+        "title": "Jobs for academics at KU Leuven — KU Leuven Jobsite",
+        "score": 25,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.kuleuven.be/personeel/jobsite/jobs/staff?lang=en",
+        "title": "Vacancies",
+        "score": 24,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.kuleuven.be/personeel/jobsite/en",
+        "title": "KU Leuven Jobsite",
+        "score": 20,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Akuleuven.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 260,
+    "organisation": "Friedrich-Naumann-Stiftung",
+    "category": "Think tanks",
+    "priority": 3,
+    "old_url": "https://europe.fnst.org",
+    "careers_url": "https://jobsin.brussels/organisations/friedrich-naumann-foundation/",
+    "confidence": "medium",
+    "score": 13,
+    "reasons": [
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 4 job signal(s) (+6)",
+      "page title says careers (+4)",
+      "explicitly lists zero openings — still the right page (+2)"
+    ],
+    "candidates": [
+      {
+        "url": "https://jobsin.brussels/organisations/friedrich-naumann-foundation/",
+        "title": "Jobs at Friedrich Naumann Foundation in Brussels | Jobs in Brussels",
+        "score": 13,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 4 job signal(s) (+6)",
+          "page title says careers (+4)",
+          "explicitly lists zero openings — still the right page (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eurobrussels.com/jobs_at/fnf_europe_friedrich_naumann_stiftung_fr_die_freiheit/5507",
+        "title": "Jobs at FNF Europe - Friedrich-Naumann-Stiftung für die Freiheit | EuroBrussels",
+        "score": 4,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.eujobs.co/career-guides/friedrich-naumann-stiftung-f-r-die-freiheit-career-guide",
+        "title": "How to Get a Job at Friedrich-Naumann-Stiftung für die Freiheit - Complete Career Guide - EUJobs.co",
+        "score": -46,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "fetch failed (HTTP 522)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aeurope.fnst.org+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 272,
+    "organisation": "University of Antwerp - CeMIS (Centre for Migration and Intercultural Studies)",
+    "category": "Universities & research",
+    "priority": 1,
+    "old_url": "https://www.uantwerpen.be/en/jobs/",
+    "careers_url": "https://www.uantwerpen.be/en/jobs/vacancies/",
+    "confidence": "high",
+    "score": 27,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.uantwerpen.be/en/jobs/vacancies/",
+        "title": "Vacancies | University of Antwerp",
+        "score": 27,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.uantwerpen.be/en/jobs/uantwerp-as-an-employer/careers/",
+        "title": "Career options | University of Antwerp",
+        "score": 24,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.uantwerpen.be/en/jobs/",
+        "title": "Jobs | University of Antwerp",
+        "score": 24,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.uantwerpen.be/en/jobs/vacancies/vacancies-partner-institutions/",
+        "title": "Other job opportunities | University of Antwerp",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Auantwerpen.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 271,
+    "organisation": "ULB - LAMC (Laboratoire d'anthropologie des mondes contemporains)",
+    "category": "Universities & research",
+    "priority": 1,
+    "old_url": "https://www.ulb.be/en/jobs",
+    "careers_url": "https://neurophylab.ulb.be/jobs",
+    "confidence": "high",
+    "score": 21,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "matches the sheet's known domain (+3)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://neurophylab.ulb.be/jobs",
+        "title": "Neurophy Lab - Jobs",
+        "score": 21,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+3)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://sciences.ulb.be/en/job-opportunities",
+        "title": "Job opportunities - Faculté des Sciences",
+        "score": 21,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+3)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://inforemploi.ulb.be/version-francaise/accompagnement/career-center",
+        "title": "Career Center - InfOR-Emploi ULB",
+        "score": 20,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+3)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.ulb.be/?locale=en_GB",
+        "title": "Jobs at ULB",
+        "score": 14,
+        "reasons": [
+          "matches the sheet's known domain (+3)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aulb.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 273,
+    "organisation": "VUB - Brussels School of Governance / IES",
+    "category": "Universities & research",
+    "priority": 1,
+    "old_url": "https://www.vub.be/en/jobs",
+    "careers_url": "https://www.brussels-school.be/school/jobs",
+    "confidence": "high",
+    "score": 18,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.brussels-school.be/school/jobs",
+        "title": "Jobs | BSoG",
+        "score": 18,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.vub.be/en/working-for-vrije-universiteit-brussel-vub",
+        "title": "Working for the Vrije Universiteit Brussel - VUB | Vrije Universiteit Brussel",
+        "score": 16,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.vub.be/go/EN_ALL-JOBS/3775601/",
+        "title": "All jobs",
+        "score": 14,
+        "reasons": [
+          "matches the sheet's known domain (+3)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.vub.be/?locale=en_GB",
+        "title": "Home",
+        "score": 10,
+        "reasons": [
+          "matches the sheet's known domain (+3)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Avub.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 270,
+    "organisation": "MigratieMuseum Migration",
+    "category": "Universities & research",
+    "priority": 1,
+    "old_url": "https://www.migratiemuseummigration.be",
+    "careers_url": "https://jobsin.brussels/",
+    "confidence": "medium",
+    "score": 11,
+    "reasons": [
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 5 job signal(s) (+6)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 11,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.brusselsmuseums.be/en/museums/migratiemuseummigration",
+        "title": "MigratieMuseumMigration | Brussels Museums",
+        "score": -1,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://culture.ec.europa.eu/cultural-heritage/initiatives-and-success-stories/european-heritage-label/european-heritage-label-sites/migratiemuseummigration-mmm-belgium",
+        "title": "MigratieMuseumMigration (MMM) (Belgium) - Culture and Creativity",
+        "score": -2,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.migratiemuseummigration.be/?lang=en",
+        "title": "Migratie Museum Migration",
+        "score": -38,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search rank #3 (+1)",
+          "fetch failed (HTTP 0)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Amigratiemuseummigration.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 275,
+    "organisation": "College of Europe",
+    "category": "Universities & research",
+    "priority": 2,
+    "old_url": "https://www.coleurope.eu/careers",
+    "careers_url": "https://www.coleurope.eu/news/job-vacancies-college-europe-5",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.coleurope.eu/news/job-vacancies-college-europe-5",
+        "title": "Job vacancies at the College of Europe | Coleurope",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.coleurope.eu/bruges/vacancies",
+        "title": "Vacancies | Coleurope",
+        "score": 22,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.coleurope.eu/news/job-vacancies-college-europe-1",
+        "title": "Job vacancies at the College of Europe | Coleurope",
+        "score": 21,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.coleurope.eu/about-college/careers-office/students",
+        "title": "Students | Coleurope",
+        "score": 18,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobsin.brussels/organisations/college-of-europe/",
+        "title": "Jobs at College of Europe in Brussels | Jobs in Brussels",
+        "score": 13,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)",
+          "explicitly lists zero openings — still the right page (+2)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acoleurope.eu+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 276,
+    "organisation": "Ghent University - CESSMIR",
+    "category": "Universities & research",
+    "priority": 2,
+    "old_url": "https://www.ugent.be/en/work",
+    "careers_url": "https://www.ugent.be/en/work/mobility-career/career-aspects/vacancies",
+    "confidence": "high",
+    "score": 21,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.ugent.be/en/work/mobility-career/career-aspects/vacancies",
+        "title": "Job offers — Ghent University",
+        "score": 21,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.ugent.be/job/Ghent-Postdoctoral-researcher-and-manager-of-interdisciplinary-project-on-the-asylum-procedure-in-Belgium-9000/1352230857/",
+        "title": "Postdoctoral researcher and manager of interdisciplinary project on the asylum procedure in Belgium Job Details | Universiteit Gent",
+        "score": 18,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+3)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.ugent.be/en/work",
+        "title": "Jobs — Ghent University",
+        "score": 16,
+        "reasons": [
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.ugent.be/",
+        "title": "Jobs UGent: Home",
+        "score": 15,
+        "reasons": [
+          "matches the sheet's known domain (+3)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.idlab.ugent.be/en",
+        "title": "IDLab UGent | Check out our vacancies 👇",
+        "score": 12,
+        "reasons": [
+          "matches the sheet's known domain (+3)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Augent.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 274,
+    "organisation": "AfricaMuseum (Royal Museum for Central Africa)",
+    "category": "Universities & research",
+    "priority": 2,
+    "old_url": "https://www.africamuseum.be/en/about_us/jobs",
+    "careers_url": "https://www.africamuseum.be/fr/about_us/jobs",
+    "confidence": "high",
+    "score": 27,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.africamuseum.be/fr/about_us/jobs",
+        "title": "Jobs | Musée royal de l'Afrique centrale - Tervuren - Belgique",
+        "score": 27,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.africamuseum.be/en/about_us/jobs",
+        "title": "Jobs | Royal Museum for Central Africa - Tervuren - Belgium",
+        "score": 25,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.africamuseum.be/de/node/1281",
+        "title": "Provenance Research Project | Königliches Museum für Zentralafrika - Tervuren - Belgien",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.cultuurjobs.be/organisatie/koninklijk-museum-voor-midden-afrika/",
+        "title": "Cultuurjobs - Koninklijk Museum voor Midden-Afrika",
+        "score": 8,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://werkenvoor.be/nl/jobs/cng23015-verantwoordelijke-events-mvx",
+        "title": "Verantwoordelijke events (m/v/x) | Workingfor.be",
+        "score": 8,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 2 job signal(s) (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://africamuseum.be/about_us?amp=&cl=nl&set_language=nl",
+        "title": "About us | Royal Museum for Central Africa - Tervuren - Belgium",
+        "score": -35,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 400)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aafricamuseum.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 277,
+    "organisation": "UCLouvain - LAAP (Laboratoire d'anthropologie prospective)",
+    "category": "Universities & research",
+    "priority": 2,
+    "old_url": "https://uclouvain.be/en/jobs",
+    "careers_url": "https://www.uclouvain.be/en/research-institutes/immc/vacancies",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.uclouvain.be/en/research-institutes/immc/vacancies",
+        "title": "Vacancies | Université catholique de Louvain",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.uclouvain.be/en/university/jobs",
+        "title": "Jobs | Université catholique de Louvain",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.uclouvain.be/en/research-institutes/eli/open-positions",
+        "title": "Jobs | Université catholique de Louvain",
+        "score": 21,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.uclouvain.be/en/careers",
+        "title": "Working at UCLouvain | Université catholique de Louvain",
+        "score": 19,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.uclouvain.be/?locale=en_GB",
+        "title": "Academic staff",
+        "score": 10,
+        "reasons": [
+          "matches the sheet's known domain (+3)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.uclouvain.be/",
+        "title": "jobs.uclouvain.be.",
+        "score": 9,
+        "reasons": [
+          "matches the sheet's known domain (+3)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Auclouvain.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 278,
+    "organisation": "Bozar (Centre for Fine Arts)",
+    "category": "Universities & research",
+    "priority": 3,
+    "old_url": "https://www.bozar.be/en/jobs",
+    "careers_url": "https://www.bozar.be/nl/meertalige-freelance-gidsen",
+    "confidence": "medium",
+    "score": 16,
+    "reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.bozar.be/nl/meertalige-freelance-gidsen",
+        "title": "MEERTALIGE FREELANCE GIDSEN | Bozar Brussel",
+        "score": 16,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.bozar.be/en/production-supervisor-music",
+        "title": "Production Supervisor Music | Bozar Brussels",
+        "score": 16,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.bozar.be/en/working-bozar",
+        "title": "Working at Bozar | Bozar Brussels",
+        "score": 16,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.bozar.be/nl/digital-project-officer",
+        "title": "Digital project officer | Bozar Brussel",
+        "score": 15,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Abozar.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 280,
+    "organisation": "KANAL Centre Pompidou",
+    "category": "Universities & research",
+    "priority": 3,
+    "old_url": "https://kanal.brussels",
+    "careers_url": "https://kanal.brussels/en/jobs",
+    "confidence": "high",
+    "score": 25,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://kanal.brussels/en/jobs",
+        "title": "Jobs | Kanal – Centre Pompidou – Architecture – Brussels",
+        "score": 25,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://kanal.brussels/en/jobs",
+        "title": "Jobs | KANAL — Centre Pompidou — Brussels",
+        "score": 24,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.brusselsmuseums.be/fr/jobs",
+        "title": "Les offres d'emploi dans les musées | Brussels Museums",
+        "score": 8,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://kanal.brussels/en/news/kanal-foundation-hiring",
+        "title": "Kanal Foundation is hiring!",
+        "score": -31,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 404)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://kanal.brussels/en/search/content/batiment",
+        "title": "Search | KANAL — Centre Pompidou",
+        "score": -36,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "fetch failed (HTTP 404)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Akanal.brussels+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 279,
+    "organisation": "IHECS",
+    "category": "Universities & research",
+    "priority": 3,
+    "old_url": "https://www.ihecs.be",
+    "careers_url": "https://www.ihecs.be/fr/emplois",
+    "confidence": "high",
+    "score": 28,
+    "reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.ihecs.be/fr/emplois",
+        "title": "Emplois | IHECS",
+        "score": 28,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.ihecs.be/fr/executive-master-european-public-affairs-and-communication/career-opportunities",
+        "title": "Career opportunities | IHECS",
+        "score": 25,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.ihecs.be/fr/actualite/offre-d-emploi",
+        "title": "Offre d'emploi | IHECS",
+        "score": 25,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.ihecs.be/fr/executive-masters/executive-master-european-public-affairs-and-communication",
+        "title": "Executive Master in European Public Affairs and Communication | IHECS",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.ihecs.be/narwhal-dartboard-suwg/ghent-university-vet-22a8d7",
+        "title": "ghent university vet",
+        "score": -35,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 404)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aihecs.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 282,
+    "organisation": "Universite Saint-Louis Bruxelles (UCLouvain Saint-Louis)",
+    "category": "Universities & research",
+    "priority": 3,
+    "old_url": "https://uclouvain.be/en/jobs",
+    "careers_url": "https://www.uclouvain.be/en/research-institutes/immc/vacancies",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.uclouvain.be/en/research-institutes/immc/vacancies",
+        "title": "Vacancies | Université catholique de Louvain",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.uclouvain.be/en/research-institutes/eli/open-positions",
+        "title": "Jobs | Université catholique de Louvain",
+        "score": 21,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://jobs.uclouvain.be/?locale=en_GB",
+        "title": "Academic staff",
+        "score": 10,
+        "reasons": [
+          "matches the sheet's known domain (+3)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://academicpositions.com/employer/saint-louis-university-brussels",
+        "title": "Saint-Louis University Brussels - Academic Positions",
+        "score": 3,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 2 job signal(s) (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.usaintlouis.be/sl/964.html",
+        "title": "Student's Jobs - Université Saint-Louis - Bruxelles",
+        "score": -39,
+        "reasons": [
+          "domain matches org name (+4)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "fetch failed (HTTP 0)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.usaintlouis.be/sl/3141.html",
+        "title": "Espace emploi - Université Saint-Louis - Bruxelles",
+        "score": -40,
+        "reasons": [
+          "domain matches org name (+4)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 0)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Auclouvain.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 281,
+    "organisation": "Red Star Line Museum",
+    "category": "Universities & research",
+    "priority": 3,
+    "old_url": "https://www.redstarline.be",
+    "careers_url": "https://redstarline.be/en/page/staff-and-employees",
+    "confidence": "medium",
+    "score": 14,
+    "reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)"
+    ],
+    "candidates": [
+      {
+        "url": "https://redstarline.be/en/page/staff-and-employees",
+        "title": "Staff and employees | Red Star Line Museum",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://redstarline.be/en/content/museum",
+        "title": "The museum | Red Star Line Museum",
+        "score": 12,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://www.cultuurjobs.be/organisatie/red-star-line-museum/",
+        "title": "Cultuurjobs - Red Star Line Museum",
+        "score": 9,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "brave"
+      },
+      {
+        "url": "https://socius.be/vacature/publiekswerker-red-star-line-museum-mv/",
+        "title": "Publiekswerker red Star Line Museum (m/v)",
+        "score": -48,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search rank #3 (+1)",
+          "fetch failed (HTTP 404)"
+        ],
+        "engine": "brave"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aredstarline.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
   }
 ]

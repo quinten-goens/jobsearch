@@ -14,16 +14,17 @@ python3 -m venv .venv
 .venv/bin/playwright install chromium     # only needed for JS-rendered pages
 ```
 
-Optional but strongly recommended — a [Brave Search API](https://brave.com/search/api)
-key (2,000 queries/month free, no card):
+Strongly recommended — a [Brave Search API](https://brave.com/search/api) key
+(2,000 queries/month free, no card). Either name works:
 
 ```bash
-echo 'BRAVE_API_KEY=your-key-here' > .env
+echo 'BRAVE_KEY=your-key-here' > .env
 ```
 
-Without it, discovery falls back to scraping DuckDuckGo, which **soft-bans after
-roughly 20 searches**. The fallback works, but it needs a ~15s delay per query,
-which turns the 282-org sweep into a multi-hour job.
+It's the difference between a ~5-minute sweep and a multi-hour one. Without it,
+discovery falls back to scraping DuckDuckGo, which **soft-bans after roughly 20
+searches** and then returns empty results rather than an error — so it needs a
+~15s delay per query to survive 282 organisations.
 
 ## Usage
 
