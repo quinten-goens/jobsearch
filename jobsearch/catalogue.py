@@ -26,7 +26,13 @@ from .registry import (
     BELGIAN_UNIVERSITIES,
     BRUSSELS_COMMUNES,
     BRUSSELS_PERIPHERY,
+    CULTURAL_INSTITUTES,
+    EUROPEAN_INSTITUTIONS,
     INTERNATIONAL_REMOTE,
+    LATAM_INSTITUTIONS,
+    POLITICAL_FOUNDATIONS,
+    TRADE_ASSOCIATIONS,
+    TRADE_UNIONS,
 )
 
 CATALOGUE_JSON = DATA / "catalogue.json"
@@ -34,6 +40,17 @@ CATALOGUE_JSON = DATA / "catalogue.json"
 # Sector is the top-level facet in the UI: it answers "what kind of place is
 # this?", which is the question the sheet's 15 overlapping categories didn't.
 SECTOR_RULES = [
+    # Order matters: these run before the generic "federation"/"foundation"
+    # keywords below, which would otherwise swallow them into NGO/think tank.
+    ("European & intl institution", ("intergovernmental organisation",)),
+    # Before the generic keywords: "agency" otherwise pulls Frontex into
+    # consultancies, and "institute"/"foundation" pull agencies into think tanks.
+    ("EU institution", ("eu body / agency",)),
+    ("Trade association & federation", ("trade association", "federation (",)),
+    ("Political foundation", ("political foundation",)),
+    ("Trade union & employer body", ("trade union", "employer federation")),
+    ("Latin America institution", ("latin america body",)),
+    ("Cultural institute", ("cultural institute",)),
     ("Hospital & healthcare", ("hospital", "hôpital", "hopital", "ziekenhuis",
                                "clinique", "cliniques", "chu ", "uz ", "huderf",
                                "bordet", "sciensano", "iriscare")),
@@ -217,6 +234,79 @@ def from_registry() -> list[dict]:
             remote_friendly=remote,
             sources=["Regional registry: international organisations"],
         ))
+    # The EU/intergovernmental split is the one that matters for how you apply:
+    # EU bodies mostly route through EPSO, while EUROCONTROL, NATO, the Council
+    # of Europe and the UN agencies recruit directly.
+    EU_BODY = (
+        "european commission", "european parliament", "council of the european",
+        "european council", "external action", "court of justice",
+        "court of auditors", "european central bank", "investment bank",
+        "investment fund", "economic and social committee", "committee of the",
+        "ombudsman", "data protection supervisor", "public prosecutor", "epso",
+        "executive agency", "frontex", "euaa", "europol", "eurojust", "fra (",
+        "eige", "eurofound", "cedefop", "european training foundation",
+        "environment agency", "ecdc", "medicines agency", "efsa", "echa",
+        "eba /", "acer", "enisa", "eu-osha", "euipo", "translation centre",
+        "eit (", "defence agency", "european university institute",
+    )
+    for name, base, lang, note, remote in EUROPEAN_INSTITUTIONS:
+        low = name.lower()
+        is_eu = any(k in low for k in EU_BODY)
+        out.append(_record(
+            organisation=name,
+            sector="EU institution" if is_eu else "European & intl institution",
+            category="EU institutions" if is_eu else "International org",
+            type="EU body / agency" if is_eu else "Intergovernmental organisation",
+            base=base, languages=lang, description=note,
+            target_roles=("Policy officer, administrator, contract agent (CAST), "
+                          "seconded national expert, traineeship" if is_eu else
+                          "Policy, programme, political affairs — recruits "
+                          "directly, no EPSO concours"),
+            remote_friendly=remote,
+            sources=["Regional registry: European & international institutions"],
+        ))
+    for name, subsector, lang, note in TRADE_ASSOCIATIONS:
+        out.append(_record(
+            organisation=name, sector="Trade association & federation",
+            category="Trade associations", type=f"Federation ({subsector})",
+            base="Brussels", languages=lang, description=note,
+            target_roles="Policy Officer, Policy Adviser, Communications, "
+                         "Advocacy, Project Manager",
+            sources=["Regional registry: EU trade associations"],
+        ))
+    for name, wing, lang, note in POLITICAL_FOUNDATIONS:
+        out.append(_record(
+            organisation=name, sector="Political foundation",
+            category="Think tanks", type=f"Political foundation ({wing})",
+            base="Brussels", languages=lang, description=note,
+            target_roles="Programme manager, policy officer, project coordinator",
+            sources=["Regional registry: political foundations"],
+        ))
+    for name, lang, note in TRADE_UNIONS:
+        out.append(_record(
+            organisation=name, sector="Trade union & employer body",
+            category="Trade unions", type="Trade union / employer federation",
+            base="Brussels", languages=lang, description=note,
+            target_roles="Policy adviser, international officer, campaigns",
+            sources=["Regional registry: trade unions and employer bodies"],
+        ))
+    for name, city, lang, note in LATAM_INSTITUTIONS:
+        out.append(_record(
+            organisation=name, sector="Latin America institution",
+            category="Latin America", type="Latin America body",
+            base=city, languages=lang, description=note,
+            target_roles="Programme officer, project coordinator, policy, culture",
+            latam_relevant=True,
+            sources=["Regional registry: Spanish/Latin American institutions"],
+        ))
+    for name, city, lang, note in CULTURAL_INSTITUTES:
+        out.append(_record(
+            organisation=name, sector="Cultural institute",
+            category="Corporate & training", type="Cultural institute",
+            base=city, languages=lang, description=note,
+            target_roles="Programme coordinator, events, communications",
+            sources=["Regional registry: cultural institutes"],
+        ))
     for name, level, lang, note in BELGIAN_PUBLIC_BODIES:
         out.append(_record(
             organisation=name, sector="Belgian public sector",
@@ -265,9 +355,19 @@ def merge(*groups: list[dict]) -> list[dict]:
             for field, val in rec.items():
                 if field == "sources":
                     cur["sources"] = sorted(set(cur["sources"]) | set(val))
+                elif field == "sector" and val and _from_registry_row(rec):
+                    # The registry knows what a body actually is; the sheet's
+                    # sector is inferred from free text and gets it wrong
+                    # (Frontex as a "consultancy", EIGE as a "think tank").
+                    cur["sector"] = val
+                    cur["type"] = rec.get("type") or cur["type"]
                 elif not cur.get(field) and val:
                     cur[field] = val
     return list(by_key.values())
+
+
+def _from_registry_row(rec: dict) -> bool:
+    return any("registry" in s.lower() for s in rec.get("sources", []))
 
 
 def main() -> None:
