@@ -1,10 +1,28 @@
 # Brussels job search
 
-Finds live Brussels EU-affairs jobs and puts them in one filterable place.
+A documented catalogue of **413 organisations** in and around Brussels — who
+they are, what they do, and where their careers page is — plus the live jobs
+they're advertising.
 
-Built around Sarah's target list of 282 organisations
-(`conv/Sarah_Pernet_Brussels_Job_Search.xlsx`). The workbook is only ever read —
-it stays her manual tracker, and nothing here writes to it.
+Organisations are the point: the question is "where could I work, and is it
+worth approaching them?" Jobs are a supporting view.
+
+It started from Sarah's hand-built target list of 282
+(`conv/Sarah_Pernet_Brussels_Job_Search.xlsx`, only ever read — it stays her
+manual tracker) and extends it in two ways:
+
+- **Where a sector has a knowable membership, enumerate it.** The sheet had 4 of
+  the 19 Brussels communes. `registry.py` carries all 19, the 26-commune
+  periphery, and Belgium's universities — each with size, working language and a
+  note on what makes it distinct. Universities carry an anthropology flag, since
+  the PhD route is a specific goal.
+- **Where it doesn't, harvest it.** NGOs and grassroots groups have no
+  authoritative list, so `directories.py` scrapes the federations that publish
+  their membership (CNCD-11.11.11, ngo-federatie) rather than hand-curating a
+  list that would just be guesswork.
+
+Cross-cutting themes are flags rather than categories: **38 organisations are
+anthropology/PhD-relevant**, **86 are Latin America / Spanish-relevant**.
 
 ## Setup
 
@@ -29,17 +47,40 @@ searches** and then returns empty results rather than an error — so it needs a
 ## Usage
 
 ```bash
-.venv/bin/python -m jobsearch.orgs        # xlsx        -> data/orgs.json
-.venv/bin/python -m jobsearch.discover    # find careers pages -> data/discovered.json
-.venv/bin/python -m jobsearch.pipeline    # scrape everything  -> data/jobs.json
-.venv/bin/streamlit run app.py            # browse it
+.venv/bin/python -m jobsearch.orgs         # xlsx -> data/orgs.json
+.venv/bin/python -m jobsearch.directories  # NGO federations -> directory_orgs.json
+.venv/bin/python -m jobsearch.catalogue    # merge all three -> catalogue.json
+.venv/bin/python -m jobsearch.enrich       # careers page + freshness per org
+.venv/bin/streamlit run app.py             # browse it
 ```
 
-`--boards` skips the per-org scrape and just hits the job boards; it takes
-seconds and gives you most of the value. `--limit N` caps the org sweep.
+Jobs (secondary):
 
-Discovery is resumable: it saves after every organisation and keeps whatever
-already resolved, so an interrupted run costs at most one org.
+```bash
+.venv/bin/python -m jobsearch.pipeline --boards   # job boards only, seconds
+.venv/bin/python -m jobsearch.pipeline           # + every org careers page, ~30 min
+```
+
+`enrich` only touches rows without a careers URL, so re-running it is cheap;
+`--all` forces a redo. Both it and `discover` write after every organisation, so
+an interrupted run costs at most the requests in flight.
+
+## Is this careers page worth checking?
+
+`freshness.py` answers that, and is careful about how much it claims. Four
+sources, ranked by trust:
+
+| Source | Trust | Why |
+|---|---|---|
+| CMS `dateModified` / `article:modified_time` | high | the site's own "content changed" stamp |
+| sitemap `<lastmod>` | medium | usually maintained |
+| `Last-Modified` header | **low** | on a dynamic page this is the render time, not a content change — left.eu reports "today" on every request |
+| nothing published | none | most pages, in practice |
+
+Only high/medium dates are treated as evidence, so a page is never called stale
+on the strength of a missing header. It works: Protection International's
+vacancies page was last touched 255 days ago (consistent with its "no vacancies
+at this time"), and Braine-l'Alleud's is over four years old.
 
 ## How it finds careers pages
 

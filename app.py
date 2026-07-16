@@ -14,6 +14,7 @@ import streamlit as st
 
 from jobsearch.catalogue import CATALOGUE_JSON
 from jobsearch.config import JOBS_JSON
+from jobsearch.discover import HIGH_THRESHOLD, THRESHOLD
 
 st.set_page_config(page_title="Brussels job search", page_icon="🇧🇪", layout="wide")
 
@@ -50,6 +51,13 @@ def load_catalogue() -> pd.DataFrame:
                          ("last_updated_age_days", None)):
         if col not in df:
             df[col] = default
+    if "careers_score" not in df:
+        df["careers_score"] = 0
+    df["careers_score"] = (
+        pd.to_numeric(df["careers_score"], errors="coerce").fillna(0).astype(int)
+    )
+    if "careers_reasons" not in df:
+        df["careers_reasons"] = [[] for _ in range(len(df))]
     df["has_careers"] = df["careers_url"].astype(bool)
     return df
 
@@ -107,7 +115,22 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
     st.sidebar.caption("Themes")
     phd = st.sidebar.checkbox("Anthropology / PhD route")
     latam = st.sidebar.checkbox("Latin America / Spanish")
-    has_page = st.sidebar.checkbox("Has a careers page", value=False)
+
+    st.sidebar.caption("Careers page")
+    conf = st.sidebar.multiselect(
+        "Confidence", ["high", "medium", "none"],
+        help="How sure the scorer is that this really is the org's careers page",
+    )
+    lo, hi = int(df["careers_score"].min()), int(df["careers_score"].max())
+    min_score = st.sidebar.slider(
+        "Minimum score", lo, hi, lo,
+        help=(
+            "The scorer's evidence total: careers-shaped path, domain "
+            f"ownership, geography and page content. ≥{HIGH_THRESHOLD} is "
+            f"high confidence, ≥{THRESHOLD} is medium; below that we report "
+            "no page rather than guess."
+        ),
+    )
 
     f = df
     if q:
@@ -124,8 +147,10 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
         f = f[f["phd_relevant"]]
     if latam:
         f = f[f["latam_relevant"]]
-    if has_page:
-        f = f[f["has_careers"]]
+    if conf:
+        f = f[f["careers_confidence"].replace("", "none").isin(conf)]
+    if min_score > lo:
+        f = f[f["careers_score"] >= min_score]
     return f
 
 
@@ -157,6 +182,7 @@ if page == "Organisations":
         "Lang": view["languages"],
         "Size": view["size"],
         "Updated": view["last_updated"].replace("", "—"),
+        "Score": view["careers_score"],
         "Careers": view["careers_url"],
     })
     st.dataframe(
@@ -175,6 +201,10 @@ if page == "Organisations":
             ),
             "Updated": st.column_config.TextColumn(
                 width="small", help="When the careers page last changed"
+            ),
+            "Score": st.column_config.NumberColumn(
+                width="small", format="%d",
+                help=f"Evidence total. ≥{HIGH_THRESHOLD} high, ≥{THRESHOLD} medium.",
             ),
         },
     )
@@ -222,7 +252,11 @@ if page == "Organisations":
         if r["careers_url"]:
             conf = r["careers_confidence"]
             st.markdown(f"{CONF_ICON.get(conf,'⚪')} **[Careers page ↗]({r['careers_url']})**")
-            st.caption(f"Confidence: {conf or 'unknown'}")
+            st.caption(f"Confidence: {conf or 'unknown'} · score {r['careers_score']}")
+            if len(r["careers_reasons"]):
+                with st.expander("Why this page?"):
+                    for reason in r["careers_reasons"]:
+                        st.caption(f"· {reason}")
             if r["last_updated"]:
                 trust = r["last_updated_trust"]
                 st.caption(f"Last updated {r['last_updated']} — source: "

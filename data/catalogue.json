@@ -12,28 +12,28 @@
     "target_roles": "Comms, diversity",
     "priority": 3,
     "eu_nationality": "EU",
-    "homepage": "",
+    "homepage": "https://actiris.brussels",
     "careers_url": "https://www.actiris.brussels/fr/citoyens/offres-d-emploi/",
     "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Sarah's target list"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 24,
+    "careers_score": 19,
     "careers_reasons": [
       "careers-shaped path (+4)",
       "domain matches org name (+4)",
-      "matches the sheet's known domain (+5)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
       "search rank #1 (+3)",
       "page title says careers (+4)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Aactiris.brussels+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Actiris+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "COCOF (Commission communautaire francaise)",
@@ -392,6 +392,7 @@
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
       "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold",
       "page text has 1 job signal(s) (+2)",
       "page title says careers (+4)"
     ],
@@ -447,8 +448,8 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://vdab.be",
-    "careers_url": "https://www.vdab.be/vindeenjob/jobs/1080-sint-jans-molenbeek",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "none",
@@ -457,17 +458,11 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 13,
+    "careers_score": 0,
     "careers_reasons": [
-      "careers-shaped path (+5)",
-      "domain unrelated to this org (-6)",
-      "Brussels/EU domain signal (+2)",
-      "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)",
-      "page text has 2 job signal(s) (+4)",
-      "page title says careers (+4)"
+      "no viable candidate"
     ],
-    "search_url": "https://www.google.com/search?q=Commune+Molenbeek-Saint-Jean+%2F+Sint-Jans-Molenbeek+Brussels+jobs+vacancies+careers",
+    "search_url": "https://www.google.com/search?q=site%3Avdab.be+jobs+OR+vacancies+OR+careers",
     "last_updated_age_days": null
   },
   {
@@ -958,7 +953,7 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://koekelberg.be",
-    "careers_url": "https://www.koekelberg.be/w/index.php?cont=2865&lgn=1",
+    "careers_url": "https://www.koekelberg.be/w/index.php?cont=2873&lgn=1",
     "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
@@ -968,16 +963,18 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 16,
+    "careers_score": 15,
     "careers_reasons": [
       "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold",
       "page text has 1 job signal(s) (+2)",
       "page title says careers (+4)"
     ],
-    "search_url": "https://www.google.com/search?q=Commune+de+Koekelberg+Brussels+jobs+vacancies+careers",
+    "search_url": "https://www.google.com/search?q=site%3Akoekelberg.be+jobs+OR+vacancies+OR+careers",
     "last_updated_age_days": null
   },
   {
@@ -1029,12 +1026,12 @@
     "target_roles": "Social cohesion / integration officer",
     "priority": 3,
     "eu_nationality": "EU",
-    "homepage": "",
-    "careers_url": "https://jobsin.brussels/",
+    "homepage": "https://sjtn.brussels",
+    "careers_url": "https://sjtn.brussels/fr/emplois-formations/offres-demploi",
     "careers_confidence": "medium",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated": "2026-07-16",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "Sarah's target list"
     ],
@@ -1042,14 +1039,16 @@
     "latam_relevant": false,
     "careers_score": 11,
     "careers_reasons": [
+      "careers-shaped path (+4)",
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
       "search rank #1 (+3)",
-      "page text has 5 job signal(s) (+6)",
+      "page text has 1 job signal(s) (+2)",
       "page title says careers (+4)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Astjosse.irisnet.be+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Commune+de+Saint-Josse-ten-Noode+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 0
   },
   {
     "organisation": "Commune de Schaerbeek",
@@ -1244,8 +1243,8 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://vdab.be",
-    "careers_url": "https://www.vdab.be/vindeenjob/vacatures-in-gemeente/Drogenbos",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "2026-07-16",
     "last_updated_source": "http",
     "last_updated_trust": "low",
@@ -1254,17 +1253,16 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 14,
+    "careers_score": 8,
     "careers_reasons": [
       "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 2 job signal(s) (+4)",
-      "page title says careers (+4)"
+      "search rank #3 (+1)",
+      "page text has 2 job signal(s) (+4)"
     ],
-    "search_url": "https://www.google.com/search?q=Gemeente%2FCommune+Drogenbos+Brussels+jobs+vacancies+careers",
+    "search_url": "https://www.google.com/search?q=site%3Avdab.be+jobs+OR+vacancies+OR+careers",
     "last_updated_age_days": 0
   },
   {
@@ -1574,28 +1572,28 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://jobat.be",
-    "careers_url": "https://www.jobat.be/en/jobs/mechelen",
+    "careers_url": "https://www.brussels.be/current-vacancies",
     "careers_confidence": "medium",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "none",
+    "last_updated": "2026-07-14",
+    "last_updated_source": "jsonld",
+    "last_updated_trust": "high",
     "sources": [
       "Regional registry: Brussels periphery"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 14,
+    "careers_score": 11,
     "careers_reasons": [
       "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 2 job signal(s) (+4)",
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)",
       "page title says careers (+4)"
     ],
-    "search_url": "https://www.google.com/search?q=Gemeente%2FCommune+Mechelen+Brussels+jobs+vacancies+careers",
-    "last_updated_age_days": null
+    "search_url": "https://www.google.com/search?q=site%3Ajobat.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 2
   },
   {
     "organisation": "Gemeente/Commune Ottignies-Louvain-la-Neuve",
@@ -1627,6 +1625,7 @@
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
       "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold",
       "fetch failed (HTTP 404)"
     ],
     "search_url": "https://www.google.com/search?q=Gemeente%2FCommune+Ottignies-Louvain-la-Neuve+Brussels+jobs+vacancies+careers"
@@ -1715,8 +1714,8 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://vdab.be",
-    "careers_url": "https://www.vdab.be/vindeenjob/vacatures-in-gemeente/Sint-genesius-rode",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "2026-07-16",
     "last_updated_source": "http",
     "last_updated_trust": "low",
@@ -1725,17 +1724,11 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 13,
+    "careers_score": 0,
     "careers_reasons": [
-      "careers-shaped path (+5)",
-      "domain unrelated to this org (-6)",
-      "Brussels/EU domain signal (+2)",
-      "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)",
-      "page text has 2 job signal(s) (+4)",
-      "page title says careers (+4)"
+      "no viable candidate"
     ],
-    "search_url": "https://www.google.com/search?q=Gemeente%2FCommune+Sint-Genesius-Rode+%2F+Rhode-Saint-Genese+Brussels+jobs+vacancies+careers",
+    "search_url": "https://www.google.com/search?q=site%3Avdab.be+jobs+OR+vacancies+OR+careers",
     "last_updated_age_days": 0
   },
   {
@@ -1934,9 +1927,9 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://gemeentejob.be",
-    "careers_url": "https://www.gemeentejob.be/",
-    "careers_confidence": "medium",
-    "last_updated": "2025-06-26",
+    "careers_url": "https://www.gemeentejob.be/vacatures/",
+    "careers_confidence": "high",
+    "last_updated": "2025-10-20",
     "last_updated_source": "meta",
     "last_updated_trust": "high",
     "sources": [
@@ -1944,17 +1937,19 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 15,
+    "careers_score": 26,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #3 (+1)",
+      "search rank #2 (+2)",
       "page text has 1 job signal(s) (+2)",
       "page title says careers (+4)"
     ],
-    "search_url": "https://www.google.com/search?q=Gemeente%2FCommune+Wemmel+Brussels+jobs+vacancies+careers",
-    "last_updated_age_days": 385
+    "search_url": "https://www.google.com/search?q=site%3Agemeentejob.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 269
   },
   {
     "organisation": "Gemeente/Commune Wezembeek-Oppem",
@@ -2151,8 +2146,8 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.blomeyer.eu/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -2161,14 +2156,14 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 14,
+    "careers_score": 8,
     "careers_reasons": [
       "domain matches org name (+4)",
-      "matches the sheet's known domain (+5)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)"
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Ablomeyer.eu+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Blomeyer+%26+Sanz+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Burson (ex-Hill+Knowlton / BCW)",
@@ -2255,8 +2250,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -2265,16 +2260,15 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 10,
+    "careers_score": -36,
     "careers_reasons": [
-      "domain unrelated to this org (-6)",
-      "Brussels/EU domain signal (+2)",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
       "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)",
-      "page text has 5 job signal(s) (+6)",
-      "page title says careers (+4)"
+      "search rank #1 (+3)",
+      "fetch failed (HTTP 0)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Acecoforma.com+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Cecoforma+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Deloitte - EU Services",
@@ -2889,9 +2883,9 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "https://teamlewis.com",
-    "careers_url": "https://www.teamlewis.com/uk/instinctif-partners/",
-    "careers_confidence": "medium",
-    "last_updated": "2026-04-14",
+    "careers_url": "https://www.teamlewis.com/au/magazine/a-career-change-with-team-lewis/",
+    "careers_confidence": "high",
+    "last_updated": "2024-08-29",
     "last_updated_source": "meta",
     "last_updated_trust": "high",
     "sources": [
@@ -2899,15 +2893,17 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 13,
+    "careers_score": 20,
     "careers_reasons": [
       "careers-shaped path (+5)",
-      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
       "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)"
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
     ],
-    "search_url": "https://www.google.com/search?q=Instinctif+Partners+Brussels+jobs+vacancies+careers",
-    "last_updated_age_days": 93
+    "search_url": "https://www.google.com/search?q=site%3Ateamlewis.com+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 686
   },
   {
     "organisation": "Interel",
@@ -3738,8 +3734,8 @@
     "priority": 1,
     "eu_nationality": "N/A",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -3748,16 +3744,13 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 10,
+    "careers_score": -5,
     "careers_reasons": [
       "domain unrelated to this org (-6)",
-      "Brussels/EU domain signal (+2)",
-      "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)",
-      "page text has 5 job signal(s) (+6)",
-      "page title says careers (+4)"
+      "search rank #3 (+1)",
+      "no careers path or ATS — capped below threshold"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Acoachingfederation.org+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Intercultural+training+%2F+DEI+freelance+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "International School of Brussels (ISB)",
@@ -3913,25 +3906,29 @@
     "target_roles": "Press & cultural officer (local recruitment)",
     "priority": 1,
     "eu_nationality": "No (Mexican)",
-    "homepage": "",
-    "careers_url": "https://trabajosi.nl.gob.mx/",
+    "homepage": "https://eu-careers.europa.eu",
+    "careers_url": "https://eu-careers.europa.eu/en/job-opportunities/open-vacancies/ec_vacancies",
     "careers_confidence": "medium",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated": "2026-07-16",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "Sarah's target list"
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 12,
+    "careers_score": 10,
     "careers_reasons": [
-      "matches the sheet's known domain (+3)",
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
+      "search rank #3 (+1)",
+      "page text has 1 job signal(s) (+2)",
       "page title says careers (+4)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Agob.mx+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Mexican+Mission+to+the+EU+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 0
   },
   {
     "organisation": "Mission of Argentina to the EU",
@@ -3946,27 +3943,29 @@
     "target_roles": "Press/comms (local recruitment)",
     "priority": 2,
     "eu_nationality": "No",
-    "homepage": "",
-    "careers_url": "https://jobsin.brussels/",
+    "homepage": "https://eeas.europa.eu",
+    "careers_url": "https://www.eeas.europa.eu/eeas/vacancies_en",
     "careers_confidence": "medium",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated": "2026-07-16",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "Sarah's target list"
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 11,
+    "careers_score": 10,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 5 job signal(s) (+6)",
+      "search rank #3 (+1)",
+      "page text has 1 job signal(s) (+2)",
       "page title says careers (+4)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Aebelg.cancilleria.gob.ar+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Mission+of+Argentina+to+the+EU+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 0
   },
   {
     "organisation": "Mission of Brazil to the EU",
@@ -4016,25 +4015,29 @@
     "target_roles": "Press/comms (local recruitment)",
     "priority": 2,
     "eu_nationality": "No",
-    "homepage": "",
-    "careers_url": "https://www.chile.gob.cl/onu/oportunidades/oportunidades",
+    "homepage": "https://eeas.europa.eu",
+    "careers_url": "https://www.eeas.europa.eu/eeas/vacancies_en",
     "careers_confidence": "medium",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated": "2026-07-16",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "Sarah's target list"
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 14,
+    "careers_score": 11,
     "careers_reasons": [
-      "domain matches org name (+4)",
-      "matches the sheet's known domain (+5)",
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)"
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Achile.gob.cl+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Mission+of+Chile+to+the+EU+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 0
   },
   {
     "organisation": "Mission of Colombia to the EU",
@@ -4050,8 +4053,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -4060,16 +4063,14 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 10,
+    "careers_score": 7,
     "careers_reasons": [
-      "domain unrelated to this org (-6)",
+      "domain matches org name (+4)",
       "Brussels/EU domain signal (+2)",
-      "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)",
-      "page text has 5 job signal(s) (+6)",
-      "page title says careers (+4)"
+      "search rank #3 (+1)",
+      "no careers path or ATS — capped below threshold"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Abelgica.embajada.gov.co+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Mission+of+Colombia+to+the+EU+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Mission of Peru to the EU",
@@ -4085,8 +4086,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -4095,16 +4096,16 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 11,
+    "careers_score": 4,
     "careers_reasons": [
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 5 job signal(s) (+6)",
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold",
       "page title says careers (+4)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Agob.pe+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Mission+of+Peru+to+the+EU+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Spanish Permanent Representation to the EU",
@@ -5083,8 +5084,8 @@
     "priority": 3,
     "eu_nationality": "Yes",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -5093,16 +5094,16 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 10,
+    "careers_score": -46,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)",
-      "page text has 5 job signal(s) (+6)",
-      "page title says careers (+4)"
+      "search rank #3 (+1)",
+      "fetch failed (HTTP 403)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Aop.europa.eu+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Publications+Office+%2F+EU+Newsroom+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Council of Europe - Liaison Office",
@@ -5399,8 +5400,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -5409,16 +5410,15 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 10,
+    "careers_score": -53,
     "careers_reasons": [
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
-      "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)",
-      "page text has 5 job signal(s) (+6)",
-      "page title says careers (+4)"
+      "search rank #3 (+1)",
+      "no careers path or ATS — capped below threshold",
+      "fetch failed (HTTP 403)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Aunocha.org+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=OCHA+Brussels+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "OHCHR - Europe Regional Office",
@@ -5608,28 +5608,28 @@
     "target_roles": "Comms, advocacy",
     "priority": 1,
     "eu_nationality": "No",
-    "homepage": "",
-    "careers_url": "https://jobsin.brussels/organisations/unhcr/",
+    "homepage": "https://untalent.org",
+    "careers_url": "https://untalent.org/jobs-at-unhcr/in-anything/contract-all/brussels",
     "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Sarah's target list"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 12,
+    "careers_score": 10,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)",
-      "page text has 4 job signal(s) (+6)",
-      "page title says careers (+4)",
-      "explicitly lists zero openings — still the right page (+2)"
+      "search rank #3 (+1)",
+      "page text has 4 job signal(s) (+6)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Aunhcr.org+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=UNHCR+-+Representation+to+the+EU+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "UNICEF Brussels",
@@ -5820,8 +5820,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://euobserver.com/228368/from-trojan-horse-in-brussels-to-executive-for-chinas-byd-hungarys-szijjarto-makes-classic-revolving-doors-move/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -5830,16 +5830,11 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 17,
+    "careers_score": 0,
     "careers_reasons": [
-      "domain matches org name (+4)",
-      "matches the sheet's known domain (+5)",
-      "Brussels/EU domain signal (+2)",
-      "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)",
-      "page text has 1 job signal(s) (+2)"
+      "no viable candidate"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Aeuobserver.com+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=EUobserver+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Euractiv",
@@ -5855,8 +5850,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobs.euractiv.com/job-alerts/brussels/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -5865,16 +5860,17 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 17,
+    "careers_score": 8,
     "careers_reasons": [
-      "careers-shaped path (+5)",
-      "matches the sheet's known domain (+3)",
+      "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #3 (+1)",
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold",
+      "page text has 2 job signal(s) (+4)",
       "page title says careers (+4)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Aeuractiv.com+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Euractiv+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Politico Europe",
@@ -6068,11 +6064,11 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://ngo-federatie.be/onze-leden/11-11-11/",
-    "careers_url": "https://ngo-federatie.be/onze-leden/bis-beweging-voor-internationale-solidariteit/",
+    "careers_url": "https://11.be/en/vacancies",
     "careers_confidence": "medium",
-    "last_updated": "2024-02-23",
-    "last_updated_source": "meta",
-    "last_updated_trust": "high",
+    "last_updated": "2026-07-15",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "ngo-federatie member organisations"
     ],
@@ -6080,13 +6076,16 @@
     "latam_relevant": false,
     "careers_score": 12,
     "careers_reasons": [
-      "matches the sheet's known domain (+5)",
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)"
+      "search rank #3 (+1)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
     ],
     "search_url": "https://www.google.com/search?q=site%3Ango-federatie.be+jobs+OR+vacancies+OR+careers",
-    "last_updated_age_days": 874
+    "last_updated_age_days": 1
   },
   {
     "organisation": "ACDA, Action et Coopération pour le développement dans les Andes",
@@ -6207,8 +6206,8 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://amonsoli.be",
-    "careers_url": "https://jobsin.brussels/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "none",
@@ -6217,14 +6216,12 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 10,
+    "careers_score": -1,
     "careers_reasons": [
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
-      "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)",
-      "page text has 5 job signal(s) (+6)",
-      "page title says careers (+4)"
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
     ],
     "search_url": "https://www.google.com/search?q=site%3Aamonsoli.be+jobs+OR+vacancies+OR+careers",
     "last_updated_age_days": null
@@ -6243,8 +6240,8 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://adpm.be",
-    "careers_url": "https://www.adpm.be/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "none",
@@ -6253,12 +6250,14 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 13,
+    "careers_score": 5,
     "careers_reasons": [
+      "bare homepage, no careers path (-8)",
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
       "Brussels/EU domain signal (+2)",
-      "search rank #2 (+2)"
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold"
     ],
     "search_url": "https://www.google.com/search?q=site%3Aadpm.be+jobs+OR+vacancies+OR+careers",
     "last_updated_age_days": null
@@ -6277,8 +6276,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/organisations/actionaid-international/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -6287,17 +6286,15 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 13,
+    "careers_score": -46,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
-      "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
       "search rank #1 (+3)",
-      "page text has 5 job signal(s) (+6)",
-      "page title says careers (+4)",
-      "explicitly lists zero openings — still the right page (+2)"
+      "fetch failed (HTTP 522)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Aactionaid.eu+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=ActionAid+EU+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Agentschap Integratie en Inburgering",
@@ -6350,11 +6347,11 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://akay-esseboe.be",
-    "careers_url": "https://jobsin.brussels/",
+    "careers_url": "https://www.brussels.be/current-vacancies",
     "careers_confidence": "medium",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "none",
+    "last_updated": "2026-07-14",
+    "last_updated_source": "jsonld",
+    "last_updated_trust": "high",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
@@ -6362,15 +6359,16 @@
     "latam_relevant": false,
     "careers_score": 11,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 5 job signal(s) (+6)",
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)",
       "page title says careers (+4)"
     ],
     "search_url": "https://www.google.com/search?q=site%3Aakay-esseboe.be+jobs+OR+vacancies+OR+careers",
-    "last_updated_age_days": null
+    "last_updated_age_days": 2
   },
   {
     "organisation": "Alterbrussels",
@@ -6386,27 +6384,28 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://alterbrussels.org",
-    "careers_url": "https://jobsin.brussels/",
+    "careers_url": "https://www.brussels.be/current-vacancies",
     "careers_confidence": "medium",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "none",
+    "last_updated": "2026-07-14",
+    "last_updated_source": "jsonld",
+    "last_updated_trust": "high",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 11,
+    "careers_score": 10,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 5 job signal(s) (+6)",
+      "search rank #3 (+1)",
+      "page text has 1 job signal(s) (+2)",
       "page title says careers (+4)"
     ],
     "search_url": "https://www.google.com/search?q=site%3Aalterbrussels.org+jobs+OR+vacancies+OR+careers",
-    "last_updated_age_days": null
+    "last_updated_age_days": 2
   },
   {
     "organisation": "Amazone asbl",
@@ -6496,8 +6495,8 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/jobs/amnesty-international-office-and-finance-assistant-french-or-dutch-speaking-2026-07/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -6506,17 +6505,15 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 15,
+    "careers_score": -48,
     "careers_reasons": [
       "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
-      "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)",
-      "page text has 5 job signal(s) (+6)",
-      "page title says careers (+4)"
+      "search rank #3 (+1)",
+      "fetch failed (HTTP 522)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Aamnesty.eu+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Amnesty+International+EU+Office+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Asmae",
@@ -6532,27 +6529,28 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://asmae.org",
-    "careers_url": "https://jobsin.brussels/",
+    "careers_url": "https://eu-careers.europa.eu/en/job-opportunities/open-vacancies/ec_vacancies",
     "careers_confidence": "medium",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "none",
+    "last_updated": "2026-07-16",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 11,
+    "careers_score": 10,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 5 job signal(s) (+6)",
+      "search rank #3 (+1)",
+      "page text has 1 job signal(s) (+2)",
       "page title says careers (+4)"
     ],
     "search_url": "https://www.google.com/search?q=site%3Aasmae.org+jobs+OR+vacancies+OR+careers",
-    "last_updated_age_days": null
+    "last_updated_age_days": 0
   },
   {
     "organisation": "Association Belgo Palestinienne",
@@ -6568,8 +6566,8 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://association-belgo-palestinienne.be",
-    "careers_url": "https://www.association-belgo-palestinienne.be/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "2017-01-10",
     "last_updated_source": "sitemap",
     "last_updated_trust": "medium",
@@ -6578,12 +6576,14 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 14,
+    "careers_score": 6,
     "careers_reasons": [
+      "bare homepage, no careers path (-8)",
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
       "Brussels/EU domain signal (+2)",
-      "search rank #1 (+3)"
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
     ],
     "search_url": "https://www.google.com/search?q=site%3Aassociation-belgo-palestinienne.be+jobs+OR+vacancies+OR+careers",
     "last_updated_age_days": 3474
@@ -6612,14 +6612,13 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 6,
+    "careers_score": -41,
     "careers_reasons": [
-      "domain unrelated to this org (-6)",
-      "Brussels/EU domain signal (+2)",
-      "search snippet mentions jobs (+2)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
       "search rank #2 (+2)",
-      "page text has 1 job signal(s) (+2)",
-      "page title says careers (+4)"
+      "no careers path or ATS — capped below threshold",
+      "fetch failed (HTTP 0)"
     ],
     "search_url": "https://www.google.com/search?q=site%3Aautreterre.org+jobs+OR+vacancies+OR+careers"
   },
@@ -6673,8 +6672,8 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://banlieues.be",
-    "careers_url": "https://jobsin.brussels/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "none",
@@ -6683,13 +6682,13 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 10,
+    "careers_score": 8,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)",
-      "page text has 5 job signal(s) (+6)",
+      "search rank #3 (+1)",
       "page title says careers (+4)"
     ],
     "search_url": "https://www.google.com/search?q=site%3Abanlieues.be+jobs+OR+vacancies+OR+careers",
@@ -6709,8 +6708,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://bepax.org",
-    "careers_confidence": "high",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -6719,7 +6718,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 18,
+    "careers_score": 0,
     "careers_reasons": [
       "careers-shaped path (+4)",
       "domain matches org name (+4)",
@@ -6743,11 +6742,11 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://bissongo.com",
-    "careers_url": "https://jobsin.brussels/",
+    "careers_url": "https://www.brussels.be/current-vacancies",
     "careers_confidence": "medium",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "none",
+    "last_updated": "2026-07-14",
+    "last_updated_source": "jsonld",
+    "last_updated_trust": "high",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
@@ -6755,15 +6754,16 @@
     "latam_relevant": false,
     "careers_score": 11,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 5 job signal(s) (+6)",
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)",
       "page title says careers (+4)"
     ],
     "search_url": "https://www.google.com/search?q=site%3Abissongo.com+jobs+OR+vacancies+OR+careers",
-    "last_updated_age_days": null
+    "last_updated_age_days": 2
   },
   {
     "organisation": "Broederlijk Delen",
@@ -6815,8 +6815,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://ccme.eu/storage/app/media/uploads/2018/11/2014-03-30-Keynote_AP_March_2014.pdf",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -6825,7 +6825,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 14,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -6848,7 +6848,7 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://cepag.be",
-    "careers_url": "https://cepag.be/archive_drupal/etats-generaux-du-travail-2017-2018/",
+    "careers_url": "https://cepag.be/archive_drupal/the-partnership/",
     "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
@@ -6858,13 +6858,15 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 16,
+    "careers_score": 11,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)"
+      "search rank #3 (+1)",
+      "no careers path or ATS — capped below threshold",
+      "page text has 1 job signal(s) (+2)"
     ],
     "search_url": "https://www.google.com/search?q=site%3Acepag.be+jobs+OR+vacancies+OR+careers",
     "last_updated_age_days": null
@@ -6883,8 +6885,8 @@
     "priority": 2,
     "eu_nationality": "Belgian/EU",
     "homepage": "",
-    "careers_url": "https://www.cgra.be/sites/default/files/rapporten/coi_focus_noord-macedonie._algemene_situatie_20231205.pdf",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -6893,7 +6895,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 15,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -6917,8 +6919,8 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -6927,16 +6929,16 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 11,
+    "careers_score": 9,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 5 job signal(s) (+6)",
+      "search rank #2 (+2)",
       "page title says careers (+4)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Acifca.org+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=CIFCA+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "CIRE",
@@ -7061,8 +7063,8 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.caritas.eu/opportunities-at-caritas/",
-    "careers_confidence": "high",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -7071,7 +7073,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 27,
+    "careers_score": 0,
     "careers_reasons": [
       "careers-shaped path (+3)",
       "domain matches org name (+4)",
@@ -7172,8 +7174,8 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://casanica.org",
-    "careers_url": "https://casanica.org/a-propos/contact/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "2025-09-22",
     "last_updated_source": "meta",
     "last_updated_trust": "high",
@@ -7182,7 +7184,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 11,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -7205,8 +7207,8 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://cgslb.be",
-    "careers_url": "https://my.aclvb-cgslb.org/fr/demandez-votre-affiliation",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "2026-05-30",
     "last_updated_source": "jsonld",
     "last_updated_trust": "high",
@@ -7215,13 +7217,14 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 16,
+    "careers_score": 9,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)"
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
     ],
     "search_url": "https://www.google.com/search?q=site%3Acgslb.be+jobs+OR+vacancies+OR+careers",
     "last_updated_age_days": 47
@@ -7276,8 +7279,8 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://cetri.be",
-    "careers_url": "https://jobsin.brussels/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "none",
@@ -7286,13 +7289,13 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 11,
+    "careers_score": 8,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 5 job signal(s) (+6)",
+      "search rank #3 (+1)",
       "page title says careers (+4)"
     ],
     "search_url": "https://www.google.com/search?q=site%3Acetri.be+jobs+OR+vacancies+OR+careers",
@@ -7312,8 +7315,8 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://cota.be",
-    "careers_url": "https://jobsin.brussels/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "none",
@@ -7322,14 +7325,13 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 11,
+    "careers_score": 5,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 5 job signal(s) (+6)",
-      "page title says careers (+4)"
+      "search rank #2 (+2)"
     ],
     "search_url": "https://www.google.com/search?q=site%3Acota.be+jobs+OR+vacancies+OR+careers",
     "last_updated_age_days": null
@@ -7350,14 +7352,22 @@
     "homepage": "https://comitebelgesaharaoccidental.wordpress.com",
     "careers_url": "",
     "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated": "2026-06-01",
+    "last_updated_source": "sitemap",
+    "last_updated_trust": "medium",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #3 (+1)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acomitebelgesaharaoccidental.wordpress.com+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 45
   },
   {
     "organisation": "Comité pour l'Abolition des Dettes illégiTiMes (CADTM)",
@@ -7373,8 +7383,8 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://cadtm.org",
-    "careers_url": "https://www.cadtm.org/The-AI-bubble-and-the-US-economy",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "2025-10-16",
     "last_updated_source": "meta",
     "last_updated_trust": "high",
@@ -7383,7 +7393,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 14,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -7444,16 +7454,28 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://lacsc.be",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.lacsc.be/vos-droits/travailler-dans-le-secteur-prive/conge/vacances-suppl%C3%A9mentaires",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 24,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Alacsc.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Conseil de la jeunesse catholique",
@@ -7471,14 +7493,24 @@
     "homepage": "https://cjc.be",
     "careers_url": "",
     "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated": "2026-06-17",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acjc.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 29
   },
   {
     "organisation": "Convivial",
@@ -7494,8 +7526,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.convivial.be/travailler-a-convivial/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -7504,7 +7536,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 14,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -7528,15 +7560,26 @@
     "eu_nationality": "",
     "homepage": "https://cec-ong.org",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 9,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acec-ong.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Coordination et Initiatives pour Réfugiés et étrangers (CIRé)",
@@ -7553,7 +7596,7 @@
     "eu_nationality": "",
     "homepage": "https://cire.be",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -7561,7 +7604,17 @@
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain unrelated to this org (-6)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)",
+      "explicitly lists zero openings — still the right page (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acire.be+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "DGD (Belgian Development Cooperation, FPS Foreign Affairs)",
@@ -7614,16 +7667,27 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://dynamointernational.org",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://dynamointernational.org/en/service-mobilite/partir/job-springboard/",
+    "careers_confidence": "high",
+    "last_updated": "2022-01-21",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 22,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Adynamointernational.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 1637
   },
   {
     "organisation": "Défi Belgique Afrique (DBA)",
@@ -7639,16 +7703,28 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://ongdba.org",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://ongdba.org/jobs/",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-13",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 25,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aongdba.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 3
   },
   {
     "organisation": "EAPN (European Anti-Poverty Network)",
@@ -7664,8 +7740,8 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.eapn.eu/policy-and-advocacy-assistant/",
-    "careers_confidence": "high",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -7674,7 +7750,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 24,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -7948,15 +8024,25 @@
     "eu_nationality": "",
     "homepage": "https://peaceducation.org",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": -47,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #2 (+2)",
+      "fetch failed (HTTP 410)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Apeaceducation.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "En savoir plus sur ces finalités",
@@ -7972,16 +8058,28 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://cookiedatabase.org",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.brussels.be/current-vacancies",
+    "careers_confidence": "medium",
+    "last_updated": "2026-07-14",
+    "last_updated_source": "jsonld",
+    "last_updated_trust": "high",
     "sources": [
       "CBCS - Brussels social sector"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 10,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acookiedatabase.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 2
   },
   {
     "organisation": "Entraide",
@@ -7998,15 +8096,26 @@
     "eu_nationality": "",
     "homepage": "https://entraide.be",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 8,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "looks like a non-Brussels office (-8)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aentraide.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Entraide et Fraternite",
@@ -8022,8 +8131,8 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -8032,16 +8141,16 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 11,
+    "careers_score": 9,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 5 job signal(s) (+6)",
+      "search rank #2 (+2)",
       "page title says careers (+4)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Aentraide.be+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Entraide+et+Fraternite+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Equinet",
@@ -8057,8 +8166,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/jobs/equinet-policy-officer-2024-12/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -8067,17 +8176,15 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 14,
+    "careers_score": -36,
     "careers_reasons": [
       "careers-shaped path (+5)",
-      "domain unrelated to this org (-6)",
-      "Brussels/EU domain signal (+2)",
+      "domain matches org name (+4)",
       "search snippet mentions jobs (+2)",
-      "search rank #3 (+1)",
-      "page text has 5 job signal(s) (+6)",
-      "page title says careers (+4)"
+      "search rank #1 (+3)",
+      "fetch failed (HTTP 403)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Aequineteurope.org+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Equinet+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Eurochild",
@@ -8197,8 +8304,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.statelessness.eu/sites/www.statelessness.eu/files/Resolution%20Booklet%20Leipzig%202015%20final.pdf",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -8207,7 +8314,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 14,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -8371,16 +8478,27 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://fgtb-wallonne.be",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://fgtb-wallonne.be/publications/contre-les-jobs-de-merde/",
+    "careers_confidence": "high",
+    "last_updated": "2022-07-12",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 19,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Afgtb-wallonne.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 1465
   },
   {
     "organisation": "FIAN Belgium",
@@ -8398,14 +8516,24 @@
     "homepage": "https://fian.be",
     "careers_url": "",
     "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated": "2015-07-23",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Afian.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 4011
   },
   {
     "organisation": "FIDH EU Office",
@@ -8421,8 +8549,8 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.fidh.org/IMG/pdf/za486a.pdf",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -8431,7 +8559,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 14,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -8454,16 +8582,26 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://fmi-pad.net",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://workingatfmi.com/vacancies",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 16,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Afmi-pad.net+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "FOS (Socialistische Solidariteit)",
@@ -8479,8 +8617,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.fos.ngo/unter-the-game-speelmee/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -8489,7 +8627,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 15,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -8513,16 +8651,27 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://fucid.be",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.fucid.be/analyse-jobs-etudiants-quand-le-travail-penalise/",
+    "careers_confidence": "high",
+    "last_updated": "2025-09-29",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 20,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Afucid.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 290
   },
   {
     "organisation": "Fair Trials",
@@ -8538,8 +8687,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/jobs/fair-trials-legal-consultant-2026-06/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -8548,17 +8697,15 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 14,
+    "careers_score": -47,
     "careers_reasons": [
       "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
-      "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #3 (+1)",
-      "page text has 4 job signal(s) (+6)",
-      "page title says careers (+4)"
+      "search rank #2 (+2)",
+      "fetch failed (HTTP 522)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Afairtrials.org+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Fair+Trials+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Fairtrade Belgium",
@@ -8684,8 +8831,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.foyer.be/news/linking-eymid/?lang=en",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -8694,7 +8841,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 16,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -8718,8 +8865,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.frontlinedefenders.org/sites/default/files/hr_manager_jd-1.pdf",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -8728,7 +8875,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 14,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -8753,14 +8900,22 @@
     "homepage": "https://freresdeshommes.org",
     "careers_url": "",
     "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated": "2026-06-20",
+    "last_updated_source": "sitemap",
+    "last_updated_trust": "medium",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #3 (+1)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Afreresdeshommes.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 26
   },
   {
     "organisation": "Global Health Advocates",
@@ -8776,8 +8931,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.ghadvocates.eu/app/uploads/2024-CSOs-Job-Offer-for-EU-Commissioner-IP.pdf",
-    "careers_confidence": "high",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -8786,7 +8941,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 19,
+    "careers_score": 0,
     "careers_reasons": [
       "careers-shaped path (+5)",
       "domain matches org name (+4)",
@@ -8847,15 +9002,24 @@
     "eu_nationality": "",
     "homepage": "https://osrae-europe.org",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 1,
+    "careers_reasons": [
+      "domain unrelated to this org (-6)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aosrae-europe.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Human Rights Watch Brussels",
@@ -8944,14 +9108,23 @@
     "homepage": "https://humundi.org",
     "careers_url": "",
     "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated": "2025-01-22",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Ahumundi.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 540
   },
   {
     "organisation": "ICMPD",
@@ -9038,8 +9211,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/jobs/international-planned-parenthood-federation-events-and-administration-intern-2026-05/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -9048,17 +9221,15 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 14,
+    "careers_score": -47,
     "careers_reasons": [
       "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
-      "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #3 (+1)",
-      "page text has 4 job signal(s) (+6)",
-      "page title says careers (+4)"
+      "search rank #2 (+2)",
+      "fetch failed (HTTP 403)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Aippfen.org+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=IPPF+European+Network+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "ITECO",
@@ -9076,14 +9247,25 @@
     "homepage": "https://iteco.be",
     "careers_url": "",
     "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated": "2026-07-16",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aiteco.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 0
   },
   {
     "organisation": "Ifsi Isvi",
@@ -9101,14 +9283,25 @@
     "homepage": "https://ifsi-isvi.be",
     "careers_url": "",
     "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated": "2018-07-19",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aifsi-isvi.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 2919
   },
   {
     "organisation": "Iles de Paix",
@@ -9162,14 +9355,25 @@
     "homepage": "https://eco-conseil.be",
     "careers_url": "",
     "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated": "2026-06-30",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aeco-conseil.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 16
   },
   {
     "organisation": "Institut pour l'egalite des femmes et des hommes",
@@ -9225,12 +9429,22 @@
     "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aintal.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "International Alert - Brussels",
@@ -9282,8 +9496,8 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jrseurope.org/en/news/malta-no-giving-up-stories-of-unfinished-journeys/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -9292,7 +9506,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 14,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -9315,16 +9529,28 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://joinforwater.ngo",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://joinforwater.ngo/en/job-opportunities/",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 24,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Ajoinforwater.ngo+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Kba Foncaba",
@@ -9340,16 +9566,28 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://kba-foncaba.be",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://kba-foncaba.be/nl/vacatures.html",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-16",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 25,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Akba-foncaba.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 0
   },
   {
     "organisation": "Kidogos asbl",
@@ -9365,16 +9603,27 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://kidogos.org",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.monasbl.be/annonces/emploi/",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 18,
+    "careers_reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Akidogos.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "La Chaloupe",
@@ -9390,16 +9639,28 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://lachaloupe.be",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://lachaloupe.be/job-etudiant",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 25,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Alachaloupe.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "La Strada International",
@@ -9415,8 +9676,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.lastradainternational.org/what-is-human-trafficking-forced-labour-labour-exploitation/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -9425,7 +9686,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 12,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -9452,12 +9713,21 @@
     "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #2 (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Alhac.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Le Monde selon les Femmes",
@@ -9473,8 +9743,8 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "https://mondefemmes.org",
-    "careers_url": "https://www.mondefemmes.org/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -9484,7 +9754,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 11,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -9542,15 +9812,25 @@
     "eu_nationality": "",
     "homepage": "https://csa-be.org",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": -36,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "fetch failed (HTTP 404)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acsa-be.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Louvain Cooperation (UCLouvain NGO)",
@@ -9603,8 +9883,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://mrax.be/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -9613,7 +9893,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 13,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -9707,8 +9987,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://medecinsdumonde.be/node/30",
-    "careers_confidence": "high",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -9717,7 +9997,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 22,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -9813,8 +10093,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -9823,16 +10103,13 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 10,
+    "careers_score": -1,
     "careers_reasons": [
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
-      "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)",
-      "page text has 5 job signal(s) (+6)",
-      "page title says careers (+4)"
+      "search rank #1 (+3)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Amentorescale.be+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Mentor-Escale+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Missing Children Europe",
@@ -9884,16 +10161,28 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://moc.be",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.mc.be/fr/jobs-a-la-mc",
+    "careers_confidence": "medium",
+    "last_updated": "2026-07-16",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 11,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Amoc.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 0
   },
   {
     "organisation": "Myria (Federal Migration Centre)",
@@ -9949,12 +10238,24 @@
     "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Amedecinsdumonde.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Nonviolent Peaceforce",
@@ -9970,8 +10271,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/jobs/nonviolent-peaceforce-programme-impact-consortium-manager-2025-11/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -9980,17 +10281,15 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 16,
+    "careers_score": -46,
     "careers_reasons": [
       "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
-      "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
       "search rank #1 (+3)",
-      "page text has 4 job signal(s) (+6)",
-      "page title says careers (+4)"
+      "fetch failed (HTTP 522)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Anonviolentpeaceforce.org+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Nonviolent+Peaceforce+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "OIDHACO (Oficina Internacional de Derechos Humanos - Accion Colombia)",
@@ -10006,8 +10305,8 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.oidhaco.org/en/parliamentary-question-on-the-situation-of-violence-in-buenaventura-and-the-role-of-european-companies/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -10016,7 +10315,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 14,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -10145,15 +10444,26 @@
     "eu_nationality": "",
     "homepage": "https://outlook.office.com",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CBCS - Brussels social sector"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aoutlook.office.com+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Outlook Live",
@@ -10170,15 +10480,26 @@
     "eu_nationality": "",
     "homepage": "https://outlook.live.com",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CBCS - Brussels social sector"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 8,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aoutlook.live.com+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Oxfam Belgique",
@@ -10194,16 +10515,28 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://oxfambelgique.be",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://oxfambelgique.be/offres-emploi/offre-de-stage-en-communication",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-16",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 22,
+    "careers_reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aoxfambelgique.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 0
   },
   {
     "organisation": "Oxfam Belgique / Belgie",
@@ -10290,16 +10623,29 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://oxfammagasinsdumonde.be",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://oxfammagasinsdumonde.be/jobs/",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 27,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aoxfammagasinsdumonde.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "PAC - Agir par la Culture",
@@ -10315,16 +10661,27 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://pac-g.be",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://pac.org/job_location/brussels",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-16",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 18,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Apac-g.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 0
   },
   {
     "organisation": "PICUM",
@@ -10374,8 +10731,8 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://paxchristi.net/protecting-human-rights-in-the-context-of-business-activities/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -10384,7 +10741,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 14,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -10476,17 +10833,28 @@
     "target_roles": "Comms, coordination",
     "priority": 2,
     "eu_nationality": "No",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
+    "homepage": "https://belrefugees.be",
+    "careers_url": "https://www.belrefugees.be/fr/emplois-et-stages/",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Sarah's target list"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 19,
+    "careers_reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Plateforme+Citoyenne+de+Soutien+aux+Refugies+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Pro-Action Développement asbl",
@@ -10502,16 +10870,27 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://proactiondev.org",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.monasbl.be/annonces/emploi/",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 19,
+    "careers_reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aproactiondev.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "ProtectDefenders.eu",
@@ -10600,16 +10979,28 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://qu<p><",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.brussels.be/current-vacancies",
+    "careers_confidence": "medium",
+    "last_updated": "2026-07-14",
+    "last_updated_source": "jsonld",
+    "last_updated_trust": "high",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 11,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aqu%3Cp%3E%3C+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 2
   },
   {
     "organisation": "Quinoa asbl",
@@ -10625,8 +11016,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "https://quinoa.be",
-    "careers_url": "https://quinoa.be/en/projet/bap/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -10636,7 +11027,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 16,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -10660,16 +11051,28 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://rcn-ong.be",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://rcn-ong.be/en/act-participate/jobs/",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 25,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Arcn-ong.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Red Cross EU Office",
@@ -10720,8 +11123,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://rsf.org/en/reporters-without-borders-rsf-uk",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -10730,7 +11133,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 14,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -10789,16 +11192,27 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://sboverseas.org",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://sboverseas.org/en/get-involved/jobs-2/",
+    "careers_confidence": "high",
+    "last_updated": "2023-05-30",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 23,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Asboverseas.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 1143
   },
   {
     "organisation": "SOLIDAR",
@@ -10814,8 +11228,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.solidar.org/wp-content/uploads/2024/10/briefing-paper-109-eu-talent-pool.pdf",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -10824,7 +11238,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 14,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -10847,8 +11261,8 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.humundi.org/en/homepage/",
-    "careers_confidence": "high",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -10857,7 +11271,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 18,
+    "careers_score": 0,
     "careers_reasons": [
       "careers-shaped path (+4)",
       "domain matches org name (+4)",
@@ -10986,8 +11400,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/organisations/search-for-common-ground/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -10996,17 +11410,14 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 13,
+    "careers_score": 0,
     "careers_reasons": [
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 4 job signal(s) (+6)",
-      "page title says careers (+4)",
-      "explicitly lists zero openings — still the right page (+2)"
+      "search rank #2 (+2)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Asfcg.org+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Search+for+Common+Ground+-+European+HQ+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Service Civil International (SCI) - International Secretariat",
@@ -11059,7 +11470,7 @@
     "eu_nationality": "",
     "homepage": "https://scibelgium.be",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -11067,7 +11478,17 @@
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 9,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 2 job signal(s) (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Ascibelgium.be+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Social Platform",
@@ -11118,16 +11539,29 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://soralia.be",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.soralia.be/accueil/jobs/",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-08",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 27,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Asoralia.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 8
   },
   {
     "organisation": "Terre des Hommes EU Office",
@@ -11144,7 +11578,7 @@
     "eu_nationality": "No",
     "homepage": "",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -11152,7 +11586,16 @@
       "Sarah's target list"
     ],
     "phd_relevant": false,
-    "latam_relevant": true
+    "latam_relevant": true,
+    "careers_score": 7,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Terre+des+Hommes+EU+Office+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Trias",
@@ -11239,16 +11682,28 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://ucoopia.org",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://ucoopia.org/en/get-involved/jobs/",
+    "careers_confidence": "high",
+    "last_updated": "2026-01-13",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 25,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aucoopia.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 184
   },
   {
     "organisation": "Unia (Equality Body)",
@@ -11340,14 +11795,24 @@
     "homepage": "https://viadonbosco.org",
     "careers_url": "",
     "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated": "2023-11-23",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aviadonbosco.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 966
   },
   {
     "organisation": "Vie Feminine",
@@ -11398,16 +11863,27 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://levillagedumonde.blogspot.com",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.monasbl.be/annonces/emploi/",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 17,
+    "careers_reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Alevillagedumonde.blogspot.com+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Viva Salud",
@@ -11498,14 +11974,22 @@
     "homepage": "https://wapainternational.org",
     "careers_url": "",
     "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated": "2024-04-10",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #3 (+1)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Awapainternational.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 827
   },
   {
     "organisation": "WSM (Wereldsolidariteit / Solidarite Mondiale)",
@@ -11521,8 +12005,8 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.wsm.be/en/page-292/",
-    "careers_confidence": "high",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -11531,7 +12015,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 19,
+    "careers_score": 0,
     "careers_reasons": [
       "careers-shaped path (+5)",
       "domain matches org name (+4)",
@@ -11557,14 +12041,24 @@
     "homepage": "https://wsm.be",
     "careers_url": "",
     "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated": "2026-02-06",
+    "last_updated_source": "sitemap",
+    "last_updated_trust": "medium",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Awsm.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 160
   },
   {
     "organisation": "World Vision Brussels",
@@ -11580,8 +12074,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/organisations/world-vision-eu-representation/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -11590,17 +12084,15 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 13,
+    "careers_score": -48,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
-      "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 4 job signal(s) (+6)",
-      "page title says careers (+4)",
-      "explicitly lists zero openings — still the right page (+2)"
+      "search rank #3 (+1)",
+      "fetch failed (HTTP 0)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Awveurope.org+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=World+Vision+Brussels+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "class='img-fluid img-thumbnail' />",
@@ -11616,16 +12108,28 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://solsoc.be",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.solsoc.be/jobs-stages",
+    "careers_confidence": "high",
+    "last_updated": "2022-11-07",
+    "last_updated_source": "sitemap",
+    "last_updated_trust": "medium",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 23,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)",
+      "explicitly lists zero openings — still the right page (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Asolsoc.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 1347
   },
   {
     "organisation": "Bruegel",
@@ -11747,8 +12251,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://centreavec.be/dossier/pour-quoi-travaillons-nous/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -11757,7 +12261,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 16,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -11962,8 +12466,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://etopia.be/evenement/grande-conference-avec-celine-marty-travailler-moins-pour-vivre-mieux/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -11972,7 +12476,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 16,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -12066,8 +12570,8 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/organisations/friedrich-ebert-stiftung/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -12076,17 +12580,15 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 13,
+    "careers_score": -47,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
-      "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 4 job signal(s) (+6)",
-      "page title says careers (+4)",
-      "explicitly lists zero openings — still the right page (+2)"
+      "search rank #2 (+2)",
+      "fetch failed (HTTP 522)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Abrussels.fes.de+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Friedrich-Ebert-Stiftung+EU+Office+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Friedrich-Naumann-Stiftung",
@@ -12102,8 +12604,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/organisations/friedrich-naumann-foundation/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -12112,17 +12614,15 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 13,
+    "careers_score": -46,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain unrelated to this org (-6)",
-      "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
       "search rank #1 (+3)",
-      "page text has 4 job signal(s) (+6)",
-      "page title says careers (+4)",
-      "explicitly lists zero openings — still the right page (+2)"
+      "fetch failed (HTTP 522)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Aeurope.fnst.org+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=Friedrich-Naumann-Stiftung+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Friends of Europe",
@@ -12172,8 +12672,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.fundacioncarolina.es/wp-content/uploads/2021/06/DT_FC_50.pdf",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -12182,7 +12682,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 13,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -12416,8 +12916,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://bruselas.cervantes.es/fr/default.shtm",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -12426,7 +12926,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 12,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -12448,8 +12948,8 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobs.crisisgroup.org/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -12458,7 +12958,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 16,
+    "careers_score": 0,
     "careers_reasons": [
       "matches the sheet's known domain (+3)",
       "search snippet mentions jobs (+2)",
@@ -12518,7 +13018,7 @@
     "eu_nationality": "No",
     "homepage": "",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -12526,7 +13026,16 @@
       "Sarah's target list"
     ],
     "phd_relevant": false,
-    "latam_relevant": true
+    "latam_relevant": true,
+    "careers_score": -46,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "fetch failed (HTTP 522)"
+    ],
+    "search_url": "https://www.google.com/search?q=Konrad-Adenauer-Stiftung+European+Office+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Migration Policy Institute Europe",
@@ -12613,8 +13122,8 @@
     "priority": 2,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.prospex-institute.org/allthings-biopro",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -12623,7 +13132,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": false,
-    "careers_score": 14,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -12717,8 +13226,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://transform-network.net/blog/report/march-of-anger-public-sector-workers-in-poland-say-enough-is-enough/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -12727,7 +13236,7 @@
     ],
     "phd_relevant": false,
     "latam_relevant": true,
-    "careers_score": 14,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -12820,17 +13329,29 @@
     "target_roles": "Research, administration, project support",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "homepage": "https://antwerpmanagementschool.be",
+    "careers_url": "https://www.antwerpmanagementschool.be/en/overview-ftm/belgium-for-international-students/career-opportunities",
+    "careers_confidence": "high",
+    "last_updated": "2026-01-27",
+    "last_updated_source": "jsonld",
+    "last_updated_trust": "high",
     "sources": [
       "Regional registry: Belgian universities"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 22,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Antwerp+Management+School+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 170
   },
   {
     "organisation": "Bozar (Centre for Fine Arts)",
@@ -12846,8 +13367,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://www.bozar.be/nl/meertalige-freelance-gidsen",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -12856,7 +13377,7 @@
     ],
     "phd_relevant": true,
     "latam_relevant": true,
-    "careers_score": 16,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -12917,7 +13438,7 @@
     "eu_nationality": "",
     "homepage": "",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -12925,7 +13446,16 @@
       "Regional registry: Belgian university colleges"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 3,
+    "careers_reasons": [
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=EPHEC+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Erasmushogeschool Brussel",
@@ -12940,17 +13470,29 @@
     "target_roles": "Lecturing, project support, administration",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "homepage": "https://erasmushogeschool.be",
+    "careers_url": "https://www.erasmushogeschool.be/nl/vacatures",
+    "careers_confidence": "high",
+    "last_updated": "2025-07-09",
+    "last_updated_source": "sitemap",
+    "last_updated_trust": "medium",
     "sources": [
       "Regional registry: Belgian university colleges"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 24,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Erasmushogeschool+Brussel+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 372
   },
   {
     "organisation": "Ghent University (UGent)",
@@ -12965,17 +13507,27 @@
     "target_roles": "PhD / doctoral researcher, research assistant",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
+    "homepage": "https://ugent.be",
     "careers_url": "",
     "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: Belgian universities"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Ghent+University+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Ghent University - CESSMIR",
@@ -13025,17 +13577,23 @@
     "target_roles": "Lecturing, project support, administration",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
+    "homepage": "https://eurobrussels.com",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: Belgian university colleges"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "no viable candidate"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aeurobrussels.com+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Hasselt University (UHasselt)",
@@ -13050,17 +13608,28 @@
     "target_roles": "Research, administration, project support",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "homepage": "https://uhasselt.be",
+    "careers_url": "https://www.uhasselt.be/en/about-hasselt-university/working-at-hasselt-university/vacancies",
+    "careers_confidence": "high",
+    "last_updated": "2025-03-26",
+    "last_updated_source": "sitemap",
+    "last_updated_trust": "medium",
     "sources": [
       "Regional registry: Belgian universities"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 20,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Hasselt+University+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 477
   },
   {
     "organisation": "Haute École Léonard de Vinci",
@@ -13075,17 +13644,29 @@
     "target_roles": "Lecturing, project support, administration",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
+    "homepage": "https://vinci.be",
+    "careers_url": "https://www.vinci.be/fr/emploi",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: Belgian university colleges"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 23,
+    "careers_reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Haute+%C3%89cole+L%C3%A9onard+de+Vinci+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Horizon Europe consortia - via CORDIS",
@@ -13284,17 +13865,28 @@
     "target_roles": "PhD / doctoral researcher, research assistant",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
+    "homepage": "https://kuleuven.be",
+    "careers_url": "https://www.kuleuven.be/personeel/jobsite/jobs/staff?lang=en",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: Belgian universities"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 20,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=KU+Leuven+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "KU Leuven - Faculty of Social Sciences",
@@ -13346,17 +13938,29 @@
     "target_roles": "Lecturing, project support, administration",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "homepage": "https://luca-arts.be",
+    "careers_url": "https://www.luca-arts.be/en/vacancies",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-16",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "Regional registry: Belgian university colleges"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 22,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=LUCA+School+of+Arts+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 0
   },
   {
     "organisation": "MigratieMuseum Migration",
@@ -13372,8 +13976,8 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://jobsin.brussels/",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -13382,16 +13986,13 @@
     ],
     "phd_relevant": true,
     "latam_relevant": false,
-    "careers_score": 11,
+    "careers_score": -1,
     "careers_reasons": [
       "domain unrelated to this org (-6)",
       "Brussels/EU domain signal (+2)",
-      "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 5 job signal(s) (+6)",
-      "page title says careers (+4)"
+      "search rank #1 (+3)"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Amigratiemuseummigration.be+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=MigratieMuseum+Migration+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Odisee",
@@ -13406,17 +14007,27 @@
     "target_roles": "Lecturing, project support, administration",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
+    "homepage": "https://odisee.cvw.io",
     "careers_url": "",
     "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: Belgian university colleges"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Odisee+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Red Star Line Museum",
@@ -13432,8 +14043,8 @@
     "priority": 3,
     "eu_nationality": "No",
     "homepage": "",
-    "careers_url": "https://redstarline.be/en/page/staff-and-employees",
-    "careers_confidence": "medium",
+    "careers_url": "",
+    "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -13442,7 +14053,7 @@
     ],
     "phd_relevant": true,
     "latam_relevant": false,
-    "careers_score": 14,
+    "careers_score": 0,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
@@ -13464,17 +14075,26 @@
     "target_roles": "Research, administration, project support",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
+    "homepage": "https://rma.ac.be",
     "careers_url": "",
     "careers_confidence": "",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: Belgian universities"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 0,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=Royal+Military+Academy+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "UCLouvain",
@@ -13489,17 +14109,27 @@
     "target_roles": "PhD / doctoral researcher, research assistant",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
+    "homepage": "https://uclouvain.be",
+    "careers_url": "https://www.uclouvain.be/en/careers",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: Belgian universities"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 16,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=UCLouvain+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "UCLouvain - LAAP (Laboratoire d'anthropologie prospective)",
@@ -13588,7 +14218,7 @@
     "eu_nationality": "",
     "homepage": "",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -13596,7 +14226,17 @@
       "Regional registry: Belgian universities"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 9,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=United+Nations+University+-+CRIS+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Universite Saint-Louis Bruxelles (UCLouvain Saint-Louis)",
@@ -13648,17 +14288,29 @@
     "target_roles": "PhD / doctoral researcher, research assistant",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
+    "homepage": "https://uantwerpen.be",
+    "careers_url": "https://www.uantwerpen.be/en/jobs/vacancies/",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: Belgian universities"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 22,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=University+of+Antwerp+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "University of Antwerp - CeMIS (Centre for Migration and Intercultural Studies)",
@@ -13710,17 +14362,27 @@
     "target_roles": "PhD / doctoral researcher, research assistant",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
+    "homepage": "https://uliege.be",
+    "careers_url": "https://www.uliege.be/cms/c_9247584/en/careers",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: Belgian universities"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 14,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)"
+    ],
+    "search_url": "https://www.google.com/search?q=Universit%C3%A9+de+Li%C3%A8ge+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Université de Mons (UMONS)",
@@ -13735,17 +14397,28 @@
     "target_roles": "Research, administration, project support",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "homepage": "https://euraxess.ec.europa.eu",
+    "careers_url": "https://euraxess.ec.europa.eu/jobs/88377",
+    "careers_confidence": "medium",
+    "last_updated": "2026-07-16",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "Regional registry: Belgian universities"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 12,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #3 (+1)",
+      "page text has 5 job signal(s) (+6)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Universit%C3%A9+de+Mons+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 0
   },
   {
     "organisation": "Université de Namur (UNamur)",
@@ -13760,17 +14433,28 @@
     "target_roles": "Research, administration, project support",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "homepage": "https://unamur.be",
+    "careers_url": "https://www.unamur.be/fr/universite/travailler/cellule-emploi-recruteurs",
+    "careers_confidence": "medium",
+    "last_updated": "2026-07-16",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "Regional registry: Belgian universities"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 17,
+    "careers_reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Universit%C3%A9+de+Namur+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 0
   },
   {
     "organisation": "Université libre de Bruxelles (ULB)",
@@ -13785,17 +14469,29 @@
     "target_roles": "PhD / doctoral researcher, research assistant",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "homepage": "https://ulb.be",
+    "careers_url": "https://www.ulb.be/fr/travailler-et-collaborer/offres-d-emploi",
+    "careers_confidence": "high",
+    "last_updated": "2026-02-19",
+    "last_updated_source": "sitemap",
+    "last_updated_trust": "medium",
     "sources": [
       "Regional registry: Belgian universities"
     ],
     "phd_relevant": true,
-    "latam_relevant": true
+    "latam_relevant": true,
+    "careers_score": 20,
+    "careers_reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Universit%C3%A9+libre+de+Bruxelles+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 147
   },
   {
     "organisation": "Université ouverte / Open Universiteit",
@@ -13812,7 +14508,7 @@
     "eu_nationality": "",
     "homepage": "",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -13820,7 +14516,16 @@
       "Regional registry: Belgian universities"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 5,
+    "careers_reasons": [
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Universit%C3%A9+ouverte+%2F+Open+Universiteit+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "VUB - Brussels School of Governance / IES",
@@ -13872,7 +14577,7 @@
     "eu_nationality": "",
     "homepage": "",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -13880,7 +14585,15 @@
       "Regional registry: Belgian universities"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 2,
+    "careers_reasons": [
+      "domain unrelated to this org (-6)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Vlerick+Business+School+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Vrije Universiteit Brussel (VUB)",
@@ -13895,16 +14608,28 @@
     "target_roles": "PhD / doctoral researcher, research assistant",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
+    "homepage": "https://academicpositions.be",
+    "careers_url": "https://academicpositions.be/jobs/employer/vrije-universiteit-brussel",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: Belgian universities"
     ],
     "phd_relevant": true,
-    "latam_relevant": false
+    "latam_relevant": false,
+    "careers_score": 15,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 3 job signal(s) (+6)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Vrije+Universiteit+Brussel+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   }
 ]

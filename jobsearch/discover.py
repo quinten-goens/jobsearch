@@ -20,6 +20,10 @@ from .search import search
 
 DISCOVERED_JSON = DATA / "discovered.json"
 
+# Below this, we report "not found" rather than offer a plausible wrong link.
+THRESHOLD = 10
+HIGH_THRESHOLD = 18
+
 # Path patterns that signal a careers page, weighted by how specific they are.
 # Regexes rather than substrings because Belgian sites decorate these words
 # freely -- "werken-voor-fod-buitenlandse-zaken", "offres-d-emploi",
@@ -56,7 +60,7 @@ AGGREGATORS = (
     # National/regional job portals. They list jobs for everyone, so they're
     # never a specific organisation's careers page -- Drogenbos was resolving
     # to vdab.be, which serves all of Flanders.
-    "vdab.be", "leforem.be", "actiris.brussels/fr/citoyens", "stepstone",
+    "vdab.be", "leforem.be", "stepstone",
     "monster.", "jobat.be", "references.lesoic.be", "references.be",
     "unjobs.org", "impactpool.org", "devex.com", "jobsin.brussels",
     "eurobrussels.com", "euractiv.com", "ngojobboard", "reliefweb.int",
@@ -113,21 +117,41 @@ def score_candidate(cand: dict, org: dict) -> tuple[int, list[str]]:
     """Score a search result as the org's careers page. Returns (score, reasons)."""
     low = cand["url"].lower()
     score, why = 0, []
-
-    if any(a in low for a in AGGREGATORS):
-        return -100, ["aggregator/social, not the org's own page"]
-
     domain = domain_of(low)
+
+    # A document is never a careers page. These slip through because a PDF's
+    # text is full of job-ish words -- CGRA was resolving to a country-of-origin
+    # research report, FIDH to a random dossier.
+    if re.search(r"\.(pdf|docx?|xlsx?|pptx?|zip|rtf|odt)(\?|#|$)", low):
+        return -100, ["a document, not a careers page"]
+
+    # An org that *is* a job portal (Actiris, talent.brussels) legitimately
+    # lives on a portal domain, so only treat one as an aggregator when it
+    # isn't this org's own site.
+    org_toks = tokens(org["organisation"])
+    dom_stem = re.sub(r"[^a-z0-9]", "", domain.split(".")[0])
+    own_site = bool(org_toks and any(t in dom_stem for t in org_toks))
+    if not own_site and any(a in low for a in AGGREGATORS):
+        return -100, ["aggregator/job portal, not the org's own page"]
+
     path_part = low.split(domain, 1)[-1] if domain else low
     old = str(org.get("existing_url") or "").lower()
     old_domain = domain_of(old)
 
     # 1. Path shape
+    path_hit = False
     for pat, pts in PATH_HINTS:
         if re.search(pat, path_part):
             score += pts
+            path_hit = True
             why.append(f"careers-shaped path (+{pts})")
             break
+
+    # A bare homepage is not a careers page, however much hiring language it
+    # happens to carry.
+    if not path_part.strip("/"):
+        score -= 8
+        why.append("bare homepage, no careers path (-8)")
 
     # An archive of closed/expired vacancies is a careers-shaped page that
     # will never contain an applyable job.
@@ -142,9 +166,8 @@ def score_candidate(cand: dict, org: dict) -> tuple[int, list[str]]:
         why.append("hosted on a known ATS (+6)")
 
     # 3. Does this domain belong to this org at all?
-    org_toks = tokens(org["organisation"])
-    dom_flat = re.sub(r"[^a-z0-9]", "", domain.split(".")[0])
-    name_match = bool(org_toks and any(t in dom_flat for t in org_toks))
+    dom_flat = dom_stem
+    name_match = own_site
     # Check the acronym of each name form: the bare name's initials, and the
     # initials of any parenthetical expansion.
     acro_match = False
@@ -199,6 +222,16 @@ def score_candidate(cand: dict, org: dict) -> tuple[int, list[str]]:
     if rank_bonus:
         score += rank_bonus
         why.append(f"search rank #{cand.get('rank', 0) + 1} (+{rank_bonus})")
+
+    # A careers page is identified by its *structure* -- a careers-shaped path,
+    # or an ATS. Hiring language in the page text is corroboration, not proof:
+    # relying on it sent us to a news article on EUobserver and to a competitor
+    # agency's profile of Instinctif Partners. Without structural evidence, cap
+    # the score below the threshold so the org honestly reports "not found"
+    # rather than offering a plausible-looking wrong link.
+    if not (path_hit or on_ats):
+        score = min(score, THRESHOLD - 1)
+        why.append("no careers path or ATS — capped below threshold")
 
     return score, why
 
@@ -325,9 +358,8 @@ def discover_one(org: dict) -> dict:
     best = scored[0] if scored else None
 
     # Threshold: below this we don't trust it enough to call it found.
-    THRESHOLD = 10
     if best and best["score"] >= THRESHOLD:
-        confidence = "high" if best["score"] >= 18 else "medium"
+        confidence = "high" if best["score"] >= HIGH_THRESHOLD else "medium"
         chosen, method = best["url"], "search+verify"
     else:
         confidence, chosen, method = "none", None, "search+verify"

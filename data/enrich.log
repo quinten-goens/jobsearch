@@ -67,3 +67,101 @@ Enriching 137 of 413 organisations (Brave)
  65/137 MED       —     Collectif d'échanges pour la Techn https://jobsin.brussels/
  66/137 MED   273d ago  Comité pour l'Abolition des Dettes https://www.cadtm.org/The-AI-bubble-and-the-
  67/137 MED       —     Banlieues                          https://jobsin.brussels/
+ 68/137 MED    45d ago  Comité belge de soutien au Peuple  https://comitebelgesaharaoccidental.wordpres
+ 69/137 MED    29d ago  Conseil de la jeunesse catholique  https://archipel.be
+ 70/137 MED       —     Entraide                           https://jobsin.brussels/
+ 71/137 OK        —     Confédération des Syndicats Chréti https://www.lacsc.be/vos-droits/travailler-d
+ 72/137 MED       —     Coopération par l'Education et la  https://www.eurobrussels.com/jobs/education_
+ 73/137 MISS      —     Coordination et Initiatives pour R 
+ 74/137 OK   1637d ago  Dynamo international               https://dynamointernational.org/en/service-m
+ 75/137 OK      3d ago  Défi Belgique Afrique (DBA)        https://ongdba.org/jobs/
+ 76/137 MED       —     En savoir plus sur ces finalités   https://jobsin.brussels/
+ 77/137 OK   1465d ago  FGTB wallonne                      https://fgtb-wallonne.be/publications/contre
+ 78/137 OK    290d ago  FUCID                              https://www.fucid.be/analyse-jobs-etudiants-
+ 79/137 MED       —     Education globale & développement  https://jobsin.brussels/
+ 80/137 MED       —     FMI-PAD Network                    https://workingatfmi.com/vacancies
+ 81/137 MED   540d ago  Humundi (ex-SOS Faim)              https://www.humundi.org/en/actions/burkina-f
+ 82/137 MED       —     Frères des Hommes                  https://jobsin.brussels/
+ 83/137 MED       —     Help Osra Ethiopia                 https://jobsin.brussels/
+ 84/137 OK      0d ago  ITECO                              https://www.iteco.be/spip.php?doc=1403&from=
+ 85/137 MED  4011d ago  FIAN Belgium                       https://www.fian.be/IMG/pdf/pdf_dossier_nl.p
+ 86/137 MED       —     Intal                              https://www.intal.be/nl/agenda/actions-20-03
+ 87/137 OK   2919d ago  Ifsi Isvi                          https://www.ifsi-isvi.be/nl/algemeen/waardig
+ 88/137 OK        —     Join for Water                     https://joinforwater.ngo/en/job-opportunitie
+ 89/137 OK     16d ago  Institut Eco-Conseil               https://www.eco-conseil.be/linstitut-eco-con
+ 90/137 OK        —     La Chaloupe                        https://lachaloupe.be/job-etudiant
+/Users/quintengoens/Repos/jobsearch/jobsearch/discover.py:202: XMLParsedAsHTMLWarning: It looks like you're using an HTML parser to parse an XML document.
+
+Assuming this really is an XML document, what you're doing might work, but you should know that using an XML parser will be more reliable. To parse this document as XML, make sure you have the Python package 'lxml' installed, and pass the keyword argument `features="xml"` into the BeautifulSoup constructor.
+
+If you want or need to use an HTML parser on this document, you can make this warning go away by filtering it. To do that, run this code before calling the BeautifulSoup constructor:
+
+    from bs4 import XMLParsedAsHTMLWarning
+    import warnings
+
+    warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
+
+  
+/Users/quintengoens/Repos/jobsearch/jobsearch/freshness.py:48: XMLParsedAsHTMLWarning: It looks like you're using an HTML parser to parse an XML document.
+
+Assuming this really is an XML document, what you're doing might work, but you should know that using an XML parser will be more reliable. To parse this document as XML, make sure you have the Python package 'lxml' installed, and pass the keyword argument `features="xml"` into the BeautifulSoup constructor.
+
+If you want or need to use an HTML parser on this document, you can make this warning go away by filtering it. To do that, run this code before calling the BeautifulSoup constructor:
+
+    from bs4 import XMLParsedAsHTMLWarning
+    import warnings
+
+    warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
+
+  soup = BeautifulSoup(html, "lxml")
+ 91/137 OK      0d ago  Kba Foncaba                        https://kba-foncaba.be/nl/vacatures.html
+ 92/137 OK        —     Kidogos asbl                       https://www.monasbl.be/annonces/emploi/
+ 93/137 OK        —     Médecins du Monde                  https://medecinsdumonde.be/node/30
+ 94/137 MED       —     Logo du Collectif stratégies alime https://jobsin.brussels/
+ 95/137 MED       —     Le Logo de LHAC                    https://www.lhac.be/
+ 96/137 MED     0d ago  Mouvement ouvrier chrétien - MOC   https://www.mc.be/fr/jobs-a-la-mc
+ 97/137 MED       —     Outlook 365                        https://www.vdab.be/vindeenjob/jobs/microsof
+ 98/137 OK      0d ago  Oxfam Belgique                     https://oxfambelgique.be/offres-emploi/offre
+ 99/137 OK        —     Plateforme Citoyenne de Soutien au https://www.belrefugees.be/fr/emplois-et-sta
+100/137 OK        —     Oxfam, Magasins du monde           https://oxfammagasinsdumonde.be/jobs/
+101/137 MED       —     Outlook Live                       https://jobsin.brussels/
+102/137 OK      0d ago  PAC - Agir par la Culture          https://pac.org/job_location/brussels
+103/137 OK        —     Pro-Action Développement asbl      https://www.monasbl.be/annonces/emploi/
+104/137 MED       —     Qu<P><                             https://jobsin.brussels/
+105/137 OK        —     RCN Justice & Démocratie           https://rcn-ong.be/en/act-participate/jobs/
+106/137 OK   1143d ago  SB OverSeas Belgique               https://sboverseas.org/en/get-involved/jobs-
+107/137 OK      8d ago  Soralia                            https://www.soralia.be/accueil/jobs/
+108/137 OK    184d ago  Ucoopia                            https://ucoopia.org/en/get-involved/jobs/
+109/137 MED   160d ago  We Social Movements (WSM)          https://www.wsm.be/en/
+110/137 OK    966d ago  Via Don Bosco                      https://www.viadonbosco.org/wp-content/uploa
+111/137 MISS      —     Terre des Hommes EU Office         
+112/137 MED       —     Village du monde (asbl Le Coron)   https://www.monasbl.be/annonces/emploi/
+113/137 MED   827d ago  WAPA International                 https://wapainternational.org/fr/en-belgique
+114/137 OK   1347d ago  class='img-fluid img-thumbnail' /> https://www.solsoc.be/jobs-stages
+115/137 OK    170d ago  Antwerp Management School          https://www.antwerpmanagementschool.be/en/ov
+116/137 MISS      —     Service civil international (SCI)  
+117/137 MISS      —     EPHEC                              
+118/137 OK    372d ago  Erasmushogeschool Brussel          https://www.erasmushogeschool.be/nl/vacature
+119/137 MED       —     HE2B (Haute École Bruxelles-Braban https://www.eurobrussels.com/jobs/brussels
+120/137 MED       —     Ghent University (UGent)           https://www.ugent.be/en/work
+121/137 MISS      —     Konrad-Adenauer-Stiftung European  
+122/137 OK        —     Haute École Léonard de Vinci       https://www.vinci.be/fr/emploi
+123/137 OK        —     KU Leuven                          https://www.kuleuven.be/personeel/jobsite/jo
+124/137 OK      0d ago  LUCA School of Arts                https://www.luca-arts.be/en/vacancies
+125/137 MED       —     Royal Military Academy             https://www.rma.ac.be/en
+126/137 MED       —     Odisee                             https://odisee.cvw.io/?lang=nl-BE
+127/137 MED       —     UCLouvain                          https://www.uclouvain.be/en/careers
+128/137 MISS      —     United Nations University - CRIS   
+129/137 OK        —     University of Antwerp (UAntwerpen) https://www.uantwerpen.be/en/jobs/vacancies/
+130/137 MED       —     Université de Liège (ULiège)       https://www.uliege.be/cms/c_9247584/en/caree
+131/137 MED     0d ago  Université de Namur (UNamur)       https://www.unamur.be/fr/universite/travaill
+132/137 MED     0d ago  Université de Mons (UMONS)         https://euraxess.ec.europa.eu/jobs/88377
+133/137 OK    147d ago  Université libre de Bruxelles (ULB https://www.ulb.be/fr/travailler-et-collabor
+134/137 MISS      —     Université ouverte / Open Universi 
+135/137 OK    477d ago  Hasselt University (UHasselt)      https://www.uhasselt.be/en/about-hasselt-uni
+136/137 MISS      —     Vlerick Business School            
+137/137 MED       —     Vrije Universiteit Brussel (VUB)   https://academicpositions.be/jobs/employer/v
+
+======================================================================
+  careers page: high=264  medium=134  none=15
+  with a last-updated date: 63/413
