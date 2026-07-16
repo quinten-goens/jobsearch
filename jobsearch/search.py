@@ -42,38 +42,58 @@ def _cache_path(query: str):
     return SEARCH_CACHE / (hashlib.sha256(query.encode()).hexdigest()[:32] + ".json")
 
 
+# Brave's free tier is quota-limited per month but also rate-limited per second.
+# Serialise and space out calls: a 429 storm burns quota for nothing.
+_brave_lock = threading.Lock()
+_last_brave_call = 0.0
+BRAVE_DELAY = float(os.getenv("JOBSEARCH_BRAVE_DELAY", "1.1"))
+
+
 def _brave(query: str, count: int = 5) -> list[dict] | None:
-    """Return results, or None if Brave is unavailable/failed (so we can fall back)."""
+    """Return results, or None if Brave is unavailable (so we can fall back)."""
+    global _last_brave_call
     if not BRAVE_API_KEY:
         return None
-    try:
-        r = requests.get(
-            "https://api.search.brave.com/res/v1/web/search",
-            params={"q": query, "count": count, "country": "be"},
-            headers={
-                "Accept": "application/json",
-                "X-Subscription-Token": BRAVE_API_KEY,
-            },
-            timeout=TIMEOUT,
-        )
-        if r.status_code == 429:
-            print("  ! Brave rate limit hit, pausing 2s")
-            time.sleep(2)
+
+    for attempt in range(4):
+        with _brave_lock:
+            elapsed = time.time() - _last_brave_call
+            if elapsed < BRAVE_DELAY:
+                time.sleep(BRAVE_DELAY - elapsed)
+            _last_brave_call = time.time()
+        try:
+            r = requests.get(
+                "https://api.search.brave.com/res/v1/web/search",
+                params={"q": query, "count": count, "country": "be"},
+                headers={
+                    "Accept": "application/json",
+                    "X-Subscription-Token": BRAVE_API_KEY,
+                },
+                timeout=TIMEOUT,
+            )
+            if r.status_code == 429:
+                # Rate limited, not out of quota: back off and retry rather
+                # than falling through to DuckDuckGo, which is banned anyway.
+                time.sleep(2 * (attempt + 1))
+                continue
+            if r.status_code in (401, 403):
+                print(f"  ! Brave rejected the key (HTTP {r.status_code})")
+                return None
+            if r.status_code != 200:
+                return None
+            data = r.json()
+            return [
+                {
+                    "url": w.get("url", ""),
+                    "title": w.get("title", ""),
+                    "snippet": w.get("description", ""),
+                    "engine": "brave",
+                }
+                for w in data.get("web", {}).get("results", [])[:count]
+            ]
+        except (requests.exceptions.RequestException, json.JSONDecodeError, KeyError):
             return None
-        if r.status_code != 200:
-            return None
-        data = r.json()
-        return [
-            {
-                "url": w.get("url", ""),
-                "title": w.get("title", ""),
-                "snippet": w.get("description", ""),
-                "engine": "brave",
-            }
-            for w in data.get("web", {}).get("results", [])[:count]
-        ]
-    except (requests.exceptions.RequestException, json.JSONDecodeError, KeyError):
-        return None
+    return None
 
 
 def _ddg_once(query: str, count: int) -> list[dict]:

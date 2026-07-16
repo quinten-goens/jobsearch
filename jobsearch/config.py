@@ -16,7 +16,11 @@ WORKBOOK = ROOT / "conv" / "Sarah_Pernet_Brussels_Job_Search.xlsx"
 ORGS_JSON = DATA / "orgs.json"
 JOBS_JSON = DATA / "jobs.json"
 
-BRAVE_API_KEY = os.getenv("BRAVE_API_KEY", "").strip()
+# Accept either name: BRAVE_API_KEY is what Brave's docs call it, BRAVE_KEY is
+# the obvious shorthand people actually type.
+BRAVE_API_KEY = (
+    os.getenv("BRAVE_API_KEY") or os.getenv("BRAVE_KEY") or ""
+).strip()
 
 UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "

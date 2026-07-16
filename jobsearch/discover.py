@@ -10,10 +10,11 @@ import json
 import re
 import sys
 import urllib.parse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from bs4 import BeautifulSoup
 
-from .config import DATA, ORGS_JSON
+from .config import BRAVE_API_KEY, DATA, ORGS_JSON
 from .http import fetch
 from .search import search
 
@@ -127,9 +128,15 @@ def score_candidate(cand: dict, org: dict) -> tuple[int, list[str]]:
     # 3. Does this domain belong to this org at all?
     org_toks = tokens(org["organisation"])
     dom_flat = re.sub(r"[^a-z0-9]", "", domain.split(".")[0])
-    acronym = "".join(w[0] for w in org["organisation"].split() if w[:1].isalpha())
     name_match = bool(org_toks and any(t in dom_flat for t in org_toks))
-    acro_match = len(acronym) >= 3 and acronym.lower() == dom_flat
+    # Check the acronym of each name form: the bare name's initials, and the
+    # initials of any parenthetical expansion.
+    acro_match = False
+    for variant in name_variants(org["organisation"]):
+        acro = "".join(w[0] for w in variant.split() if w[:1].isalpha()).lower()
+        if len(acro) >= 3 and acro == dom_flat:
+            acro_match = True
+            break
     domain_known = bool(old_domain) and (
         old_domain == domain
         or old_domain.split(".")[-2:] == domain.split(".")[-2:]
@@ -218,6 +225,30 @@ def clean_name(name: str) -> str:
     return re.sub(r"\s*\([^)]*\)", "", name).strip()
 
 
+def name_variants(name: str) -> list[str]:
+    """Search-worthy forms of an org name, best first.
+
+    Sheet names mix an acronym with an expansion and sometimes a parent body --
+    "DGD (Belgian Development Cooperation, FPS Foreign Affairs)". Searching the
+    bare acronym is too thin to find the right site, and searching the whole
+    string is too specific to match anything, so try both plus the expansion.
+    """
+    out = [clean_name(name)]
+    m = re.search(r"\(([^)]*)\)", name)
+    if m:
+        # The expansion, minus any trailing parent-body clause.
+        expansion = m.group(1).split(",")[0].strip()
+        if len(expansion) > 4:
+            out.append(expansion)
+            # Acronym + expansion together disambiguates best of all.
+            out.append(f"{clean_name(name)} {expansion}")
+    # Drop an "X / Y" bilingual pair down to its first half.
+    if " / " in out[0]:
+        out.append(out[0].split(" / ")[0].strip())
+    seen: set[str] = set()
+    return [v for v in out if v and not (v in seen or seen.add(v))]
+
+
 def discover_one(org: dict) -> dict:
     name = org["organisation"]
     short = clean_name(name)
@@ -225,10 +256,16 @@ def discover_one(org: dict) -> dict:
     # Several query shapes. One query per org is a single point of failure: the
     # generic one can surface an overseas office while never showing the
     # Brussels HQ, so the second anchors on the city explicitly.
+    variants = name_variants(name)
     queries = [
         f"{short} Brussels jobs vacancies careers",
         f"{short} careers page Brussels Belgium",
     ]
+    # A compound name ("DGD (Belgian Development Cooperation, ...)") searches
+    # badly in either direction; the expansion often finds what the acronym
+    # can't.
+    for v in variants[1:]:
+        queries.append(f"{v} Brussels jobs vacancies careers")
     # If the sheet already knows the org's domain, ask the engine directly for
     # careers pages on that domain. This rescues orgs whose name is ambiguous
     # enough that a plain name search never surfaces the right site at all.
@@ -319,22 +356,30 @@ def main() -> None:
           f"{len(done)} already resolved\n")
 
     out = list(done.values())
-    # Single-threaded on purpose: DDG is globally serialised by its lock, so
-    # workers would only queue behind each other while making the ban worse.
-    for i, org in enumerate(todo, 1):
-        try:
-            res = discover_one(org)
-        except Exception as e:  # never lose the whole run to one bad page
-            print(f"  ! {org['organisation'][:40]}: {type(e).__name__}: {e}")
-            continue
-        out.append(res)
-        mark = {"high": "OK  ", "medium": "MED ", "none": "MISS"}[res["confidence"]]
-        changed = "" if res["careers_url"] == res["old_url"] else "  [CHANGED]"
-        print(f"{i:>3}/{len(todo)} {mark} {res['score']:>3}  "
-              f"{res['organisation'][:38]:<38} "
-              f"{str(res['careers_url'])[:52]}{changed}", flush=True)
-        # Save after every org so a crash or ban never costs more than one.
-        DISCOVERED_JSON.write_text(json.dumps(out, indent=2, ensure_ascii=False))
+    # Workers help when Brave is answering (the page fetches dominate) and are
+    # harmless when it isn't: the DDG fallback serialises itself on its own
+    # lock regardless.
+    workers = 8 if BRAVE_API_KEY else 1
+    done_n = 0
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = {pool.submit(discover_one, o): o for o in todo}
+        for fut in as_completed(futures):
+            org = futures[fut]
+            done_n += 1
+            try:
+                res = fut.result()
+            except Exception as e:  # never lose the whole run to one bad page
+                print(f"  ! {org['organisation'][:40]}: {type(e).__name__}: {e}")
+                continue
+            out.append(res)
+            mark = {"high": "OK  ", "medium": "MED ", "none": "MISS"}[res["confidence"]]
+            changed = "" if res["careers_url"] == res["old_url"] else "  [CHANGED]"
+            print(f"{done_n:>3}/{len(todo)} {mark} {res['score']:>3}  "
+                  f"{res['organisation'][:38]:<38} "
+                  f"{str(res['careers_url'])[:52]}{changed}", flush=True)
+            # Save as we go so an interrupted run never costs more than the
+            # requests still in flight.
+            DISCOVERED_JSON.write_text(json.dumps(out, indent=2, ensure_ascii=False))
 
     tally: dict = {}
     for r in out:
