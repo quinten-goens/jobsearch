@@ -1,0 +1,578 @@
+[
+  {
+    "organisation": "ACDA, Action et Coopération pour le développement dans les Andes",
+    "homepage": "https://acda-peru.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Action Mondiale pour la Solidarité",
+    "homepage": "https://amonsoli.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Action-développement parrainages mondiaux (ADPM)",
+    "homepage": "https://adpm.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Akay Esseboe",
+    "homepage": "https://akay-esseboe.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Alterbrussels",
+    "homepage": "https://alterbrussels.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Asmae",
+    "homepage": "https://asmae.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Association Belgo Palestinienne",
+    "homepage": "https://association-belgo-palestinienne.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Autre Terre",
+    "homepage": "https://autreterre.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Bissongo",
+    "homepage": "https://bissongo.com",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Caritas international",
+    "homepage": "https://caritasinternational.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Casa Nicaragua asbl Pierreuse & Ailleurs",
+    "homepage": "https://casanica.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Centrale Générale des Syndicats Libéraux de Belgique (CGSLB)",
+    "homepage": "https://cgslb.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Centre Placet asbl",
+    "homepage": "https://placet.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Centre Tricontinental (CETRI)",
+    "homepage": "https://cetri.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "CEPAG (Centre d'Education Populaire André GENOT)",
+    "homepage": "https://cepag.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Collectif d'échanges pour la Technologie Appropriée (COTA)",
+    "homepage": "https://cota.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Logo du Collectif stratégies alimentaires (CSA)",
+    "homepage": "https://csa-be.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Comité belge de soutien au Peuple Sahraoui",
+    "homepage": "https://comitebelgesaharaoccidental.wordpress.com",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Comité pour l'Abolition des Dettes illégiTiMes (CADTM)",
+    "homepage": "https://cadtm.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Commission Justice et Paix",
+    "homepage": "https://justicepaix.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Confédération des Syndicats Chrétiens (CSC)",
+    "homepage": "https://lacsc.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Conseil de la jeunesse catholique",
+    "homepage": "https://cjc.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Coopération par l'Education et la Culture (CEC)",
+    "homepage": "https://cec-ong.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Coordination et Initiatives pour Réfugiés et étrangers (CIRé)",
+    "homepage": "https://cire.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Défi Belgique Afrique (DBA)",
+    "homepage": "https://ongdba.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Dynamo international",
+    "homepage": "https://dynamointernational.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Echos Communication",
+    "homepage": "https://echoscommunication.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Education globale & développement",
+    "homepage": "https://peaceducation.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Entraide",
+    "homepage": "https://entraide.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "FGTB wallonne",
+    "homepage": "https://fgtb-wallonne.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "FIAN Belgium",
+    "homepage": "https://fian.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "FMI-PAD Network",
+    "homepage": "https://fmi-pad.net",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Kba Foncaba",
+    "homepage": "https://kba-foncaba.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Frères des Hommes",
+    "homepage": "https://freresdeshommes.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "FUCID",
+    "homepage": "https://fucid.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Help Osra Ethiopia",
+    "homepage": "https://osrae-europe.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Humundi (ex-SOS Faim)",
+    "homepage": "https://humundi.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Ifsi Isvi",
+    "homepage": "https://ifsi-isvi.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Iles de Paix",
+    "homepage": "https://ilesdepaix.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Institut Eco-Conseil",
+    "homepage": "https://eco-conseil.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Intal",
+    "homepage": "https://intal.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "ITECO",
+    "homepage": "https://iteco.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Join for Water",
+    "homepage": "https://joinforwater.ngo",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Kidogos asbl",
+    "homepage": "https://kidogos.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "La Chaloupe",
+    "homepage": "https://lachaloupe.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Le Monde selon les femmes",
+    "homepage": "https://mondefemmes.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Le Logo de LHAC",
+    "homepage": "https://lhac.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Louvain Coopération",
+    "homepage": "https://louvaincooperation.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Médecins du Monde",
+    "homepage": "https://medecinsdumonde.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Mouvement ouvrier chrétien - MOC",
+    "homepage": "https://moc.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Oxfam Belgique",
+    "homepage": "https://oxfambelgique.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Oxfam, Magasins du monde",
+    "homepage": "https://oxfammagasinsdumonde.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "PAC - Agir par la Culture",
+    "homepage": "https://pac-g.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Pro-Action Développement asbl",
+    "homepage": "https://proactiondev.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Quinoa",
+    "homepage": "https://quinoa.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Qu<P><",
+    "homepage": "https://qu<p><",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "RCN Justice & Démocratie",
+    "homepage": "https://rcn-ong.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "SB OverSeas Belgique",
+    "homepage": "https://sboverseas.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Service civil international (SCI)",
+    "homepage": "https://scibelgium.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "class='img-fluid img-thumbnail' />",
+    "homepage": "https://solsoc.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Soralia",
+    "homepage": "https://soralia.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Ucoopia",
+    "homepage": "https://ucoopia.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Via Don Bosco",
+    "homepage": "https://viadonbosco.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Village du monde (asbl Le Coron)",
+    "homepage": "https://levillagedumonde.blogspot.com",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "Viva Salud",
+    "homepage": "https://vivasalud.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "WAPA International",
+    "homepage": "https://wapainternational.org",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "We Social Movements (WSM)",
+    "homepage": "https://wsm.be",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, FR)",
+    "base": "Belgium",
+    "source_directory": "CNCD-11.11.11 member organisations"
+  },
+  {
+    "organisation": "11.11.11 is de koepel van internationale solidariteit en wil uitbuiting de wereld uit. Bekijk",
+    "homepage": "https://ngo-federatie.be/onze-leden/11-11-11/",
+    "category": "Development & humanitarian",
+    "type": "NGO (Belgian, NL)",
+    "base": "Belgium",
+    "source_directory": "ngo-federatie member organisations"
+  },
+  {
+    "organisation": "En savoir plus sur ces finalités",
+    "homepage": "https://cookiedatabase.org",
+    "category": "Civil society & grassroots",
+    "type": "NGO (Brussels, FR)",
+    "base": "Belgium",
+    "source_directory": "CBCS - Brussels social sector"
+  },
+  {
+    "organisation": "Outlook 365",
+    "homepage": "https://outlook.office.com",
+    "category": "Civil society & grassroots",
+    "type": "NGO (Brussels, FR)",
+    "base": "Belgium",
+    "source_directory": "CBCS - Brussels social sector"
+  },
+  {
+    "organisation": "Outlook Live",
+    "homepage": "https://outlook.live.com",
+    "category": "Civil society & grassroots",
+    "type": "NGO (Brussels, FR)",
+    "base": "Belgium",
+    "source_directory": "CBCS - Brussels social sector"
+  },
+  {
+    "organisation": "Banlieues",
+    "homepage": "https://banlieues.be",
+    "category": "Civil society & grassroots",
+    "type": "NGO (Brussels, FR)",
+    "base": "Belgium",
+    "source_directory": "CBCS - Brussels social sector"
+  }
+]

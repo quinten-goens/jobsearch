@@ -42,6 +42,9 @@ def fetch(url: str, *, ttl: int = CACHE_TTL, headers: dict | None = None) -> dic
             "url": r.url,
             "text": text,
             "content_type": ctype,
+            # Kept for freshness checks (Last-Modified); lowercased so callers
+            # don't have to guess at the server's capitalisation.
+            "headers": {k.lower(): v for k, v in r.headers.items()},
         }
     except requests.exceptions.RequestException as e:
         out = {
