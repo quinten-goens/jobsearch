@@ -150,11 +150,19 @@ def _clean(s: str) -> str:
     return re.sub(r"\s+", " ", (s or "")).strip()
 
 
+# Sidebar filter links look exactly like job links -- same anchor, same
+# job-ish words -- but the trailing count gives them away: "Internship (15)",
+# "Policy & EU Affairs (50)". A real posting doesn't end in a bare number.
+FACET_PAT = re.compile(r"\(\s*\d+\s*\)\s*$")
+
+
 def _looks_like_title(text: str) -> bool:
     t = text.lower().strip()
     if len(t) < 6 or len(t) > 140:
         return False
     if any(n == t or t.startswith(n) for n in NOISE):
+        return False
+    if FACET_PAT.search(t):
         return False
     return any(w in t for w in TITLE_WORDS)
 
