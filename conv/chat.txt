@@ -1,0 +1,148 @@
+My girlfriend is searching a job in brussels [Sarah Pernet | LinkedIn](https://www.linkedin.com/in/sarah-pernet/) ; what kind of institutions should she look at for a job?
+Pivoted to direct inquiry, contextualized Brussels job market opportunities
+
+I can't open LinkedIn profiles (the site blocks automated access), so I'm working blind on her background — but I can lay out the Brussels landscape, which is unusual compared to most cities.
+
+Roughly, the employer ecosystem splits into:
+
+    EU institutions — Commission, Parliament, Council, EEAS, plus agencies. Permanent posts go through EPSO competitions (slow, ~1–2 years), but contract agent (CAST), temporary agent, and seconded roles are much faster entry points.
+    The "EU bubble" around them — trade associations and federations (BusinessEurope, industry groups), public affairs consultancies (FleishmanHillard, Kreab, Hume Brophy), law firms with competition/regulatory practices, think tanks (Bruegel, CEPS, EPC, Egmont).
+    NGOs and international orgs — huge concentration: Oxfam, Amnesty EU, WWF EPO, MSF, plus NATO, and various UN offices.
+    Belgian public sector and regional — federal ministries, Brussels-Capital Region, Actiris; often needs FR/NL bilingualism.
+    Corporate — many multinationals keep European HQs here, plus the usual consulting/finance/tech presence.
+    Research and academia — VUB, ULB, KU Leuven Brussels campus, imec, plus EU-funded research programmes.
+
+Which of these is realistic depends a lot on her profile, so:
+
+Q: What's her professional background roughly?
+A: Policy / international relations
+
+Q: Which languages does she work in?
+A: English french spanish a bit of dutch portuguese
+
+Q: Career stage?
+A: 2-5 years experience
+Synthesized multilingual assets with viable EU career pathways
+
+With that profile — policy/IR, mid-early career, and FR/ES on top of English — she's actually well-matched to Brussels. Here's how I'd rank the targets:
+
+The most realistic entry points at 2–5 years
+
+    Trade associations and federations. This is where the volume is. Hundreds of them (BusinessEurope, CEFIC, Digital Europe, Eurogroup for Animals, food/energy/health federations), and they hire "Policy Officer" / "Policy Advisor" roles exactly at her level. EuroBrussels alone currently lists ~41 openings at 3–4 years experience and ~50 at 5+.
+    EuroBrussels
+    Political groups and MEP offices in the Parliament. Accredited Parliamentary Assistant roles are hired directly by MEPs — no concours, no reserve list, and they move fast. Her French and Spanish are a real edge here (French, Spanish, and Latin American MEPs). Group secretariats (S&D, EPP, Renew, Greens) also hire policy advisers.
+    Public affairs consultancies — FleishmanHillard, Kreab, Rud Pedersen, Interel, FTI. They hire at consultant/senior account executive level and it's a well-trodden springboard.
+    NGOs and advocacy — Oxfam EU, WWF EPO, EPHA, human rights and development orgs. Lower pay, but her language set travels well.
+
+EU institutions directly — manage expectations on timing
+
+The permanent-official route is largely blocked this year. The AD5 generalist competition — the main entry point — opened 5 February and closed 10 March 2026, and it drew ~174,900 applicants for 1,490 reserve-list places, a 0.85% success rate. EPSO has also pushed the International affairs specialists competition to 2027.
+Orseu-concours + 2
+
+So the practical route is CAST Permanent (contract agent). It's open-ended with no deadline — you create an EPSO account and enter your profile into the database, with profiles including political affairs/EU policies among others. Recruiting services then shortlist from the database when a need arises, and only shortlisted candidates get invited to the tests. Two things matter: register now, and update the application at least every six months to stay visible in the database. FG III/FG IV are the relevant grades for her.
+europa + 2
+
+Where her Spanish specifically pays off
+
+Worth targeting deliberately rather than treating as a bonus: EEAS and DG INTPA/NEAR Latin America desks, EU–LAC and EU–Mercosur files, development NGOs with Latin American programmes, and the Spanish and Latin American permanent representations/missions to the EU. Also OEI, and the Spanish-speaking diaspora of consultancies. Portuguese, even partial, pairs with this (Brazil/Mercosur, Lusophone Africa).
+
+Dutch matters much less in the EU bubble but a lot if she ever looks at Belgian federal/regional public sector or local corporates — worth continuing but not a blocker.
+
+Practical
+
+    Job boards that actually matter: EuroBrussels and Euractiv Jobs are the two everyone uses; both curate their listings, so the quality is high, and both offer newsletters for new postings. Add eujobs.co, Devex and Impactpool for the international/development side, plus LinkedIn.
+    Substack
+    Brussels runs on networking to an unusual degree — the events circuit (think tank panels, association receptions) generates more offers than cold applications do.
+    One check: EU institution posts require EU citizenship. Associations, NGOs, and consultancies don't, but need a work permit if she's non-EU.
+
+If you can tell me her actual policy area — trade, climate, digital, development, security — I can narrow this to specific organisations worth approaching.
+Reconsidered scope limitations and proposed hybrid verification approach
+
+I didn't, actually — I should correct that rather than let it stand. Nothing in this conversation proposed a Google-search strategy for URLs. The closest thing was the LinkedIn fetch failing with an error message that said "use the search-result snippet, or find an alternative source" — but that was the tool complaining, not me proposing a plan.
+
+That said, the underlying idea is right, and there's a real constraint worth being blunt about: 254 organisations means 254 searches. That's far past what I can do in one go, and doing 20 of them would just give you a list that's verified at the top and guesswork below — worse than one that's honestly labelled throughout.
+
+So here's what I'd do instead, and it's better than either option:
+
+Add a pre-built search link for every row. A column with https://www.google.com/search?q=Protection+International+Brussels+jobs+vacancies for each organisation. One click, always resolves, never rots when an org redesigns its site, and requires me to fabricate nothing. Careers pages are exactly the kind of URL that moves constantly — a hardcoded /vacancies/ path I half-remember is less reliable than a search that finds the current one.
+
+Then keep the direct URL column too, with the confidence flag, so she has both: the likely-direct link, and a guaranteed fallback.
+
+Let me verify the highest-value uncertain ones properly while I'm at it.
+Refined search strategy and consolidated promising job board sources
+
+That's instructive. My guess for Protection International was /jobs/ — the real page is /vacancies/. Which is exactly the failure mode I was worried about, and it validates doing both columns rather than trusting my recall.
+
+The search also turned up three things worth adding:
+
+    ProtectDefenders.eu — the EU Human Rights Defenders Mechanism, Brussels, and its postings explicitly ask for Spanish speakers.
+    OMCT Europe (World Organisation Against Torture) — Brussels office running a human rights defenders programme.
+    jobsin.brussels — a curated board covering NGOs, international organisations and political parties that wasn't on my list.
+
+One correction to the sheet, too: I'd said Protection International works in Mexico. Its permanent presence is Colombia, Guatemala, DRC, Kenya and Thailand, with non-permanent activity in ~30 more countries. Still an outstanding fit — Colombia and Guatemala, Spanish-working, Brussels HQ — but I shouldn't overstate it.
+Ran 2 commands, created a file, read a file
+
+282 rows (up from 254), 27 boards (up from 25).
+
+Splits applied — 16 bundled rows became individual organisations: the five LatAm missions to the EU are now separate; RTBF and VRT; Fairtrade International and Fairtrade Belgium; the four Brussels communes; COCOF and VGC; Bozar and KANAL; the three Brussels international schools; RSF, Global Witness and Fair Trials; the three Belgian party think tanks; the four MEP committee groupings; Euraxess and CORDIS. Each carries its own base, roles, rationale and language edge rather than inheriting a generic one.
+
+Two link columns per row:
+
+    Direct link — 133 marked High confidence, 148 marked Check (orange). The Check ones are smaller orgs and reconstructed careers paths. Some will be wrong.
+    Search link — a pre-built Google query per organisation. This is the column to trust.
+
+The honest summary: roughly half the direct links are educated guesses. The Protection International case is the proof — I'd have sent her to a 404. I've put that example in the Dashboard so she understands why the second column exists rather than assuming it's redundant.
+
+If you want the direct links actually verified, that's a real piece of work — 282 searches. Two options:
+
+    Give me a subset — the 64 Priority 1 rows, or just the ones marked Check within Priority 1. That's a tractable batch I can genuinely confirm.
+    Use the Research feature for the full sweep — it's built for exactly this volume, and it'll do it properly rather than me half-doing it across many turns.
+
+Which would you prefer?
+Sarah pernet brussels job search
+Spreadsheet · XLSX 
+
+Write and run a code to see if the listed urls 404 then correct
+Identified sandbox limitations and devised local solution for URL validation
+
+Let me try it and see what the sandbox actually allows.
+Devised local script to validate URLs and handle bot-blocking nuances
+
+Confirmed, and it's definitive: x-deny-reason: host_not_allowed on every real domain, 200 on the whitelisted control. My sandbox can only reach package registries and GitHub — every organisation domain is blocked at the proxy. So I cannot check these links myself, and I can't correct what I can't check.
+
+What I can do is hand you the checker to run on your own machine, where there's no such restriction.
+Created a file, ran a command, read a file
+
+Both files are above. To run it:
+
+pip install openpyxl requests
+python check_links.py Sarah_Pernet_Brussels_Job_Search.xlsx
+
+It checks all 282 URLs across 12 threads (~1–2 minutes), then writes ..._CHECKED.xlsx with three new columns:
+
+    S — HTTP status
+    T — Final URL (populated only when the site redirected somewhere new)
+    U — Verdict, colour-coded: green OK, amber REDIRECTED, red DEAD
+
+Red means replace the link — use the Search link column. Amber means the org moved; paste column T over column P.
+
+Two things I built in deliberately:
+
+HEAD-then-GET fallback. A lot of servers reject HEAD with a 403 or 405 while serving GET perfectly well. Checking with HEAD alone would produce a pile of false deaths.
+
+BLOCKED is a separate verdict from DEAD. Cloudflare, LinkedIn, and several .gov and .europa.eu domains reject scripted requests no matter how valid the URL is. Those get marked BLOCKED and left alone rather than being condemned. Expect a fair number — don't read them as broken links.
+
+My prediction, for what it's worth: most of the 133 High-confidence rows will come back OK, and a meaningful share of the 148 Check rows will come back DEAD or REDIRECTED — the small Belgian NGOs and the reconstructed /vacancies/ and /careers/ paths are where I was guessing. Send me the verdict tallies and I'll fix the dead ones properly with targeted searches, which at that point will be a tractable number rather than 282.
+Check links
+PY 
+Sarah pernet brussels job search
+Spreadsheet · XLSX 
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+Artifacts
+Check links
+PY 
+Sarah pernet brussels job search
+Spreadsheet · XLSX 
+

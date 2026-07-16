@@ -1,0 +1,566 @@
+[
+  {
+    "id": 1,
+    "organisation": "Selor language exams (Article 7/12)",
+    "category": "Belgian public",
+    "priority": 1,
+    "old_url": "https://www.werkenvoor.be/en/language-certificates",
+    "careers_url": "https://werkenvoor.be/nl/jobs",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://werkenvoor.be/nl/jobs",
+        "title": "Alle vacatures | Werkenvoor.be",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.vdab.be/vindeenjob/jobs/jobs-in-belgium",
+        "title": "3854 English jobs in Flanders in Belgium | VDAB",
+        "score": 15,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 3 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://werkenvoor.be/nl",
+        "title": "Homepage | Werkenvoor.be",
+        "score": 15,
+        "reasons": [
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 2 job signal(s) (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.vdab.be/vindeenjob/jobs/english-speaking-jobs",
+        "title": "4143 jobs voor english speaking jobs gevonden | VDAB.be",
+        "score": 12,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://travaillerpour.be/fr/jobs",
+        "title": "Toutes les offres d'emploi | Travaillerpour.be",
+        "score": 10,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://belgiumhandbook.com/applying-for-public-sector-jobs-selor-as-an-eu-citizen/",
+        "title": "Applying for Public Sector Jobs (Selor) as an EU Citizen",
+        "score": 3,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Awerkenvoor.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 2,
+    "organisation": "FPS Foreign Affairs (Belgium)",
+    "category": "Belgian public",
+    "priority": 2,
+    "old_url": "https://diplomatie.belgium.be/en/jobs",
+    "careers_url": "https://diplomatie.belgium.be/nl/werken-voor-fod-buitenlandse-zaken",
+    "confidence": "high",
+    "score": 21,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://diplomatie.belgium.be/nl/werken-voor-fod-buitenlandse-zaken",
+        "title": "Werken voor FOD Buitenlandse Zaken - FPS Foreign Affairs",
+        "score": 21,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://unitedstates.diplomatie.belgium.be/en/embassy-and-consulates/vacancies-and-internships",
+        "title": "Vacancies and internships | FPS Foreign Affairs - Belgium",
+        "score": 14,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+3)",
+          "looks like a non-Brussels office (-8)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://fco.tal.net/vx/appcentre-ext/candidate/jobboard/vacancy/1/adv/",
+        "title": "Search Jobs - FCDO",
+        "score": 12,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 3 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://diplomatie.belgium.be/en",
+        "title": "Homepage | FPS Foreign Affairs - Foreign Trade and Development Cooperation",
+        "score": 9,
+        "reasons": [
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://unjobs.org/duty_stations/belgium",
+        "title": "Vacancies in Belgium - UNjobs",
+        "score": 1,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Adiplomatie.belgium.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 3,
+    "organisation": "werkenvoor.be / travaillerpour.be",
+    "category": "Belgian public",
+    "priority": 2,
+    "old_url": "https://www.werkenvoor.be",
+    "careers_url": "https://werkenvoor.be/nl/jobs",
+    "confidence": "high",
+    "score": 27,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://werkenvoor.be/nl/jobs",
+        "title": "Alle vacatures | Werkenvoor.be",
+        "score": 27,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://travaillerpour.be/fr/jobs",
+        "title": "Toutes les offres d'emploi | Travaillerpour.be",
+        "score": 20,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.vdab.be/vindeenjob/jobs/jobs-in-belgium",
+        "title": "3854 English jobs in Flanders in Belgium | VDAB",
+        "score": 15,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 3 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://travaillerpour.be/language_selection_page?destination=/jobs",
+        "title": "Taalkeuze | Werkenvoor.be - travaillerpour.be",
+        "score": 15,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.vdab.be/vindeenjob/jobs/english-speaking-jobs",
+        "title": "4143 jobs voor english speaking jobs gevonden | VDAB.be",
+        "score": 12,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Awerkenvoor.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 4,
+    "organisation": "Actiris",
+    "category": "Belgian public",
+    "priority": 3,
+    "old_url": "https://www.actiris.brussels",
+    "careers_url": "https://www.actiris.brussels/fr/citoyens/offres-d-emploi/",
+    "confidence": "high",
+    "score": 24,
+    "reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.actiris.brussels/fr/citoyens/offres-d-emploi/",
+        "title": "Trouvez un emploi avec Actiris - actiris.brussels",
+        "score": 24,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.actiris.brussels/nl/burgers/vacatures/",
+        "title": "Vind een job met Actiris - actiris.brussels",
+        "score": 24,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.actiris.brussels/fr/citoyens",
+        "title": "Citoyens | Actiris - actiris.brussels",
+        "score": 15,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aactiris.brussels+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 5,
+    "organisation": "COCOF (Commission communautaire francaise)",
+    "category": "Belgian public",
+    "priority": 3,
+    "old_url": "https://ccf.brussels",
+    "careers_url": "https://ccf.brussels/qui-sommes-nous/ressources-humaines/offres-demploi/",
+    "confidence": "high",
+    "score": 28,
+    "reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://ccf.brussels/qui-sommes-nous/ressources-humaines/offres-demploi/",
+        "title": "Offres d'emploi - Commission communautaire française (COCOF)",
+        "score": 28,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://ccf.brussels/category/offres-demploi/",
+        "title": "Offres d'emploi - Commission communautaire française (COCOF)",
+        "score": 25,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 11,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.brussels.be/current-vacancies",
+        "title": "Current vacancies - City of Brussels",
+        "score": 11,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://unjobs.org/duty_stations/bru",
+        "title": "Vacancies in Brussels, Belgium - UNjobs",
+        "score": 1,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Accf.brussels+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 6,
+    "organisation": "Commune d'Evere",
+    "category": "Belgian public",
+    "priority": 3,
+    "old_url": "https://www.evere.brussels",
+    "careers_url": "https://evere.talentfinder.be/fr/index.aspx",
+    "confidence": "medium",
+    "score": 15,
+    "reasons": [
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://evere.talentfinder.be/fr/index.aspx",
+        "title": "Offres d'emploi récentes | Administration communale d'Evere",
+        "score": 15,
+        "reasons": [
+          "domain matches org name (+4)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 10,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://eu-careers.europa.eu/en/job-opportunities/open-vacancies/cast",
+        "title": "Job vacancies | EU Careers - Europa",
+        "score": 10,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.eurobrussels.com/",
+        "title": "EuroBrussels: Find EU Jobs in Brussels and EU Institutions",
+        "score": 7,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobs.evere.be/index.aspx",
+        "title": "Offres d'emploi récentes | Administration communale d'Evere",
+        "score": 7,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobs.evere.be/fr/home.aspx",
+        "title": "Offres d'emploi | Administration communale d'Evere",
+        "score": 4,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aevere.brussels+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  }
+]
