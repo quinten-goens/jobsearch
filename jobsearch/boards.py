@@ -179,7 +179,11 @@ def euractiv() -> list[dict]:
                     category = _clean(p)
             out.append({
                 "title": title,
-                "employer": "",  # not on the card; only on the detail page
+                # Euractiv publishes no employer name anywhere machine-readable
+                # -- not on the card, the detail page, JSON-LD or meta tags.
+                # The only trace is the logo image, whose filename is often
+                # "logo-1.png". Left blank rather than guessed at.
+                "employer": "",
                 "location": _clean(location),
                 "category": _clean(category),
                 "url": href,

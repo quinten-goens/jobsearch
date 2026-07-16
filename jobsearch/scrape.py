@@ -12,6 +12,7 @@ show how much to trust it:
 import json
 import re
 import urllib.parse
+from datetime import date, timedelta
 
 from bs4 import BeautifulSoup
 
@@ -42,6 +43,107 @@ NOISE = (
     "home", "search", "filter", "login", "sign in", "register", "apply now",
     "share", "print", "download", "next", "previous", "français", "nederlands",
 )
+
+# Publication / closing dates as they appear near a listing. Careers pages
+# write dates every way imaginable, so try ISO first (unambiguous), then the
+# common EU day-month-year spellings in EN/FR/NL.
+MONTHS = {
+    m: i for i, ms in enumerate([
+        ("january", "jan", "janvier", "januari"),
+        ("february", "feb", "février", "fevrier", "februari"),
+        ("march", "mar", "mars", "maart"),
+        ("april", "apr", "avril"),
+        ("may", "mai", "mei"),
+        ("june", "jun", "juin", "juni"),
+        ("july", "jul", "juillet", "juli"),
+        ("august", "aug", "août", "aout", "augustus"),
+        ("september", "sep", "sept", "septembre"),
+        ("october", "oct", "octobre", "oktober"),
+        ("november", "nov", "novembre"),
+        ("december", "dec", "décembre", "decembre"),
+    ], start=1) for m in ms
+}
+_MONTH_RE = "|".join(sorted(MONTHS, key=len, reverse=True))
+
+DATE_PATS = (
+    re.compile(r"\b(\d{4})-(\d{2})-(\d{2})\b"),                       # 2026-07-16
+    re.compile(rf"\b(\d{{1,2}})\s+({_MONTH_RE})\.?\s+(\d{{4}})\b", re.I),  # 16 July 2026
+    re.compile(rf"\b({_MONTH_RE})\.?\s+(\d{{1,2}}),?\s+(\d{{4}})\b", re.I), # July 16, 2026
+    re.compile(r"\b(\d{1,2})[/.](\d{1,2})[/.](\d{4})\b"),             # 16/07/2026
+)
+
+POSTED_HINT = re.compile(
+    r"(posted|published|online since|date de publication|gepubliceerd|"
+    r"publication date)", re.I
+)
+DEADLINE_HINT = re.compile(
+    r"(deadline|closing|closes|apply by|expires|date limite|uiterste|"
+    r"limite de candidature|until)", re.I
+)
+
+
+def _parse_date(text: str) -> str:
+    """First parseable date in `text` -> ISO, else ''."""
+    for pat in DATE_PATS:
+        m = pat.search(text)
+        if not m:
+            continue
+        g = m.groups()
+        try:
+            if pat is DATE_PATS[0]:
+                y, mo, d = int(g[0]), int(g[1]), int(g[2])
+            elif pat is DATE_PATS[1]:
+                d, mo, y = int(g[0]), MONTHS[g[1].lower().rstrip(".")], int(g[2])
+            elif pat is DATE_PATS[2]:
+                mo, d, y = MONTHS[g[0].lower().rstrip(".")], int(g[1]), int(g[2])
+            else:
+                # Day-first: the EU convention, and what these sites use.
+                d, mo, y = int(g[0]), int(g[1]), int(g[2])
+            return date(y, mo, d).isoformat()
+        except (ValueError, KeyError):
+            continue
+    return ""
+
+
+def _relative_date(text: str) -> str:
+    """'Posted 3 days ago' -> ISO date."""
+    m = re.search(r"(\d+)\s*(day|week|month|hour|minute)s?\s+ago", text, re.I)
+    if m:
+        n, unit = int(m.group(1)), m.group(2).lower()
+        days = {"minute": 0, "hour": 0, "day": 1, "week": 7, "month": 30}[unit] * n
+        return (date.today() - timedelta(days=days)).isoformat()
+    if re.search(r"\b(today|just posted|new)\b", text, re.I):
+        return date.today().isoformat()
+    if re.search(r"\byesterday\b", text, re.I):
+        return (date.today() - timedelta(days=1)).isoformat()
+    return ""
+
+
+def _dates_near(el) -> tuple[str, str]:
+    """(posted, deadline) from a listing element and its immediate context."""
+    posted = deadline = ""
+    # <time datetime="..."> is the most reliable signal when present.
+    for t in el.find_all("time"):
+        iso = (t.get("datetime") or "")[:10]
+        if re.match(r"\d{4}-\d{2}-\d{2}", iso):
+            blob = (t.get_text(" ", strip=True) + " " +
+                    (t.parent.get_text(" ", strip=True) if t.parent else ""))
+            if DEADLINE_HINT.search(blob) and not posted:
+                deadline = deadline or iso
+            else:
+                posted = posted or iso
+
+    text = el.get_text(" ", strip=True)
+    # Split on the hint words so a "Deadline 3 Sept" doesn't get read as the
+    # publication date, and vice versa.
+    for sentence in re.split(r"(?<=[.;|])\s+|\n", text):
+        if DEADLINE_HINT.search(sentence) and not deadline:
+            deadline = _parse_date(sentence)
+        elif POSTED_HINT.search(sentence) and not posted:
+            posted = _parse_date(sentence) or _relative_date(sentence)
+    if not posted:
+        posted = _relative_date(text)
+    return posted, deadline
 
 
 def _clean(s: str) -> str:
@@ -217,20 +319,57 @@ def _generic_jobs(soup: BeautifulSoup, base: str) -> list[dict]:
         ):
             continue
 
+        # Dates live on the surrounding row, not the anchor itself.
+        row = a.find_parent(["li", "article", "tr", "div"]) or a
+        posted, deadline = _dates_near(row)
+
         seen.add(full)
         out.append({
             "title": text,
             "url": full,
             "location": "",
-            "posted": "",
+            "posted": posted,
+            "deadline": deadline,
         })
     return out
 
 
 # --------------------------------------------------------------------- driver
 
-def scrape_page(url: str) -> tuple[list[dict], str]:
-    """Return (jobs, method). Never raises."""
+# Pages that say, in so many words, that there is nothing open right now.
+# Distinguishing this from "the scraper failed" matters: most small NGOs post a
+# job every few months, so an empty careers page is the normal case, not a bug.
+EMPTY_STATE = re.compile(
+    r"(no (current |open )?(vacanc|job|position|opening)\w*"
+    r"|no vacancies at this time|there are currently no"
+    r"|pas d'offre|aucune offre|geen vacature"
+    r"|check back (later|soon)|at the moment)",
+    re.I,
+)
+
+
+def _extract(html: str, base: str) -> tuple[list[dict], str, bool]:
+    """(jobs, method, looks_empty) from a page's HTML."""
+    soup = BeautifulSoup(html, "lxml")
+
+    jobs = _jsonld_jobs(soup, base)
+    if jobs:
+        return jobs, "jsonld", False
+
+    body = soup.get_text(" ", strip=True)
+    looks_empty = bool(EMPTY_STATE.search(body))
+
+    for tag in soup(["script", "style", "nav", "footer", "header"]):
+        tag.decompose()
+    return _generic_jobs(soup, base), "generic", looks_empty
+
+
+def scrape_page(url: str, *, allow_render: bool = True) -> tuple[list[dict], str]:
+    """Return (jobs, method). Never raises.
+
+    Tries the cheap paths first and only pays for headless rendering when they
+    come up empty and the page doesn't say it has no openings.
+    """
     if not url:
         return [], "no-url"
 
@@ -246,13 +385,22 @@ def scrape_page(url: str) -> tuple[list[dict], str]:
     if not r["ok"]:
         return [], f"fetch-failed:{r['status']}"
 
-    soup = BeautifulSoup(r["text"], "lxml")
-
-    jobs = _jsonld_jobs(soup, r["url"])
+    jobs, method, looks_empty = _extract(r["text"], r["url"])
     if jobs:
-        return jobs, "jsonld"
+        return jobs, method
+    if looks_empty:
+        return [], "empty-page"
 
-    for tag in soup(["script", "style", "nav", "footer", "header"]):
-        tag.decompose()
-    jobs = _generic_jobs(soup, r["url"])
-    return jobs, "generic"
+    # Nothing found and no "we have no openings" note: the listings may be
+    # client-side rendered (Vue/React), so retry through a real browser.
+    if allow_render:
+        from .render import render
+
+        rr = render(url)
+        if rr["ok"] and rr["text"]:
+            jobs, method, looks_empty = _extract(rr["text"], rr["url"])
+            if jobs:
+                return jobs, f"rendered:{method}"
+            if looks_empty:
+                return [], "empty-page"
+    return [], "no-jobs-found"

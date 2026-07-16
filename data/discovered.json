@@ -562,5 +562,2466 @@
     ],
     "search_url": "https://www.google.com/search?q=site%3Aevere.brussels+jobs+OR+vacancies+OR+careers",
     "method": "search+verify"
+  },
+  {
+    "id": 7,
+    "organisation": "Commune de Molenbeek-Saint-Jean",
+    "category": "Belgian public",
+    "priority": 3,
+    "old_url": "https://www.molenbeek.irisnet.be",
+    "careers_url": "https://molenbeekadm.irisnet.be/fr/je-vis/emploi-formation/emploi/offres-demploi-de-ladministration-communale",
+    "confidence": "high",
+    "score": 22,
+    "reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+3)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://molenbeekadm.irisnet.be/fr/je-vis/emploi-formation/emploi/offres-demploi-de-ladministration-communale",
+        "title": "Offres d'emploi de l'administration communale — Français",
+        "score": 22,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+3)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://pro.guidesocial.be/jobs/molenbeek-saint-jean-0-26.html",
+        "title": "Offres d'emploi : Molenbeek-Saint-Jean",
+        "score": 9,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.naes.com/careers/",
+        "title": "Careers - NAES",
+        "score": 8,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.bio-techne.com/about/careers",
+        "title": "Careers at Bio-Techne | Jobs in Biotech",
+        "score": -47,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 0)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Amolenbeek.irisnet.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 8,
+    "organisation": "Commune de Saint-Josse-ten-Noode",
+    "category": "Belgian public",
+    "priority": 3,
+    "old_url": "https://www.stjosse.irisnet.be",
+    "careers_url": "https://jobsin.brussels/",
+    "confidence": "medium",
+    "score": 11,
+    "reasons": [
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 5 job signal(s) (+6)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 11,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://sjtn.brussels/fr/emplois-formations/offres-demploi",
+        "title": "Offres d'emploi | Saint-Josse-ten-Noode",
+        "score": 11,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://eu-careers.europa.eu/en/temporary-agents-other-institutions-vacancies",
+        "title": "Temporary positions in the EU | EU Careers",
+        "score": 10,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://eu-careers.europa.eu/en/job-opportunities/open-vacancies",
+        "title": "Temporary job vacancies | EU Careers - Europa",
+        "score": 9,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://sjtn.brussels/fr/emplois-formations/emplois/travailler-dans-ladministration-communale",
+        "title": "Travailler dans l'Administration communale - Saint-Josse-ten-Noode",
+        "score": 5,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://sjtnsta.irisnet.be/fr/emplois-formations/offres-demploi",
+        "title": "Offres d'emploi | Saint-Josse-ten-Noode",
+        "score": -37,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "matches the sheet's known domain (+3)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 0)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Astjosse.irisnet.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 9,
+    "organisation": "Commune de Schaerbeek",
+    "category": "Belgian public",
+    "priority": 3,
+    "old_url": "https://www.1030.be",
+    "careers_url": "https://www.1030.be/fr/offres-demploi",
+    "confidence": "high",
+    "score": 20,
+    "reasons": [
+      "careers-shaped path (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.1030.be/fr/offres-demploi",
+        "title": "Offres d'emploi | Schaerbeek - 1030.be",
+        "score": 20,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.1030.be/nl/vacatures",
+        "title": "Vacatures | Schaerbeek",
+        "score": 20,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.brussels.be/current-vacancies",
+        "title": "Current vacancies - City of Brussels",
+        "score": 12,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.vdab.be/vindeenjob/jobs/1030-schaarbeek",
+        "title": "127 jobs gevonden in Schaarbeek (1030) op VDAB.be",
+        "score": 12,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 9,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.jobat.be/en",
+        "title": "Find a job | Jobat.be",
+        "score": -50,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3A1030.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 10,
+    "organisation": "VGC (Vlaamse Gemeenschapscommissie)",
+    "category": "Belgian public",
+    "priority": 3,
+    "old_url": "https://www.vgc.be",
+    "careers_url": "https://www.vgc.be/vacatures",
+    "confidence": "high",
+    "score": 27,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.vgc.be/vacatures",
+        "title": "Vacatures | Vlaamse Gemeenschapscommissie - vgc.be",
+        "score": 27,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.vgc.be/vacatures/vacatures-bij-de-vgc",
+        "title": "Vacatures bij de VGC | Vlaamse Gemeenschapscommissie",
+        "score": 26,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://vgcareers.virgingalactic.com/global/en/home",
+        "title": "Careers at Virgin Galactic | Virgin Galactic jobs",
+        "score": 11,
+        "reasons": [
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.n22.brussels/vacatures",
+        "title": "Vacatures | n22 - n22.brussels",
+        "score": 10,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search rank #3 (+1)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.volkswagen-group.com/en/careers-with-the-group-16105",
+        "title": "Careers with the Group",
+        "score": 7,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobs.volkswagen-group.com/",
+        "title": "Volkswagen Group Job Portal",
+        "score": 5,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Avgc.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 11,
+    "organisation": "talent.brussels",
+    "category": "Belgian public",
+    "priority": 3,
+    "old_url": "https://talent.brussels",
+    "careers_url": "https://www.talent.brussels/nl/vacatures",
+    "confidence": "high",
+    "score": 26,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.talent.brussels/nl/vacatures",
+        "title": "Vacatures | talent.brussels",
+        "score": 26,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.talent.brussels/fr",
+        "title": "Trouver un emploi | talent.brussels",
+        "score": 20,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 11,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.brussels.be/current-vacancies",
+        "title": "Current vacancies - City of Brussels",
+        "score": 11,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://eujobsalert.com/locations/brussels/",
+        "title": "EU Jobs, Vacancies & Careers in Brussels: 192 Open 2026",
+        "score": 9,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 4 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.eurobrussels.com/",
+        "title": "EuroBrussels: Find EU Jobs in Brussels and EU Institutions",
+        "score": 5,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Atalent.brussels+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 12,
+    "organisation": "ICF Next",
+    "category": "Comms contractors",
+    "priority": 1,
+    "old_url": "https://www.icf.com/careers",
+    "careers_url": "https://www.icf.com/next/careers",
+    "confidence": "high",
+    "score": 21,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.icf.com/next/careers",
+        "title": "Careers — Find out what's Next | ICF",
+        "score": 21,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://careers.icf.com/us/en",
+        "title": "Career opportunities at ICF",
+        "score": 12,
+        "reasons": [
+          "matches the sheet's known domain (+3)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://careers.icf.com/us/en/search-results",
+        "title": "Find Job Openings at ICF | Careers",
+        "score": 5,
+        "reasons": [
+          "matches the sheet's known domain (+3)",
+          "looks like a non-Brussels office (-8)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://unjobs.org/organizations/ifc",
+        "title": "Vacancies with IFC - International Finance Corporation | UNjobs",
+        "score": 1,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://careers.icf.com/us/en/icf-next-in-europe",
+        "title": "ICF Next | Find your resonance - careers.icf.com",
+        "score": -1,
+        "reasons": [
+          "matches the sheet's known domain (+3)",
+          "looks like a non-Brussels office (-8)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aicf.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 13,
+    "organisation": "Mostra",
+    "category": "Comms contractors",
+    "priority": 1,
+    "old_url": "https://www.mostra.com",
+    "careers_url": "https://www.brussels.be/current-vacancies",
+    "confidence": "medium",
+    "score": 12,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.brussels.be/current-vacancies",
+        "title": "Current vacancies - City of Brussels",
+        "score": 12,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 10,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://eujobsalert.com/locations/brussels/",
+        "title": "EU Jobs, Vacancies & Careers in Brussels: 183 Open 2026",
+        "score": 9,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 4 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://vistracorp.com/careers/",
+        "title": "Careers - Vistra Corp.",
+        "score": 7,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://careers.monster.com/en",
+        "title": "Monster | Job Search",
+        "score": 1,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.monster.com/",
+        "title": "Monster Jobs Search - Find Jobs Near Me | Monster.com",
+        "score": -51,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Amostra.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 14,
+    "organisation": "Ogilvy Social.Lab",
+    "category": "Comms contractors",
+    "priority": 1,
+    "old_url": "https://www.ogilvy.com/be",
+    "careers_url": "https://www.ogilvy.com/careers",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.ogilvy.com/careers",
+        "title": "careers - Ogilvy",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.ogilvy.com/be/careers",
+        "title": "careers - Ogilvy Belgium",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://job-boards.greenhouse.io/sociallab",
+        "title": "Jobs at Ogilvy Social.Lab - Greenhouse Software",
+        "score": 14,
+        "reasons": [
+          "hosted on a known ATS (+6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.ogilvyearlycareers.com/",
+        "title": "Home | Ogilvy Early Careers",
+        "score": 12,
+        "reasons": [
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://careers.oreillyauto.com/us/en/c/stores-jobs",
+        "title": "Stores jobs | Stores jobs at O'Reilly Auto Parts",
+        "score": -7,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "looks like a non-Brussels office (-8)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aogilvy.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 15,
+    "organisation": "Tipik (Sword Group)",
+    "category": "Comms contractors",
+    "priority": 1,
+    "old_url": "https://www.tipik.eu",
+    "careers_url": "https://tipik.eu/jobs/",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://tipik.eu/jobs/",
+        "title": "Jobs - Tipik Communication Agency",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://tipik.eu/",
+        "title": "Tipik Communication Agency",
+        "score": 11,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://eu-careers.europa.eu/en/job-opportunities/open-vacancies/cast",
+        "title": "Job vacancies | EU Careers - Europa",
+        "score": 10,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 9,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.tipico-careers.com/en/jobs/",
+        "title": "Find your role - Tipico Careers",
+        "score": 7,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Atipik.eu+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 16,
+    "organisation": "Burson (ex-Hill+Knowlton / BCW)",
+    "category": "Comms contractors",
+    "priority": 2,
+    "old_url": "https://www.bursonglobal.com/careers/",
+    "careers_url": "https://www.bursonglobal.com/careers",
+    "confidence": "high",
+    "score": 25,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.bursonglobal.com/careers",
+        "title": "Careers | Burson",
+        "score": 25,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.bursonglobal.com/careers/jobs?gh_jid=5019206008",
+        "title": "Internship 2026 - Belgian media and public relations (FR/NL/EN) Belgium ...",
+        "score": 22,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search rank #2 (+2)",
+          "page text has 3 job signal(s) (+6)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.careerjet.be/bedrijf/Burson/jobs",
+        "title": "Burson Jobs en Carrières - careerjet.be",
+        "score": 8,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Abursonglobal.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 17,
+    "organisation": "Cecoforma",
+    "category": "Comms contractors",
+    "priority": 2,
+    "old_url": "https://www.cecoforma.com",
+    "careers_url": "https://jobsin.brussels/",
+    "confidence": "medium",
+    "score": 10,
+    "reasons": [
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 5 job signal(s) (+6)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 10,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://join.sephora.com/careers",
+        "title": "Careers at sephora.com | sephora.com",
+        "score": 9,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://coforma.io/careers",
+        "title": "Careers - Coforma",
+        "score": 8,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.cecoenviro.com/careers/",
+        "title": "Careers - CECO Environmental",
+        "score": 8,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.cecoforma.com/jobs",
+        "title": "Want to join the team? - Cecoforma",
+        "score": -31,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "fetch failed (HTTP 0)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://cecoforma.com/",
+        "title": "Cecoforma",
+        "score": -40,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search rank #3 (+1)",
+          "fetch failed (HTTP 0)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acecoforma.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 18,
+    "organisation": "Grayling Brussels",
+    "category": "Comms contractors",
+    "priority": 2,
+    "old_url": "https://grayling.com/careers/",
+    "careers_url": "https://grayling.com/join-us/",
+    "confidence": "high",
+    "score": 20,
+    "reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://grayling.com/join-us/",
+        "title": "Join us | Grayling",
+        "score": 20,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobs.grainger.com/",
+        "title": "Grainger Careers: We Keep The World Working®",
+        "score": 4,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobs.grainger.com/viewalljobs/",
+        "title": "View all jobs - Grainger Careers: We Keep The World Working®",
+        "score": 3,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Agrayling.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 19,
+    "organisation": "Acumen Public Affairs",
+    "category": "Comms contractors",
+    "priority": 3,
+    "old_url": "https://www.acumenpa.com",
+    "careers_url": "https://acumenpa.com/careers/",
+    "confidence": "high",
+    "score": 25,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://acumenpa.com/careers/",
+        "title": "Careers | Acumen Public Affairs",
+        "score": 25,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobsin.brussels/organisations/acumen-public-affairs/",
+        "title": "Jobs at Acumen Public Affairs in Brussels | Jobs in Brussels",
+        "score": 12,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 3 job signal(s) (+6)",
+          "page title says careers (+4)",
+          "explicitly lists zero openings — still the right page (+2)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.governmentjobs.com/careers/pabureau",
+        "title": "Commonwealth of PA - Opportunities for All Job Seekers | Sorted by Job ...",
+        "score": 6,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.eurobrussels.com/jobs_at/Acumen_Public_Affairs/359",
+        "title": "Jobs at Acumen Public Affairs - EuroBrussels",
+        "score": 5,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://careers.employment.pa.gov/",
+        "title": "Commonwealth Careers",
+        "score": 4,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://duckduckgo.com/y.js?ad_domain=execunet.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=DevYv9QEMowGPaleNxiWP8c0N%2DPWNeT8cwZyetdCdK9klzw_h0%2DVeYFnviaU09P81KNZAFOzP2BFbYP4TJlUikxprZtHk2GeRzUhctiV6YCvGMhssm8nC2JJPiHQyjCFAjqvvIsVJdGjnNe6qd4wK7vpIz9rKJ2amqqNUOo7_J0.T_3Z90Fkt2D7g4b064MTqg&rut=1295b723e1dc3df83b7c8a985892ffa6c31e0df7abaa94738419da5aa99d8b9e&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De856q8sVG6LEQE0xDJBtpcSjVUCUwTSx7Bl1ZGE29UytuLvhgcbmMvXNIPNXSgOnN4Mk6ve7aHFfnVKuBo%2DafcDV_CItgZ7s1pDPjpkP9c9veoFqvzCyw2SRJIKDamv0%2D69b3xKXk2Sy4dNadXb2PDs65XIauKhZq5Li9L8S8aJzOuKkanFHq4FoSOhDjTPG30UtkKQZYKyC1CXYuahqu5qOHCNFo%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuZXhlY3VuZXQuY29tJTJmZXhlY3V0aXZlLWpvYi1zZWFyY2hlcyUyZiUzZndlbGNvbWUlM2QyMzQ3NyUyNm1zY2xraWQlM2Q5YWUxZDk0OTFhZjUxYzFkMTZkM2IzMTA1YTM0MDQ2MiUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZDIzNDc3JTI1MjAtLSUyNTIwam9iJTI1MjBwb3MuLSUyNTIwYnJvYWQlMjZ1dG1fdGVybSUzZGdlbmVyYWwlMjUyMG1hbmFnZXIlMjUyMGpvYnMlMjZ1dG1fY29udGVudCUzZENFTyUyNTIwam9iKHMp%26rlid%3D9ae1d9491af51c1d16d3b3105a340462&vqd=4-290531450840055712503110861056387212202&iurl=%7B1%7DIG%3D60D4FA35AF3F4C8AAF9EB8786B573A32%26CID%3D2BD0B07369CD652D3181A7EB68C3643D%26ID%3DDevEx%2C5039.1",
+        "title": "Executive Job Search - Senior Executive Positions",
+        "score": -51,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "fetch failed (HTTP 0)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aacumenpa.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 20,
+    "organisation": "Aula Europe",
+    "category": "Comms contractors",
+    "priority": 3,
+    "old_url": "https://www.aula-europe.eu",
+    "careers_url": "https://eu-careers.europa.eu/en/job-opportunities/open-vacancies/cast",
+    "confidence": "medium",
+    "score": 12,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://eu-careers.europa.eu/en/job-opportunities/open-vacancies/cast",
+        "title": "Job vacancies | EU Careers - Europa",
+        "score": 12,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://aulaeurope.eu/careers",
+        "title": "Aula Europe - Get inside the EU",
+        "score": 11,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.ela.europa.eu/en/vacancies",
+        "title": "Vacancies | European Labour Authority",
+        "score": 10,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://eujobsalert.com/locations/brussels/",
+        "title": "EU Jobs, Vacancies & Careers in Brussels: 183 Open 2026",
+        "score": 9,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 4 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://eujobsalert.com/",
+        "title": "EU Jobs 2026: 599 Open Positions at EU Institutions",
+        "score": 8,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://aulaeurope.eu/",
+        "title": "Aula Europe — Brussels Public Affairs Consultancy",
+        "score": 7,
+        "reasons": [
+          "domain matches org name (+4)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aaula-europe.eu+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 21,
+    "organisation": "Deloitte Digital EU",
+    "category": "Comms contractors",
+    "priority": 3,
+    "old_url": "https://www.deloittedigital.com",
+    "careers_url": "https://www.deloitte.com/global/en/careers/job-search.html",
+    "confidence": "high",
+    "score": 18,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.deloitte.com/global/en/careers/job-search.html",
+        "title": "Welcome to Careers at Deloitte",
+        "score": 18,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.deloitte.com/be/en/careers/job-search.html",
+        "title": "Job Search | Careers | Deloitte Belgium",
+        "score": 18,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.deloitte.com/be/en/careers/overview.html",
+        "title": "Careers at Deloitte",
+        "score": 17,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.deloittedigital.com/us/en/careers.html",
+        "title": "Careers | Deloitte Digital",
+        "score": 16,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "looks like a non-Brussels office (-8)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.deloitte.com/us/en/careers/careers.html",
+        "title": "Careers | Deloitte US",
+        "score": 8,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "looks like a non-Brussels office (-8)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Adeloittedigital.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 22,
+    "organisation": "Edelman Brussels",
+    "category": "Comms contractors",
+    "priority": 3,
+    "old_url": "https://www.edelman.com/careers",
+    "careers_url": null,
+    "confidence": "none",
+    "score": 9,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.eastman.com/en/careers",
+        "title": "Careers | Find Jobs | Eastman",
+        "score": 9,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.edelman.com/careers",
+        "title": "Careers | Edelman",
+        "score": -31,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.edelman.com/be/careers",
+        "title": "Careers | Edelman - Edelman Brussels",
+        "score": -31,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aedelman.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 23,
+    "organisation": "FTI Consulting Brussels",
+    "category": "Comms contractors",
+    "priority": 3,
+    "old_url": "https://fticonsulting.com/careers",
+    "careers_url": "https://www.fticonsulting.com/careers",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.fticonsulting.com/careers",
+        "title": "Careers at FTI Consulting | Consulting Jobs",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://fticonsult.referrals.selectminds.com/fticareers/",
+        "title": "FTI Consulting Inc Careers - Jobs",
+        "score": 17,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://fticonsult.referrals.selectminds.com/jobs/search/10796779",
+        "title": "Job Search Results - FTI Consulting Inc Careers",
+        "score": 16,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Afticonsulting.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 24,
+    "organisation": "FleishmanHillard",
+    "category": "Comms contractors",
+    "priority": 3,
+    "old_url": "https://fleishmanhillard.be",
+    "careers_url": "https://fleishmanhillard.eu/careers/",
+    "confidence": "high",
+    "score": 18,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://fleishmanhillard.eu/careers/",
+        "title": "Careers - FleishmanHillard EU",
+        "score": 18,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://fleishmanhillard.com/join-us/",
+        "title": "Public Relations Jobs and More - FleishmanHillard Careers",
+        "score": 17,
+        "reasons": [
+          "careers-shaped path (+4)",
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://fleishmanhillard.eu/contact/career-business/",
+        "title": "Career Opportunities - FleishmanHillard in the European Union",
+        "score": 16,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://fls.com/en/company/careers/open-positions",
+        "title": "Open positions | FLS careers",
+        "score": 11,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://careers.dsm-firmenich.com/en/careers.html",
+        "title": "Careers",
+        "score": 6,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Afleishmanhillard.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 25,
+    "organisation": "Instinctif Partners",
+    "category": "Comms contractors",
+    "priority": 3,
+    "old_url": "https://instinctif.com/careers/",
+    "careers_url": null,
+    "confidence": "none",
+    "score": 7,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-6)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://careers.insight.com/careers",
+        "title": "Careers at Insight",
+        "score": 7,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://careers.inotiv.com/",
+        "title": "Career Opportunities at Inotiv",
+        "score": 3,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobs.references.be/entreprise/14c35e8a-ed19-4f8b-9aec-6141d16875a6/instinctif-partners",
+        "title": "Offres avec Instinctif Partners | www.references.be",
+        "score": -1,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Ainstinctif.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 26,
+    "organisation": "Interel",
+    "category": "Comms contractors",
+    "priority": 3,
+    "old_url": "https://www.interelgroup.com",
+    "careers_url": "https://interel.com/careers",
+    "confidence": "high",
+    "score": 22,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://interel.com/careers",
+        "title": "Careers — Interel",
+        "score": 22,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 10,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://eujobsalert.com/locations/brussels/",
+        "title": "EU Jobs, Vacancies & Careers in Brussels: 192 Open 2026",
+        "score": 9,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 4 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobs.enel.com/en_US/careers/home",
+        "title": "ENEL - Careers",
+        "score": 8,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.interlink.com/about-us/careers",
+        "title": "Careers - Interlink",
+        "score": 7,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Ainterelgroup.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 27,
+    "organisation": "Kreab",
+    "category": "Comms contractors",
+    "priority": 3,
+    "old_url": "https://kreab.com/brussels/",
+    "careers_url": "https://kreab.com/brussels/careers/",
+    "confidence": "high",
+    "score": 19,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)"
+    ],
+    "candidates": [
+      {
+        "url": "https://kreab.com/brussels/careers/",
+        "title": "Join our Team - Public Affairs / Kreab Brussels",
+        "score": 19,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search rank #1 (+3)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://kreab.talentfinder.be/en/index.aspx",
+        "title": "Recent job offers | KREAB",
+        "score": 14,
+        "reasons": [
+          "domain matches org name (+4)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.kraken.com/careers",
+        "title": "Crypto Jobs & Careers | Browse Crypto Job Openings | Kraken",
+        "score": 13,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 3 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://kreab.talentfinder.be/nl/index.aspx",
+        "title": "Recente Vacatures | KREAB",
+        "score": 13,
+        "reasons": [
+          "domain matches org name (+4)",
+          "Brussels/EU domain signal (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.crayola.com/company/colorful-careers",
+        "title": "Colorful Careers at Crayola",
+        "score": 12,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.kaiserpermanentejobs.org/search-jobs",
+        "title": "Search our Job Opportunities at Kaiser Permanente",
+        "score": 5,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Akreab.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 28,
+    "organisation": "Rud Pedersen Public Affairs",
+    "category": "Comms contractors",
+    "priority": 3,
+    "old_url": "https://www.rudpedersen.com/careers",
+    "careers_url": "https://team.rudpedersen.com/en-UK/careers",
+    "confidence": "high",
+    "score": 18,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "matches the sheet's known domain (+3)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://team.rudpedersen.com/en-UK/careers",
+        "title": "Find your career at Rud Pedersen Group! At Rud Pedersen Public Affairs ...",
+        "score": 18,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "matches the sheet's known domain (+3)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.rudpedersen.fi/en-EU/careers",
+        "title": "Open Positions - Rud Pedersen Public Affairs | Brussels",
+        "score": 16,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.rudpedersen.fi/de/karriere",
+        "title": "Public Affairs Jobs & Stellenangebote | Rud Pedersen",
+        "score": 11,
+        "reasons": [
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobs.rutgers.edu/postings/search",
+        "title": "Rutgers University",
+        "score": 7,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search rank #1 (+3)",
+          "page text has 3 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.thomsonreuters.com/en/careers",
+        "title": "Careers | Thomson Reuters",
+        "score": 7,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Arudpedersen.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 29,
+    "organisation": "Teneo / Cambre",
+    "category": "Comms contractors",
+    "priority": 3,
+    "old_url": "https://www.teneo.com/careers/",
+    "careers_url": "https://www.teneo.com/careers/open-positions/office/brussels/",
+    "confidence": "high",
+    "score": 29,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 4 job signal(s) (+6)",
+      "explicitly lists zero openings — still the right page (+2)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.teneo.com/careers/open-positions/office/brussels/",
+        "title": "Open Positions | Teneo",
+        "score": 29,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 4 job signal(s) (+6)",
+          "explicitly lists zero openings — still the right page (+2)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://nato.taleo.net/careersection/2/jobsearch.ftl?lang=en",
+        "title": "NATO - NATO Vacancies",
+        "score": 22,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "hosted on a known ATS (+6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.teneo.net/careers/",
+        "title": "Careers Vacancies at Teneo - IT Services For Infrastructure & Operations",
+        "score": 17,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.teneo.com/brussels/",
+        "title": "Teneo Brussels | The Global CEO Advisory Firm",
+        "score": 12,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.temenos.com/about-us/careers/",
+        "title": "Careers | Working at Temenos",
+        "score": 10,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.nato.int/en/work-with-us/careers/vacancies",
+        "title": "Vacancies | NATO General information",
+        "score": 9,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Ateneo.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 30,
+    "organisation": "Wavestone (ex-PwC EU Services)",
+    "category": "Comms contractors",
+    "priority": 3,
+    "old_url": "https://www.wavestone.com/en/careers/",
+    "careers_url": "https://www.wavestone.com/en/careers/",
+    "confidence": "high",
+    "score": 23,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.wavestone.com/en/careers/",
+        "title": "Consulting jobs at Wavestone - take your career to the next level",
+        "score": 23,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.wavestone.com/fr/carrieres/nos-offres/",
+        "title": "Nos offres - Wavestone",
+        "score": 19,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.wavestone.com/en/careers/our-offers/",
+        "title": "Our offers - Wavestone",
+        "score": 18,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://careers.smartrecruiters.com/Wavestone1",
+        "title": "Careers at Wavestone",
+        "score": 17,
+        "reasons": [
+          "hosted on a known ATS (+6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.waystone.com/careers/",
+        "title": "Careers - Waystone",
+        "score": 9,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.blackstone.com/careers/careers-blackstone/",
+        "title": "Careers at Blackstone",
+        "score": 8,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Awavestone.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 31,
+    "organisation": "Weber Shandwick Brussels",
+    "category": "Comms contractors",
+    "priority": 3,
+    "old_url": "https://webershandwick.com/careers/",
+    "careers_url": "https://webershandwick.com/careers/jobs",
+    "confidence": "high",
+    "score": 24,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://webershandwick.com/careers/jobs",
+        "title": "Careers & Open Job Vacancies | Weber Shandwick",
+        "score": 24,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://webershandwick.eu/be/join-us/careers",
+        "title": "Jobs & Careers - Work at Weber - Webershandwick - Brussels",
+        "score": 18,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://searchjobs.libertymutualgroup.com/careers?utm_source=Retargeting&utm_campaign=Bing+Search&extcmp=bof-rmkt-srch-bing-nbri&ss=paid",
+        "title": "View our openings - Career at Liberty Mutual",
+        "score": 3,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://careers.weber.com/",
+        "title": "Weber Careers",
+        "score": 1,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Awebershandwick.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 32,
+    "organisation": "Intercultural training / DEI freelance",
+    "category": "Corporate & training",
+    "priority": 1,
+    "old_url": "https://coachingfederation.org",
+    "careers_url": "https://jobsin.brussels/",
+    "confidence": "medium",
+    "score": 10,
+    "reasons": [
+      "domain unrelated to this org (-6)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 5 job signal(s) (+6)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://jobsin.brussels/",
+        "title": "Jobs in Brussels | EU institutions, NGOs, Think Tanks",
+        "score": 10,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 5 job signal(s) (+6)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.ussoccer.com/careers",
+        "title": "Careers at U.S. Soccer | U.S. Soccer Official Website",
+        "score": 7,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://jobs.fifa.com/",
+        "title": "Jobs at FIFA | FIFA Careers",
+        "score": 5,
+        "reasons": [
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acoachingfederation.org+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 33,
+    "organisation": "Schaeffler - European operations",
+    "category": "Corporate & training",
+    "priority": 1,
+    "old_url": "https://www.schaeffler.com/en/careers/",
+    "careers_url": "https://www.schaeffler.be/nl/careers/",
+    "confidence": "medium",
+    "score": 16,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 1 job signal(s) (+2)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.schaeffler.be/nl/careers/",
+        "title": "Carrière | Schaeffler België",
+        "score": 16,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.schaeffler.com/en/careers/jobs/",
+        "title": "Jobs | Schaeffler Group",
+        "score": -31,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.schaeffler.com/en/careers/",
+        "title": "Careers | Schaeffler Group",
+        "score": -32,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://schaefflergroup.jobs.net/",
+        "title": "Find a Job | schaefflergroup.jobs.net",
+        "score": -43,
+        "reasons": [
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "fetch failed (HTTP 403)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aschaeffler.com+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
+  },
+  {
+    "id": 34,
+    "organisation": "British School of Brussels (BSB)",
+    "category": "Corporate & training",
+    "priority": 3,
+    "old_url": "https://www.britishschool.be",
+    "careers_url": "https://www.europeanschool.be/career/",
+    "confidence": "high",
+    "score": 20,
+    "reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "candidates": [
+      {
+        "url": "https://www.europeanschool.be/career/",
+        "title": "Job vacancies at the European School | EEBA recruitment",
+        "score": 20,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain matches org name (+4)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #3 (+1)",
+          "page text has 1 job signal(s) (+2)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.britishschool.be/",
+        "title": "British School of Brussels | International School in Belgium",
+        "score": 12,
+        "reasons": [
+          "domain matches org name (+4)",
+          "matches the sheet's known domain (+5)",
+          "Brussels/EU domain signal (+2)",
+          "search rank #3 (+1)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.britishschool.nl/about-us/working-for-us",
+        "title": "Working For Us - British School in the Netherlands",
+        "score": 11,
+        "reasons": [
+          "domain matches org name (+4)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page text has 1 job signal(s) (+2)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.brit.school/vacancies",
+        "title": "The BRIT School - Work For Us & Vacancies",
+        "score": 11,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "search snippet mentions jobs (+2)",
+          "search rank #2 (+2)",
+          "page text has 2 job signal(s) (+4)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      },
+      {
+        "url": "https://www.eteach.com/careers/thebritishschoolofbrussels",
+        "title": "Careers at The British School Of Brussels - Tervuren, Belgium, | eteach",
+        "score": 10,
+        "reasons": [
+          "careers-shaped path (+5)",
+          "domain unrelated to this org (-6)",
+          "Brussels/EU domain signal (+2)",
+          "search snippet mentions jobs (+2)",
+          "search rank #1 (+3)",
+          "page title says careers (+4)"
+        ],
+        "engine": "ddg"
+      }
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Abritishschool.be+jobs+OR+vacancies+OR+careers",
+    "method": "search+verify"
   }
 ]

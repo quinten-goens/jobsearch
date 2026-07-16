@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(source .venv/bin/activate)",
+      "Bash(pgrep -f *)",
+      "Bash(pkill -f jobsearch*)",
+      "Bash(.venv/bin/pip list*)",
+      "Bash(.venv/bin/pip show *)",
+      "Bash(.venv/bin/pip install -r requirements.txt)",
+      "Bash(.venv/bin/streamlit run *)",
+      "Bash(.venv/bin/playwright install*)"
+    ]
+  }
+}
