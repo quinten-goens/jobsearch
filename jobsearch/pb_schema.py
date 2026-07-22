@@ -101,6 +101,12 @@ def url_versions_spec(org_cid: str) -> dict:
             _text("last_updated_source"),
             _text("last_updated_trust"),
             _num("last_updated_age_days"),
+            # Live-openings snapshot for this page (HTML-only detection).
+            _select("openings_state",
+                    ["has_openings", "no_openings", "unknown"]),
+            _num("openings_count"),
+            _json("openings_titles"),
+            _date("openings_checked_at"),
             _text("run_id"),          # which discovery sweep produced it
             _bool("superseded"),      # false only for the newest per org
             _date("discovered_at"),

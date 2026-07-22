@@ -391,6 +391,17 @@ def discover_one(org: dict) -> dict:
     # can't.
     for v in variants[1:]:
         queries.append(f"{v} Brussels jobs vacancies careers")
+    # A native-language query for orgs whose site may carry no English -- German
+    # foundations, Italian/Spanish bodies. "vacatures" (NL) and "emploi" (FR)
+    # are already covered by the Brussels queries.
+    lang = str(org.get("languages") or org.get("language_edge") or "").upper()
+    longest = max(variants, key=len)
+    if "DE" in lang:
+        queries.append(f"{longest} Stellenangebote Karriere")
+    if "ES" in lang:
+        queries.append(f"{longest} empleo vacantes trabaja con nosotros")
+    if "IT" in lang:
+        queries.append(f"{longest} lavora con noi posizioni aperte")
     # If the sheet already knows the org's domain, ask the engine directly for
     # careers pages on that domain. This rescues orgs whose name is ambiguous
     # enough that a plain name search never surfaces the right site at all.

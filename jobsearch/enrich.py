@@ -45,6 +45,18 @@ def enrich_one(rec: dict) -> dict:
         rec["last_updated_source"] = f["source"]
         rec["last_updated_trust"] = f["trust"]
         rec["last_updated_age_days"] = f["age_days"]
+
+        # Same fetch is cached, so this is nearly free: does the page have
+        # live openings right now? This is the off-board signal Sarah cares
+        # about most.
+        from .openings import detect
+        from datetime import datetime, timezone
+
+        o = detect(rec["careers_url"])
+        rec["openings_state"] = o["state"]
+        rec["openings_count"] = o["count"]
+        rec["openings_titles"] = o["titles"]
+        rec["openings_checked_at"] = datetime.now(timezone.utc).isoformat()
     return rec
 
 

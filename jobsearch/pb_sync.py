@@ -44,6 +44,10 @@ def _version_body(rec: dict, org_id: str, run_id: str) -> dict:
         "last_updated_source": rec.get("last_updated_source") or "",
         "last_updated_trust": rec.get("last_updated_trust") or "",
         "last_updated_age_days": rec.get("last_updated_age_days"),
+        "openings_state": rec.get("openings_state") or "unknown",
+        "openings_count": int(rec.get("openings_count") or 0),
+        "openings_titles": rec.get("openings_titles") or [],
+        "openings_checked_at": rec.get("openings_checked_at") or None,
         "run_id": run_id,
         "superseded": False,
         "discovered_at": datetime.now(timezone.utc).isoformat(),
@@ -92,7 +96,7 @@ def main() -> None:
     print(f"  updated {len(upd_ops)} organisations", flush=True)
 
     # --- phase 2: url_versions where the URL changed (batched) -----------
-    supersede_ops, create_ops, create_meta = [], [], []
+    supersede_ops, create_ops, create_meta, openings_ops = [], [], [], []
     for r in cat:
         url = r.get("careers_url") or ""
         if not url:
@@ -100,7 +104,20 @@ def main() -> None:
         org = orgs_by_key[norm(r["organisation"])]
         current = cur_by_org.get(org["id"])
         if current and current.get("url") == url:
-            continue  # unchanged
+            # URL unchanged, but openings change while the URL stays the same
+            # -- that's the whole point of the off-board signal. Refresh the
+            # openings snapshot on the existing version rather than skipping.
+            if r.get("openings_checked_at"):
+                openings_ops.append({
+                    "method": "PATCH",
+                    "path": f"/api/collections/url_versions/records/{current['id']}",
+                    "body": {
+                        "openings_state": r.get("openings_state") or "unknown",
+                        "openings_count": int(r.get("openings_count") or 0),
+                        "openings_titles": r.get("openings_titles") or [],
+                        "openings_checked_at": r.get("openings_checked_at"),
+                    }})
+            continue
         if current:
             supersede_ops.append({
                 "method": "PATCH",
@@ -112,6 +129,9 @@ def main() -> None:
             "body": _version_body(r, org["id"], run_id)})
         create_meta.append(org["id"])
 
+    if openings_ops:
+        pb.batch(openings_ops)
+        print(f"  url_versions: {len(openings_ops)} openings snapshots updated")
     if supersede_ops:
         pb.batch(supersede_ops)
     new_versions = []
