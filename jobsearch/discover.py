@@ -126,11 +126,13 @@ def score_candidate(cand: dict, org: dict) -> tuple[int, list[str]]:
         return -100, ["a document, not a careers page"]
 
     # An org that *is* a job portal (Actiris, talent.brussels) legitimately
-    # lives on a portal domain, so only treat one as an aggregator when it
-    # isn't this org's own site.
+    # lives on a portal domain. But an org NAME appearing in a subdomain of an
+    # aggregator -- fao.impactpool.org, oecd.impactpool.org -- is still the
+    # aggregator, not the org's own site. So the "own site" exception only
+    # counts when the org owns the registered domain, not a subdomain.
     org_toks = tokens(org["organisation"])
-    dom_stem = re.sub(r"[^a-z0-9]", "", domain.split(".")[0])
-    own_site = bool(org_toks and any(t in dom_stem for t in org_toks))
+    reg_stem = re.sub(r"[^a-z0-9]", "", domain.split(".")[-2] if domain.count(".") >= 1 else domain)
+    own_site = bool(org_toks and any(t in reg_stem for t in org_toks))
     if not own_site and any(a in low for a in AGGREGATORS):
         return -100, ["aggregator/job portal, not the org's own page"]
 
@@ -138,8 +140,16 @@ def score_candidate(cand: dict, org: dict) -> tuple[int, list[str]]:
     old = str(org.get("existing_url") or "").lower()
     old_domain = domain_of(old)
 
-    # 1. Path shape
-    path_hit = False
+    # 1. Path shape. A careers-shaped *subdomain* counts too:
+    # careers.efsa.europa.eu, jobs.itu.int -- the careers signal is in the host,
+    # not the path.
+    subdomain = domain.rsplit(".", 2)[0] if domain.count(".") >= 2 else ""
+    careers_sub = bool(re.match(r"^(careers?|jobs?|vacan|emploi|recruit|werken)",
+                                subdomain))
+    path_hit = careers_sub
+    if careers_sub:
+        score += 5
+        why.append("careers-shaped subdomain (+5)")
     for pat, pts in PATH_HINTS:
         if re.search(pat, path_part):
             score += pts
@@ -148,8 +158,8 @@ def score_candidate(cand: dict, org: dict) -> tuple[int, list[str]]:
             break
 
     # A bare homepage is not a careers page, however much hiring language it
-    # happens to carry.
-    if not path_part.strip("/"):
+    # happens to carry -- unless the subdomain itself is the careers one.
+    if not path_part.strip("/") and not careers_sub:
         score -= 8
         why.append("bare homepage, no careers path (-8)")
 
@@ -166,15 +176,35 @@ def score_candidate(cand: dict, org: dict) -> tuple[int, list[str]]:
         why.append("hosted on a known ATS (+6)")
 
     # 3. Does this domain belong to this org at all?
-    dom_flat = dom_stem
+    dom_flat = reg_stem
     name_match = own_site
-    # Check the acronym of each name form: the bare name's initials, and the
-    # initials of any parenthetical expansion.
+    # Official institutional domains -- europa.eu (EU bodies), *.int
+    # (intergovernmental orgs), coe.int, un.org -- are a strong ownership
+    # signal by themselves, and their hostnames are contractions that defeat
+    # token matching ("europarl" for European Parliament, "coe" for Council of
+    # Europe). On such a domain, accept a short (>=2 char) acronym match too.
+    official = bool(re.search(
+        r"(^|\.)(europa\.eu|coe\.int|un\.org|nato\.int|oecd\.org|who\.int)$"
+        r"|\.int$", domain))
+    # Match the acronym against any domain label, not just the registered
+    # stem: on europa.eu the org's identifier is the *subdomain*
+    # (echa.europa.eu, careers.efsa.europa.eu), so the stem is always
+    # "europa".
+    labels = {re.sub(r"[^a-z0-9]", "", p) for p in domain.split(".")}
+    min_len = 2 if official else 3
     acro_match = False
     for variant in name_variants(org["organisation"]):
-        acro = "".join(w[0] for w in variant.split() if w[:1].isalpha()).lower()
-        if len(acro) >= 3 and acro == dom_flat:
-            acro_match = True
+        # Two acronym forms: initials of each word ("European Parliament" ->
+        # "ep"), and the name itself when it's already an acronym ("EFSA").
+        candidates = {"".join(w[0] for w in variant.split() if w[:1].isalpha()).lower()}
+        flat = re.sub(r"[^a-z0-9]", "", variant.lower())
+        if flat == variant.lower().replace(" ", "") and len(variant.split()) == 1:
+            candidates.add(flat)
+        for acro in candidates:
+            if len(acro) >= min_len and (acro == dom_flat or acro in labels):
+                acro_match = True
+                break
+        if acro_match:
             break
     domain_known = bool(old_domain) and (
         old_domain == domain
@@ -184,6 +214,11 @@ def score_candidate(cand: dict, org: dict) -> tuple[int, list[str]]:
     if name_match or acro_match:
         score += 4
         why.append("domain matches org name (+4)")
+    elif official:
+        # Right family (an EU/intergovernmental domain) even if the specific
+        # acronym didn't line up -- enough to clear the "unrelated" penalty.
+        score += 3
+        why.append("official EU / intergovernmental domain (+3)")
     if domain_known:
         # The sheet's existing links are unreliable on the *path* (the /jobs/
         # vs /vacancies/ problem this pipeline exists to fix) but the *domain*
@@ -192,7 +227,7 @@ def score_candidate(cand: dict, org: dict) -> tuple[int, list[str]]:
         pts = 5 if old_domain == domain else 3
         score += pts
         why.append(f"matches the sheet's known domain (+{pts})")
-    if not (name_match or acro_match or domain_known or on_ats):
+    if not (name_match or acro_match or domain_known or on_ats or official):
         # An unrelated domain with a careers-shaped path is the classic false
         # positive: a real jobs page belonging to somebody else entirely.
         # brussels.be/current-vacancies was being handed to eleven different

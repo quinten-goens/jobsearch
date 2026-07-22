@@ -164,12 +164,10 @@ def page_organisations():
         st.stop()
     f = org_filters(cat)
 
-    k1, k2, k3, k4, k5 = st.columns(5)
+    k1, k2, k3 = st.columns(3)
     k1.metric("Shown", len(f))
     k2.metric("With careers page", int(f["has_careers"].sum()))
     k3.metric("Reviewed", int(f["reviewed"].sum()))
-    k4.metric("Anthropology / PhD", int(f["phd_relevant"].sum()))
-    k5.metric("Latin America", int(f["latam_relevant"].sum()))
 
     if f.empty:
         st.info("No organisations match these filters.")
@@ -450,7 +448,21 @@ def page_coverage():
 # ----------------------------------------------------------------- navigation
 # Proper Streamlit multipage nav (not a radio): each page is its own entry in
 # the sidebar, with the browser URL and back/forward working per page.
-st.sidebar.title("🇧🇪 Brussels job search")
+#
+# Streamlit renders the nav at the very top of the sidebar. To put the title
+# *above* it, we pin the title with position:sticky and a negative margin via a
+# tiny CSS shim, then declare the nav as a section so it reads as one unit.
+st.markdown(
+    """<style>
+    [data-testid="stSidebarNav"]::before {
+        content: "🇧🇪 Brussels job search";
+        display: block;
+        font-size: 1.25rem; font-weight: 700;
+        padding: 0.5rem 1rem 0.75rem 0.75rem;
+    }
+    </style>""",
+    unsafe_allow_html=True,
+)
 nav = st.navigation([
     st.Page(page_organisations, title="Organisations", icon="🏢", default=True),
     st.Page(page_sectors, title="Sectors", icon="📊"),

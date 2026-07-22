@@ -1,4 +1,4 @@
-2026-07-22 13:31:59.377 Uvicorn server started on :::8502
+2026-07-22 13:39:45.605 Uvicorn server started on :::8502
 
   You can now view your Streamlit app in your browser.
 
@@ -11,47 +11,7 @@
   $ xcode-select --install
   $ pip install watchdog
             
-2026-07-22 13:32:16.797 Please replace `use_container_width` with `width`.
-
-`use_container_width` will be removed after 2025-12-31.
-
-For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
-2026-07-22 13:33:04.604 Please replace `use_container_width` with `width`.
-
-`use_container_width` will be removed after 2025-12-31.
-
-For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
-2026-07-22 13:33:10.978 Please replace `use_container_width` with `width`.
-
-`use_container_width` will be removed after 2025-12-31.
-
-For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
-2026-07-22 13:33:14.791 Please replace `use_container_width` with `width`.
-
-`use_container_width` will be removed after 2025-12-31.
-
-For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
-2026-07-22 13:33:22.714 Please replace `use_container_width` with `width`.
-
-`use_container_width` will be removed after 2025-12-31.
-
-For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
-2026-07-22 13:33:22.716 Please replace `use_container_width` with `width`.
-
-`use_container_width` will be removed after 2025-12-31.
-
-For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
-2026-07-22 13:33:34.644 Please replace `use_container_width` with `width`.
-
-`use_container_width` will be removed after 2025-12-31.
-
-For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
-2026-07-22 13:33:44.471 Please replace `use_container_width` with `width`.
-
-`use_container_width` will be removed after 2025-12-31.
-
-For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
-2026-07-22 13:33:50.759 Please replace `use_container_width` with `width`.
+2026-07-22 13:40:05.968 Please replace `use_container_width` with `width`.
 
 `use_container_width` will be removed after 2025-12-31.
 
