@@ -29,11 +29,19 @@ ISO = re.compile(r"(\d{4}-\d{2}-\d{2})")
 # Text that changes on every load even when the content is identical -- a CSRF
 # token, a session id, today's date printed in a footer, a rotating "X people
 # viewing" counter. Stripped before hashing so the fingerprint reflects the
-# actual content, not the render.
+# actual content, not the render. Critical now that a hash change *overrides*
+# metadata freshness: a token that rotates per request must not read as a
+# content change, or every such page would falsely flip to "fresh" daily.
 _VOLATILE = re.compile(
-    r"csrf|nonce|session|token|__VIEWSTATE|\bcsrftoken\b|"
-    r"\d{1,2}:\d{2}(:\d{2})?|"  # clock times
-    r"\d{4}-\d{2}-\d{2}t\d{2}:\d{2}",  # ISO timestamps
+    # key=value / key: value for the usual volatile keys -- consume the VALUE too,
+    # not just the keyword, so the rotating part is actually removed.
+    r"(csrf|csrftoken|nonce|session(id)?|sid|token|auth|__viewstate|"
+    r"__requestverificationtoken|_token|jsessionid|phpsessid|viewstate)"
+    r"\s*[=:]\s*[\"']?[\w\-./+%]+|"
+    # long hex / base64-ish blobs that are tokens with no keyword nearby
+    r"\b[0-9a-f]{16,}\b|\b[A-Za-z0-9\-_]{24,}\b|"
+    r"\d{1,2}:\d{2}(:\d{2})?|"          # clock times
+    r"\d{4}-\d{2}-\d{2}t\d{2}:\d{2}",   # ISO timestamps
     re.I,
 )
 
@@ -159,6 +167,20 @@ def last_updated(url: str, *, prev_hash: str = "",
         return _empty()
 
     r = fetch(url)
+
+    # Always compute the current fingerprint first: a detected content change is
+    # the strongest freshness evidence we have, so it gets to override a metadata
+    # date that may be stale (a hand-edited NGO page adds a vacancy without the
+    # CMS bumping dateModified -- exactly the off-board case we care about).
+    cur_hash = _hash_html(r["text"]) if (r["ok"] and r["text"]) else ""
+    if cur_hash and prev_hash and cur_hash != prev_hash:
+        today = datetime.now(timezone.utc).date().isoformat()
+        # The content moved since we last saw it: the page is fresh, full stop.
+        return {"date": today, "source": "hash", "age_days": 0,
+                "trust": "high", "hash": cur_hash}
+
+    # No content change (or no baseline yet): fall back to whatever date the page
+    # publishes about itself, best source first.
     date_str, source = "", ""
 
     if r["ok"] and r["text"]:
@@ -172,22 +194,17 @@ def last_updated(url: str, *, prev_hash: str = "",
         date_str = _from_headers(r.get("headers") or {})
         source = "http" if date_str else ""
 
-    # Always compute the current fingerprint so callers can store it for next
-    # time, regardless of whether a metadata date was found.
-    cur_hash = _hash_html(r["text"]) if (r["ok"] and r["text"]) else ""
-
-    # Content-hash fallback: only when nothing better dated the page.
+    # Still nothing from metadata: date it by the hash itself.
     if not date_str and cur_hash:
-        today = datetime.now(timezone.utc).date().isoformat()
         if not prev_hash:
             # First time we've fingerprinted it -- no baseline to compare, so we
             # can't claim a date yet. We still return the hash to seed next scan.
             return {"date": "", "source": "hash-seeded", "age_days": None,
                     "trust": "none", "hash": cur_hash}
-        if cur_hash != prev_hash:
-            date_str, source = today, "hash"       # changed -> updated today
-        elif prev_date:
-            date_str, source = prev_date, "hash"    # unchanged -> as old as before
+        # prev_hash exists and (given the override above) equals cur_hash:
+        # unchanged, so it's as old as we last recorded it.
+        if prev_date:
+            date_str, source = prev_date, "hash"
 
     if not date_str:
         out = _empty()
@@ -202,9 +219,11 @@ def last_updated(url: str, *, prev_hash: str = "",
         out["hash"] = cur_hash
         return out
 
-    # Last-Modified on a dynamic page is usually the render time, not a content
-    # change, so it must not be read as evidence the page is fresh. A detected
-    # content change ("hash") is real evidence, so it earns medium trust.
+    # A detected content *change* returned high trust inline above. Reaching here
+    # with source "hash" means the opposite -- content unchanged, carrying the
+    # prior date forward -- so it's medium, same as before. Last-Modified on a
+    # dynamic page is usually the render time, not a content change, so it stays
+    # low and is never read as evidence a page is fresh.
     trust = {"jsonld": "high", "meta": "high", "sitemap": "medium",
              "hash": "medium", "http": "low"}.get(source, "none")
     return {"date": date_str, "source": source, "age_days": age,
