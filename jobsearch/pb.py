@@ -15,6 +15,8 @@ import requests
 
 from .config import ROOT
 
+import os
+
 try:
     from dotenv import dotenv_values
 
@@ -23,12 +25,42 @@ except Exception:  # pragma: no cover
     _ENV = {}
 
 
+def _secret(key: str) -> str:
+    """One credential, resolved across every deployment target we run in:
+
+      1. a local .env file            -- laptop / repo
+      2. the process environment      -- Docker / Dokploy inject vars, not a file
+      3. Streamlit's st.secrets       -- Streamlit Community Cloud
+
+    So the same code works whether the value arrives as a file, an env var, or a
+    Streamlit secret, with no per-environment branching.
+    """
+    # Process env wins over a possibly-stale .env file, so a deployment can
+    # always override; then the local file; then Streamlit secrets.
+    val = os.environ.get(key) or _ENV.get(key)
+    if val:
+        return val
+    try:
+        import streamlit as st
+
+        # st.secrets raises if there's no secrets file, so guard the lookup.
+        if key in st.secrets:
+            return str(st.secrets[key])
+    except Exception:
+        pass
+    return ""
+
+
 def _base() -> str:
     """API origin, even if PH_URL was pasted as the admin-UI deep link."""
-    raw = _ENV.get("PH_URL") or ""
+    raw = _secret("PH_URL")
     m = re.match(r"(https?://[^/]+)", raw)
     if not m:
-        raise RuntimeError("PH_URL missing or malformed in .env")
+        raise RuntimeError(
+            "PH_URL missing or malformed. Set it in .env (local), as an "
+            "environment variable (Docker/Dokploy), or in st.secrets "
+            "(Streamlit Cloud)."
+        )
     return m.group(1)
 
 
@@ -49,12 +81,13 @@ class PB:
     # ------------------------------------------------------------------ auth
     def _creds(self) -> tuple[str, str]:
         if self._admin:
-            u, p = _ENV.get("PH_ADMIN_USR"), _ENV.get("PH_ADMIN_PWD")
+            u, p = _secret("PH_ADMIN_USR"), _secret("PH_ADMIN_PWD")
         else:
-            u, p = _ENV.get("PH_USR"), _ENV.get("PH_PWD")
+            u, p = _secret("PH_USR"), _secret("PH_PWD")
         if not u or not p:
             raise RuntimeError(
-                f"Missing {'PH_ADMIN_*' if self._admin else 'PH_*'} in .env"
+                f"Missing {'PH_ADMIN_*' if self._admin else 'PH_*'} — set them "
+                "in .env, the environment, or st.secrets."
             )
         return u, p
 
