@@ -40,11 +40,19 @@ def enrich_one(rec: dict) -> dict:
         rec["homepage"] = f"https://{domain_of(rec['careers_url'])}"
 
     if rec["careers_url"]:
-        f = last_updated(rec["careers_url"])
+        # Feed last scan's fingerprint + date so a metadata-less page can still
+        # be dated by whether its content changed since we last saw it.
+        f = last_updated(rec["careers_url"],
+                         prev_hash=rec.get("content_hash") or "",
+                         prev_date=rec.get("last_updated") or "")
         rec["last_updated"] = f["date"]
         rec["last_updated_source"] = f["source"]
         rec["last_updated_trust"] = f["trust"]
         rec["last_updated_age_days"] = f["age_days"]
+        if f.get("hash"):
+            from datetime import datetime, timezone
+            rec["content_hash"] = f["hash"]
+            rec["content_hash_at"] = datetime.now(timezone.utc).isoformat()
 
         # Same fetch is cached, so this is nearly free: does the page have
         # live openings right now? This is the off-board signal Sarah cares

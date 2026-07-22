@@ -48,6 +48,8 @@ def _version_body(rec: dict, org_id: str, run_id: str) -> dict:
         "openings_count": int(rec.get("openings_count") or 0),
         "openings_titles": rec.get("openings_titles") or [],
         "openings_checked_at": rec.get("openings_checked_at") or None,
+        "content_hash": rec.get("content_hash") or "",
+        "content_hash_at": rec.get("content_hash_at") or None,
         "run_id": run_id,
         "superseded": False,
         "discovered_at": datetime.now(timezone.utc).isoformat(),

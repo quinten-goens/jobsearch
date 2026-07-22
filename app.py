@@ -119,21 +119,34 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
     st.sidebar.subheader("Filter")
     q = st.sidebar.text_input("Search", placeholder="name, description, role…")
     sectors = st.sidebar.multiselect("Sector", sorted(df["sector"].unique()))
-    updated_within = st.sidebar.selectbox(
-        "Careers page updated",
-        ["In the last 30 days", "In the last 90 days", "In the last year",
-         "Any time"],
-        index=0,  # 30 days is the requested default
-        help="Show organisations whose careers page has changed recently. "
-             "Many sites don't say when they last updated — the toggle below "
-             "decides whether to include those.",
+
+    # One-click "see everything": bypasses the recency filter entirely. Most of
+    # the catalogue is hidden by default because we can't date the page, so give
+    # a single obvious escape hatch rather than making people find two controls.
+    show_all = st.sidebar.checkbox(
+        "Show all organisations", value=False,
+        help="By default you only see pages we can prove changed recently, "
+             "which hides most of the catalogue. Turn this on to see every "
+             "organisation, including the ones with no readable update date.",
     )
-    include_undated = st.sidebar.checkbox(
-        "Also show pages with no update date", value=False,
-        help="Only about 1 in 5 sites tells us when its page last changed. "
-             "With this off, you only see pages we can prove are recent — "
-             "which hides most communes and NGOs. Turn it on to see them too.",
-    )
+    if show_all:
+        updated_within, include_undated = "Any time", True
+    else:
+        updated_within = st.sidebar.selectbox(
+            "Careers page updated",
+            ["In the last 30 days", "In the last 90 days", "In the last year",
+             "Any time"],
+            index=0,  # 30 days is the requested default
+            help="Show organisations whose careers page has changed recently. "
+                 "Many sites don't say when they last updated — the toggle "
+                 "below decides whether to include those.",
+        )
+        include_undated = st.sidebar.checkbox(
+            "Also show pages with no update date", value=False,
+            help="Only about 1 in 5 sites tells us when its page last changed. "
+                 "With this off, you only see pages we can prove are recent — "
+                 "which hides most communes and NGOs. Turn it on to see them too.",
+        )
 
     st.sidebar.caption("Progress")
     reviewed = st.sidebar.radio(
@@ -238,8 +251,8 @@ def page_organisations():
     with dl_col:
         do_refresh = st.button(
             f"🔄 Refresh these {len(f)}", use_container_width=True,
-            disabled=len(f) > 100,
-            help="Re-check every organisation shown (≤100). Larger sweeps: "
+            disabled=len(f) > 2500,
+            help="Re-check every organisation shown (≤2500). Larger sweeps: "
                  "python -m jobsearch.enrich.",
         )
 

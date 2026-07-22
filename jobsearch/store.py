@@ -40,6 +40,8 @@ def _flatten(org: dict, version: dict | None) -> dict:
     rec["openings_titles"] = v.get("openings_titles") or []
     rec["openings_new_titles"] = v.get("openings_new_titles") or []
     rec["openings_new_at"] = v.get("openings_new_at", "")
+    rec["content_hash"] = v.get("content_hash", "")
+    rec["content_hash_at"] = v.get("content_hash_at", "")
     # Review state comes straight off the org row.
     rec["reviewed"] = bool(org.get("reviewed"))
     rec["reviewed_url"] = org.get("reviewed_url", "")
@@ -140,9 +142,14 @@ def refresh_org(org: dict, pb: PB | None = None) -> dict:
     url_changed = bool(new_url) and (not current or current.get("url") != new_url)
 
     # Always re-check freshness of the live page, even when the URL is unchanged
-    # -- "same URL, but the page was updated" is the common case.
-    fresh = last_updated(new_url) if new_url else {}
+    # -- "same URL, but the page was updated" is the common case. Pass the stored
+    # fingerprint so a metadata-less page is dated by whether its content moved.
+    prev_hash = (current or {}).get("content_hash") or "" if not url_changed else ""
+    prev_date = (current or {}).get("last_updated") or "" if not url_changed else ""
+    fresh = last_updated(new_url, prev_hash=prev_hash,
+                         prev_date=prev_date) if new_url else {}
     page_date = fresh.get("date", "")
+    new_hash = fresh.get("hash", "")
 
     # --- append a new version if the URL moved --------------------------
     if url_changed:
@@ -158,6 +165,9 @@ def refresh_org(org: dict, pb: PB | None = None) -> dict:
             "last_updated_source": fresh.get("source", ""),
             "last_updated_trust": fresh.get("trust", ""),
             "last_updated_age_days": fresh.get("age_days"),
+            "content_hash": new_hash,
+            "content_hash_at": (datetime.now(timezone.utc).isoformat()
+                                if new_hash else None),
             "run_id": "refresh-" + datetime.now().strftime("%Y%m%d-%H%M%S"),
             "superseded": False,
             "discovered_at": datetime.now(timezone.utc).isoformat(),
@@ -199,6 +209,11 @@ def refresh_org(org: dict, pb: PB | None = None) -> dict:
                 "openings_titles": now_titles,
                 "openings_checked_at": datetime.now(timezone.utc).isoformat(),
             }
+            # Refresh the fingerprint on the current version (unless we just
+            # created a new version above, which already carries it).
+            if new_hash and not url_changed:
+                body["content_hash"] = new_hash
+                body["content_hash_at"] = datetime.now(timezone.utc).isoformat()
             # Keep the new-titles flag sticky until she visits What's new and
             # it's re-scanned with nothing newer; only overwrite when we found
             # something (don't wipe a prior 'new' on an unreadable re-scan).

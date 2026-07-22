@@ -14,6 +14,7 @@ There are four possible sources, and they are not equally trustworthy:
 We record the source alongside the date so the UI can say how much to trust it,
 and never claim a page is stale on the strength of a missing header.
 """
+import hashlib
 import re
 import urllib.parse
 from datetime import datetime, timezone
@@ -24,6 +25,44 @@ from bs4 import BeautifulSoup
 from .http import fetch
 
 ISO = re.compile(r"(\d{4}-\d{2}-\d{2})")
+
+# Text that changes on every load even when the content is identical -- a CSRF
+# token, a session id, today's date printed in a footer, a rotating "X people
+# viewing" counter. Stripped before hashing so the fingerprint reflects the
+# actual content, not the render.
+_VOLATILE = re.compile(
+    r"csrf|nonce|session|token|__VIEWSTATE|\bcsrftoken\b|"
+    r"\d{1,2}:\d{2}(:\d{2})?|"  # clock times
+    r"\d{4}-\d{2}-\d{2}t\d{2}:\d{2}",  # ISO timestamps
+    re.I,
+)
+
+
+def content_hash(url: str) -> str:
+    """A stable fingerprint of a page's meaningful text.
+
+    We can only date about a third of careers pages from their own metadata.
+    For the rest, we date them ourselves: hash the visible text now, and on the
+    next scan a changed hash *is* the "this page was updated" event -- on a date
+    we control, for 100% of readable pages. Returns "" if the page can't be read.
+    """
+    r = fetch(url)
+    if not r["ok"] or not r["text"]:
+        return ""
+    return _hash_html(r["text"])
+
+
+def _hash_html(html: str) -> str:
+    soup = BeautifulSoup(html, "lxml")
+    # Drop the chrome that shifts independently of the content we care about.
+    for tag in soup(["script", "style", "nav", "footer", "header", "noscript"]):
+        tag.decompose()
+    text = soup.get_text(" ", strip=True).lower()
+    text = _VOLATILE.sub("", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    if not text:
+        return ""
+    return hashlib.sha256(text.encode("utf-8", "ignore")).hexdigest()
 
 META_KEYS = (
     ("meta", {"property": "article:modified_time"}),
@@ -106,10 +145,18 @@ def _lastmod_for_url(soup: BeautifulSoup, target: str) -> str:
     return ""
 
 
-def last_updated(url: str) -> dict:
-    """{'date': ISO or '', 'source': str, 'age_days': int|None, 'trust': str}."""
+def last_updated(url: str, *, prev_hash: str = "",
+                 prev_date: str = "") -> dict:
+    """{'date', 'source', 'age_days', 'trust', 'hash'}.
+
+    `prev_hash` / `prev_date` are the content fingerprint and date we recorded
+    on the last scan. When the page exposes no metadata date of its own, they
+    let us date it by change: a differing hash means "updated now", a matching
+    hash means "unchanged since prev_date". This is what gives the ~1,400
+    metadata-less pages a freshness signal at all.
+    """
     if not url:
-        return {"date": "", "source": "", "age_days": None, "trust": "none"}
+        return _empty()
 
     r = fetch(url)
     date_str, source = "", ""
@@ -125,17 +172,45 @@ def last_updated(url: str) -> dict:
         date_str = _from_headers(r.get("headers") or {})
         source = "http" if date_str else ""
 
+    # Always compute the current fingerprint so callers can store it for next
+    # time, regardless of whether a metadata date was found.
+    cur_hash = _hash_html(r["text"]) if (r["ok"] and r["text"]) else ""
+
+    # Content-hash fallback: only when nothing better dated the page.
+    if not date_str and cur_hash:
+        today = datetime.now(timezone.utc).date().isoformat()
+        if not prev_hash:
+            # First time we've fingerprinted it -- no baseline to compare, so we
+            # can't claim a date yet. We still return the hash to seed next scan.
+            return {"date": "", "source": "hash-seeded", "age_days": None,
+                    "trust": "none", "hash": cur_hash}
+        if cur_hash != prev_hash:
+            date_str, source = today, "hash"       # changed -> updated today
+        elif prev_date:
+            date_str, source = prev_date, "hash"    # unchanged -> as old as before
+
     if not date_str:
-        return {"date": "", "source": "", "age_days": None, "trust": "none"}
+        out = _empty()
+        out["hash"] = cur_hash
+        return out
 
     try:
         d = datetime.fromisoformat(date_str).replace(tzinfo=timezone.utc)
         age = (datetime.now(timezone.utc) - d).days
     except ValueError:
-        return {"date": "", "source": "", "age_days": None, "trust": "none"}
+        out = _empty()
+        out["hash"] = cur_hash
+        return out
 
     # Last-Modified on a dynamic page is usually the render time, not a content
-    # change, so it must not be read as evidence the page is fresh.
+    # change, so it must not be read as evidence the page is fresh. A detected
+    # content change ("hash") is real evidence, so it earns medium trust.
     trust = {"jsonld": "high", "meta": "high", "sitemap": "medium",
-             "http": "low"}.get(source, "none")
-    return {"date": date_str, "source": source, "age_days": age, "trust": trust}
+             "hash": "medium", "http": "low"}.get(source, "none")
+    return {"date": date_str, "source": source, "age_days": age,
+            "trust": trust, "hash": cur_hash}
+
+
+def _empty() -> dict:
+    return {"date": "", "source": "", "age_days": None, "trust": "none",
+            "hash": ""}

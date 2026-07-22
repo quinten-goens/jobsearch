@@ -54,6 +54,21 @@ def _select(name, values):
             "maxSelect": 1, "values": values}
 
 
+def _ensure_fields(pb: "PB", name: str, spec_fields: list[dict]) -> None:
+    """Add any spec field the live collection is missing, without touching the
+    existing ones. Makes the schema self-healing: new fields (content_hash,
+    openings_new_*) land on a collection that already holds data, instead of
+    silently failing to write."""
+    coll = next(c for c in pb.list_collections() if c["name"] == name)
+    have = {f["name"] for f in coll.get("fields", coll.get("schema", []))}
+    missing = [f for f in spec_fields if f["name"] not in have]
+    if not missing:
+        return
+    fields = list(coll.get("fields", coll.get("schema", []))) + missing
+    pb.update_collection(coll["id"], {"fields": fields})
+    print(f"  {name}: added {', '.join(f['name'] for f in missing)}")
+
+
 def organisations_spec() -> dict:
     return {
         "name": "organisations",
@@ -107,6 +122,12 @@ def url_versions_spec(org_cid: str) -> dict:
             _num("openings_count"),
             _json("openings_titles"),
             _date("openings_checked_at"),
+            # Titles that appeared since the last scan -- the "What's new" flag.
+            _json("openings_new_titles"),
+            _date("openings_new_at"),
+            # Content fingerprint: lets us date metadata-less pages by change.
+            _text("content_hash", maxSize=64),
+            _date("content_hash_at"),
             _text("run_id"),          # which discovery sweep produced it
             _bool("superseded"),      # false only for the newest per org
             _date("discovered_at"),
@@ -165,6 +186,7 @@ def main() -> None:
     # 2. url_versions (needs the org collection id for its relation)
     if pb.collection_exists("url_versions"):
         print("  url_versions: exists")
+        _ensure_fields(pb, "url_versions", url_versions_spec(org_cid)["fields"])
     else:
         pb.create_collection(url_versions_spec(org_cid))
         print("  url_versions: created")
