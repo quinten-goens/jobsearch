@@ -15,10 +15,15 @@ the catalogue is full of European institutions and foreign missions.
 """
 import json
 import re
+import warnings
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, XMLParsedAsHTMLWarning
 
 from .http import fetch
+
+# Same as freshness.py: parsing the odd XML-shaped page with the HTML parser is
+# fine here; silence bs4's warning so it doesn't flood the refresh logs.
+warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
 
 # Result states.
 HAS = "has_openings"

@@ -17,12 +17,18 @@ and never claim a page is stale on the strength of a missing header.
 import hashlib
 import re
 import urllib.parse
+import warnings
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, XMLParsedAsHTMLWarning
 
 from .http import fetch
+
+# We deliberately parse everything -- including the occasional sitemap or page
+# served as XML -- with the lxml HTML parser, which is fine for our purposes
+# (extracting dates/text). bs4's warning about it is just noise in the logs.
+warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
 
 ISO = re.compile(r"(\d{4}-\d{2}-\d{2})")
 
