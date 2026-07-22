@@ -1,1 +1,20 @@
 waiting for rate limit to clear on https://qgoens.pockethost.io ...
+API back at Wed Jul 22 12:24:54 CEST 2026
+=== Wed Jul 22 12:24:55 CEST 2026 enabling batch API ===
+  organisations: exists
+  url_versions: exists
+  url_checks: exists
+  API access rules: set
+  organisations.current_url: exists
+  batch API: enabled
+
+  Schema ready.
+=== running batched sync ===
+Reading current PocketBase state…
+  created 282 organisations
+  updated 0 organisations
+
+  url_versions: 182 new
+  run_id: sync-20260722-122500
+=== verifying ===
+orgs: 665 | versions: 438

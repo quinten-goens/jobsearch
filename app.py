@@ -55,11 +55,17 @@ def load_catalogue() -> pd.DataFrame:
     if "sources" not in df:
         df["sources"] = [[] for _ in range(len(df))]
     for col, default in (("phd_relevant", False), ("latam_relevant", False),
-                         ("remote_friendly", False),
+                         ("remote_friendly", False), ("reviewed", False),
                          ("priority", None), ("size", None),
                          ("last_updated_age_days", None)):
         if col not in df:
             df[col] = default
+    df["reviewed"] = df["reviewed"].fillna(False).astype(bool)
+    for col in ("reviewed_url", "reviewed_page_date", "reviewed_at",
+                "current_page_date"):
+        if col not in df:
+            df[col] = ""
+        df[col] = df[col].fillna("")
     if "careers_score" not in df:
         df["careers_score"] = 0
     df["careers_score"] = (
@@ -126,6 +132,14 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
     latam = st.sidebar.checkbox("Latin America / Spanish")
     remote = st.sidebar.checkbox("Hires remote / worldwide")
 
+    st.sidebar.caption("Progress")
+    reviewed = st.sidebar.radio(
+        "Reviewed", ["All", "Not yet reviewed", "Reviewed"],
+        label_visibility="collapsed",
+        help="'Reviewed' means you've checked the current careers page. A "
+             "refresh un-ticks it if the page has been updated since.",
+    )
+
     st.sidebar.caption("Careers page")
     conf = st.sidebar.multiselect(
         "Confidence", ["high", "medium", "none"],
@@ -159,6 +173,10 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
         f = f[f["latam_relevant"]]
     if remote:
         f = f[f["remote_friendly"]]
+    if reviewed == "Reviewed":
+        f = f[f["reviewed"]]
+    elif reviewed == "Not yet reviewed":
+        f = f[~f["reviewed"]]
     if conf:
         f = f[f["careers_confidence"].replace("", "none").isin(conf)]
     if min_score > lo:
@@ -170,206 +188,118 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
 if page == "Organisations":
     st.title("Organisations")
     f = org_filters(cat)
-    st.caption(f"{len(f)} of {len(cat)} organisations")
 
     k1, k2, k3, k4, k5 = st.columns(5)
     k1.metric("Shown", len(f))
     k2.metric("With careers page", int(f["has_careers"].sum()))
-    k3.metric("Anthropology / PhD", int(f["phd_relevant"].sum()))
-    k4.metric("Latin America", int(f["latam_relevant"].sum()))
-    k5.metric("Remote-friendly", int(f["remote_friendly"].sum()))
-    st.divider()
+    k3.metric("Reviewed", int(f["reviewed"].sum()))
+    k4.metric("Anthropology / PhD", int(f["phd_relevant"].sum()))
+    k5.metric("Latin America", int(f["latam_relevant"].sum()))
 
     if f.empty:
         st.info("No organisations match these filters.")
         st.stop()
 
-    # Refresh the whole filtered set. Capped so a stray "no filters" click
-    # doesn't kick off 665 live searches; narrow the filters for a big sweep.
-    rc1, rc2 = st.columns([3, 1])
-    with rc2:
-        if st.button(f"🔄 Refresh these {len(f)}", use_container_width=True,
-                     disabled=len(f) > 60,
-                     help="Re-search every organisation shown. Filter to ≤60 "
-                          "first; larger sweeps belong on the CLI "
-                          "(python -m jobsearch.enrich)."):
-            prog = st.progress(0.0, "Refreshing…")
-            changed = 0
-            rows = f.to_dict("records")
-            for i, rr in enumerate(rows, 1):
-                try:
-                    new = store.refresh_org(
-                        rr["id"], rr["organisation"], base=rr["base"],
-                        existing_url=rr["careers_url"], category=rr["category"],
-                    )
-                    if new.get("url") and new.get("url") != rr["careers_url"]:
-                        changed += 1
-                except Exception:
-                    pass
-                prog.progress(i / len(rows), f"{i}/{len(rows)}…")
-            load_catalogue.clear()
-            st.success(f"Refreshed {len(rows)} — {changed} URLs changed.")
-            st.rerun()
+    ref_col, dl_col = st.columns([3, 1])
+    with ref_col:
+        st.caption(
+            "Tick **Reviewed** once you've looked at a careers page. "
+            "**Refresh** re-checks the page — if it's changed since you "
+            "reviewed it, the tick clears itself."
+        )
+    with dl_col:
+        do_refresh = st.button(
+            f"🔄 Refresh these {len(f)}", use_container_width=True,
+            disabled=len(f) > 60,
+            help="Re-check every organisation shown (≤60). Larger sweeps: "
+                 "python -m jobsearch.enrich.",
+        )
 
-    view = f.sort_values(["sector", "organisation"])
-    # Sector and Type are both filters already; showing Type here as well was
-    # pushing the careers link off the right edge.
+    if do_refresh:
+        prog = st.progress(0.0, "Refreshing…")
+        changed = uncheck = 0
+        rows = f.to_dict("records")
+        for i, rr in enumerate(rows, 1):
+            try:
+                res = store.refresh_org(rr)
+                changed += bool(res.get("changed"))
+                uncheck += bool(res.get("unreviewed"))
+            except Exception:
+                pass
+            prog.progress(i / len(rows), f"{i}/{len(rows)}…")
+        load_catalogue.clear()
+        st.success(f"Refreshed {len(rows)} — {changed} URLs changed, "
+                   f"{uncheck} un-reviewed (page updated).")
+        st.rerun()
+
+    view = f.sort_values(["reviewed", "sector", "organisation"]).reset_index(drop=True)
+    # One editable table. Reviewed is a tickable checkbox; everything else is
+    # read-only. Sarah works entirely here -- no detail panel, no button wall.
+    # The org id rides along as a hidden column so we can map edits back.
     table = pd.DataFrame({
-        "": view["careers_confidence"].map(lambda c: CONF_ICON.get(c, "⚪")),
-        "Organisation": view["organisation"],
-        "Sector": view["sector"],
-        "Based in": view["base"],
-        "Lang": view["languages"],
-        "Size": view["size"],
-        "Updated": view["last_updated"].replace("", "—"),
-        "Score": view["careers_score"],
-        "Careers": view["careers_url"],
+        "Reviewed": view["reviewed"].tolist(),
+        "": [CONF_ICON.get(c, "⚪") for c in view["careers_confidence"]],
+        "Organisation": view["organisation"].tolist(),
+        "Sector": view["sector"].tolist(),
+        "Based in": view["base"].tolist(),
+        "Lang": view["languages"].tolist(),
+        "Updated": view["last_updated"].replace("", "—").tolist(),
+        "Score": view["careers_score"].tolist(),
+        "Careers page": view["careers_url"].tolist(),
+        "Fallback search": view["search_url"].tolist(),
+        "_id": view["id"].tolist(),
     })
-    st.dataframe(
-        table, hide_index=True, use_container_width=True, height=420,
+
+    edited = st.data_editor(
+        table, hide_index=True, use_container_width=True, height=560,
+        disabled=[c for c in table.columns if c != "Reviewed"],
+        column_order=[c for c in table.columns if c != "_id"],
         column_config={
+            "Reviewed": st.column_config.CheckboxColumn(
+                "✓", width="small",
+                help="Tick once you've reviewed this careers page.",
+            ),
             "": st.column_config.TextColumn("", width="small",
                                             help="Careers-page confidence"),
             "Organisation": st.column_config.TextColumn(width="large"),
             "Sector": st.column_config.TextColumn(width="medium"),
             "Based in": st.column_config.TextColumn(width="small"),
-            "Careers": st.column_config.LinkColumn("Careers", display_text="Open ↗",
-                                                   width="small"),
-            "Size": st.column_config.NumberColumn(
-                format="localized",
-                help="Population (communes) or students (universities)",
-            ),
+            "Careers page": st.column_config.LinkColumn(
+                display_text="Open ↗", width="small"),
+            "Fallback search": st.column_config.LinkColumn(
+                display_text="Search ↗", width="small"),
             "Updated": st.column_config.TextColumn(
-                width="small", help="When the careers page last changed"
-            ),
+                width="small", help="When the careers page last changed"),
             "Score": st.column_config.NumberColumn(
                 width="small", format="%d",
-                help=f"Evidence total. ≥{HIGH_THRESHOLD} high, ≥{THRESHOLD} medium.",
-            ),
+                help=f"Evidence total. ≥{HIGH_THRESHOLD} high, ≥{THRESHOLD} medium."),
         },
+        key="org_editor",
     )
+
+    # Persist any ticked/unticked rows. Compare the editor's Reviewed column
+    # against what we loaded, and write only the diffs to PocketBase.
+    by_id = view.set_index("id")
+    changed_rows = edited[edited["Reviewed"] != table["Reviewed"]]
+    if not changed_rows.empty:
+        for _, erow in changed_rows.iterrows():
+            org_id = erow["_id"]
+            row = by_id.loc[org_id]
+            try:
+                store.set_reviewed(
+                    org_id, bool(erow["Reviewed"]),
+                    current_url=row["careers_url"],
+                    page_date=row["current_page_date"],
+                )
+            except Exception as e:
+                st.error(f"Could not save review state: {e}")
+        load_catalogue.clear()
+        st.rerun()
+
     st.download_button(
         "Download as CSV", view.to_csv(index=False).encode(),
         file_name="brussels_organisations.csv", mime="text/csv",
     )
-
-    st.divider()
-    st.subheader("Organisation detail")
-    pick = st.selectbox("Choose an organisation", view["organisation"].tolist())
-    r = view[view["organisation"] == pick].iloc[0]
-
-    c1, c2 = st.columns([2, 1])
-    with c1:
-        st.markdown(f"### {r['organisation']}")
-        st.markdown(
-            f"<span style='color:{MUTED}'>{r['sector']}"
-            + (f" · {r['type']}" if r["type"] else "")
-            + (f" · {r['base']}" if r["base"] else "")
-            + "</span>",
-            unsafe_allow_html=True,
-        )
-        if r["description"]:
-            st.write(r["description"])
-        if r["target_roles"]:
-            st.markdown(f"**Roles to look for:** {r['target_roles']}")
-        if r["why_fits"] and r["why_fits"] != r["description"]:
-            st.markdown(f"**Why it fits:** {r['why_fits']}")
-        tags = []
-        if r["phd_relevant"]:
-            tags.append("🎓 anthropology / PhD route")
-        if r["latam_relevant"]:
-            tags.append("🌎 Latin America / Spanish")
-        if r["remote_friendly"]:
-            tags.append("🏠 hires remote / worldwide")
-        if tags:
-            st.markdown(" · ".join(tags))
-    with c2:
-        if r["languages"]:
-            st.metric("Working language", r["languages"])
-        if pd.notna(r["size"]) and r["size"]:
-            label = ("Population" if r["sector"] == "Commune / local government"
-                     else "Students" if r["sector"] == "University & research"
-                     else "Size")
-            st.metric(label, f"{int(r['size']):,}")
-        if r["careers_url"]:
-            conf = r["careers_confidence"]
-            st.markdown(f"{CONF_ICON.get(conf,'⚪')} **[Careers page ↗]({r['careers_url']})**")
-            st.caption(f"Confidence: {conf or 'unknown'} · score {r['careers_score']}")
-            if len(r["careers_reasons"]):
-                with st.expander("Why this page?"):
-                    for reason in r["careers_reasons"]:
-                        st.caption(f"· {reason}")
-            if r["last_updated"]:
-                trust = r["last_updated_trust"]
-                st.caption(f"Last updated {r['last_updated']} — source: "
-                           f"{TRUST_NOTE.get(trust, 'unknown')}")
-            else:
-                st.caption("This page publishes no last-updated date.")
-        elif r["search_url"]:
-            st.markdown(f"⚪ [Search for it ↗]({r['search_url']})")
-            st.caption("No careers page found with enough confidence.")
-        if r["homepage"]:
-            st.markdown(f"[Homepage ↗]({r['homepage']})")
-        if len(r["sources"]):
-            st.caption("Source: " + ", ".join(r["sources"]))
-
-        # --- user actions: mark checked, and refresh the URL ---------------
-        st.divider()
-        if r["last_check_verdict"]:
-            when = str(r["last_check_at"])[:10]
-            st.caption(f"You last marked this **{r['last_check_verdict']}** "
-                       f"on {when}.")
-
-        VERDICTS = {
-            "good": "✅ Good link", "wrong": "❌ Wrong page",
-            "dead": "💀 Dead / 404", "applied": "📮 Applied",
-            "not_relevant": "🚫 Not relevant",
-        }
-        st.caption("Mark this link, once you've looked:")
-        vcols = st.columns(len(VERDICTS))
-        for col, (verdict, lbl) in zip(vcols, VERDICTS.items()):
-            if col.button(lbl, key=f"v_{r['id']}_{verdict}",
-                          use_container_width=True):
-                try:
-                    store.log_check(r["id"], r["version_id"], verdict,
-                                    r["careers_url"])
-                    load_catalogue.clear()
-                    st.success(f"Logged: {verdict}")
-                    st.rerun()
-                except Exception as e:
-                    st.error(f"Could not save: {e}")
-
-        if st.button("🔄 Refresh this URL", key=f"refresh_{r['id']}"):
-            with st.spinner(f"Re-searching for {r['organisation']}…"):
-                try:
-                    new = store.refresh_org(
-                        r["id"], r["organisation"], base=r["base"],
-                        existing_url=r["careers_url"], category=r["category"],
-                    )
-                    load_catalogue.clear()
-                    if new.get("url") and new.get("url") != r["careers_url"]:
-                        st.success(f"New URL found: {new['url']}")
-                    else:
-                        st.info("No change — the current URL is still the best match.")
-                    st.rerun()
-                except Exception as e:
-                    st.error(f"Refresh failed: {e}")
-
-        # --- URL history --------------------------------------------------
-        with st.expander("URL history"):
-            try:
-                hist = store.version_history(r["id"])
-            except Exception:
-                hist = []
-            if len(hist) <= 1:
-                st.caption("Only one version on record so far.")
-            for v in hist:
-                tag = "current" if not v.get("superseded") else "superseded"
-                st.caption(
-                    f"**{tag}** · {str(v.get('discovered_at',''))[:10]} · "
-                    f"score {v.get('score','?')} · [{v.get('url','')[:60]}]"
-                    f"({v.get('url','')})"
-                )
 
 # ------------------------------------------------------------------ sectors
 elif page == "Sectors":

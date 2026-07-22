@@ -70,6 +70,14 @@ def organisations_spec() -> dict:
             _bool("phd_relevant"), _bool("latam_relevant"), _bool("remote_friendly"),
             _text("homepage", maxSize=1000), _text("search_url", maxSize=1000),
             _json("sources"),
+            # "Reviewed" state. reviewed=true means Sarah has looked at the
+            # current careers page. reviewed_url / reviewed_page_date capture
+            # what she reviewed against, so a refresh can tell whether the page
+            # has since changed and auto-untick.
+            _bool("reviewed"),
+            _text("reviewed_url", maxSize=1000),
+            _text("reviewed_page_date"),   # page last_updated at review time
+            _date("reviewed_at"),
             # current_url is added in a second pass, once url_versions exists.
         ],
         "indexes": [

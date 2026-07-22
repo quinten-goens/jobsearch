@@ -8,6 +8,19 @@ from datetime import datetime, timezone
 
 from .pb import PB
 
+# Reads use the regular account (open list/view rules). Writes that touch the
+# organisations table -- repointing current_url on a refresh -- need superuser,
+# since organisations stays read-only to the public so the catalogue can't be
+# corrupted. One cached admin client, reused so we don't re-auth per action.
+_admin: PB | None = None
+
+
+def _admin_pb() -> PB:
+    global _admin
+    if _admin is None:
+        _admin = PB(admin=True)
+    return _admin
+
 
 def _flatten(org: dict, version: dict | None) -> dict:
     """One org row + its current url_version -> the flat record the UI uses."""
@@ -21,6 +34,12 @@ def _flatten(org: dict, version: dict | None) -> dict:
     rec["last_updated_trust"] = v.get("last_updated_trust", "")
     rec["last_updated_age_days"] = v.get("last_updated_age_days")
     rec["version_id"] = v.get("id", "")
+    rec["current_page_date"] = v.get("last_updated", "")
+    # Review state comes straight off the org row.
+    rec["reviewed"] = bool(org.get("reviewed"))
+    rec["reviewed_url"] = org.get("reviewed_url", "")
+    rec["reviewed_page_date"] = org.get("reviewed_page_date", "")
+    rec["reviewed_at"] = org.get("reviewed_at", "")
     return rec
 
 
@@ -61,6 +80,23 @@ def log_check(org_id: str, version_id: str, verdict: str, url: str,
     })
 
 
+def set_reviewed(org_id: str, reviewed: bool, current_url: str = "",
+                 page_date: str = "") -> dict:
+    """Tick/untick 'reviewed'. On tick, record what was reviewed against so a
+    later refresh can tell whether the page has changed."""
+    admin = _admin_pb()
+    body: dict = {"reviewed": reviewed}
+    if reviewed:
+        body["reviewed_url"] = current_url
+        body["reviewed_page_date"] = page_date or ""
+        body["reviewed_at"] = datetime.now(timezone.utc).isoformat()
+    else:
+        body["reviewed_url"] = ""
+        body["reviewed_page_date"] = ""
+        body["reviewed_at"] = None
+    return admin.update_record("organisations", org_id, body)
+
+
 def version_history(org_id: str, pb: PB | None = None) -> list[dict]:
     """All URLs ever found for an org, newest first."""
     pb = pb or PB()
@@ -69,46 +105,80 @@ def version_history(org_id: str, pb: PB | None = None) -> list[dict]:
                   reverse=True)
 
 
-def refresh_org(org_id: str, org_name: str, base: str = "",
-                existing_url: str = "", category: str = "",
-                pb: PB | None = None) -> dict:
-    """Re-run discovery for one org and, if the URL changed, append a version.
+def refresh_org(org: dict, pb: PB | None = None) -> dict:
+    """Re-run discovery for one org. Append a url_version if the URL changed,
+    and auto-untick 'reviewed' if the page has been updated since she checked.
 
-    Returns the new (or unchanged) current version record.
+    `org` is a flat record from load_catalogue (has id, organisation, base,
+    careers_url, category, reviewed, reviewed_url, reviewed_page_date).
+
+    Returns {changed, new_url, unreviewed, page_date} for the UI to report.
     """
     from .discover import discover_one
     from .freshness import last_updated
 
-    pb = pb or PB()
+    pb = pb or _admin_pb()  # writes to organisations require superuser
+    org_id = org["id"]
     res = discover_one({
-        "id": org_id, "organisation": org_name, "category": category,
-        "priority": None, "existing_url": existing_url, "base": base,
+        "id": org_id, "organisation": org["organisation"],
+        "category": org.get("category", ""), "priority": None,
+        "existing_url": org.get("careers_url", ""), "base": org.get("base", ""),
     })
-
-    current = pb.find_one("url_versions", f'org="{org_id}" && superseded=false')
     new_url = res.get("careers_url") or ""
+    current = pb.find_one("url_versions", f'org="{org_id}" && superseded=false')
+    url_changed = bool(new_url) and (not current or current.get("url") != new_url)
 
-    # No URL found, or same as current: log the refresh attempt, change nothing.
-    if not new_url or (current and current.get("url") == new_url):
-        return current or {}
-
-    if current:
-        pb.update_record("url_versions", current["id"], {"superseded": True})
+    # Always re-check freshness of the live page, even when the URL is unchanged
+    # -- "same URL, but the page was updated" is the common case.
     fresh = last_updated(new_url) if new_url else {}
-    new = pb.create_record("url_versions", {
-        "org": org_id,
-        "url": new_url,
-        "confidence": res.get("confidence") or "none",
-        "score": int(res.get("score") or 0),
-        "reasons": res.get("reasons") or [],
-        "method": "refresh",
-        "last_updated": fresh.get("date", ""),
-        "last_updated_source": fresh.get("source", ""),
-        "last_updated_trust": fresh.get("trust", ""),
-        "last_updated_age_days": fresh.get("age_days"),
-        "run_id": "refresh-" + datetime.now().strftime("%Y%m%d-%H%M%S"),
-        "superseded": False,
-        "discovered_at": datetime.now(timezone.utc).isoformat(),
-    })
-    pb.update_record("organisations", org_id, {"current_url": new["id"]})
-    return new
+    page_date = fresh.get("date", "")
+
+    # --- append a new version if the URL moved --------------------------
+    if url_changed:
+        if current:
+            pb.update_record("url_versions", current["id"], {"superseded": True})
+        new = pb.create_record("url_versions", {
+            "org": org_id, "url": new_url,
+            "confidence": res.get("confidence") or "none",
+            "score": int(res.get("score") or 0),
+            "reasons": res.get("reasons") or [],
+            "method": "refresh",
+            "last_updated": page_date,
+            "last_updated_source": fresh.get("source", ""),
+            "last_updated_trust": fresh.get("trust", ""),
+            "last_updated_age_days": fresh.get("age_days"),
+            "run_id": "refresh-" + datetime.now().strftime("%Y%m%d-%H%M%S"),
+            "superseded": False,
+            "discovered_at": datetime.now(timezone.utc).isoformat(),
+        })
+        pb.update_record("organisations", org_id, {"current_url": new["id"]})
+    elif current and page_date and page_date != current.get("last_updated"):
+        # URL unchanged but the page's own date moved: keep the freshness on
+        # the current version up to date.
+        pb.update_record("url_versions", current["id"], {
+            "last_updated": page_date,
+            "last_updated_source": fresh.get("source", ""),
+            "last_updated_trust": fresh.get("trust", ""),
+            "last_updated_age_days": fresh.get("age_days"),
+        })
+
+    # --- auto-untick 'reviewed' if the page has been updated ------------
+    unreviewed = False
+    if org.get("reviewed"):
+        prev_date = org.get("reviewed_page_date") or ""
+        # Updated == the careers URL moved, or the page's trustworthy
+        # last-updated date is now newer than when she reviewed it.
+        page_is_newer = bool(page_date and prev_date and page_date > prev_date)
+        if url_changed or page_is_newer:
+            pb.update_record("organisations", org_id, {
+                "reviewed": False, "reviewed_url": "",
+                "reviewed_page_date": "", "reviewed_at": None,
+            })
+            unreviewed = True
+
+    return {
+        "changed": url_changed,
+        "new_url": new_url,
+        "unreviewed": unreviewed,
+        "page_date": page_date,
+    }
