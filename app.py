@@ -21,15 +21,6 @@ st.set_page_config(page_title="Brussels job search", page_icon="🇧🇪", layou
 # Categorical slots 1-3 from the validated reference palette; only a few are
 # needed, which keeps colour alone safe to read.
 SERIES = ["#2a78d6", "#008300", "#e87ba4"]
-MUTED = "#898781"
-
-CONF_ICON = {"high": "🟢", "medium": "🟡", "none": "⚪", "": "⚪"}
-TRUST_NOTE = {
-    "high": "the site's own 'content changed' stamp",
-    "medium": "the site's sitemap",
-    "low": "an HTTP header — on a dynamic page this is often just render time",
-    "none": "no date published",
-}
 
 
 # PocketBase is the source of truth. Cache briefly so a rerun isn't a network
@@ -140,6 +131,23 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
              "refresh un-ticks it if the page has been updated since.",
     )
 
+    st.sidebar.caption("Page freshness")
+    updated_within = st.sidebar.selectbox(
+        "Updated within",
+        ["Last 30 days", "Last 90 days", "Last year", "Any time"],
+        index=0,  # 30 days is the requested default
+        help="Filters on the careers page's last-updated date. Only ~1/3 of "
+             "pages publish a trustworthy date; use the toggle below to decide "
+             "what to do with the rest.",
+    )
+    include_undated = st.sidebar.checkbox(
+        "Also show pages with no known date", value=False,
+        help="Only ~1 in 5 pages publishes a trustworthy update date. With "
+             "this off, the freshness filter is strict but hides every page "
+             "that doesn't advertise its age (most communes and NGOs). Turn "
+             "it on to keep those too.",
+    )
+
     st.sidebar.caption("Careers page")
     conf = st.sidebar.multiselect(
         "Confidence", ["high", "medium", "none"],
@@ -177,6 +185,15 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
         f = f[f["reviewed"]]
     elif reviewed == "Not yet reviewed":
         f = f[~f["reviewed"]]
+    if updated_within != "Any time":
+        days = {"Last 30 days": 30, "Last 90 days": 90, "Last year": 365}[updated_within]
+        cutoff = pd.Timestamp(date.today()) - pd.Timedelta(days=days)
+        dt = pd.to_datetime(f["last_updated"], errors="coerce")
+        fresh_enough = dt >= cutoff
+        # Pages with no parseable date are kept or dropped per the toggle.
+        if include_undated:
+            fresh_enough = fresh_enough | dt.isna()
+        f = f[fresh_enough]
     if conf:
         f = f[f["careers_confidence"].replace("", "none").isin(conf)]
     if min_score > lo:
@@ -238,7 +255,6 @@ if page == "Organisations":
     # The org id rides along as a hidden column so we can map edits back.
     table = pd.DataFrame({
         "Reviewed": view["reviewed"].tolist(),
-        "": [CONF_ICON.get(c, "⚪") for c in view["careers_confidence"]],
         "Organisation": view["organisation"].tolist(),
         "Sector": view["sector"].tolist(),
         "Based in": view["base"].tolist(),
@@ -259,8 +275,6 @@ if page == "Organisations":
                 "✓", width="small",
                 help="Tick once you've reviewed this careers page.",
             ),
-            "": st.column_config.TextColumn("", width="small",
-                                            help="Careers-page confidence"),
             "Organisation": st.column_config.TextColumn(width="large"),
             "Sector": st.column_config.TextColumn(width="medium"),
             "Based in": st.column_config.TextColumn(width="small"),
