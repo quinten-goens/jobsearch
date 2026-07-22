@@ -338,6 +338,28 @@ def from_directories() -> list[dict]:
     return out
 
 
+def from_register() -> list[dict]:
+    """Larger Belgium-based orgs from the EU Transparency Register."""
+    from .register import REGISTER_JSON
+
+    if not REGISTER_JSON.exists():
+        return []
+    out = []
+    for o in json.loads(REGISTER_JSON.read_text()):
+        rec = _record(
+            organisation=o["organisation"],
+            sector=o.get("sector") or "NGO & civil society",
+            category=o.get("category") or "", type=o.get("type") or "",
+            base=o.get("base") or "Belgium",
+            homepage=o.get("homepage") or "",
+            size=o.get("size"),
+            description=o.get("description") or "",
+            sources=["EU Transparency Register"],
+        )
+        out.append(tag_themes(rec))
+    return out
+
+
 def merge(*groups: list[dict]) -> list[dict]:
     """Merge on a normalised name; earlier groups win on conflicts."""
     by_key: dict[str, dict] = {}
@@ -371,12 +393,16 @@ def _from_registry_row(rec: dict) -> bool:
 
 
 def main() -> None:
-    sheet, registry, directories = from_sheet(), from_registry(), from_directories()
+    sheet, registry = from_sheet(), from_registry()
+    directories, register = from_directories(), from_register()
     print(f"  sheet:       {len(sheet):>4}")
     print(f"  registry:    {len(registry):>4}")
     print(f"  directories: {len(directories):>4}")
+    print(f"  register:    {len(register):>4}")
 
-    cat = [tag_themes(r) for r in merge(sheet, registry, directories)]
+    # Curated sources first so they win the dedupe; the Register (broad but
+    # thinner) fills the gaps around them.
+    cat = [tag_themes(r) for r in merge(sheet, registry, directories, register)]
     cat.sort(key=lambda r: (r["sector"], r["organisation"]))
     CATALOGUE_JSON.write_text(json.dumps(cat, indent=2, ensure_ascii=False))
 

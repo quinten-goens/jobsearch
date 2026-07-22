@@ -349,9 +349,75 @@ def name_variants(name: str) -> list[str]:
     return [v for v in out if v and not (v in seen or seen.add(v))]
 
 
+# Careers paths to try directly on an org's own domain, before spending a
+# search. Ordered most- to least-common across EU/BE org sites. Multilingual.
+PROBE_PATHS = (
+    "/careers", "/careers/", "/en/careers", "/jobs", "/jobs/", "/en/jobs",
+    "/vacancies", "/vacancies/", "/vacatures", "/nl/vacatures", "/emplois",
+    "/fr/emplois", "/offres-emploi", "/work-with-us", "/join-us", "/join",
+    "/about/careers", "/about-us/careers", "/about-us/jobs", "/get-involved/jobs",
+    "/opportunities", "/recruitment", "/jobs-and-careers", "/career",
+    "/stellenangebote", "/karriere", "/empleo", "/trabaja-con-nosotros",
+    "/lavora-con-noi", "/en/about-us/vacancies", "/about/jobs", "/hr/vacancies",
+)
+
+
+def probe_homepage(org: dict) -> dict | None:
+    """Try common careers paths on the org's known domain, no search needed.
+
+    For Register orgs (which carry a webSiteURL) this resolves the careers page
+    at zero Brave cost, and is often more accurate than search. Returns a
+    discover-shaped dict if a path scores well, else None to fall through to
+    search.
+    """
+    home = str(org.get("homepage") or org.get("existing_url") or "").strip()
+    if not home or "//" not in home:
+        return None
+    domain = domain_of(home)
+    if not domain:
+        return None
+
+    best = None
+    for path in PROBE_PATHS:
+        url = f"https://{domain}{path}"
+        r = fetch(url)
+        if not r["ok"]:
+            continue  # 404/redirect/blocked -> not this path
+        # Only accept if the fetched page really looks like a careers page.
+        s1, why1 = score_candidate(
+            {"url": r["url"], "title": "", "snippet": "", "rank": 0}, org)
+        s2, why2, final = verify_page(r["url"])
+        total = s1 + s2
+        if best is None or total > best["score"]:
+            best = {"url": final or r["url"], "score": total,
+                    "reasons": why1 + why2}
+        if total >= HIGH_THRESHOLD:
+            break  # good enough; stop probing
+
+    if best and best["score"] >= THRESHOLD:
+        conf = "high" if best["score"] >= HIGH_THRESHOLD else "medium"
+        return {
+            "id": org["id"], "organisation": org["organisation"],
+            "category": org.get("category"), "priority": org.get("priority"),
+            "old_url": org.get("existing_url"), "careers_url": best["url"],
+            "confidence": conf, "score": best["score"],
+            "reasons": ["found by probing the org's own domain"] + best["reasons"],
+            "candidates": [], "method": "homepage-probe",
+            "search_url": "https://www.google.com/search?q="
+            + urllib.parse.quote_plus(f"{org['organisation']} jobs careers"),
+        }
+    return None
+
+
 def discover_one(org: dict) -> dict:
     name = org["organisation"]
     short = clean_name(name)
+
+    # Cheapest path first: if we know the org's domain, probe it directly for a
+    # careers page. Saves a Brave search entirely when it hits.
+    probed = probe_homepage(org)
+    if probed:
+        return probed
 
     # Several query shapes. One query per org is a single point of failure: the
     # generic one can surface an overseas office while never showing the
