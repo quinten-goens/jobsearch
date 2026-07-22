@@ -39,9 +39,12 @@ PATH_HINTS = [
     (r"recruit|rekrut", 4),
     (r"empleo|trabaja", 4),
     (r"openings?|hiring|employment", 4),
+    (r"open[-_]?positions?|positions?[-_]?open|current[-_]?positions?", 4),
+    (r"traineeship|internship|stage\b", 4),
     (r"opportunit", 3),
     (r"rejoignez|solliciteren", 3),
     (r"human[-_]?resources|ressources[-_]?humaines", 3),
+    (r"at[-_]?your[-_]?service", 2),  # europarl's careers section lives here
 ]
 
 # Text that should appear on a real careers page.
@@ -280,7 +283,15 @@ def verify_page(url: str) -> tuple[int, list[str], str]:
     """Fetch the page and score the evidence actually on it."""
     r = fetch(url)
     if not r["ok"]:
-        return -50, [f"fetch failed (HTTP {r['status']})"], ""
+        status = r["status"]
+        # 403/401/429 = the site blocks scrapers (Cloudflare, and every
+        # europa.eu / *.int institution), NOT a dead link. Penalising these
+        # sank real careers pages for the European Parliament, ECHA, EFSA, etc.
+        # Stay neutral and let the URL/domain signals decide.
+        if status in (401, 403, 429) or status == 0:
+            return 0, [f"page blocks scrapers (HTTP {status}) — not verified"], url
+        # 404/410 and other 4xx/5xx are genuinely missing.
+        return -50, [f"fetch failed (HTTP {status})"], ""
 
     soup = BeautifulSoup(r["text"], "lxml")
     for tag in soup(["script", "style", "nav", "footer"]):
