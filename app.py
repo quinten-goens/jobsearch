@@ -13,7 +13,6 @@ import pandas as pd
 import streamlit as st
 
 from jobsearch.config import JOBS_JSON
-from jobsearch.discover import HIGH_THRESHOLD, THRESHOLD
 from jobsearch import store
 
 st.set_page_config(page_title="Brussels job search", page_icon="🇧🇪", layout="wide")
@@ -89,79 +88,42 @@ def load_jobs() -> tuple[pd.DataFrame, str]:
     return df, payload.get("generated_at", "")
 
 
-cat = load_catalogue()
-if cat.empty:
-    st.warning("No catalogue yet — run `python -m jobsearch.catalogue`.")
-    st.stop()
-
-# ------------------------------------------------------------------ sidebar
-st.sidebar.title("🇧🇪 Brussels job search")
-page = st.sidebar.radio(
-    "View",
-    ["Organisations", "Sectors", "Jobs", "Coverage"],
-    label_visibility="collapsed",
-)
-st.sidebar.divider()
-
-st.sidebar.caption(f"{len(cat)} organisations · {int(cat['has_careers'].sum())} "
-                   "with a careers page")
-
-
 def org_filters(df: pd.DataFrame) -> pd.DataFrame:
     """Shared filter controls, rendered in the sidebar."""
     st.sidebar.subheader("Filter")
     q = st.sidebar.text_input("Search", placeholder="name, description, role…")
     sectors = st.sidebar.multiselect("Sector", sorted(df["sector"].unique()))
-    bases = st.sidebar.multiselect("Based in", sorted(
-        b for b in df["base"].unique() if b
-    ))
-    langs = st.sidebar.multiselect(
-        "Working language", ["FR", "NL", "EN", "ES"]
+    updated_within = st.sidebar.selectbox(
+        "Careers page updated",
+        ["In the last 30 days", "In the last 90 days", "In the last year",
+         "Any time"],
+        index=0,  # 30 days is the requested default
+        help="Show organisations whose careers page has changed recently. "
+             "Many sites don't say when they last updated — the toggle below "
+             "decides whether to include those.",
     )
-    st.sidebar.caption("Themes")
-    phd = st.sidebar.checkbox("Anthropology / PhD route")
-    latam = st.sidebar.checkbox("Latin America / Spanish")
-    remote = st.sidebar.checkbox("Hires remote / worldwide")
+    include_undated = st.sidebar.checkbox(
+        "Also show pages with no update date", value=False,
+        help="Only about 1 in 5 sites tells us when its page last changed. "
+             "With this off, you only see pages we can prove are recent — "
+             "which hides most communes and NGOs. Turn it on to see them too.",
+    )
 
     st.sidebar.caption("Progress")
     reviewed = st.sidebar.radio(
         "Reviewed", ["All", "Not yet reviewed", "Reviewed"],
         label_visibility="collapsed",
-        help="'Reviewed' means you've checked the current careers page. A "
-             "refresh un-ticks it if the page has been updated since.",
+        help="'Reviewed' means you've looked at that organisation's careers "
+             "page. A refresh un-ticks it if the page has changed since.",
     )
 
-    st.sidebar.caption("Page freshness")
-    updated_within = st.sidebar.selectbox(
-        "Updated within",
-        ["Last 30 days", "Last 90 days", "Last year", "Any time"],
-        index=0,  # 30 days is the requested default
-        help="Filters on the careers page's last-updated date. Only ~1/3 of "
-             "pages publish a trustworthy date; use the toggle below to decide "
-             "what to do with the rest.",
-    )
-    include_undated = st.sidebar.checkbox(
-        "Also show pages with no known date", value=False,
-        help="Only ~1 in 5 pages publishes a trustworthy update date. With "
-             "this off, the freshness filter is strict but hides every page "
-             "that doesn't advertise its age (most communes and NGOs). Turn "
-             "it on to keep those too.",
-    )
-
-    st.sidebar.caption("Careers page")
-    conf = st.sidebar.multiselect(
-        "Confidence", ["high", "medium", "none"],
-        help="How sure the scorer is that this really is the org's careers page",
-    )
-    lo, hi = int(df["careers_score"].min()), int(df["careers_score"].max())
-    min_score = st.sidebar.slider(
-        "Minimum score", lo, hi, lo,
-        help=(
-            "The scorer's evidence total: careers-shaped path, domain "
-            f"ownership, geography and page content. ≥{HIGH_THRESHOLD} is "
-            f"high confidence, ≥{THRESHOLD} is medium; below that we report "
-            "no page rather than guess."
-        ),
+    st.sidebar.caption("Careers page link")
+    link_choice = st.sidebar.radio(
+        "How sure are we the link is right?",
+        ["Any", "Only links we're sure about", "Hide guessed / missing links"],
+        help="Some links we found and double-checked; others are a best guess, "
+             "and a few we couldn't find at all. This lets you focus on the "
+             "ones we're confident point to the real careers page.",
     )
 
     f = df
@@ -171,22 +133,13 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
         f = f[blob.str.contains(q, case=False, na=False)]
     if sectors:
         f = f[f["sector"].isin(sectors)]
-    if bases:
-        f = f[f["base"].isin(bases)]
-    if langs:
-        f = f[f["languages"].str.contains("|".join(langs), case=False, na=False)]
-    if phd:
-        f = f[f["phd_relevant"]]
-    if latam:
-        f = f[f["latam_relevant"]]
-    if remote:
-        f = f[f["remote_friendly"]]
     if reviewed == "Reviewed":
         f = f[f["reviewed"]]
     elif reviewed == "Not yet reviewed":
         f = f[~f["reviewed"]]
     if updated_within != "Any time":
-        days = {"Last 30 days": 30, "Last 90 days": 90, "Last year": 365}[updated_within]
+        days = {"In the last 30 days": 30, "In the last 90 days": 90,
+                "In the last year": 365}[updated_within]
         cutoff = pd.Timestamp(date.today()) - pd.Timedelta(days=days)
         dt = pd.to_datetime(f["last_updated"], errors="coerce")
         fresh_enough = dt >= cutoff
@@ -194,16 +147,21 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
         if include_undated:
             fresh_enough = fresh_enough | dt.isna()
         f = f[fresh_enough]
-    if conf:
-        f = f[f["careers_confidence"].replace("", "none").isin(conf)]
-    if min_score > lo:
-        f = f[f["careers_score"] >= min_score]
+    conf = f["careers_confidence"].replace("", "none")
+    if link_choice == "Only links we're sure about":
+        f = f[conf == "high"]
+    elif link_choice == "Hide guessed / missing links":
+        f = f[conf.isin(["high", "medium"])]
     return f
 
 
 # ------------------------------------------------------------ organisations
-if page == "Organisations":
+def page_organisations():
     st.title("Organisations")
+    cat = load_catalogue()
+    if cat.empty:
+        st.warning("No catalogue yet — run `python -m jobsearch.catalogue`.")
+        st.stop()
     f = org_filters(cat)
 
     k1, k2, k3, k4, k5 = st.columns(5)
@@ -253,16 +211,20 @@ if page == "Organisations":
     # One editable table. Reviewed is a tickable checkbox; everything else is
     # read-only. Sarah works entirely here -- no detail panel, no button wall.
     # The org id rides along as a hidden column so we can map edits back.
+    # Plain-language link quality instead of a raw score.
+    LINK_LABEL = {"high": "✓ Checked", "medium": "Best guess",
+                  "none": "Not found", "": "Not found"}
     table = pd.DataFrame({
         "Reviewed": view["reviewed"].tolist(),
         "Organisation": view["organisation"].tolist(),
         "Sector": view["sector"].tolist(),
-        "Based in": view["base"].tolist(),
-        "Lang": view["languages"].tolist(),
-        "Updated": view["last_updated"].replace("", "—").tolist(),
-        "Score": view["careers_score"].tolist(),
+        "Where": view["base"].tolist(),
+        "Languages": view["languages"].tolist(),
+        "Page last changed": view["last_updated"].replace("", "—").tolist(),
+        "Link": [LINK_LABEL.get(c, "Not found")
+                 for c in view["careers_confidence"]],
         "Careers page": view["careers_url"].tolist(),
-        "Fallback search": view["search_url"].tolist(),
+        "Search instead": view["search_url"].tolist(),
         "_id": view["id"].tolist(),
     })
 
@@ -272,21 +234,29 @@ if page == "Organisations":
         column_order=[c for c in table.columns if c != "_id"],
         column_config={
             "Reviewed": st.column_config.CheckboxColumn(
-                "✓", width="small",
-                help="Tick once you've reviewed this careers page.",
+                "Reviewed", width="small",
+                help="Tick once you've looked at this organisation's careers "
+                     "page.",
             ),
             "Organisation": st.column_config.TextColumn(width="large"),
             "Sector": st.column_config.TextColumn(width="medium"),
-            "Based in": st.column_config.TextColumn(width="small"),
+            "Where": st.column_config.TextColumn(width="small"),
             "Careers page": st.column_config.LinkColumn(
-                display_text="Open ↗", width="small"),
-            "Fallback search": st.column_config.LinkColumn(
-                display_text="Search ↗", width="small"),
-            "Updated": st.column_config.TextColumn(
-                width="small", help="When the careers page last changed"),
-            "Score": st.column_config.NumberColumn(
-                width="small", format="%d",
-                help=f"Evidence total. ≥{HIGH_THRESHOLD} high, ≥{THRESHOLD} medium."),
+                "Careers page", display_text="Open ↗", width="small",
+                help="The page where this organisation lists its jobs."),
+            "Search instead": st.column_config.LinkColumn(
+                "Search instead", display_text="Search ↗", width="small",
+                help="A Google search for their jobs — use this when we "
+                     "couldn't find the page, or the link looks wrong."),
+            "Page last changed": st.column_config.TextColumn(
+                width="small",
+                help="When the careers page was last updated, where the site "
+                     "tells us. A dash means the site doesn't say."),
+            "Link": st.column_config.TextColumn(
+                width="small",
+                help="'✓ Checked' = we found the real careers page and "
+                     "verified it. 'Best guess' = likely right, worth a "
+                     "glance. 'Not found' = use the Search instead link."),
         },
         key="org_editor",
     )
@@ -316,10 +286,11 @@ if page == "Organisations":
     )
 
 # ------------------------------------------------------------------ sectors
-elif page == "Sectors":
+def page_sectors():
+    cat = load_catalogue()
     st.title("Sectors")
-    st.caption("How the 413 organisations break down, and how well each sector "
-               "is covered.")
+    st.caption(f"How the {len(cat)} organisations break down, and how well "
+               "each sector is covered.")
 
     by_sector = cat["sector"].value_counts()
     # Magnitude comparison: bars in one hue, horizontal for long names.
@@ -349,7 +320,7 @@ elif page == "Sectors":
     st.bar_chart(top_base, color=SERIES[0], horizontal=True, height=320)
 
 # --------------------------------------------------------------------- jobs
-elif page == "Jobs":
+def page_jobs():
     st.title("Jobs")
     jobs, generated_at = load_jobs()
     if jobs.empty:
@@ -411,7 +382,8 @@ elif page == "Jobs":
     )
 
 # ----------------------------------------------------------------- coverage
-else:
+def page_coverage():
+    cat = load_catalogue()
     st.title("Coverage")
     st.caption("How the catalogue was built and where it's weak — so you know "
                "what to trust.")
@@ -473,3 +445,16 @@ else:
                 display_text="Search ↗"
             )},
         )
+
+
+# ----------------------------------------------------------------- navigation
+# Proper Streamlit multipage nav (not a radio): each page is its own entry in
+# the sidebar, with the browser URL and back/forward working per page.
+st.sidebar.title("🇧🇪 Brussels job search")
+nav = st.navigation([
+    st.Page(page_organisations, title="Organisations", icon="🏢", default=True),
+    st.Page(page_sectors, title="Sectors", icon="📊"),
+    st.Page(page_jobs, title="Jobs", icon="💼"),
+    st.Page(page_coverage, title="Coverage", icon="🔍"),
+])
+nav.run()
