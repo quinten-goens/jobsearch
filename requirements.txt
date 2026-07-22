@@ -5,3 +5,8 @@ lxml>=5.0
 streamlit>=1.30
 pandas>=2.0
 python-dotenv>=1.0
+pocketbase>=0.17
+# Only needed for the job-board scrape (jobsearch.pipeline), not the daily
+# refresh. Install the Chromium binary with `playwright install chromium` if
+# you run the board scrape in-container.
+playwright>=1.40

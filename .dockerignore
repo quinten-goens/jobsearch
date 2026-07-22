@@ -1,0 +1,14 @@
+# Never bake secrets or local state into the image. .env is injected at runtime
+# by Dokploy; data/ is a mounted volume so the cache + freshness baseline persist.
+.env
+.venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+data/
+conv/
+.git/
+.gitignore
+.DS_Store
+README.md
+*.xlsx

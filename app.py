@@ -134,9 +134,10 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
     else:
         updated_within = st.sidebar.selectbox(
             "Careers page updated",
-            ["In the last 30 days", "In the last 90 days", "In the last year",
-             "Any time"],
-            index=0,  # 30 days is the requested default
+            ["Today", "In the last 2 days", "In the last 3 days",
+             "In the last 7 days", "In the last 30 days",
+             "In the last 90 days", "In the last year", "Any time"],
+            index=4,  # 30 days is the requested default
             help="Show organisations whose careers page has changed recently. "
                  "Many sites don't say when they last updated — the toggle "
                  "below decides whether to include those.",
@@ -193,8 +194,9 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
     elif reviewed == "Not yet reviewed":
         f = f[~f["reviewed"]]
     if updated_within != "Any time":
-        days = {"In the last 30 days": 30, "In the last 90 days": 90,
-                "In the last year": 365}[updated_within]
+        days = {"Today": 0, "In the last 2 days": 2, "In the last 3 days": 3,
+                "In the last 7 days": 7, "In the last 30 days": 30,
+                "In the last 90 days": 90, "In the last year": 365}[updated_within]
         cutoff = pd.Timestamp(date.today()) - pd.Timedelta(days=days)
         dt = pd.to_datetime(f["last_updated"], errors="coerce")
         fresh_enough = dt >= cutoff

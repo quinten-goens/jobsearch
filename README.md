@@ -76,6 +76,52 @@ API, so a full 665-org sync is a handful of calls, not thousands.
 Credentials live in `.env`: `PH_ADMIN_*` for schema creation, `PH_*` for the
 app's day-to-day reads and writes.
 
+## Daily refresh (Docker + Dokploy)
+
+The catalogue is only useful if it stays current: a page that gained an opening
+yesterday should surface today. `jobsearch.refresh` is the job that keeps it
+fresh, and the `Dockerfile` packages the code to run it on a schedule.
+
+```bash
+.venv/bin/python -m jobsearch.refresh            # re-check every known page, then sync
+.venv/bin/python -m jobsearch.refresh --no-sync  # local only
+.venv/bin/python -m jobsearch.refresh --limit 50 # first 50 (smoke test)
+```
+
+What one run does, per org that already has a careers URL: re-checks freshness
+(metadata date, else content-hash change detection) and re-scans live openings,
+then `pb_sync` pushes the snapshot to PocketBase. It is **discovery-free** — it
+never searches for new URLs (that's `enrich`, which spends Brave quota) — so
+it's cheap and rate-limit-safe to run every day.
+
+### The container is a runtime, not a cron
+
+The image deliberately **does not run anything on start** — it holds the code
+and dependencies and then idles (`sleep infinity`). You spin it up once with
+Dokploy, and schedule the work separately so the container stays a stable,
+ready-to-exec runtime:
+
+```bash
+docker exec <container> python -m jobsearch.refresh
+```
+
+In Dokploy: deploy this repo as an app (it builds the `Dockerfile`), then add a
+**Scheduled Job** running that `docker exec` line once a day.
+
+Two things the deployment needs:
+
+- **`.env` injected at runtime**, not baked into the image (`.dockerignore`
+  keeps it out). Set `PH_URL`, `PH_USR`, `PH_PWD`, `PH_ADMIN_USR`,
+  `PH_ADMIN_PWD`, and `BRAVE_KEY` as Dokploy environment variables.
+- **A volume mounted at `/app/data`.** The HTTP cache and, crucially, the
+  content-hash freshness baseline live there. Without a persistent volume every
+  run looks like a "first scan" and can't date the metadata-less pages by change
+  (see below) — the whole point of running daily.
+
+The base image is browser-free (the daily refresh is HTTP-only). If you also run
+the job-board scrape (`jobsearch.pipeline`) in-container, add
+`RUN playwright install --with-deps chromium` to the `Dockerfile`.
+
 Jobs (secondary):
 
 ```bash
@@ -89,20 +135,30 @@ an interrupted run costs at most the requests in flight.
 
 ## Is this careers page worth checking?
 
-`freshness.py` answers that, and is careful about how much it claims. Four
-sources, ranked by trust:
+`freshness.py` answers that, and is careful about how much it claims. Sources,
+ranked by trust:
 
 | Source | Trust | Why |
 |---|---|---|
 | CMS `dateModified` / `article:modified_time` | high | the site's own "content changed" stamp |
 | sitemap `<lastmod>` | medium | usually maintained |
+| **content-hash change** | medium | *we* date the page: a changed fingerprint since the last scan means "updated now" |
 | `Last-Modified` header | **low** | on a dynamic page this is the render time, not a content change — left.eu reports "today" on every request |
-| nothing published | none | most pages, in practice |
+| nothing published | none | only on a page's very first scan |
 
 Only high/medium dates are treated as evidence, so a page is never called stale
 on the strength of a missing header. It works: Protection International's
 vacancies page was last touched 255 days ago (consistent with its "no vacancies
 at this time"), and Braine-l'Alleud's is over four years old.
+
+**Dating the pages that publish no date.** Only about a third of careers pages
+expose any last-updated metadata, so the rest used to be undateable and hidden
+by default. The fix: fingerprint each page's meaningful text (site chrome and
+volatile tokens — clocks, session ids, CSRF nonces — stripped first), store it,
+and on the next run compare. A changed hash *is* the "this page was updated"
+event, on a date we control, for every readable page. It only bites from the
+**second** scan onward — the first has no baseline to diff against — which is
+why the daily refresh and its persistent `/app/data` volume matter.
 
 ## How it finds careers pages
 
@@ -175,6 +231,13 @@ jobsearch/
   scrape.py     layered extraction + date parsing
   boards.py     EuroBrussels, Euractiv
   render.py     headless Chromium for JS pages
-  pipeline.py   drives it all -> jobs.json
+  freshness.py  when a page last changed (metadata, else content-hash)
+  openings.py   does a page have live openings right now? (HTML only)
+  enrich.py     careers page + freshness + openings per org
+  refresh.py    daily re-check of known pages, then sync (Docker entrypoint)
+  pb_sync.py    push catalogue.json -> PocketBase (batch API)
+  store.py      the app's read/write view of PocketBase
+  pipeline.py   drives the job-board scrape -> jobs.json
 app.py          Streamlit UI
+Dockerfile      runtime image for the scheduled daily refresh
 ```

@@ -40,33 +40,44 @@ def enrich_one(rec: dict) -> dict:
         rec["homepage"] = f"https://{domain_of(rec['careers_url'])}"
 
     if rec["careers_url"]:
-        # Feed last scan's fingerprint + date so a metadata-less page can still
-        # be dated by whether its content changed since we last saw it.
-        f = last_updated(rec["careers_url"],
-                         prev_hash=rec.get("content_hash") or "",
-                         prev_date=rec.get("last_updated") or "")
-        rec["last_updated"] = f["date"]
-        rec["last_updated_source"] = f["source"]
-        rec["last_updated_trust"] = f["trust"]
-        rec["last_updated_age_days"] = f["age_days"]
-        if f.get("hash"):
-            from datetime import datetime, timezone
-            rec["content_hash"] = f["hash"]
-            rec["content_hash_at"] = datetime.now(timezone.utc).isoformat()
+        recheck_page(rec)
+    return rec
 
-        # Same fetch is cached, so this is nearly free: does the page have
-        # live openings right now? This is the off-board signal Sarah cares
-        # about most.
-        from .openings import detect
-        from datetime import datetime, timezone
 
-        o = detect(rec["careers_url"])
-        rec["openings_state"] = o["state"]
-        rec["openings_count"] = o["count"]
-        rec["openings_titles"] = o["titles"]
-        rec["openings_checked_at"] = datetime.now(timezone.utc).isoformat()
-        # Fit is computed at load time in the app (from the stored titles), so
-        # re-tuning the profile never needs a re-scan.
+def recheck_page(rec: dict) -> dict:
+    """Re-check freshness + openings on an already-known careers URL, in place.
+
+    This is the cheap, discovery-free half of enrichment: no search, just a
+    (cached) fetch of the known page to re-date it and re-scan its openings.
+    It's what the daily refresh runs over the whole catalogue -- see
+    jobsearch.refresh.
+    """
+    from datetime import datetime, timezone
+
+    # Feed last scan's fingerprint + date so a metadata-less page can still be
+    # dated by whether its content changed since we last saw it.
+    f = last_updated(rec["careers_url"],
+                     prev_hash=rec.get("content_hash") or "",
+                     prev_date=rec.get("last_updated") or "")
+    rec["last_updated"] = f["date"]
+    rec["last_updated_source"] = f["source"]
+    rec["last_updated_trust"] = f["trust"]
+    rec["last_updated_age_days"] = f["age_days"]
+    if f.get("hash"):
+        rec["content_hash"] = f["hash"]
+        rec["content_hash_at"] = datetime.now(timezone.utc).isoformat()
+
+    # Same fetch is cached, so this is nearly free: does the page have live
+    # openings right now? This is the off-board signal Sarah cares about most.
+    from .openings import detect
+
+    o = detect(rec["careers_url"])
+    rec["openings_state"] = o["state"]
+    rec["openings_count"] = o["count"]
+    rec["openings_titles"] = o["titles"]
+    rec["openings_checked_at"] = datetime.now(timezone.utc).isoformat()
+    # Fit is computed at load time in the app (from the stored titles), so
+    # re-tuning the profile never needs a re-scan.
     return rec
 
 
