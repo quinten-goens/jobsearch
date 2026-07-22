@@ -59,8 +59,17 @@ def _changed(existing: dict, body: dict) -> bool:
 
 
 def main() -> None:
+    from .catalogue import dedup_by_domain
+
     pb = PB(admin=True)
     cat = json.loads(CATALOGUE_JSON.read_text())
+    # enrich writes catalogue.json directly, so apply the domain-dedup here
+    # too (it operates on names/domains, which enrich preserves) -- otherwise
+    # the same-org-different-name duplicates would reach PocketBase.
+    before = len(cat)
+    cat = dedup_by_domain(cat)
+    if len(cat) != before:
+        print(f"  deduped {before - len(cat)} same-domain duplicates")
     run_id = "sync-" + datetime.now().strftime("%Y%m%d-%H%M%S")
 
     # --- read current state: 3 paginated list calls, not 665 -------------
