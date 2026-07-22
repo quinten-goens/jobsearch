@@ -1,4 +1,4 @@
-2026-07-17 00:03:37.391 Uvicorn server started on :::8502
+2026-07-22 11:41:25.759 Uvicorn server started on :::8502
 
   You can now view your Streamlit app in your browser.
 
@@ -11,8 +11,9 @@
   $ xcode-select --install
   $ pip install watchdog
             
-2026-07-17 00:03:51.583 Please replace `use_container_width` with `width`.
+2026-07-22 11:41:46.142 Please replace `use_container_width` with `width`.
 
 `use_container_width` will be removed after 2025-12-31.
 
 For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+  Stopping...

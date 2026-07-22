@@ -84,12 +84,28 @@ class PB:
         return {"Authorization": self.token()}
 
     # ------------------------------------------------------------- requests
+    # PocketHost rate-limits /api paths and answers 429 when pushed. Space
+    # requests out and back off on 429 rather than failing the whole sync.
+    _min_interval = 0.35
+    _last_req = 0.0
+
     def _req(self, method: str, path: str, **kw) -> dict:
-        r = requests.request(method, f"{self.base}{path}",
-                             headers=self._headers(), timeout=30, **kw)
-        if not r.ok:
-            raise PBError(f"{method} {path} -> {r.status_code}: {r.text[:200]}")
-        return r.json() if r.text else {}
+        for attempt in range(6):
+            gap = time.time() - PB._last_req
+            if gap < PB._min_interval:
+                time.sleep(PB._min_interval - gap)
+            PB._last_req = time.time()
+
+            r = requests.request(method, f"{self.base}{path}",
+                                 headers=self._headers(), timeout=30, **kw)
+            if r.status_code == 429:
+                wait = min(30, 2 ** attempt)
+                time.sleep(wait)
+                continue
+            if not r.ok:
+                raise PBError(f"{method} {path} -> {r.status_code}: {r.text[:200]}")
+            return r.json() if r.text else {}
+        raise PBError(f"{method} {path} -> 429 after retries (rate limited)")
 
     # ------------------------------------------------------------- schema
     def list_collections(self) -> list[dict]:
@@ -131,3 +147,29 @@ class PB:
     def find_one(self, coll: str, filter: str) -> dict | None:
         items = self.list_records(coll, filter=filter, per_page=1)
         return items[0] if items else None
+
+    # ------------------------------------------------------------- batch
+    # PocketBase runs many writes in one HTTP request via /api/batch. This is
+    # the difference between a ~1,500-call sync and a ~30-call one -- essential
+    # under PocketHost's 1,000-requests/hour ceiling. Must be enabled in the
+    # instance settings (Settings > Batch); create_collection turns it on for
+    # us in pb_schema.
+    def batch(self, ops: list[dict], chunk: int = 100) -> list[dict]:
+        """Run write ops in batches. Each op: {method, path, body}.
+
+        Returns the per-op response bodies in order. Raises on any failure.
+        """
+        results: list[dict] = []
+        for start in range(0, len(ops), chunk):
+            part = ops[start:start + chunk]
+            payload = {"requests": [
+                {"method": o["method"], "url": o["path"], "body": o.get("body", {})}
+                for o in part
+            ]}
+            data = self._req("POST", "/api/batch", json=payload)
+            # PocketBase returns a list of {status, body} in request order.
+            for item in (data if isinstance(data, list) else data.get("responses", [])):
+                if item.get("status", 200) >= 400:
+                    raise PBError(f"batch op failed: {item}")
+                results.append(item.get("body", {}))
+        return results

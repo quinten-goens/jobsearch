@@ -12,9 +12,9 @@ from datetime import date, datetime
 import pandas as pd
 import streamlit as st
 
-from jobsearch.catalogue import CATALOGUE_JSON
 from jobsearch.config import JOBS_JSON
 from jobsearch.discover import HIGH_THRESHOLD, THRESHOLD
+from jobsearch import store
 
 st.set_page_config(page_title="Brussels job search", page_icon="🇧🇪", layout="wide")
 
@@ -32,15 +32,23 @@ TRUST_NOTE = {
 }
 
 
-@st.cache_data(ttl=120)
+# PocketBase is the source of truth. Cache briefly so a rerun isn't a network
+# round-trip, but short enough that a check or refresh shows up promptly.
+@st.cache_data(ttl=60)
 def load_catalogue() -> pd.DataFrame:
-    if not CATALOGUE_JSON.exists():
+    try:
+        rows = store.load_catalogue()
+    except Exception as e:
+        st.error(f"Could not reach PocketBase: {e}")
         return pd.DataFrame()
-    df = pd.DataFrame(json.loads(CATALOGUE_JSON.read_text()))
+    df = pd.DataFrame(rows)
+    if df.empty:
+        return df
     for col in ("organisation", "sector", "category", "type", "base",
                 "languages", "description", "why_fits", "target_roles",
                 "careers_url", "careers_confidence", "homepage",
-                "last_updated", "last_updated_trust", "search_url"):
+                "last_updated", "last_updated_trust", "search_url",
+                "version_id", "last_check_verdict", "last_check_at", "id"):
         if col not in df:
             df[col] = ""
         df[col] = df[col].fillna("")
@@ -176,6 +184,33 @@ if page == "Organisations":
         st.info("No organisations match these filters.")
         st.stop()
 
+    # Refresh the whole filtered set. Capped so a stray "no filters" click
+    # doesn't kick off 665 live searches; narrow the filters for a big sweep.
+    rc1, rc2 = st.columns([3, 1])
+    with rc2:
+        if st.button(f"🔄 Refresh these {len(f)}", use_container_width=True,
+                     disabled=len(f) > 60,
+                     help="Re-search every organisation shown. Filter to ≤60 "
+                          "first; larger sweeps belong on the CLI "
+                          "(python -m jobsearch.enrich)."):
+            prog = st.progress(0.0, "Refreshing…")
+            changed = 0
+            rows = f.to_dict("records")
+            for i, rr in enumerate(rows, 1):
+                try:
+                    new = store.refresh_org(
+                        rr["id"], rr["organisation"], base=rr["base"],
+                        existing_url=rr["careers_url"], category=rr["category"],
+                    )
+                    if new.get("url") and new.get("url") != rr["careers_url"]:
+                        changed += 1
+                except Exception:
+                    pass
+                prog.progress(i / len(rows), f"{i}/{len(rows)}…")
+            load_catalogue.clear()
+            st.success(f"Refreshed {len(rows)} — {changed} URLs changed.")
+            st.rerun()
+
     view = f.sort_values(["sector", "organisation"])
     # Sector and Type are both filters already; showing Type here as well was
     # pushing the careers link off the right edge.
@@ -277,6 +312,64 @@ if page == "Organisations":
             st.markdown(f"[Homepage ↗]({r['homepage']})")
         if len(r["sources"]):
             st.caption("Source: " + ", ".join(r["sources"]))
+
+        # --- user actions: mark checked, and refresh the URL ---------------
+        st.divider()
+        if r["last_check_verdict"]:
+            when = str(r["last_check_at"])[:10]
+            st.caption(f"You last marked this **{r['last_check_verdict']}** "
+                       f"on {when}.")
+
+        VERDICTS = {
+            "good": "✅ Good link", "wrong": "❌ Wrong page",
+            "dead": "💀 Dead / 404", "applied": "📮 Applied",
+            "not_relevant": "🚫 Not relevant",
+        }
+        st.caption("Mark this link, once you've looked:")
+        vcols = st.columns(len(VERDICTS))
+        for col, (verdict, lbl) in zip(vcols, VERDICTS.items()):
+            if col.button(lbl, key=f"v_{r['id']}_{verdict}",
+                          use_container_width=True):
+                try:
+                    store.log_check(r["id"], r["version_id"], verdict,
+                                    r["careers_url"])
+                    load_catalogue.clear()
+                    st.success(f"Logged: {verdict}")
+                    st.rerun()
+                except Exception as e:
+                    st.error(f"Could not save: {e}")
+
+        if st.button("🔄 Refresh this URL", key=f"refresh_{r['id']}"):
+            with st.spinner(f"Re-searching for {r['organisation']}…"):
+                try:
+                    new = store.refresh_org(
+                        r["id"], r["organisation"], base=r["base"],
+                        existing_url=r["careers_url"], category=r["category"],
+                    )
+                    load_catalogue.clear()
+                    if new.get("url") and new.get("url") != r["careers_url"]:
+                        st.success(f"New URL found: {new['url']}")
+                    else:
+                        st.info("No change — the current URL is still the best match.")
+                    st.rerun()
+                except Exception as e:
+                    st.error(f"Refresh failed: {e}")
+
+        # --- URL history --------------------------------------------------
+        with st.expander("URL history"):
+            try:
+                hist = store.version_history(r["id"])
+            except Exception:
+                hist = []
+            if len(hist) <= 1:
+                st.caption("Only one version on record so far.")
+            for v in hist:
+                tag = "current" if not v.get("superseded") else "superseded"
+                st.caption(
+                    f"**{tag}** · {str(v.get('discovered_at',''))[:10]} · "
+                    f"score {v.get('score','?')} · [{v.get('url','')[:60]}]"
+                    f"({v.get('url','')})"
+                )
 
 # ------------------------------------------------------------------ sectors
 elif page == "Sectors":

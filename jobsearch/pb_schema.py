@@ -163,6 +163,23 @@ def main() -> None:
         pb.create_collection(url_checks_spec(org_cid, uv_cid))
         print("  url_checks: created")
 
+    # 3b. API access rules. Base collections are superuser-only by default,
+    # which blocks the app's regular PH_USR account. These rules are
+    # deliberately open (""), i.e. public read/write without auth: the data is
+    # public Brussels org names and careers URLs, and it keeps the app simple.
+    # Schema and the organisations table's writes stay superuser-only, so the
+    # catalogue itself can't be corrupted through the open rules.
+    RULES = {
+        "organisations": {"listRule": "", "viewRule": ""},
+        "url_versions": {"listRule": "", "viewRule": "",
+                         "createRule": "", "updateRule": ""},
+        "url_checks": {"listRule": "", "viewRule": "", "createRule": ""},
+    }
+    for c in pb.list_collections():
+        if c["name"] in RULES:
+            pb.update_collection(c["id"], RULES[c["name"]])
+    print("  API access rules: set")
+
     # 4. back-reference: organisations.current_url -> url_versions
     org = next(c for c in pb.list_collections() if c["name"] == "organisations")
     have = {f["name"] for f in org.get("fields", org.get("schema", []))}
@@ -173,6 +190,19 @@ def main() -> None:
         print("  organisations.current_url: added")
     else:
         print("  organisations.current_url: exists")
+
+    # 5. Enable the batch API so the sync can write many records per request
+    # (PocketHost caps requests at 1,000/hour; per-record writes blow through
+    # that). The settings key has moved across versions, so try the current one
+    # and fall back quietly.
+    try:
+        pb._req("PATCH", "/api/settings",
+                json={"batch": {"enabled": True, "maxRequests": 200,
+                                "timeout": 30, "maxBodySize": 0}})
+        print("  batch API: enabled")
+    except Exception as e:
+        print(f"  batch API: could not enable automatically ({str(e)[:60]});"
+              " enable it in Settings > Batch")
 
     print("\n  Schema ready.")
 
