@@ -6,16 +6,43 @@ Organisations are the product: the question this answers is "where could I
 work, and is it worth approaching them?" -- so the catalogue leads, jobs are a
 supporting tab, and every organisation carries the context needed to judge it.
 """
+import hmac
 import json
 from datetime import date, datetime
 
 import pandas as pd
 import streamlit as st
 
-from jobsearch.config import JOBS_JSON
+from jobsearch.config import JOBS_JSON, _secret
 from jobsearch import store
 
 st.set_page_config(page_title="Brussels job search", page_icon="🇧🇪", layout="wide")
+
+
+def require_password() -> None:
+    """Gate the whole app behind APP_PWD before anything else renders.
+
+    The password comes from APP_PWD (env var, .env, or st.secrets on Streamlit
+    Cloud). If it isn't set, the app stays open -- so local dev isn't blocked and
+    a forgotten secret fails open to convenience, not a lockout. Compared with
+    hmac.compare_digest to avoid leaking length via timing.
+    """
+    expected = _secret("APP_PWD")
+    if not expected:
+        return  # no password configured -> no gate
+    if st.session_state.get("_authed"):
+        return
+
+    st.title("🇧🇪 Brussels job search")
+    entered = st.text_input("Password", type="password",
+                            help="Ask Quinten for the password.")
+    if entered:
+        if hmac.compare_digest(entered, expected):
+            st.session_state["_authed"] = True
+            st.rerun()  # clear the input and fall through to the app
+        else:
+            st.error("Incorrect password.")
+    st.stop()  # nothing below renders until authenticated
 
 # Categorical slots 1-3 from the validated reference palette; only a few are
 # needed, which keeps colour alone safe to read.
@@ -607,6 +634,8 @@ st.markdown(
     </style>""",
     unsafe_allow_html=True,
 )
+require_password()
+
 nav = st.navigation([
     st.Page(page_organisations, title="Organisations", icon="🏢", default=True),
     st.Page(page_whats_new, title="What's new", icon="🆕"),
