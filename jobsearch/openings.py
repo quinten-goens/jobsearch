@@ -91,22 +91,35 @@ NOISE = (
     "en savoir plus", "lire la suite", "meer info", "mehr erfahren",
     "internal login", "log in", "login", "sign in", "my account", "register",
     "create an account",
+    # generic link labels that carry a title-word but describe nothing:
+    "click here", "see locally hired", "see current", "see open",
+    "cliquez ici", "voir les", "haga clic",
 )
+
+# A "title" that is really a bare URL — the rail-research PDFs came through as
+# "https://…/wp-content/…". Never a job title.
+_URL_LIKE = re.compile(r"https?://|www\.|\.pdf($|[?#])|/wp-content/", re.I)
 
 
 def _clean(s: str) -> str:
     return re.sub(r"\s+", " ", (s or "")).strip()
 
 
-def _looks_like_title(text: str) -> bool:
-    t = text.lower().strip()
-    if len(t) < 5 or len(t) > 140:
+def _is_real_title(text: str) -> bool:
+    """A last-line gate every candidate title passes, from JSON *and* links:
+    reject URLs, encoded junk, facet counts and generic link chrome."""
+    t = _clean(text).lower()
+    if not (5 <= len(t) <= 140):
+        return False
+    if _URL_LIKE.search(t) or "%20" in t or "%2" in t:
         return False
     if re.search(r"\(\s*\d+\s*\)\s*$", t):  # "Internships (12)" is a facet
         return False
-    if any(n in t for n in NOISE):
-        return False
-    return any(w in t for w in TITLE_WORDS)
+    return not any(n in t for n in NOISE)
+
+
+def _looks_like_title(text: str) -> bool:
+    return _is_real_title(text) and any(w in text.lower() for w in TITLE_WORDS)
 
 
 def _titles_from_json(html: str) -> list[str]:
@@ -136,10 +149,9 @@ def _titles_from_json(html: str) -> list[str]:
     seen, out = set(), []
     for t in titles:
         t = _clean(t)
-        # Reject URL-encoded strings and obvious chrome.
-        if "%20" in t or "%2" in t:
+        if not _is_real_title(t):  # rejects URLs, encoded junk, chrome
             continue
-        if t and t.lower() not in seen and 5 <= len(t) <= 140:
+        if t.lower() not in seen:
             seen.add(t.lower())
             out.append(t)
     return out
