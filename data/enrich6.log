@@ -64,3 +64,417 @@ Enriching 450 of 665 organisations (Brave)
  62/450 MISS      —     Gemeente/Commune Sint-Genesius-Rod 
  63/450 MISS      —     Gemeente/Commune Overijse          
  64/450 OK    183d ago  Gemeente/Commune Grimbergen        https://www.grimbergen.be/vacatures
+ 65/450 OK      0d ago  Gemeente/Commune Vilvoorde         https://www.vilvoorde.be/vacatures
+ 66/450 OK        —     Gemeente/Commune Machelen          https://www.machelen.be/vacatures
+ 67/450 OK      0d ago  Gemeente/Commune Sint-Pieters-Leeu https://www.sint-pieters-leeuw.be/werken-ond
+ 68/450 OK    344d ago  Gemeente/Commune Tervuren          https://www.tervuren.be/jobs
+ 69/450 OK        —     Gemeente/Commune Waterloo          https://www.waterloo.be/economie/emploi/offr
+ 70/450 MISS      —     Cecoforma                          
+ 71/450 MISS      —     Edelman Brussels                   
+ 72/450 MED    93d ago  Instinctif Partners                https://www.teamlewis.com/uk/instinctif-part
+ 73/450 MISS      —     Blomeyer & Sanz                    
+ 74/450 OK    895d ago  Gemeente/Commune Zaventem          https://www.zaventem.be/thema/detail/110/vac
+ 75/450 MISS      —     Gemeente/Commune Wemmel            
+ 76/450 MISS      —     British Council Brussels           
+ 77/450 MISS      —     Intercultural training / DEI freel 
+ 78/450 MISS      —     Institut français Belgique         
+ 79/450 MISS      —     Commune de Saint-Josse-ten-Noode   
+ 80/450 OK        —     Commune Woluwe-Saint-Lambert / Sin https://www.woluwe1200.be/jobs/
+ 81/450 OK    752d ago  Gemeente/Commune Wezembeek-Oppem   https://www.wezembeek-oppem.be/werken-voor-g
+ 82/450 MISS      —     Alliance Française Bruxelles-Europ 
+ 83/450 MISS      —     Italian Cultural Institute         
+ 84/450 MISS      —     Mexican Mission to the EU          
+ 85/450 OK        —     EUNIC Brussels                     https://eunic.eu/news/job-opportunity-at-eun
+ 86/450 OK      0d ago  Gemeente/Commune Wavre             https://www.wavre.be/offres-demploi
+ 87/450 MISS      —     Mission of Peru to the EU          
+ 88/450 MISS      —     Instituto Cervantes Bruselas       
+ 89/450 MISS      —     Council of the European Union      
+ 90/450 MED     1d ago  Goethe-Institut Brüssel            https://www.goethe.de/ins/be/en/ueb/kar.html
+ 91/450 MISS      —     Mission of Colombia to the EU      
+ 92/450 MISS      —     Mission of Chile to the EU         
+ 93/450 MISS      —     Mission of Argentina to the EU     
+ 94/450 OK        —     Cedefop                            https://www.cedefop.europa.eu/en/about-cedef
+ 95/450 OK      0d ago  ACER                               https://www.acer.europa.eu/the-agency/career
+ 96/450 OK   1498d ago  CdT (Translation Centre)           https://cdt.europa.eu/en/jobs
+ 97/450 MISS      —     ECHA                               
+ 98/450 MISS      —     EPSO (European Personnel Selection 
+ 99/450 MED   134d ago  ECDC                               https://www.ecdc.europa.eu/en/about-us/work-
+100/450 MISS      —     EFSA                               
+101/450 OK        —     EBA / ESMA / EIOPA                 https://www.eba.europa.eu/about-us/careers/v
+102/450 OK      0d ago  EIT (European Institute of Innovat https://www.eit.europa.eu/work-with-us/caree
+103/450 OK    434d ago  EMA (European Medicines Agency)    https://www.ema.europa.eu/en/about-us/career
+104/450 OK    475d ago  ENISA                              https://www.enisa.europa.eu/careers
+105/450 OK      2d ago  European Climate, Infrastructure a https://cinea.ec.europa.eu/about-us/job-oppo
+106/450 OK     28d ago  European Commission                https://commission.europa.eu/get-involved/jo
+107/450 OK      0d ago  European Committee of the Regions  https://www.cor.europa.eu/en/about/work-us/j
+108/450 MISS      —     European Council                   
+109/450 OK      0d ago  ESM (European Stability Mechanism) https://www.esm.europa.eu/careers/vacancies/
+110/450 MED       —     EU-OSHA                            https://euosha.gestmax.eu/searchinactive/new
+111/450 OK      0d ago  European Data Protection Superviso https://www.edps.europa.eu/about/office-edps
+112/450 OK        —     European Defence Agency (EDA)      https://eda.europa.eu/careers
+113/450 OK    281d ago  European Economic and Social Commi https://www.eesc.europa.eu/en/work-with-us/j
+114/450 OK     23d ago  European Education and Culture Exe https://www.eacea.ec.europa.eu/working-agenc
+115/450 OK      0d ago  European External Action Service ( https://www.eeas.europa.eu/eeas/vacancies_en
+116/450 OK     10d ago  European Health and Digital Execut https://hadea.ec.europa.eu/about/job-opportu
+117/450 MED     6d ago  European Innovation Council and SM https://eismea.ec.europa.eu/working-eismea_e
+118/450 OK        —     EUIPO                              https://www.euipo.europa.eu/en/about-us/the-
+119/450 OK        —     Eurofound                          https://www.eurofound.europa.eu/en/pages/vac
+120/450 MED       —     European Ombudsman                 https://www.ombudsman.europa.eu/en/office/ca
+121/450 OK   1375d ago  Eurojust                           https://www.eurojust.europa.eu/about-us/jobs
+122/450 OK        —     European Central Bank              https://www.ecb.europa.eu/careers/vacancies/
+123/450 OK      0d ago  European Research Executive Agency https://rea.ec.europa.eu/working-rea/jobs-re
+124/450 MISS      —     European Parliament                
+125/450 MISS      —     European Court of Auditors         
+126/450 MISS      —     European Court of Justice          
+127/450 MED    99d ago  International Committee of the Red https://redcross.eu/about/careers
+128/450 OK        —     EEA (European Environment Agency)  https://www.eea.europa.eu/en/about/careers/v
+129/450 MISS      —     ACP Secretariat (OACPS)            
+130/450 MISS      —     ASEAN Mission to the EU            
+131/450 MISS      —     African Union Mission to the EU    
+132/450 OK        —     European Investment Fund           https://www.eif.org/work-with-us/careers
+133/450 OK    142d ago  European Investment Bank (EIB)     https://www.eib.org/en/about/careers/index
+134/450 MISS      —     Benelux Union                      
+135/450 OK    161d ago  European Public Prosecutor's Offic https://www.eppo.europa.eu/careers_en
+136/450 MED       —     European University Institute      https://www.eui.eu/About/JobOpportunities/Ac
+137/450 OK     57d ago  Europol                            https://www.europol.europa.eu/work-with-us/c
+138/450 MISS      —     Publications Office / EU Newsroom  
+139/450 MED       —     FRA (Fundamental Rights Agency)    https://fra.europa.eu/de/about-fra/recruitme
+140/450 MISS      —     EFTA Secretariat                   
+141/450 OK        —     EFTA Surveillance Authority        https://www.eftasurv.int/careers
+142/450 OK      0d ago  ESA (European Space Agency)        https://www.esa.int/About_Us/Careers_at_ESA
+143/450 OK     29d ago  Anna Lindh Foundation              https://alf.website/en/job-opportunities/
+144/450 MED   155d ago  Bank for International Settlements https://lde.tbe.taleo.net/errorpages/page_no
+145/450 OK      0d ago  EUROCONTROL                        https://www.eurocontrol.int/careers
+146/450 MISS      —     CERN (European Organization for Nu 
+147/450 OK        —     Commonwealth Secretariat           https://thecommonwealth.current-vacancies.co
+148/450 MISS      —     Council of Europe                  
+149/450 MISS      —     European Patent Office             
+150/450 OK      0d ago  EMBL (European Molecular Biology L https://www.embl.org/careers/
+151/450 MISS      —     ESO (European Southern Observatory 
+152/450 OK      0d ago  EUMETSAT (European Meteorological  https://www.eumetsat.int/work-us/careers-eum
+153/450 MED    99d ago  IFRC (Red Cross Federation) Europe https://redcross.eu/about/careers
+154/450 MISS      —     IMF Europe office                  
+155/450 MISS      —     European Court of Human Rights     
+156/450 MED       —     ITU (International Telecommunicati https://jobs.itu.int
+157/450 OK        —     International IDEA                 https://www.idea.int/careers
+158/450 MISS      —     International Organisation of La F 
+159/450 OK        —     EBRD (European Bank for Reconstruc https://www.ebrd.com/home/work-with-us/ebrd-
+160/450 OK        —     NATO                               https://nato.taleo.net/careersection/2/jobse
+161/450 MISS      —     NATO Parliamentary Assembly        
+162/450 OK      0d ago  Gavi, the Vaccine Alliance         https://www.gavi.org/about-us/work-us/vacanc
+163/450 OK        —     Global Fund to Fight AIDS, TB and  https://www.theglobalfund.org/en/careers/
+164/450 MISS      —     NCIA (NATO Communications and Info 
+165/450 MED       —     OECD Brussels                      https://careers.smartrecruiters.com/OECD/oec
+166/450 MED       —     IFAD (International Fund for Agric https://www.ifad.org/en/work-with-us
+167/450 MISS      —     UN Liaison Offices in Brussels     
+168/450 OK   2255d ago  UN Regional Information Centre (UN https://unric.org/en/brussels-vacancies/
+169/450 OK        —     ICAO (International Civil Aviation https://icaocareers.icao.int/careers/Home/In
+170/450 OK        —     Interpol (International Criminal P https://www.interpol.int/en/What-you-can-do/
+171/450 OK        —     IAEA (International Atomic Energy  https://iaea.taleo.net/careersection/ex/jobs
+172/450 MISS      —     UNU (United Nations University)    
+173/450 MED       —     IMO (International Maritime Organi https://www.imo.org/en/about/careers/pages/d
+174/450 OK        —     NSPA (NATO Support and Procurement https://nspa-nato.career.emply.com/vacancies
+175/450 MISS      —     ODIHR (OSCE Office for Democratic  
+176/450 MISS      —     OSCE (Organization for Security an 
+177/450 MISS      —     UNIDO (UN Industrial Development O 
+178/450 MISS      —     Western European Union residual bo 
+179/450 MISS      —     CHU Brugmann                       
+180/450 MED   176d ago  CHU Saint-Pierre                   https://www.stpierre-bru.be/jobs/
+181/450 OK        —     UNITAR                             https://unitar.org/vacancy-announcements
+182/450 OK        —     CHU de Liège                       https://www.jobs.chuliege.be/cms/c_56917/fr/
+183/450 MISS      —     Chirec (Delta, Braine, Ste-Anne)   
+184/450 MISS      —     Cliniques de l'Europe / Europa Zie 
+185/450 OK      0d ago  Cliniques universitaires Saint-Luc https://www.saintluc.be/fr/jobs
+186/450 MED   247d ago  UNOPS                              https://www.unops.org/jobs
+187/450 MED     0d ago  H.U.B (Hôpital Universitaire de Br https://www.hubruxelles.be/fr/jobs
+188/450 OK      0d ago  HUDERF (Queen Fabiola Children's H https://www.huderf.be/en/jobs
+189/450 OK      0d ago  Hôpital Erasme (ULB)               https://www.erasme.be/fr/jobs-erasme
+190/450 OK      0d ago  Institut Jules Bordet              https://www.bordet.be/fr/jobs
+191/450 MISS      —     Institute of Tropical Medicine cli 
+192/450 OK        —     UZ Brussel                         https://www.uzbrusselwerkt.be/onze-vacatures
+193/450 MISS      —     UZ Gent                            
+194/450 OK        —     UZ Leuven                          https://www.uzleuven.be/jobs
+195/450 MISS      —     UZA (Antwerp University Hospital)  
+196/450 MED    17d ago  Union for the Mediterranean        https://ufmsecretariat.org/work-with-us/vaca
+197/450 OK     28d ago  Unitaid                            https://unitaid.org/work-with-us/
+198/450 MISS      —     CHU UCL Namur                      
+199/450 OK    476d ago  Venice Commission                  https://commission.europa.eu/get-involved/jo
+200/450 MED       —     WIPO (World Intellectual Property  https://www.wipo.int/en/web/working-at-wipo/
+201/450 OK    507d ago  WTO (World Trade Organization)     https://www.wto.org/english/thewto_e/vacan_e
+202/450 MISS      —     IFRC Europe / Brussels             
+203/450 MED   409d ago  Epicura                            https://emploisepicura.recruitee.com/
+204/450 OK    164d ago  Amnesty International (Internation https://www.amnesty.org/en/careers/
+205/450 MISS      —     International Crisis Group         
+206/450 OK        —     Danish Refugee Council             https://drc.ngo/en/jobs/
+207/450 MISS      —     Médecins Sans Frontières (Operatio 
+208/450 MED       —     FAO (Food and Agriculture Organiza https://fao.impactpool.org/vacancies
+209/450 MISS      —     OCHA Brussels (Liaison)            
+210/450 OK      0d ago  GAVI                               https://www.gavi.org/about-us/work-us/vacanc
+211/450 OK        —     Global Fund                        https://www.theglobalfund.org/en/careers/
+212/450 OK    217d ago  Human Rights Watch                 https://www.hrw.org/careers
+213/450 MED   169d ago  ILO (International Labour Organiza https://www.ilo.org/about-ilo/employment-opp
+214/450 OK        —     IOM (International Organization fo https://iom.impactpool.org/vacancies
+215/450 OK   1074d ago  Internews                          https://internews.org/careers/
+216/450 MED   140d ago  Norwegian Refugee Council          https://www.nrc.no/careers
+217/450 OK        —     OECD (Organisation for Economic Co https://oecd.impactpool.org/vacancies
+218/450 MED     0d ago  Open Society Foundations           https://www.opensocietyfoundations.org/emplo
+219/450 OK    280d ago  Oxfam International                https://www.oxfam.org/en/take-action/jobs
+220/450 MISS      —     UNHCR - Representation to the EU   
+221/450 MED     0d ago  OHCHR (UN Human Rights Office)     https://www.ohchr.org/en/work-with-us
+222/450 OK      0d ago  Save the Children International    https://www.savethechildren.net/careers
+223/450 OK      0d ago  UN Women                           https://www.unwomen.org/en/jobs/unwomen
+224/450 OK      0d ago  UNHCR (UN Refugee Agency)          https://www.unhcr.org/careers-unhcr
+225/450 MISS      —     UNESCO (UN Educational, Scientific 
+226/450 OK      0d ago  WHO (World Health Organization)    https://www.who.int/careers/apply-for-a-posi
+227/450 MISS      —     AECID (Spanish Development Coopera 
+228/450 OK        —     Broederlijk Delen - Latin America  https://broederlijkdelen.be/en/vacatures
+229/450 MISS      —     CAF - Development Bank of Latin Am 
+230/450 MISS      —     CELAC representation               
+231/450 OK      0d ago  CEPAL / ECLAC European office      https://www.cepal.org/en/employment
+232/450 MISS      —     CIFCA (Copenhagen Initiative for C 
+233/450 MISS      —     Camões Institute                   
+234/450 MISS      —     UNICEF (UN Children's Fund)        
+235/450 MISS      —     Enlazando Alternativas / Latin Ame 
+236/450 MISS      —     Entraide et Fraternite             
+237/450 MISS      —     FOS (Socialistische Solidariteit)  
+238/450 MISS      —     UNDP (UN Development Programme)    
+239/450 MISS      —     Grupo Sur                          
+240/450 MISS      —     Instituto Cervantes Brussels       
+241/450 MISS      —     Inter-American Development Bank (I 
+242/450 MISS      —     Mercosur Mission to the EU         
+243/450 MISS      —     OEI (Organización de Estados Ibero 
+244/450 MISS      —     OIDHACO (Oficina Internacional de  
+245/450 MISS      —     UNRWA (UN Relief and Works Agency  
+246/450 OK   1347d ago  Solsoc (Solidarité Socialiste)     https://www.solsoc.be/jobs-stages
+247/450 MISS      —     EUobserver                         
+248/450 MISS      —     Euractiv                           
+249/450 MISS      —     11.11.11 is de koepel van internat 
+250/450 OK      0d ago  UNFPA (UN Population Fund)         https://www.unfpa.org/jobs
+251/450 MISS      —     ACDA, Action et Coopération pour l 
+252/450 OK        —     United Nations Volunteers (UNV)    https://unvacancies.org/jobs/grade/unv
+253/450 MISS      —     ActionAid EU                       
+254/450 MISS      —     Action Mondiale pour la Solidarité 
+255/450 OK        —     WFP (World Food Programme)         https://wfp.impactpool.org/vacancies
+256/450 MISS      —     Amnesty International EU Office    
+257/450 MISS      —     Asmae                              
+258/450 OK        —     UNODC (UN Office on Drugs and Crim https://www.unodc.org/unodc/vacancies/
+259/450 MISS      —     Fundacion Carolina                 
+260/450 MISS      —     Action-développement parrainages m 
+261/450 MISS      —     BePax                              
+262/450 MISS      —     Akay Esseboe                       
+263/450 OK        —     CCME (Churches' Commission for Mig https://ccmeurope.recruitee.com/l/en
+264/450 MED       —     CEPAG (Centre d'Education Populair https://cepag.be/archive_drupal/the-partners
+265/450 OK        —     Caritas international              https://www.caritasinternational.be/en/jobs/
+266/450 MISS      —     Alterbrussels                      
+267/450 MISS      —     Centrale Générale des Syndicats Li 
+268/450 OK        —     Casa de América                    https://wearecasa.org/careers/
+269/450 OK        —     Centre Placet asbl                 https://www.monasbl.be/annonces/emploi/
+270/450 MISS      —     Association Belgo Palestinienne    
+271/450 MISS      —     Autre Terre                        
+272/450 MED   525d ago  Comité pour l'Abolition des Dettes https://www.cadtm.org/Goldilocks-and-the-las
+273/450 OK        —     Confédération des Syndicats Chréti https://www.lacsc.be/vos-droits/travailler-d
+274/450 MED    29d ago  Conseil de la jeunesse catholique  https://archipel.be
+275/450 MISS      —     Convivial                          
+276/450 MISS      —     Banlieues                          
+277/450 MISS      —     Bissongo                           
+278/450 OK   1637d ago  Dynamo international               https://dynamointernational.org/en/service-m
+279/450 OK      3d ago  Défi Belgique Afrique (DBA)        https://ongdba.org/jobs/
+280/450 MISS      —     EAPN (European Anti-Poverty Networ 
+281/450 MISS      —     Casa Nicaragua asbl Pierreuse & Ai 
+282/450 MISS      —     Entraide                           
+283/450 MISS      —     Equinet                            
+284/450 MISS      —     European Network on Statelessness  
+285/450 OK      0d ago  FGTB wallonne                      https://fgtb.be/offres-d-emploi
+286/450 MISS      —     FIAN Belgium                       
+287/450 MISS      —     FIDH EU Office                     
+288/450 MISS      —     Centre Tricontinental (CETRI)      
+289/450 MED   290d ago  FUCID                              https://www.fucid.be/analyse-jobs-etudiants-
+290/450 MISS      —     Fair Trials                        
+291/450 MISS      —     Collectif d'échanges pour la Techn 
+292/450 MISS      —     Front Line Defenders - EU Office   
+293/450 MISS      —     Comité belge de soutien au Peuple  
+294/450 MISS      —     Global Health Advocates            
+295/450 MISS      —     Coopération par l'Education et la  
+296/450 MISS      —     Humundi (ex-SOS Faim)              
+297/450 MISS      —     IPPF European Network              
+298/450 MED     0d ago  SEGIB (Secretaría General Iberoame https://segib.org/es/tag/empleo/
+299/450 MED  2919d ago  Ifsi Isvi                          https://www.ifsi-isvi.be/nl/algemeen/waardig
+300/450 MED     0d ago  ITECO                              https://www.iteco.be/spip.php?doc=1403&from=
+301/450 MISS      —     Intal                              
+302/450 MISS      —     Jesuit Refugee Service Europe      
+303/450 OK        —     Join for Water                     https://joinforwater.ngo/en/job-opportunitie
+/Users/quintengoens/Repos/jobsearch/jobsearch/discover.py:250: XMLParsedAsHTMLWarning: It looks like you're using an HTML parser to parse an XML document.
+
+Assuming this really is an XML document, what you're doing might work, but you should know that using an XML parser will be more reliable. To parse this document as XML, make sure you have the Python package 'lxml' installed, and pass the keyword argument `features="xml"` into the BeautifulSoup constructor.
+
+If you want or need to use an HTML parser on this document, you can make this warning go away by filtering it. To do that, run this code before calling the BeautifulSoup constructor:
+
+    from bs4 import XMLParsedAsHTMLWarning
+    import warnings
+
+    warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
+
+  soup = BeautifulSoup(r["text"], "lxml")
+/Users/quintengoens/Repos/jobsearch/jobsearch/freshness.py:48: XMLParsedAsHTMLWarning: It looks like you're using an HTML parser to parse an XML document.
+
+Assuming this really is an XML document, what you're doing might work, but you should know that using an XML parser will be more reliable. To parse this document as XML, make sure you have the Python package 'lxml' installed, and pass the keyword argument `features="xml"` into the BeautifulSoup constructor.
+
+If you want or need to use an HTML parser on this document, you can make this warning go away by filtering it. To do that, run this code before calling the BeautifulSoup constructor:
+
+    from bs4 import XMLParsedAsHTMLWarning
+    import warnings
+
+    warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
+
+  soup = BeautifulSoup(html, "lxml")
+304/450 OK      0d ago  Kba Foncaba                        https://kba-foncaba.be/nl/vacatures.html
+305/450 MISS      —     Coordination et Initiatives pour R 
+306/450 MISS      —     Education globale & développement  
+307/450 OK        —     La Chaloupe                        https://lachaloupe.be/job-etudiant
+308/450 MED       —     FMI-PAD Network                    https://workingatfmi.com/vacancies
+309/450 MISS      —     Frères des Hommes                  
+310/450 MISS      —     MRAX                               
+311/450 MED   659d ago  Medecins du Monde Belgique         https://www.medecinsdumonde.org/en/all-our-v
+312/450 MISS      —     Mentor-Escale                      
+313/450 MISS      —     Mouvement ouvrier chrétien - MOC   
+314/450 OK    659d ago  Médecins du Monde                  https://www.medecinsdumonde.org/en/all-our-v
+315/450 MISS      —     Nonviolent Peaceforce              
+316/450 OK      0d ago  Oxfam Belgique                     https://oxfambelgique.be/offres-emploi/offre
+317/450 OK        —     Oxfam, Magasins du monde           https://oxfammagasinsdumonde.be/jobs/
+318/450 MISS      —     Help Osra Ethiopia                 
+319/450 MISS      —     Pax Christi International          
+320/450 MED     0d ago  PAC - Agir par la Culture          https://pac.org/job_location/brussels
+321/450 OK        —     Plateforme Citoyenne de Soutien au https://www.belrefugees.be/fr/emplois-et-sta
+322/450 MISS      —     Quinoa asbl                        
+323/450 OK        —     RCN Justice & Démocratie           https://rcn-ong.be/en/act-participate/jobs/
+324/450 MISS      —     Reporters Without Borders (RSF)    
+325/450 OK   1143d ago  SB OverSeas Belgique               https://sboverseas.org/en/get-involved/jobs-
+326/450 MISS      —     SOLIDAR                            
+327/450 MED     0d ago  SOS Faim                           https://www.humundi.org/en/homepage/
+328/450 MISS      —     Search for Common Ground - Europea 
+329/450 MED    16d ago  Institut Eco-Conseil               https://www.eco-conseil.be/linstitut-eco-con
+330/450 OK      8d ago  Soralia                            https://www.soralia.be/accueil/jobs/
+331/450 MISS      —     Terre des Hommes EU Office         
+332/450 OK    184d ago  Ucoopia                            https://ucoopia.org/en/get-involved/jobs/
+333/450 MISS      —     Via Don Bosco                      
+334/450 OK        —     Kidogos asbl                       https://www.monasbl.be/annonces/emploi/
+335/450 MISS      —     LHAC                               
+336/450 MED    43d ago  WSM (Wereldsolidariteit / Solidari https://www.wsm.be/en/page-292/
+337/450 MISS      —     We Social Movements (WSM)          
+338/450 MISS      —     World Vision Brussels              
+339/450 OK   1347d ago  class='img-fluid img-thumbnail' /> https://www.solsoc.be/jobs-stages
+340/450 MISS      —     du Collectif stratégies alimentair 
+341/450 MISS      —     Centre Avec                        
+342/450 MISS      —     Etopia (Ecolo)                     
+343/450 MISS      —     European Liberal Forum             
+344/450 OK     97d ago  Foundation for European Progressiv https://feps-europe.eu/careers/
+345/450 MISS      —     Friedrich Naumann Foundation Europ 
+346/450 MISS      —     Friedrich-Ebert-Stiftung EU Office 
+347/450 MISS      —     Friedrich-Naumann-Stiftung         
+348/450 MISS      —     Hanns Seidel Stiftung Brussels     
+349/450 MISS      —     Heinrich-Böll-Stiftung European Un 
+350/450 MED  1415d ago  Jean Jaurès Foundation             https://www.jean-jaures.org/veille/les-emplo
+351/450 MISS      —     Konrad-Adenauer-Stiftung European  
+352/450 MISS      —     Transform! Europe                  
+353/450 MISS      —     Prospex Institute                  
+354/450 MISS      —     ACEA                               
+355/450 MED   211d ago  ANEC                               http://anec.eu/become-an-anec-expert-vacanci
+356/450 MISS      —     Airlines for Europe (A4E)          
+357/450 OK      0d ago  BEUC                               https://www.beuc.eu/jobs-calls
+358/450 MISS      —     BusinessEurope                     
+359/450 MED    14d ago  CEFIC                              https://cefic.org/mission-and-organisation/w
+360/450 OK      0d ago  CEPI                               https://cepi.net/careers
+361/450 OK      0d ago  CER (Community of European Railway https://www.cer.be/about-us/jobs
+362/450 OK    485d ago  CLEPA                              https://www.clepa.eu/about/structure-organis
+363/450 OK        —     Caritas Europa                     https://www.caritasinternational.be/en/jobs/
+364/450 MISS      —     Cembureau                          
+365/450 MISS      —     Climate Action Network Europe      
+366/450 MISS      —     Committee of the Regions liaison o 
+367/450 OK        —     Copa-Cogeca                        https://www.copa-cogeca.eu/jobs-policy-advis
+368/450 MISS      —     Council of European Municipalities 
+369/450 OK      2d ago  DigitalEurope                      https://www.digitaleurope.org/vacancies/
+370/450 OK        —     ECSA                               https://www.ecsa.ngo/category/jobs/
+371/450 OK        —     EFAMA                              https://www.efama.org/about-us/vacancies
+372/450 OK        —     EFPIA                              https://www.efpia.eu/about-us/job-vacancies/
+373/450 MISS      —     ETNO                               
+374/450 MISS      —     EUROFER                            
+375/450 MISS      —     Le Monde selon les Femmes          
+376/450 OK        —     Pro-Action Développement asbl      https://www.monasbl.be/annonces/emploi/
+377/450 MISS      —     Service civil international (SCI)  
+378/450 OK        —     Foyer vzw                          https://www.wzcdefoyer.be/werken-bij
+379/450 MED       —     Village du monde (asbl Le Coron)   https://www.monasbl.be/annonces/emploi/
+380/450 MISS      —     WAPA International                 
+381/450 MISS      —     EuroCommerce                       
+382/450 OK        —     La Strada International            https://strada.wd12.myworkdayjobs.com/Career
+383/450 OK    420d ago  Eurochambres                       https://www.eurochambres.eu/about/jobs/
+384/450 OK    218d ago  Eurocities                         https://eurocities.eu/jobs/
+385/450 OK     14d ago  Eurelectric                        https://www.eurelectric.org/careers/
+386/450 OK        —     Eurofound liaison                  https://www.eurofound.europa.eu/en/pages/vac
+387/450 OK        —     Eurogroup for Animals              https://www.eurogroupforanimals.org/who-we-a
+388/450 MISS      —     Eurometaux                         
+389/450 OK     73d ago  EuropaBio                          https://www.europabio.org/vacancies/
+390/450 MISS      —     European Banking Federation (EBF)  
+391/450 OK   1582d ago  European Network Against Racism (E https://www.enar-eu.org/jobs/
+392/450 OK    524d ago  European Public Health Alliance (E https://health.ec.europa.eu/health-emergency
+393/450 MISS      —     Eurodiaconia                       
+394/450 OK     29d ago  FEAD                               https://fead.be/careers/
+395/450 MISS      —     Eurogas                            
+396/450 OK        —     FuelsEurope                        https://www.fuelseurope.eu/vacancies
+397/450 OK    274d ago  GSMA Europe                        https://www.gsma.com/about-us/careers/
+398/450 MISS      —     IRU                                
+399/450 MISS      —     European Environmental Bureau (EEB 
+400/450 OK    283d ago  Hydrogen Europe                    https://www.clean-hydrogen.europa.eu/about-u
+401/450 MISS      —     European Youth Forum               
+402/450 MED       —     Insurance Europe                   https://www.insuranceeurope.eu/vacancies
+403/450 MED   269d ago  Medicines for Europe               https://www.medicinesforeurope.com/2024/11/2
+404/450 OK    664d ago  MedTech Europe                     https://www.medtecheurope.org/about-us/job-v
+405/450 OK     24d ago  FoodDrinkEurope                    https://www.fooddrinkeurope.eu/vacancies/
+406/450 OK        —     Orgalim                            https://orgalim.eu/en/careers/
+407/450 MISS      —     SMEunited                          
+408/450 MISS      —     IATA Europe                        
+409/450 MISS      —     SolidarNet / Solidar               
+410/450 MISS      —     Transport & Environment            
+411/450 OK   1704d ago  BECI (Brussels Enterprises Commerc https://www.beci.be/en/jobs
+412/450 MED    35d ago  CGSLB / ACLVB                      https://www.synova.be/nl/over-synova
+413/450 MISS      —     Plastics Europe                    
+414/450 OK        —     CSC / ACV                          https://www.hetacv.be/het-acv/vacatures
+415/450 MED     0d ago  EFFAT                              https://effat.org/vacancies-3/
+416/450 OK        —     SolarPower Europe                  https://www.solarpowereurope.org/about/caree
+417/450 OK      0d ago  ETF (European Training Foundation) https://www.etf.europa.eu/en/about/working-w
+418/450 OK     13d ago  WindEurope                         https://windeurope.org/careers/
+419/450 OK        —     ETUC (European Trade Union Confede https://www.etuc.org/en/issue/job-opening
+420/450 OK    170d ago  Antwerp Management School          https://www.antwerpmanagementschool.be/en/ov
+421/450 OK      0d ago  Bozar (Centre for Fine Arts)       https://www.luca-arts.be/en/vacancies
+422/450 MISS      —     EPHEC                              
+423/450 OK    372d ago  Erasmushogeschool Brussel          https://www.erasmushogeschool.be/nl/vacature
+424/450 MED       —     Ghent University (UGent)           https://www.ugent.be/en/work
+425/450 MISS      —     HE2B (Haute École Bruxelles-Braban 
+426/450 MED    17d ago  Zero Waste Europe                  https://zerowasteeurope.eu/join-us/work-with
+427/450 OK        —     Haute École Léonard de Vinci       https://www.vinci.be/fr/emploi
+428/450 OK        —     KU Leuven                          https://www.kuleuven.be/personeel/jobsite/jo
+429/450 OK      0d ago  LUCA School of Arts                https://www.luca-arts.be/en/vacancies
+430/450 MISS      —     MigratieMuseum Migration           
+431/450 MISS      —     Odisee                             
+432/450 MISS      —     Red Star Line Museum               
+433/450 MISS      —     Royal Military Academy             
+434/450 OK        —     IndustriAll Europe                 https://www.industriall-europe.eu/p/jobs
+435/450 MISS      —     United Nations University - CRIS   
+436/450 OK        —     University of Antwerp (UAntwerpen) https://www.uantwerpen.be/en/jobs/vacancies/
+437/450 MED       —     Université de Liège (ULiège)       https://www.uliege.be/cms/c_9247584/en/caree
+438/450 MISS      —     Université de Mons (UMONS)         
+439/450 MED     0d ago  Université de Namur (UNamur)       https://www.unamur.be/fr/universite/travaill
+440/450 OK    147d ago  Université libre de Bruxelles (ULB https://www.ulb.be/fr/travailler-et-collabor
+441/450 OK      0d ago  FGTB / ABVV                        https://fgtb.be/offres-d-emploi
+442/450 MISS      —     Vlerick Business School            
+443/450 MISS      —     Vrije Universiteit Brussel (VUB)   
+444/450 MISS      —     UNI Europa                         
+445/450 OK        —     UCLouvain                          https://www.uclouvain.be/en/university/jobs
+446/450 OK    477d ago  Hasselt University (UHasselt)      https://www.uhasselt.be/en/about-hasselt-uni
+447/450 OK    958d ago  FEB / VBO                          https://www.vbo-feb.be/nl/vacatures/
+448/450 MISS      —     EPSU                               
+449/450 MISS      —     Université ouverte / Open Universi 
+450/450 MISS      —     ETUI (European Trade Union Institu 
+
+======================================================================
+  careers page: high=376  none=214  medium=75
+  with a last-updated date: 143/665
