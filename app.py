@@ -73,6 +73,12 @@ def load_catalogue() -> pd.DataFrame:
     )
     if "openings_titles" not in df:
         df["openings_titles"] = [[] for _ in range(len(df))]
+    if "openings_new_titles" not in df:
+        df["openings_new_titles"] = [[] for _ in range(len(df))]
+    if "openings_new_at" not in df:
+        df["openings_new_at"] = ""
+    df["openings_new_at"] = df["openings_new_at"].fillna("")
+    df["has_new"] = df["openings_new_titles"].apply(lambda x: bool(x))
 
     # Fit is scored at load time from the stored titles, so re-tuning the
     # profile never needs a re-scan. Cheap: a keyword scan per title.
@@ -529,6 +535,61 @@ def page_coverage():
         )
 
 
+# ----------------------------------------------------------------- what's new
+def page_whats_new():
+    st.title("What's new")
+    st.caption("Openings that appeared since the last time each organisation "
+               "was checked — the off-board jobs, seen early, before the boards "
+               "fill up. Best-fitting first.")
+    cat = load_catalogue()
+    new = cat[cat["has_new"]].copy()
+    if new.empty:
+        st.info("Nothing new since the last scan. Hit **Refresh** on the "
+                "Organisations page (or re-run discovery) to check again.")
+        st.stop()
+
+    # Rank by fit of the newly-appeared titles.
+    from jobsearch.fit import score_openings
+    new["_newfit"] = new["openings_new_titles"].apply(
+        lambda ts: score_openings(ts or [])["best_score"])
+    new = new.sort_values("_newfit", ascending=False)
+
+    st.metric("Organisations with new openings", len(new))
+    if st.button("Mark all as seen"):
+        for _, r in new.iterrows():
+            if r["version_id"]:
+                try:
+                    store.clear_new_openings(r["version_id"])
+                except Exception:
+                    pass
+        load_catalogue.clear()
+        st.rerun()
+
+    for _, r in new.iterrows():
+        with st.container(border=True):
+            c1, c2 = st.columns([4, 1])
+            with c1:
+                st.markdown(f"**{r['organisation']}** · {r['sector']}"
+                            + (f" · {r['base']}" if r['base'] else ""))
+                for t in r["openings_new_titles"]:
+                    fit = score_openings([t])["scored"][0]
+                    tag = ("★" if fit["band"] == "strong"
+                           else "·" if fit["band"] == "possible" else " ")
+                    st.markdown(f"&nbsp;&nbsp;{tag} 🆕 {t}", unsafe_allow_html=True)
+            with c2:
+                if r["careers_url"]:
+                    st.link_button("Open ↗", r["careers_url"],
+                                   use_container_width=True)
+                if r["version_id"] and st.button(
+                        "Seen", key=f"seen_{r['id']}", use_container_width=True):
+                    try:
+                        store.clear_new_openings(r["version_id"])
+                        load_catalogue.clear()
+                        st.rerun()
+                    except Exception as e:
+                        st.error(str(e))
+
+
 # ----------------------------------------------------------------- navigation
 # Proper Streamlit multipage nav (not a radio): each page is its own entry in
 # the sidebar, with the browser URL and back/forward working per page.
@@ -549,6 +610,7 @@ st.markdown(
 )
 nav = st.navigation([
     st.Page(page_organisations, title="Organisations", icon="🏢", default=True),
+    st.Page(page_whats_new, title="What's new", icon="🆕"),
     st.Page(page_sectors, title="Sectors", icon="📊"),
     st.Page(page_jobs, title="Jobs", icon="💼"),
     st.Page(page_coverage, title="Coverage", icon="🔍"),

@@ -48076,7 +48076,7 @@
     "eu_nationality": "",
     "homepage": "http://www.ucee.be",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -48086,8 +48086,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": -50,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-10)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "fetch failed (HTTP 522)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aucee.be+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "UNITEE AISBL",
@@ -51672,19 +51679,30 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.ideasforeurope.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://coppietersfoundation.eu/news/the-ghost-of-precarity-in-employment/",
+    "careers_confidence": "medium",
+    "last_updated": "2019-03-05",
+    "last_updated_source": "sitemap",
+    "last_updated_trust": "medium",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 13,
+    "careers_reasons": [
+      "careers-shaped path (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aideasforeurope.eu+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 2696,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:46:49.919554+00:00"
   },
   {
     "organisation": "Diplomatic World Institute",
@@ -51858,19 +51876,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://stars4media.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://stars4media.eu/vacancies/",
+    "careers_confidence": "medium",
+    "last_updated": "2026-06-30",
+    "last_updated_source": "sitemap",
+    "last_updated_trust": "medium",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 17,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=EUROPE+MEDIALAB+jobs+careers",
+    "last_updated_age_days": 22,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:46:43.854038+00:00"
   },
   {
     "organisation": "EUROPEAN DEVELOPMENT AND RESEARCH ACADEMY (EDARA)",
@@ -52165,19 +52195,30 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.eanam.org",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://talent.ecb.europa.eu/careers/JobDetail/Organisational-Ombuds-and-Mediator/6172",
+    "careers_confidence": "medium",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 12,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "official EU / intergovernmental domain (+3)",
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aeanam.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:46:59.841246+00:00"
   },
   {
     "organisation": "European Capital Markets Institute (ECMI)",
@@ -52234,7 +52275,7 @@
     "eu_nationality": "",
     "homepage": "www.ecepaa.eu",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -52244,8 +52285,16 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 6,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-10)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=European+Centre+for+Economic+and+Policy+Analysis+and+Affairs+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "European Centre for International Political Economy (ECIPE)",
@@ -52468,7 +52517,7 @@
     "eu_nationality": "",
     "homepage": "http://www.eifec.org",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -52478,8 +52527,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": -51,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-10)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "fetch failed (HTTP 522)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aeifec.org+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "European Marine Board (EMB)",
@@ -52576,19 +52632,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.epicenternetwork.eu/",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.epicenternetwork.eu/career/",
+    "careers_confidence": "high",
+    "last_updated": "2026-01-12",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=European+Policy+Information+Center+%28EPICENTER%29+jobs+careers",
+    "last_updated_age_days": 191,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:46:51.102398+00:00"
   },
   {
     "organisation": "European Policy Innovation Council (EPIC)",
@@ -52604,19 +52673,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "www.thinkepic.eu",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://epico.org/en/about-us/career-section",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 16,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=European+Policy+Innovation+Council+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null,
+    "openings_state": "no_openings",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:46:43.573960+00:00"
   },
   {
     "organisation": "European Regulation and Innovation Forum (ERIF)",
@@ -52633,7 +52714,7 @@
     "eu_nationality": "",
     "homepage": "http://www.eriforum.eu",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -52643,8 +52724,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aeriforum.eu+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "European Road Transport Telematics Implementation Coordination Organisation-Intelligent Transport Systems & Services Europe (ERTICO-ITS Europe)",
@@ -52660,19 +52748,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.ertico.com/",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.ertico.com/arriva-uk-bus-wins-competitive-tender-for-north-london-route",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 11,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold",
+      "page text has 1 job signal(s) (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aertico.com+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:47:25.219089+00:00"
   },
   {
     "organisation": "European Roundtable on Climate Change and Sustainable Transition (ERCST)",
@@ -52717,7 +52818,7 @@
     "eu_nationality": "",
     "homepage": "http://www.farm-europe.eu",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -52727,8 +52828,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Afarm-europe.eu+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Flanders Make",
@@ -52744,19 +52852,35 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://www.flandersmake.be/en",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.flandersmake.be/jobs",
+    "careers_confidence": "high",
+    "last_updated": "2026-06-25",
+    "last_updated_source": "jsonld",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=Flanders+Make+jobs+careers",
+    "last_updated_age_days": 27,
+    "openings_state": "has_openings",
+    "openings_count": 1,
+    "openings_titles": [
+      "Dennis, Communication Officer"
+    ],
+    "openings_checked_at": "2026-07-22T15:46:54.415432+00:00"
   },
   {
     "organisation": "Flemish Peace Institute",
@@ -52772,19 +52896,35 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.flemishpeaceinstitute.eu",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://vacancies.eip.org/jobs",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 11,
+    "careers_reasons": [
+      "careers-shaped subdomain (+5)",
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-10)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aflemishpeaceinstitute.eu+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null,
+    "openings_state": "has_openings",
+    "openings_count": 1,
+    "openings_titles": [
+      "Traineeship - Policy Team 1 open position Brussels , Belgium Engagement, Dialogue and Process design (EDP) Trainee"
+    ],
+    "openings_checked_at": "2026-07-22T15:47:42.299080+00:00"
   },
   {
     "organisation": "Foundation on European Citizens’ Rights, Involvement and Trust (ECIT Foundation)",
@@ -52800,19 +52940,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://ecit-foundation.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://ecit-foundation.eu/vacancies/",
+    "careers_confidence": "high",
+    "last_updated": "2024-07-03",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Foundation+on+European+Citizens%E2%80%99+Rights%2C+Involvement+and+Trust+%28ECIT+Foundation%29+jobs+careers",
+    "last_updated_age_days": 749,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:46:58.326275+00:00"
   },
   {
     "organisation": "Friends of Europe",
@@ -52864,19 +53017,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://genderfiveplus.org/",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://genderfiveplus.org/join-us-in-the-eugendering-seminar-about-anti-gender-movements-in-georgia-and-ukraine/",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 16,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=GENDER+FIVE+PLUS+%28G5%2B%29+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:47:11.004872+00:00"
   },
   {
     "organisation": "GRIP (Groupe de recherche et d'information sur la paix)",
@@ -52963,19 +53128,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://www.globalgovernance.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.globalgovernanceinitiative.org/careers",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-18",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 20,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aglobalgovernance.eu+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 4,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:47:18.727906+00:00"
   },
   {
     "organisation": "Gulf Research Center Foundation Brussels (GRCF-B)",
@@ -52991,19 +53169,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://www.grc.net/grcb",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://grc.net/jobs",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 15,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=Gulf+Research+Center+Foundation+Brussels+%28GRCF-B%29+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:47:18.906568+00:00"
   },
   {
     "organisation": "HL7 Europe Foundation",
@@ -53019,19 +53209,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.hl7europe.org",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://hl7europe.org/join-us-for-the-first-xshare-webinar-on-the-ehds-adoption-kit-for-citizens/",
+    "careers_confidence": "medium",
+    "last_updated": "2025-11-10",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 16,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=HL7+Europe+Foundation+jobs+careers",
+    "last_updated_age_days": 254,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:47:26.954604+00:00"
   },
   {
     "organisation": "Institut Européen de Bioéthique-European Institute of Bioethics (IEB-EIB)",
@@ -53048,7 +53250,7 @@
     "eu_nationality": "",
     "homepage": "http://www.ieb-eib.org",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -53058,8 +53260,14 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aieb-eib.org+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Institut Jacques Delors",
@@ -53111,19 +53319,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://www.institude.org/",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.institude.org/announcement/internship-opportunities-at-institude",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 20,
+    "careers_reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Ainstitude.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:47:58.470068+00:00"
   },
   {
     "organisation": "Institute for European Environmental Policy (IEEP)",
@@ -53139,19 +53359,33 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.ieep.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://ieep.eu/vacancies/",
+    "careers_confidence": "high",
+    "last_updated": "2025-05-06",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 23,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Institute+for+European+Environmental+Policy+%28IEEP%29+jobs+careers",
+    "last_updated_age_days": 442,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:47:35.642733+00:00"
   },
   {
     "organisation": "Instituut voor Landbouw en Visserijonderzoek (ILVO)",
@@ -53167,19 +53401,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.ilvo.vlaanderen.be",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://ilvo.vlaanderen.be/en/jobs",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 17,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page blocks scrapers (HTTP 0) — not verified"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Ailvo.vlaanderen.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:47:33.471019+00:00"
   },
   {
     "organisation": "International Panel of Experts on Sustainable Food Systems (IPES-Food)",
@@ -53195,19 +53442,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "www.ipes-food.org",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://ipes-food.org/jobs/",
+    "careers_confidence": "high",
+    "last_updated": "2026-01-12",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 18,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=International+Panel+of+Experts+on+Sustainable+Food+Systems+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 191,
+    "openings_state": "no_openings",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:47:36.153474+00:00"
   },
   {
     "organisation": "Interuniversitair Micro-Electronica Centrum vzw (IMEC)",
@@ -53223,19 +53483,34 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.imec.be",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.imec.be/nl/je-carriere-bij-imec",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 27,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aimec.be+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:48:04.436834+00:00"
   },
   {
     "organisation": "Kangaroo Group",
@@ -53252,7 +53527,7 @@
     "eu_nationality": "",
     "homepage": "http://www.kangaroogroup.eu",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -53262,8 +53537,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": -50,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-10)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "fetch failed (HTTP 522)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Akangaroogroup.eu+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Keeping Channels Open (KCO)",
@@ -53280,7 +53562,7 @@
     "eu_nationality": "",
     "homepage": "www.keepingchannelsopen.com",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -53290,8 +53572,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 3,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-10)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Keeping+Channels+Open+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "King Baudouin Foundation",
@@ -53344,19 +53633,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.leru.org",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.leru.org/academic-career-maps-in-europe",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 22,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aleru.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:48:18.002458+00:00"
   },
   {
     "organisation": "Migration Policy Institute Europe",
@@ -53410,19 +53712,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://newdirection.online",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://newdirection.online/about/careers",
+    "careers_confidence": "medium",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 17,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=New+Direction+%28ND%29+jobs+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:47:56.896780+00:00"
   },
   {
     "organisation": "New Horizons Project (NHP)",
@@ -53439,7 +53753,7 @@
     "eu_nationality": "",
     "homepage": "http://www.shadaislam.com",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -53449,8 +53763,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 2,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-10)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Ashadaislam.com+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "ODI Europe",
@@ -53466,19 +53787,33 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://odi.org/en/about/our-work/odi-europe/",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://odi.org/en/careers/",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 23,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=ODI+Europe+jobs+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:47:52.893750+00:00"
   },
   {
     "organisation": "Observatoire Social Européen (OSE)",
@@ -53495,7 +53830,7 @@
     "eu_nationality": "",
     "homepage": "www.ose.be",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -53505,8 +53840,14 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 8,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=Observatoire+Social+Europ%C3%A9en+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Open Society European Policy Institute",
@@ -53559,19 +53900,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://openforumeurope.org/",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://openforumeurope.org/join-the-ofe-team-as-a-policy-intern/",
+    "careers_confidence": "medium",
+    "last_updated": "2026-03-03",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 13,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold",
+      "page text has 2 job signal(s) (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=OpenForum+Europe+%28OFE%29+jobs+careers",
+    "last_updated_age_days": 141,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:48:08.167244+00:00"
   },
   {
     "organisation": "Prospex Institute",
@@ -53588,7 +53942,7 @@
     "eu_nationality": "No",
     "homepage": "",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -53598,8 +53952,14 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": -3,
+    "careers_reasons": [
+      "bare homepage, no careers path (-8)",
+      "domain matches org name (+4)",
+      "search rank #3 (+1)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=Prospex+Institute+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "PubAffairsBruxelles ASBL (PABXL)",
@@ -53615,19 +53975,33 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.pubaffairsbruxelles.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.pubaffairsbruxelles.eu/work-with-us/",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-20",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 22,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=PubAffairsBruxelles+ASBL+%28PABXL%29+jobs+careers",
+    "last_updated_age_days": 2,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:48:05.287607+00:00"
   },
   {
     "organisation": "RAND Europe (EU) AISBL",
@@ -53643,19 +54017,36 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.rand.org/randeurope",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.rand.org/jobs.html",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 23,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=RAND+Europe+%28EU%29+AISBL+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "has_openings",
+    "openings_count": 2,
+    "openings_titles": [
+      "Read our full equal employment opportunity policy",
+      "Graduate Student Summer Associate Program"
+    ],
+    "openings_checked_at": "2026-07-22T15:48:00.344365+00:00"
   },
   {
     "organisation": "Re-Imagine Europa (RIE)",
@@ -53671,19 +54062,30 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://re-imagine.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://re-imagine.eu/",
+    "careers_confidence": "medium",
+    "last_updated": "2026-07-03",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 17,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Are-imagine.eu+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 19,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:48:31.660466+00:00"
   },
   {
     "organisation": "Real Instituto Elcano",
@@ -53736,19 +54138,33 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://scope-europe.eu",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://scope.be/en/jobs/",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 22,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Ascope-europe.eu+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null,
+    "openings_state": "no_openings",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:48:11.315075+00:00"
   },
   {
     "organisation": "Sandbag Climate Campaign",
@@ -53764,19 +54180,35 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://sandbag.be",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://sandbag.be/careers/",
+    "careers_confidence": "high",
+    "last_updated": "2026-06-11",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 29,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)",
+      "explicitly lists zero openings — still the right page (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=Sandbag+Climate+Campaign+jobs+careers",
+    "last_updated_age_days": 41,
+    "openings_state": "no_openings",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:48:13.657047+00:00"
   },
   {
     "organisation": "TF Europe (Tax Foundation Europe)",
@@ -53792,19 +54224,34 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://taxfoundation.org/eu/",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://taxfoundation.org/about-us/careers/",
+    "careers_confidence": "high",
+    "last_updated": "2026-06-24",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=TF+Europe+%28Tax+Foundation+Europe%29+jobs+careers",
+    "last_updated_age_days": 28,
+    "openings_state": "has_openings",
+    "openings_count": 1,
+    "openings_titles": [
+      "State Tax Senior Policy Analyst or Policy Analyst"
+    ],
+    "openings_checked_at": "2026-07-22T15:48:08.470797+00:00"
   },
   {
     "organisation": "THE DATA TANK VZW",
@@ -53821,7 +54268,7 @@
     "eu_nationality": "",
     "homepage": "https://datatank.org/",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -53831,8 +54278,16 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": -41,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold",
+      "fetch failed (HTTP 404)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Adatatank.org+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "The EU Awareness Centre (EUAC)",
@@ -53849,7 +54304,7 @@
     "eu_nationality": "",
     "homepage": "https://euawareness.org/",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -53859,8 +54314,16 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": -41,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold",
+      "fetch failed (HTTP 404)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aeuawareness.org+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "The European Center for Populism Studies (ECPS)",
@@ -53876,19 +54339,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://www.populismstudies.org/",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.populismstudies.org/about-us/work-with-us/",
+    "careers_confidence": "high",
+    "last_updated": "2025-09-14",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 20,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=The+European+Center+for+Populism+Studies+%28ECPS%29+jobs+careers",
+    "last_updated_age_days": 311,
+    "openings_state": "no_openings",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:48:33.222388+00:00"
   },
   {
     "organisation": "The German Marshall Fund of the United States - The Transatlantic Foundation (GMF - TF)",
@@ -53904,19 +54380,33 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://gmfus.org",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.gmfus.org/about/careers",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 23,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=The+German+Marshall+Fund+of+the+United+States+-+The+Transatlantic+Foundation+%28GMF+-+TF%29+jobs+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:48:19.009075+00:00"
   },
   {
     "organisation": "The Good Food Institute Europe (Belgium) (GFI-E)",
@@ -53932,19 +54422,36 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://gfieurope.org/",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://gfieurope.org/careers/",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-03",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 27,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page text has 3 job signal(s) (+6)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=The+Good+Food+Institute+Europe+%28Belgium%29+%28GFI-E%29+jobs+careers",
+    "last_updated_age_days": 19,
+    "openings_state": "has_openings",
+    "openings_count": 2,
+    "openings_titles": [
+      "Lead Scientist, Fermentation (18-month fixed-term contract) – Remote",
+      "job openings for GFI’s international affiliates"
+    ],
+    "openings_checked_at": "2026-07-22T15:48:19.553821+00:00"
   },
   {
     "organisation": "The Lisbon Council for Economic Competitiveness and Social Renewal asbl",
@@ -53960,19 +54467,34 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.lisboncouncil.net",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://lisboncouncil.net/jobs/",
+    "careers_confidence": "medium",
+    "last_updated": "2026-01-29",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 15,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "looks like a non-Brussels office (-8)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=The+Lisbon+Council+for+Economic+Competitiveness+and+Social+Renewal+asbl+jobs+careers",
+    "last_updated_age_days": 174,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:48:25.127882+00:00"
   },
   {
     "organisation": "Trans European Policy Studies Association (TEPSA)",
@@ -53988,19 +54510,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.tepsa.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://tepsa.eu/careers/",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Trans+European+Policy+Studies+Association+%28TEPSA%29+jobs+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:48:24.371178+00:00"
   },
   {
     "organisation": "Vlaams Instituut voor de Zee (VLIZ)",
@@ -54016,19 +54551,37 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.vliz.be",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://vliz.be/nl/jobs",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 25,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Vlaams+Instituut+voor+de+Zee+%28VLIZ%29+jobs+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "has_openings",
+    "openings_count": 2,
+    "openings_titles": [
+      "VLIZ werft aan: Researcher offshore palaeolandscape exploration",
+      "VLIZ werft aan: Open Data Engineer"
+    ],
+    "openings_checked_at": "2026-07-22T15:48:26.967796+00:00"
   },
   {
     "organisation": "Vlaamse Instelling voor Technologisch Onderzoek (VITO)",
@@ -54044,19 +54597,34 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://vito.be/en",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://vito.be/nl/jobs",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 25,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Vlaamse+Instelling+voor+Technologisch+Onderzoek+%28VITO%29+jobs+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:48:27.865070+00:00"
   },
   {
     "organisation": "Water Europe (WE)",
@@ -54072,19 +54640,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.watereurope.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://watereurope.eu/join-us-at-life-zelda-open-day-on-21st-of-june/",
+    "careers_confidence": "medium",
+    "last_updated": "2016-06-10",
+    "last_updated_source": "jsonld",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 16,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=Water+Europe+%28WE%29+jobs+careers",
+    "last_updated_age_days": 3694,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:48:55.829672+00:00"
   },
   {
     "organisation": "Wilfried Martens Centre for European Studies (Martens Centre;WMCES)",
@@ -54100,19 +54680,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://martenscentre.eu",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.martenscentre.eu/publication/jobs-without-frontiers-the-potential-of-the-single-european-labour-market/",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Wilfried+Martens+Centre+for+European+Studies+%28Martens+Centre%3BWMCES%29+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:48:53.829191+00:00"
   },
   {
     "organisation": "6G Smart Networks and Services Industry Association (6G-IA)",
@@ -54129,7 +54722,7 @@
     "eu_nationality": "",
     "homepage": "https://6g-ia.eu",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -54139,8 +54732,14 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3A6g-ia.eu+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "ACCIS",
@@ -54156,19 +54755,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.accis.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://accis.eu/wp-content/uploads/2018/04/join-us-e1526995152316.jpg",
+    "careers_confidence": "medium",
+    "last_updated": "2026-06-16",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 16,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=ACCIS+jobs+careers",
+    "last_updated_age_days": 36,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:50:12.143136+00:00"
   },
   {
     "organisation": "ACEA",
@@ -54185,7 +54796,7 @@
     "eu_nationality": "",
     "homepage": "",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -54196,7 +54807,10 @@
     "latam_relevant": false,
     "remote_friendly": false,
     "careers_score": 0,
-    "careers_reasons": []
+    "careers_reasons": [
+      "no viable candidate"
+    ],
+    "search_url": "https://www.google.com/search?q=ACEA+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "AECC",
@@ -54213,7 +54827,7 @@
     "eu_nationality": "",
     "homepage": "www.aecc.eu",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -54223,8 +54837,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 2,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-10)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=AECC+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "AEGIS Europe",
@@ -54241,7 +54862,7 @@
     "eu_nationality": "",
     "homepage": "http://www.aegiseurope.eu/",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -54251,8 +54872,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aaegiseurope.eu+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "AGE Platform Europe",
@@ -54306,19 +54934,34 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.agoria.be",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.agoria.be/en/jobs",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 27,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=AGORIA+jobs+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:49:03.768420+00:00"
   },
   {
     "organisation": "AIM - European Brands Association",
@@ -54335,7 +54978,7 @@
     "eu_nationality": "",
     "homepage": "http://www.aim.be",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -54345,8 +54988,14 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": -6,
+    "careers_reasons": [
+      "domain unrelated to this org (-10)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aaim.be+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "AIMII",
@@ -54362,19 +55011,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://www.aimii.eu",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://belgium.iom.int/careers",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 13,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "official EU / intergovernmental domain (+3)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page blocks scrapers (HTTP 403) — not verified"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aaimii.eu+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:49:21.146361+00:00"
   },
   {
     "organisation": "ALLRAIL Alliance of Rail New Entrants",
@@ -54419,7 +55080,7 @@
     "eu_nationality": "",
     "homepage": "http://www.amice-eu.org",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -54429,8 +55090,17 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold",
+      "page blocks scrapers (HTTP 0) — not verified"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aamice-eu.org+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "ANEC",
@@ -54445,20 +55115,36 @@
     "target_roles": "Policy Officer, Policy Adviser, Communications, Advocacy, Project Manager",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "homepage": "https://anec.eu",
+    "careers_url": "http://anec.eu/become-an-anec-expert-vacancies/",
+    "careers_confidence": "medium",
+    "last_updated": "2026-07-17",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "Regional registry: EU trade associations"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 13,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=ANEC+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 5,
+    "openings_state": "has_openings",
+    "openings_count": 4,
+    "openings_titles": [
+      "Call for expert to represent the consumer interests in Standardisation of Blockchain and Distributed Ledger Technologies in CEN/CLC/JTC 19",
+      "Call for consumer experts and representatives in Ecodesign and Energy Labelling related standards",
+      "Volunteers (experts)",
+      "Call for ANEC Bikes & e-bikes expert"
+    ],
+    "openings_checked_at": "2026-07-22T15:49:44.018369+00:00"
   },
   {
     "organisation": "APELL",
@@ -54474,19 +55160,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://apell.info/",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://apell.info/jobs/",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=APELL+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "no_openings",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:49:29.413662+00:00"
   },
   {
     "organisation": "APPLiA (Home Appliance Europe)",
@@ -54503,7 +55202,7 @@
     "eu_nationality": "",
     "homepage": "http://www.applia-europe.eu",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -54513,8 +55212,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aapplia-europe.eu+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Access VetMed",
@@ -54531,7 +55237,7 @@
     "eu_nationality": "",
     "homepage": "accessvetmed.eu",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -54541,8 +55247,14 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": -1,
+    "careers_reasons": [
+      "bare homepage, no careers path (-8)",
+      "domain matches org name (+4)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=Access+VetMed+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Aerospace, Security and Defence Industries Association of Europe (ASD)",
@@ -54558,19 +55270,33 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.asd-europe.org",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.asd-europe.org/about-asd/job-opportunities/",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 29,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 3 job signal(s) (+6)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aasd-europe.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null,
+    "openings_state": "no_openings",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:49:42.616338+00:00"
   },
   {
     "organisation": "Affordable Medicines Europe",
@@ -54587,7 +55313,7 @@
     "eu_nationality": "",
     "homepage": "http://www.affordablemedicines.eu",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -54597,8 +55323,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": -50,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-10)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "fetch failed (HTTP 522)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aaffordablemedicines.eu+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Aggregates Europe (AE)",
@@ -54614,19 +55347,33 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.aggregates-europe.eu/",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.aggregates-europe.eu/about-us/careers/",
+    "careers_confidence": "high",
+    "last_updated": "2025-07-07",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 23,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Aggregates+Europe+%28AE%29+jobs+careers",
+    "last_updated_age_days": 380,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:49:48.677179+00:00"
   },
   {
     "organisation": "Air Cargo Belgium (ACB)",
@@ -54642,19 +55389,34 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://aircargobelgium.be",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://aircargobelgium.be/vacancies",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 25,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Air+Cargo+Belgium+%28ACB%29+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:49:49.688186+00:00"
   },
   {
     "organisation": "Airborne Wind Europe (AWEU)",
@@ -54671,7 +55433,7 @@
     "eu_nationality": "",
     "homepage": "http://airbornewindeurope.org",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -54681,8 +55443,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aairbornewindeurope.org+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Airlines International Representation in Europe (AIRE)",
@@ -54698,19 +55467,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.aire.aero",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://aire.aero/join-us-for-aires-roundtable-on-facilitating-passengers-with-reduced-mobility-prms/",
+    "careers_confidence": "medium",
+    "last_updated": "2026-07-17",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 16,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=Airlines+International+Representation+in+Europe+%28AIRE%29+jobs+careers",
+    "last_updated_age_days": 5,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:50:20.066188+00:00"
   },
   {
     "organisation": "Airlines for Europe (A4E)",
@@ -54726,11 +55507,11 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.a4e.eu",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://a4e.eu/about-us/careers/",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register",
       "Regional registry: EU trade associations"
@@ -54738,8 +55519,21 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Airlines+for+Europe+%28A4E%29+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:50:13.941394+00:00"
   },
   {
     "organisation": "Airports Council International - European Region (ACI EUROPE)",
@@ -54755,19 +55549,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.aci-europe.org/",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://aci-europe.org/recruitment",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 20,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Airports+Council+International+-+European+Region+%28ACI+EUROPE%29+jobs+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:50:16.763462+00:00"
   },
   {
     "organisation": "Algemene vereniging van de Geneesmiddelenindustrie (pharma.be)",
@@ -54784,7 +55591,7 @@
     "eu_nationality": "",
     "homepage": "http://www.pharma.be",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -54794,8 +55601,16 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Apharma.be+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Alliance for New Mobility Europe (AME)",
@@ -54812,7 +55627,7 @@
     "eu_nationality": "",
     "homepage": "https://mobilityalliance.eu/",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -54822,8 +55637,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Amobilityalliance.eu+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Alliance for Rural Electrification (ARE)",
@@ -54839,19 +55661,38 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://www.ruralelec.org",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://renewelec.org/job-platform/",
+    "careers_confidence": "high",
+    "last_updated": "2024-11-22",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 23,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aruralelec.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 607,
+    "openings_state": "has_openings",
+    "openings_count": 4,
+    "openings_titles": [
+      "Chargé(e) Administration des Ventes Junior",
+      "Order Processing Manager",
+      "Sales Manager CSA",
+      "Communications & Events Intern"
+    ],
+    "openings_checked_at": "2026-07-22T15:51:34.103855+00:00"
   },
   {
     "organisation": "Alliance for the Freedom of Car Repair (AFCAR)",
@@ -54867,19 +55708,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "www.afcar.eu",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://allianceautomotivegroup.eu/careers/",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 18,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Alliance+for+the+Freedom+of+Car+Repair+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:50:34.519324+00:00"
   },
   {
     "organisation": "Alliance of European Car Dealers and Repairers (AECDR)",
@@ -54895,19 +55749,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://www.aecdr.eu",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://allianceautomotivegroup.eu/careers/",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 20,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aaecdr.eu+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:51:24.293349+00:00"
   },
   {
     "organisation": "Allied For Startups asbl (AFS)",
@@ -54923,19 +55790,33 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://alliedforstartups.org",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://alliedforstartups.org/careers/",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 25,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Allied+For+Startups+asbl+%28AFS%29+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:50:35.877726+00:00"
   },
   {
     "organisation": "American Chamber of Commerce to the European Union (AmCham EU)",
@@ -54951,19 +55832,34 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://www.amchameu.eu/",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.amchameu.eu/about/vacancies",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 25,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=American+Chamber+of+Commerce+to+the+European+Union+%28AmCham+EU%29+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "no_openings",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:50:39.471781+00:00"
   },
   {
     "organisation": "Ammonia Europe",
@@ -54979,19 +55875,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://www.ammoniaeurope.com/",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.ammoniaeurope.com/vacancies/",
+    "careers_confidence": "high",
+    "last_updated": "2023-09-01",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Ammonia+Europe+jobs+careers",
+    "last_updated_age_days": 1055,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:50:54.653309+00:00"
   },
   {
     "organisation": "Animal Transportation Association (ATA)",
@@ -55036,7 +55945,7 @@
     "eu_nationality": "",
     "homepage": "http://www.animalhealtheurope.eu",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55046,8 +55955,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aanimalhealtheurope.eu+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Apex-Brasil Brussels-Europe (ApexBrasil)",
@@ -55064,7 +55980,7 @@
     "eu_nationality": "",
     "homepage": "http://www.apexbrasil.com.br/en/home",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55074,8 +55990,14 @@
     "phd_relevant": false,
     "latam_relevant": true,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": -6,
+    "careers_reasons": [
+      "domain unrelated to this org (-10)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aapexbrasil.com.br+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Aqua Europa (AE)",
@@ -55091,19 +56013,59 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://aqua-europa.eu",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.eea.europa.eu/en/about/careers/vacancies",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 22,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aaqua-europa.eu+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null,
+    "openings_state": "has_openings",
+    "openings_count": 42,
+    "openings_titles": [
+      "Expert - Data Management - Contract Agent (FGIV)",
+      "Expert - Waste Data Reporting - Contract Agent (FGIV)",
+      "Expert - Data Architect - Temporary Agent (AD7)",
+      "Expert - Legal, Procurement and Data Protection - Official (AD5-AD12)",
+      "Expert - Chemicals, environment and health - Contract Agent (FGIV)",
+      "Expert - Urban Sustainability - Contract Agent (FGIV)",
+      "Expert - Air Quality - Temporary Agent (AD5)",
+      "Expert - Climate and Agriculture - Temporary Agent (AD5)",
+      "Expert - Biodiversity and Nature - Temporary Agent (AD5)",
+      "Expert - Procurement - Contract Agent (FGIV)",
+      "Assistant - Contract Agent (FGIII)",
+      "Expert - Project Management and Networking - Contract Agent (FGIV)",
+      "Expert - Water Resilience and Pollution - Temporary Agent (AD6)",
+      "Expert - Industrial Accident Assessment - Temporary Agent (AD6)",
+      "Expert - Environment and Climate Monitoring - Contract Agent (FGIV)",
+      "Human Resources Officer - Temporary Agent (AST2)",
+      "Expert - Climate Change Mitigation - Contract Agent (FGIV)",
+      "Expert - Data Governance - Contract Agent (FGIV)",
+      "Facilities management Officer - Temporary Agent (AST4)",
+      "Head of Unit - Earth Observation and Digital Transformation - Temporary Agent (AD9)",
+      "Expert - Visual communication - Contract Agent (FGIV)",
+      "Expert - Digital marketing and stakeholder engagement - Contract Agent (FGIV)",
+      "Call for Seconded National Experts 2025",
+      "Service Desk Coordinator - Temporary Agent (AST4)",
+      "Corporate Processes Officer - Contract Agent (FGIII)"
+    ],
+    "openings_checked_at": "2026-07-22T15:51:55.810041+00:00"
   },
   {
     "organisation": "Assemblée des Exportateurs de Türkiye Bureau de liaison de Bruxelles (TIM ( Turkiye Ihracatçilari Meclisi))",
@@ -55119,19 +56081,41 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://tim.org.tr/en/",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.eeas.europa.eu/eeas/vacancies_en",
+    "careers_confidence": "medium",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 17,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "official EU / intergovernmental domain (+3)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Atim.org.tr+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "has_openings",
+    "openings_count": 8,
+    "openings_titles": [
+      "Resident Twinning Adviser (RTA) Assistant - Twinning Project MK 24 IPA AG 01 24",
+      "Junior Non-Key Expert (JNKE) - Water, Energy and Natural Resources Portfolio Oversight Expert",
+      "Policy Officer – Trade Affairs (Fixed-Term) - Local Agent Group 1",
+      "The European Union Delegation to Kazakhstan is looking for: PROJECT OFFICER LOCAL AGENT GROUP I Ref: 147242 – Cooperation Section",
+      "EEAS HQ - Policy Officer - GII.GLOBAL.STRAT.4 - Contract Agent FGIV - Job No 447691",
+      "Project Officer",
+      "PROGRAMME MANAGER – COOPERATION SECTION DEMOCRATIC GOVERNANCE, HUMAN RIGHTS AND CIVIL SOCIETY",
+      "EEAS HQ - Policy Officer - Security and Defence Partnerships - MD-PSD.PCM.2.SEC2 - Contract Agent FGIV - Job No 521240"
+    ],
+    "openings_checked_at": "2026-07-22T15:51:40.609544+00:00"
   },
   {
     "organisation": "Association Technique de l'Industrie Européenne des Lubrifiants (ATIEL)",
@@ -55148,7 +56132,7 @@
     "eu_nationality": "",
     "homepage": "http://www.atiel.eu",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55158,8 +56142,13 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": -7,
+    "careers_reasons": [
+      "domain unrelated to this org (-10)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aatiel.eu+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Association de l'Aviculture, de l'Industrie et du Commerce de Volailles dans les Pays de l'Union Europeenne asbl (AVEC)",
@@ -55175,19 +56164,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.avec-poultry.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://avec-poultry.eu/news/opportunities-for-funding-in-the-new-eu-agri-promotion-scheme/",
+    "careers_confidence": "medium",
+    "last_updated": "2025-02-07",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 17,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+3)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=Association+de+l%27Aviculture%2C+de+l%27Industrie+et+du+Commerce+de+Volailles+dans+les+Pays+de+l%27Union+Europeenne+asbl+%28AVEC%29+jobs+careers",
+    "last_updated_age_days": 530,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:52:14.370422+00:00"
   },
   {
     "organisation": "Association des Constructeurs Européens d'Automobiles (ACEA)",
@@ -55203,19 +56205,35 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.acea.auto",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.acea.auto/figure/employment-in-eu-automotive-sector/",
+    "careers_confidence": "high",
+    "last_updated": "2023-09-26",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aacea.auto+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 1030,
+    "openings_state": "has_openings",
+    "openings_count": 2,
+    "openings_titles": [
+      "Board of Directors",
+      "ACEA Director General"
+    ],
+    "openings_checked_at": "2026-07-22T15:52:28.265982+00:00"
   },
   {
     "organisation": "Association des Constructeurs Européens de Motocycles (ACEM)",
@@ -55231,19 +56249,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.acem.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.acem.eu/vision-2030/jobs-growth-society/",
+    "careers_confidence": "high",
+    "last_updated": "2025-05-20",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Association+des+Constructeurs+Europ%C3%A9ens+de+Motocycles+%28ACEM%29+jobs+careers",
+    "last_updated_age_days": 428,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:52:10.020428+00:00"
   },
   {
     "organisation": "Association des Fabricants Européens de Munitions de Sport (AFEMS)",
@@ -55259,19 +56290,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.afems.org/",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.afems.org/join-us/",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 16,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=Association+des+Fabricants+Europ%C3%A9ens+de+Munitions+de+Sport+%28AFEMS%29+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:52:35.085233+00:00"
   },
   {
     "organisation": "Association européenne des consultants en innovation (EAIC",
@@ -55287,19 +56330,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://www.eaic.eu/",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.eaic.eu/jobs.html",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-15",
+    "last_updated_source": "sitemap",
+    "last_updated_trust": "medium",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Association+europ%C3%A9enne+des+consultants+en+innovation+%28EAIC+jobs+careers",
+    "last_updated_age_days": 7,
+    "openings_state": "no_openings",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:52:16.890660+00:00"
   },
   {
     "organisation": "Association for Competitive Technology (ACT)",
@@ -55315,19 +56371,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://actonline.org/eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://actonline.org/careers/",
+    "careers_confidence": "high",
+    "last_updated": "2025-11-24",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Association+for+Competitive+Technology+%28ACT%29+jobs+careers",
+    "last_updated_age_days": 240,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:52:17.887885+00:00"
   },
   {
     "organisation": "Association of Commercial Television and Video on Demand Services in Europe (ACT)",
@@ -55344,7 +56413,7 @@
     "eu_nationality": "",
     "homepage": "http://www.acte.be",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55354,8 +56423,16 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aacte.be+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Association of European Automotive and Industrial Battery Manufacturers (EUROBAT)",
@@ -55372,7 +56449,7 @@
     "eu_nationality": "",
     "homepage": "http://www.eurobat.org",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55382,8 +56459,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aeurobat.org+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Association of European Public Postal Operators (PostEurop AISBL)",
@@ -55399,19 +56483,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.posteurop.org/",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.posteurop.org/blog/digital-shift-redefines-postal-jobs-across-europe/",
+    "careers_confidence": "medium",
+    "last_updated": "2026-04-15",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 13,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aposteurop.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 98,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:52:45.471601+00:00"
   },
   {
     "organisation": "Association of European Radios (AER)",
@@ -55428,7 +56525,7 @@
     "eu_nationality": "",
     "homepage": "http://www.aereurope.org",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55438,8 +56535,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aaereurope.org+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Association of European Rail Rolling Stock Lessors (AERRL)",
@@ -55455,19 +56559,40 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://aerrl.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://rail-research.europa.eu/about-europes-rail/jobs/",
+    "careers_confidence": "high",
+    "last_updated": "2026-05-06",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 22,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "official EU / intergovernmental domain (+3)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 3 job signal(s) (+6)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aaerrl.eu+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 77,
+    "openings_state": "has_openings",
+    "openings_count": 7,
+    "openings_titles": [
+      "https://rail-research.europa.eu/wp-content/uploads/2018/05/S2R.2018.03-Communication-Officer.pdf",
+      "https://rail-research.europa.eu/wp-content/uploads/2017/09/S2R.2017.03-Programme-Manager-FGIV.pdf",
+      "https://rail-research.europa.eu/wp-content/uploads/2017/06/S2R.2017.02-Legal-Officer-AD7.pdf",
+      "https://rail-research.europa.eu/wp-content/uploads/2014/07/S2R.2016.04-Programme-Manager-FGIV.pdf",
+      "https://rail-research.europa.eu/wp-content/uploads/2016/05/S2R.2016.03-Communication-Officer.pdf",
+      "http://ec.europa.eu/transport/modes/rail/news/doc/2016-01-12-s2r-pgm-manager-vacancy.pdf",
+      "http://ec.europa.eu/transport/modes/rail/news/2015-03-04-vacancy-legal-adviser-s2r_en.htm"
+    ],
+    "openings_checked_at": "2026-07-22T15:53:12.198735+00:00"
   },
   {
     "organisation": "Association of National Organisations of Fishing Enterprises in the European Union (Europêche)",
@@ -55483,19 +56608,42 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.europeche.org",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.efca.europa.eu/en/about-us/careers#working-at-efca",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 22,
+    "careers_reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aeuropeche.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null,
+    "openings_state": "has_openings",
+    "openings_count": 8,
+    "openings_titles": [
+      "ASSISTANT TO THE EXECUTIVE DIRECTOR",
+      "PROJECT OFFICER",
+      "Coordinator of Control Operations",
+      "Officer Control Technologies and Data",
+      "HR Officer",
+      "Executive Director",
+      "INTERNATIONAL DIMENSION",
+      "Cooperation with international organisations"
+    ],
+    "openings_checked_at": "2026-07-22T15:54:06.833993+00:00"
   },
   {
     "organisation": "Association of the European Heating Industry (EHI)",
@@ -55512,7 +56660,7 @@
     "eu_nationality": "",
     "homepage": "http://www.ehi.eu",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55522,8 +56670,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aehi.eu+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Association of the European Self-Care Industry (AESGP)",
@@ -55539,19 +56694,33 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.aesgp.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://aesgp.eu/vacancies",
+    "careers_confidence": "high",
+    "last_updated": "2026-05-04",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 23,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Association+of+the+European+Self-Care+Industry+%28AESGP%29+jobs+careers",
+    "last_updated_age_days": 79,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:53:19.587043+00:00"
   },
   {
     "organisation": "Assuralia, beroepsvereniging van verzekeringsondernemingen",
@@ -55567,19 +56736,33 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.assuralia.be",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://assuralia.be/fr/jobs",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 23,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Assuralia%2C+beroepsvereniging+van+verzekeringsondernemingen+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:53:20.810849+00:00"
   },
   {
     "organisation": "BEAMA",
@@ -55596,7 +56779,7 @@
     "eu_nationality": "",
     "homepage": "https://www.beama.be",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55606,8 +56789,16 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Abeama.be+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "BELGIAN NUCLEAR FORUM (BNF)",
@@ -55624,7 +56815,7 @@
     "eu_nationality": "",
     "homepage": "https://www.forumnucleaire.be/",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55634,8 +56825,13 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 6,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aforumnucleaire.be+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "BEUC",
@@ -55650,20 +56846,35 @@
     "target_roles": "Policy Officer, Policy Adviser, Communications, Advocacy, Project Manager",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "homepage": "https://beuc.eu",
+    "careers_url": "https://www.beuc.eu/jobs-calls",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "Regional registry: EU trade associations"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 20,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=BEUC+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "has_openings",
+    "openings_count": 1,
+    "openings_titles": [
+      "Call for experts: Ecodesign/Energy Labelling"
+    ],
+    "openings_checked_at": "2026-07-22T15:53:51.746508+00:00"
   },
   {
     "organisation": "Batteries European Partnership Association (BEPA)",
@@ -55680,7 +56891,7 @@
     "eu_nationality": "",
     "homepage": "https://bepassociation.eu/",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55690,8 +56901,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Abepassociation.eu+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Belgian Association of the Consumer Healthcare Industry (BACHI)",
@@ -55708,7 +56926,7 @@
     "eu_nationality": "",
     "homepage": "http://www.bachi.be",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55718,8 +56936,13 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": -9,
+    "careers_reasons": [
+      "domain unrelated to this org (-10)",
+      "search rank #3 (+1)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Abachi.be+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Belgian Feed Association (BFA)",
@@ -55736,7 +56959,7 @@
     "eu_nationality": "",
     "homepage": "http://www.bfa.be",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55746,8 +56969,16 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 6,
+    "careers_reasons": [
+      "bare homepage, no careers path (-8)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Abfa.be+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Belgian Recorded Music Association (BRMA)",
@@ -55764,7 +56995,7 @@
     "eu_nationality": "",
     "homepage": "www.brma.be",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55774,8 +57005,14 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 8,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=Belgian+Recorded+Music+Association+careers+vacancies+official+site"
   },
   {
     "organisation": "Belgian Structured Investment Products Association (BELSIPA)",
@@ -55792,7 +57029,7 @@
     "eu_nationality": "",
     "homepage": "http://www.belsipa.be",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55802,8 +57039,16 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 5,
+    "careers_reasons": [
+      "bare homepage, no careers path (-8)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Abelsipa.be+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Belgian-Italian Chamber of Commerce (CCBI)",
@@ -55820,7 +57065,7 @@
     "eu_nationality": "",
     "homepage": "http://www.ccitabel.com",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55830,8 +57075,14 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Accitabel.com+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Beryllium Science & Technology Association (BeST)",
@@ -55848,7 +57099,7 @@
     "eu_nationality": "",
     "homepage": "http://www.beryllium.eu",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55858,8 +57109,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Aberyllium.eu+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Blockchain for Europe (BC4EU)",
@@ -55903,19 +57161,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://www.britcham.eu/",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://britcham.eu/careers",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 17,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=British+Chamber+of+Commerce+%7C+EU++Belgium+%28BritCham%29+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:54:31.156182+00:00"
   },
   {
     "organisation": "Broadcast Networks Europe (BNE)",
@@ -55931,19 +57201,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.broadcast-networks.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://broadcast-networks.eu/join-bne/",
+    "careers_confidence": "medium",
+    "last_updated": "2021-02-09",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 11,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold",
+      "page text has 1 job signal(s) (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=Broadcast+Networks+Europe+%28BNE%29+jobs+careers",
+    "last_updated_age_days": 1989,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:54:40.866988+00:00"
   },
   {
     "organisation": "Brussels-Africa Hub",
@@ -55959,19 +57242,33 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "www.brusselsafricahub.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://hub.brussels/en/join-us/",
+    "careers_confidence": "high",
+    "last_updated": "2025-08-04",
+    "last_updated_source": "jsonld",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Brussels-Africa+Hub+careers+vacancies+official+site",
+    "last_updated_age_days": 352,
+    "openings_state": "no_openings",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:54:33.503318+00:00"
   },
   {
     "organisation": "Bureau International du Béton Manufacturé (BIBM)",
@@ -55988,7 +57285,7 @@
     "eu_nationality": "",
     "homepage": "http://www.bibm.eu",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -55998,8 +57295,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 2,
+    "careers_reasons": [
+      "careers-shaped path (+4)",
+      "domain unrelated to this org (-10)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Abibm.eu+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Bureau of International Recycling (BIR)",
@@ -56016,7 +57320,7 @@
     "eu_nationality": "",
     "homepage": "https://www.bir.org/",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -56026,8 +57330,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Abir.org+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Bureau of Nordic Family Forestry (NSF)",
@@ -56044,7 +57355,7 @@
     "eu_nationality": "",
     "homepage": "https://www.nordicforestry.org/",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -56054,8 +57365,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Anordicforestry.org+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "BusinessEurope",
@@ -56071,11 +57389,11 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.businesseurope.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.businesseurope.eu/publications/jobs-and-growth-eu-strategy-speaking-notes-for-maxime-cerutti-at-euractiv-seminar/",
+    "careers_confidence": "high",
+    "last_updated": "2025-03-11",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register",
       "Regional registry: EU trade associations"
@@ -56083,8 +57401,21 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=BusinessEurope+jobs+careers",
+    "last_updated_age_days": 498,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:54:54.058877+00:00"
   },
   {
     "organisation": "CECE - Committee for European Construction Equipment",
@@ -56100,19 +57431,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.cece.eu",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.cece.eu/news/digital-skills-and-jobs-coalition-conference-industry-women-and-education-keywords-for-success",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 13,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acece.eu+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:55:09.187820+00:00"
   },
   {
     "organisation": "CECIMO",
@@ -56155,20 +57499,32 @@
     "target_roles": "Policy Officer, Policy Adviser, Communications, Advocacy, Project Manager",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "homepage": "https://cefic.org",
+    "careers_url": "https://cefic.org/mission-and-organisation/work-at-cefic/",
+    "careers_confidence": "medium",
+    "last_updated": "2026-07-02",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "Regional registry: EU trade associations"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 11,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold",
+      "page text has 1 job signal(s) (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=CEFIC+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 20,
+    "openings_state": "no_openings",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:55:09.293822+00:00"
   },
   {
     "organisation": "CEFIC - European Chemical Industry Council",
@@ -56184,19 +57540,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://cefic.org/",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://cefic.org/mission-and-organisation/work-at-cefic/",
+    "careers_confidence": "medium",
+    "last_updated": "2026-07-02",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 11,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold",
+      "page text has 1 job signal(s) (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=CEFIC+-+European+Chemical+Industry+Council+jobs+careers",
+    "last_updated_age_days": 20,
+    "openings_state": "no_openings",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:55:34.061485+00:00"
   },
   {
     "organisation": "CEMA - European Agricultural Machinery Industry Association",
@@ -56213,7 +57582,7 @@
     "eu_nationality": "",
     "homepage": "http://www.cema-agri.org",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -56223,8 +57592,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acema-agri.org+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "CENTR - Council of European Top Level Domain Registries",
@@ -56241,7 +57617,7 @@
     "eu_nationality": "",
     "homepage": "https://www.centr.org",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -56251,8 +57627,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+3)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acentr.org+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "CEPI",
@@ -56267,20 +57650,33 @@
     "target_roles": "Policy Officer, Policy Adviser, Communications, Advocacy, Project Manager",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "homepage": "https://cepi.net",
+    "careers_url": "https://cepi.net/careers",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "Regional registry: EU trade associations"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 19,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=CEPI+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:55:22.983618+00:00"
   },
   {
     "organisation": "CER (Community of European Railway)",
@@ -56295,20 +57691,34 @@
     "target_roles": "Policy Officer, Policy Adviser, Communications, Advocacy, Project Manager",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "homepage": "https://cer.be",
+    "careers_url": "https://www.cer.be/about-us/jobs",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "Regional registry: EU trade associations"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 22,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=CER+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:55:23.269129+00:00"
   },
   {
     "organisation": "CIRFS: European Man-made Fibres Association",
@@ -56324,19 +57734,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.cirfs.org",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.cirfs.org/latest-cirfs/news-list/paul-schlack-prize-2024-call-applications",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 11,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold",
+      "page text has 1 job signal(s) (+2)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acirfs.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:55:29.112938+00:00"
   },
   {
     "organisation": "CLECAT - European Association for Forwarding, Transport, Logistic and Customs Services",
@@ -56352,19 +57775,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.clecat.org",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.clecat.org/careers",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 17,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=CLECAT+-+European+Association+for+Forwarding%2C+Transport%2C+Logistic+and+Customs+Services+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:55:42.161695+00:00"
   },
   {
     "organisation": "CLEPA",
@@ -56379,20 +57814,36 @@
     "target_roles": "Policy Officer, Policy Adviser, Communications, Advocacy, Project Manager",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "homepage": "https://clepa.eu",
+    "careers_url": "https://www.clepa.eu/about/structure-organisation/vacancies/",
+    "careers_confidence": "high",
+    "last_updated": "2025-03-18",
+    "last_updated_source": "sitemap",
+    "last_updated_trust": "medium",
     "sources": [
       "Regional registry: EU trade associations"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 20,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=CLEPA+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 491,
+    "openings_state": "has_openings",
+    "openings_count": 2,
+    "openings_titles": [
+      "Materials & Substances Intern – (Technical Regulations)",
+      "Internship"
+    ],
+    "openings_checked_at": "2026-07-22T15:55:35.118682+00:00"
   },
   {
     "organisation": "CLOUD INFRASTRUCTURE SERVICES PROVIDERS IN EUROPE (CISPE)",
@@ -56409,7 +57860,7 @@
     "eu_nationality": "",
     "homepage": "https://cispe.cloud/",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -56419,8 +57870,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acispe.cloud+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "CO2 Value Europe AISBL (CVE)",
@@ -56436,19 +57894,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.co2value.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://co2value.eu/event/join-us-for-the-state-of-carbontech-summit/",
+    "careers_confidence": "medium",
+    "last_updated": "2022-05-02",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 16,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=CO2+Value+Europe+AISBL+%28CVE%29+jobs+careers",
+    "last_updated_age_days": 1542,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:55:57.114956+00:00"
   },
   {
     "organisation": "COMITE EUROPEEN des FABRICANTS de SUCRE (CEFS)",
@@ -56492,11 +57962,11 @@
     "priority": 1,
     "eu_nationality": "No",
     "homepage": "http://www.caritas.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.caritas.eu/opportunities-at-caritas/",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register",
       "Regional registry: EU trade associations",
@@ -56505,8 +57975,22 @@
     "phd_relevant": false,
     "latam_relevant": true,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 25,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+3)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page text has 4 job signal(s) (+6)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Caritas+Europa+jobs+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "no_openings",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:55:57.317167+00:00"
   },
   {
     "organisation": "Cembureau",
@@ -56523,7 +58007,7 @@
     "eu_nationality": "",
     "homepage": "",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -56533,8 +58017,16 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 4,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-10)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Cembureau+Brussels+jobs+vacancies+careers"
   },
   {
     "organisation": "Cement Europe",
@@ -56551,7 +58043,7 @@
     "eu_nationality": "",
     "homepage": "http://www.cementeurope.eu",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -56561,8 +58053,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acementeurope.eu+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "ChargeUp Europe",
@@ -56578,19 +58077,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.chargeupeurope.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.chargeupeurope.eu/join-us",
+    "careers_confidence": "medium",
+    "last_updated": "2024-02-21",
+    "last_updated_source": "sitemap",
+    "last_updated_trust": "medium",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 16,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+4)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=ChargeUp+Europe+jobs+careers",
+    "last_updated_age_days": 882,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:56:20.305904+00:00"
   },
   {
     "organisation": "Climate Action Network Europe",
@@ -56606,11 +58117,11 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.caneurope.org",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://caneurope.org/publications/jobs-in-renewable-energy-increased-by-more-than-a-million-worldwide-in-2014/",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register",
       "Regional registry: EU trade associations"
@@ -56618,8 +58129,21 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Climate+Action+Network+Europe+jobs+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:56:23.937743+00:00"
   },
   {
     "organisation": "Coalition for Open Digital Ecosystems (CODE)",
@@ -56635,19 +58159,31 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://www.opendigitalecosystems.org/",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.opendigitalecosystems.org/about/careers",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 17,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=Coalition+for+Open+Digital+Ecosystems+%28CODE%29+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:56:36.661771+00:00"
   },
   {
     "organisation": "Comeos for commerce and services",
@@ -56663,19 +58199,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.comeos.be",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://comeos.be/careers",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 19,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)"
+    ],
+    "search_url": "https://www.google.com/search?q=Comeos+for+commerce+and+services+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:56:37.014575+00:00"
   },
   {
     "organisation": "Comité Européen de Constructeurs d'Instruments de Pesage (CECIP)",
@@ -56691,19 +58240,42 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.cecip.eu",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://eu-careers.europa.eu/en/job-opportunities/open-vacancies/ec_vacancies",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 22,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acecip.eu+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "has_openings",
+    "openings_count": 8,
+    "openings_titles": [
+      "Apply for a traineeship",
+      "Secretary - to the Head of Unit",
+      "HRM Assistant",
+      "Policy Officer",
+      "Finance and Contracts Officer",
+      "Principal Adviser",
+      "Chargé des affaires juridiques - Juriste en droit immobilier",
+      "Legal Officer"
+    ],
+    "openings_checked_at": "2026-07-22T15:57:00.275367+00:00"
   },
   {
     "organisation": "Comité Européen des Entreprises Vins (CEEV)",
@@ -56719,19 +58291,32 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.ceev.eu",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.ceev.eu/jobs",
+    "careers_confidence": "high",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Comit%C3%A9+Europ%C3%A9en+des+Entreprises+Vins+%28CEEV%29+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "no_openings",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:57:02.349111+00:00"
   },
   {
     "organisation": "Comité du commerce des céréales, aliments du bétail, oléagineux, huile d'olive, huiles et graisses et agrofournitures de l'U.E. (COCERAL)",
@@ -56748,7 +58333,7 @@
     "eu_nationality": "",
     "homepage": "http://www.coceral.com",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -56758,8 +58343,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acoceral.com+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Committee of the Regions liaison offices",
@@ -56774,20 +58366,33 @@
     "target_roles": "Policy Officer, Policy Adviser, Communications, Advocacy, Project Manager",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "homepage": "https://cor.europa.eu",
+    "careers_url": "https://www.cor.europa.eu/en/about/work-us/jobs",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "Regional registry: EU trade associations"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 21,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "official EU / intergovernmental domain (+3)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Committee+of+the+Regions+liaison+offices+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:57:06.159097+00:00"
   },
   {
     "organisation": "Community of European Railway and Infrastructure Companies (CER)",
@@ -56803,19 +58408,34 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.cer.be",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://cer.be/jobs",
+    "careers_confidence": "high",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 25,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #1 (+3)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Community+of+European+Railway+and+Infrastructure+Companies+%28CER%29+jobs+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:57:07.436783+00:00"
   },
   {
     "organisation": "Confederation Europeenne de Distilleries Vinicoles (CEDIVI)",
@@ -56859,19 +58479,34 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.cepi.org",
-    "careers_url": "",
-    "careers_confidence": "",
+    "careers_url": "https://www.cepi.org/joint-cepi-industriall-position-free-trade-and-fair-competition-for-growth-and-jobs-in-europe/",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 13,
+    "careers_reasons": [
+      "found by probing the org's own domain",
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=Confederation+of+European+Paper+Industries+%28Cepi%29+jobs+careers",
+    "last_updated_age_days": null,
+    "openings_state": "has_openings",
+    "openings_count": 1,
+    "openings_titles": [
+      "Trade and Industrial Policy Director"
+    ],
+    "openings_checked_at": "2026-07-22T15:57:28.647390+00:00"
   },
   {
     "organisation": "Confederation of European Security Services (CoESS)",
@@ -56887,19 +58522,41 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.coess.org",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://eu-careers.europa.eu/en/job-opportunities/open-vacancies/ec_vacancies",
+    "careers_confidence": "medium",
+    "last_updated": "2026-07-22",
+    "last_updated_source": "http",
+    "last_updated_trust": "low",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 17,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "official EU / intergovernmental domain (+3)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 1 job signal(s) (+2)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acoess.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 0,
+    "openings_state": "has_openings",
+    "openings_count": 8,
+    "openings_titles": [
+      "Apply for a traineeship",
+      "Secretary - to the Head of Unit",
+      "HRM Assistant",
+      "Policy Officer",
+      "Finance and Contracts Officer",
+      "Principal Adviser",
+      "Chargé des affaires juridiques - Juriste en droit immobilier",
+      "Legal Officer"
+    ],
+    "openings_checked_at": "2026-07-22T15:57:32.235583+00:00"
   },
   {
     "organisation": "Conféderation Européenne des Propriétaires Forestiers (CEPF)",
@@ -56915,19 +58572,33 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "http://www.cepf-eu.org",
-    "careers_url": "",
-    "careers_confidence": "",
-    "last_updated": "",
-    "last_updated_source": "",
-    "last_updated_trust": "",
+    "careers_url": "https://www.confederationbois.be/job/",
+    "careers_confidence": "high",
+    "last_updated": "2026-04-02",
+    "last_updated_source": "meta",
+    "last_updated_trust": "high",
     "sources": [
       "EU Transparency Register"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 22,
+    "careers_reasons": [
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search snippet mentions jobs (+2)",
+      "search rank #3 (+1)",
+      "page text has 2 job signal(s) (+4)",
+      "page title says careers (+4)"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acepf-eu.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": 111,
+    "openings_state": "unknown",
+    "openings_count": 0,
+    "openings_titles": [],
+    "openings_checked_at": "2026-07-22T15:57:43.804735+00:00"
   },
   {
     "organisation": "Confédération Européenne de l’Industrie de la Chaussure (CEC)",
@@ -56944,7 +58615,7 @@
     "eu_nationality": "",
     "homepage": "http://www.cec-footwearindustry.eu",
     "careers_url": "",
-    "careers_confidence": "",
+    "careers_confidence": "none",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "",
@@ -56954,8 +58625,15 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 0,
-    "careers_reasons": []
+    "careers_score": 9,
+    "careers_reasons": [
+      "domain matches org name (+4)",
+      "matches the sheet's known domain (+5)",
+      "search snippet mentions jobs (+2)",
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold"
+    ],
+    "search_url": "https://www.google.com/search?q=site%3Acec-footwearindustry.eu+jobs+OR+vacancies+OR+careers"
   },
   {
     "organisation": "Connect Europe",

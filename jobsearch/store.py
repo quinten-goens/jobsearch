@@ -38,6 +38,8 @@ def _flatten(org: dict, version: dict | None) -> dict:
     rec["openings_state"] = v.get("openings_state", "")
     rec["openings_count"] = v.get("openings_count") or 0
     rec["openings_titles"] = v.get("openings_titles") or []
+    rec["openings_new_titles"] = v.get("openings_new_titles") or []
+    rec["openings_new_at"] = v.get("openings_new_at", "")
     # Review state comes straight off the org row.
     rec["reviewed"] = bool(org.get("reviewed"))
     rec["reviewed_url"] = org.get("reviewed_url", "")
@@ -98,6 +100,12 @@ def set_reviewed(org_id: str, reviewed: bool, current_url: str = "",
         body["reviewed_page_date"] = ""
         body["reviewed_at"] = None
     return admin.update_record("organisations", org_id, body)
+
+
+def clear_new_openings(version_id: str) -> None:
+    """Dismiss the 'new openings' flag once Sarah has seen it."""
+    _admin_pb().update_record("url_versions", version_id,
+                              {"openings_new_titles": [], "openings_new_at": None})
 
 
 def version_history(org_id: str, pb: PB | None = None) -> list[dict]:
@@ -165,6 +173,40 @@ def refresh_org(org: dict, pb: PB | None = None) -> dict:
             "last_updated_age_days": fresh.get("age_days"),
         })
 
+    # --- re-detect openings and diff against what we had ---------------
+    # A title present now that wasn't present at the last scan is genuinely
+    # new -- the early-warning signal for an off-board vacancy.
+    new_titles: list[str] = []
+    if new_url:
+        from .openings import detect
+
+        # The version we'll write openings onto: the freshly-created one if the
+        # URL moved, else the existing current version.
+        target = pb.find_one("url_versions",
+                             f'org="{org_id}" && superseded=false')
+        prev_titles = [t.lower().strip()
+                       for t in ((target or {}).get("openings_titles") or [])]
+        od = detect(new_url)
+        now_titles = od["titles"]
+        # Only meaningful when we can actually read the page.
+        if od["state"] == "has_openings":
+            new_titles = [t for t in now_titles
+                          if t.lower().strip() not in prev_titles]
+        if target:
+            body = {
+                "openings_state": od["state"],
+                "openings_count": od["count"],
+                "openings_titles": now_titles,
+                "openings_checked_at": datetime.now(timezone.utc).isoformat(),
+            }
+            # Keep the new-titles flag sticky until she visits What's new and
+            # it's re-scanned with nothing newer; only overwrite when we found
+            # something (don't wipe a prior 'new' on an unreadable re-scan).
+            if new_titles:
+                body["openings_new_titles"] = new_titles
+                body["openings_new_at"] = datetime.now(timezone.utc).isoformat()
+            pb.update_record("url_versions", target["id"], body)
+
     # --- auto-untick 'reviewed' if the page has been updated ------------
     unreviewed = False
     if org.get("reviewed"):
@@ -184,4 +226,5 @@ def refresh_org(org: dict, pb: PB | None = None) -> dict:
         "new_url": new_url,
         "unreviewed": unreviewed,
         "page_date": page_date,
+        "new_titles": new_titles,
     }
