@@ -63,6 +63,16 @@ def load_catalogue() -> pd.DataFrame:
     )
     if "careers_reasons" not in df:
         df["careers_reasons"] = [[] for _ in range(len(df))]
+    if "openings_state" not in df:
+        df["openings_state"] = ""
+    df["openings_state"] = df["openings_state"].fillna("")
+    if "openings_count" not in df:
+        df["openings_count"] = 0
+    df["openings_count"] = (
+        pd.to_numeric(df["openings_count"], errors="coerce").fillna(0).astype(int)
+    )
+    if "openings_titles" not in df:
+        df["openings_titles"] = [[] for _ in range(len(df))]
     df["has_careers"] = df["careers_url"].astype(bool)
     return df
 
@@ -117,6 +127,16 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
              "page. A refresh un-ticks it if the page has changed since.",
     )
 
+    st.sidebar.caption("Openings")
+    openings_choice = st.sidebar.radio(
+        "Openings", ["Any", "Has openings now", "Hide 'no openings'"],
+        label_visibility="collapsed",
+        help="Whether the careers page has live openings right now. 'Has "
+             "openings now' is the fast way to the organisations actually "
+             "hiring on their own site — the ones worth applying to before the "
+             "job boards fill up.",
+    )
+
     st.sidebar.caption("Careers page link")
     link_choice = st.sidebar.radio(
         "How sure are we the link is right?",
@@ -147,6 +167,10 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
         if include_undated:
             fresh_enough = fresh_enough | dt.isna()
         f = f[fresh_enough]
+    if openings_choice == "Has openings now":
+        f = f[f["openings_state"] == "has_openings"]
+    elif openings_choice == "Hide 'no openings'":
+        f = f[f["openings_state"] != "no_openings"]
     conf = f["careers_confidence"].replace("", "none")
     if link_choice == "Only links we're sure about":
         f = f[conf == "high"]
@@ -164,10 +188,12 @@ def page_organisations():
         st.stop()
     f = org_filters(cat)
 
-    k1, k2, k3 = st.columns(3)
+    k1, k2, k3, k4 = st.columns(4)
     k1.metric("Shown", len(f))
     k2.metric("With careers page", int(f["has_careers"].sum()))
-    k3.metric("Reviewed", int(f["reviewed"].sum()))
+    k3.metric("Hiring now", int((f["openings_state"] == "has_openings").sum()),
+              help="Organisations with live openings on their own careers page.")
+    k4.metric("Reviewed", int(f["reviewed"].sum()))
 
     if f.empty:
         st.info("No organisations match these filters.")
@@ -205,16 +231,32 @@ def page_organisations():
                    f"{uncheck} un-reviewed (page updated).")
         st.rerun()
 
-    view = f.sort_values(["reviewed", "sector", "organisation"]).reset_index(drop=True)
+    # Hiring-now first (that's the point), then unreviewed, then by name.
+    view = f.copy()
+    view["_hiring"] = (view["openings_state"] == "has_openings").astype(int)
+    view = view.sort_values(
+        ["_hiring", "reviewed", "organisation"],
+        ascending=[False, True, True],
+    ).reset_index(drop=True)
     # One editable table. Reviewed is a tickable checkbox; everything else is
     # read-only. Sarah works entirely here -- no detail panel, no button wall.
     # The org id rides along as a hidden column so we can map edits back.
     # Plain-language link quality instead of a raw score.
     LINK_LABEL = {"high": "✓ Checked", "medium": "Best guess",
                   "none": "Not found", "": "Not found"}
+
+    def _openings_label(state, count):
+        if state == "has_openings":
+            return f"🟢 {count} open" if count else "🟢 hiring"
+        if state == "no_openings":
+            return "— none now"
+        return "?"  # unknown / not checked
+
     table = pd.DataFrame({
         "Reviewed": view["reviewed"].tolist(),
         "Organisation": view["organisation"].tolist(),
+        "Openings": [_openings_label(s, c) for s, c in
+                     zip(view["openings_state"], view["openings_count"])],
         "Sector": view["sector"].tolist(),
         "Where": view["base"].tolist(),
         "Languages": view["languages"].tolist(),
@@ -237,6 +279,11 @@ def page_organisations():
                      "page.",
             ),
             "Organisation": st.column_config.TextColumn(width="large"),
+            "Openings": st.column_config.TextColumn(
+                width="small",
+                help="🟢 = live openings on their own careers page right now. "
+                     "'— none now' = page says nothing open. '?' = we couldn't "
+                     "read it (often a JavaScript site — worth a manual look)."),
             "Sector": st.column_config.TextColumn(width="medium"),
             "Where": st.column_config.TextColumn(width="small"),
             "Careers page": st.column_config.LinkColumn(
