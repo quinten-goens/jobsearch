@@ -183,8 +183,8 @@ def page_organisations():
     with dl_col:
         do_refresh = st.button(
             f"🔄 Refresh these {len(f)}", use_container_width=True,
-            disabled=len(f) > 60,
-            help="Re-check every organisation shown (≤60). Larger sweeps: "
+            disabled=len(f) > 100,
+            help="Re-check every organisation shown (≤100). Larger sweeps: "
                  "python -m jobsearch.enrich.",
         )
 

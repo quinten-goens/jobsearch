@@ -123,28 +123,29 @@
     "target_roles": "Policy, research, international relations, comms",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://biovia.be",
+    "careers_url": "https://www.biovia.be/jobs",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: Belgian public bodies"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 6,
+    "careers_score": 14,
     "careers_reasons": [
       "careers-shaped path (+5)",
-      "domain unrelated to this org (-10)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "page text has 1 job signal(s) (+2)",
-      "page title says careers (+4)"
+      "search rank #3 (+1)",
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=BIO+Brussels+jobs+vacancies+careers"
+    "search_url": "https://www.google.com/search?q=BIO+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Belgian Development Agency (Enabel)",
@@ -820,13 +821,13 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -43,
+    "careers_score": 7,
     "careers_reasons": [
       "domain matches org name (+4)",
       "Brussels/EU domain signal (+2)",
       "search rank #3 (+1)",
       "no careers path or ATS — capped below threshold",
-      "fetch failed (HTTP 403)"
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
     "search_url": "https://www.google.com/search?q=Federal+Institute+for+Sustainable+Development+Brussels+jobs+vacancies+careers"
   },
@@ -1373,12 +1374,13 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -5,
+    "careers_score": 7,
     "careers_reasons": [
-      "domain unrelated to this org (-10)",
-      "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "no careers path or ATS — capped below threshold"
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #3 (+1)",
+      "no careers path or ATS — capped below threshold",
+      "page blocks scrapers (HTTP 0) — not verified"
     ],
     "search_url": "https://www.google.com/search?q=equal.brussels+Brussels+jobs+vacancies+careers"
   },
@@ -3564,27 +3566,28 @@
     "target_roles": "Event & comms management",
     "priority": 2,
     "eu_nationality": "No",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://cecoforma.com",
+    "careers_url": "https://www.cecoforma.com/jobs",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Sarah's target list"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -36,
+    "careers_score": 14,
     "careers_reasons": [
       "careers-shaped path (+5)",
       "domain matches org name (+4)",
       "search snippet mentions jobs (+2)",
       "search rank #1 (+3)",
-      "fetch failed (HTTP 0)"
+      "page blocks scrapers (HTTP 0) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=Cecoforma+Brussels+jobs+vacancies+careers"
+    "search_url": "https://www.google.com/search?q=Cecoforma+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Deloitte - EU Services",
@@ -3781,28 +3784,29 @@
     "target_roles": "Account manager",
     "priority": 3,
     "eu_nationality": "No",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://edelman.com",
+    "careers_url": "https://www.edelman.com/careers/brussels",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Sarah's target list"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -34,
+    "careers_score": 16,
     "careers_reasons": [
       "careers-shaped path (+5)",
       "domain matches org name (+4)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
       "search rank #1 (+3)",
-      "fetch failed (HTTP 403)"
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=Edelman+Brussels+Brussels+jobs+vacancies+careers"
+    "search_url": "https://www.google.com/search?q=Edelman+Brussels+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Empirica",
@@ -5191,28 +5195,29 @@
     "target_roles": "Programme coordinator, events, communications",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://britishcouncil.be",
+    "careers_url": "https://www.britishcouncil.be/about/careers",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: cultural institutes"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -34,
+    "careers_score": 16,
     "careers_reasons": [
       "careers-shaped path (+5)",
       "domain matches org name (+4)",
       "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
       "search rank #1 (+3)",
-      "fetch failed (HTTP 0)"
+      "page blocks scrapers (HTTP 0) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=British+Council+Brussels+Brussels+jobs+vacancies+careers"
+    "search_url": "https://www.google.com/search?q=British+Council+Brussels+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "EUNIC Brussels",
@@ -5377,11 +5382,12 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -9,
+    "careers_score": -7,
     "careers_reasons": [
       "domain unrelated to this org (-10)",
-      "search rank #3 (+1)",
-      "no careers path or ATS — capped below threshold"
+      "search rank #1 (+3)",
+      "no careers path or ATS — capped below threshold",
+      "page blocks scrapers (HTTP 0) — not verified"
     ],
     "search_url": "https://www.google.com/search?q=Italian+Cultural+Institute+Brussels+jobs+vacancies+careers"
   },
@@ -6208,28 +6214,28 @@
     "target_roles": "Policy officer, administrator, contract agent (CAST), seconded national expert, traineeship",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://echa.europa.eu",
+    "careers_url": "https://echa.europa.eu/traineeships-vacancies",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: European & international institutions"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 1,
+    "careers_score": 14,
     "careers_reasons": [
-      "domain unrelated to this org (-10)",
-      "search snippet mentions jobs (+2)",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
       "search rank #1 (+3)",
-      "no careers path or ATS — capped below threshold",
-      "page text has 1 job signal(s) (+2)",
-      "page title says careers (+4)"
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=ECHA+careers+vacancies+official+site"
+    "search_url": "https://www.google.com/search?q=ECHA+careers+vacancies+official+site",
+    "last_updated_age_days": null
   },
   {
     "organisation": "EEA (European Environment Agency)",
@@ -7070,27 +7076,28 @@
     "target_roles": "Policy officer, administrator, contract agent (CAST), seconded national expert, traineeship",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://consilium.europa.eu",
+    "careers_url": "https://www.consilium.europa.eu/en/general-secretariat/careers/vacancies/",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: European & international institutions"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -39,
+    "careers_score": 11,
     "careers_reasons": [
       "careers-shaped path (+5)",
       "official EU / intergovernmental domain (+3)",
       "search snippet mentions jobs (+2)",
       "search rank #3 (+1)",
-      "fetch failed (HTTP 403)"
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=European+Council+Brussels+jobs+vacancies+careers"
+    "search_url": "https://www.google.com/search?q=European+Council+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "European Court of Auditors",
@@ -8285,29 +8292,28 @@
     "target_roles": "Editorial, comms",
     "priority": 3,
     "eu_nationality": "Yes",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://op.europa.eu",
+    "careers_url": "https://op.europa.eu/en/web/about-us/career-opportunities",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Sarah's target list"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 4,
+    "careers_score": 13,
     "careers_reasons": [
-      "domain unrelated to this org (-10)",
+      "careers-shaped path (+5)",
+      "official EU / intergovernmental domain (+3)",
       "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)",
-      "no careers path or ATS — capped below threshold",
-      "page text has 2 job signal(s) (+4)",
-      "page title says careers (+4)",
-      "explicitly lists zero openings — still the right page (+2)"
+      "search rank #1 (+3)",
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=Publications+Office+%2F+EU+Newsroom+careers+vacancies+official+site"
+    "search_url": "https://www.google.com/search?q=Publications+Office+%2F+EU+Newsroom+careers+vacancies+official+site",
+    "last_updated_age_days": null
   },
   {
     "organisation": "ACP Secretariat (OACPS)",
@@ -8973,27 +8979,28 @@
     "target_roles": "Policy, programme, political affairs — recruits directly, no EPSO concours",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://echr.coe.int",
+    "careers_url": "https://www.echr.coe.int/employment-and-traineeships",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: European & international institutions"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -38,
+    "careers_score": 12,
     "careers_reasons": [
       "careers-shaped path (+4)",
       "official EU / intergovernmental domain (+3)",
       "search snippet mentions jobs (+2)",
       "search rank #1 (+3)",
-      "fetch failed (HTTP 403)"
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=European+Court+of+Human+Rights+careers+vacancies+official+site"
+    "search_url": "https://www.google.com/search?q=European+Court+of+Human+Rights+careers+vacancies+official+site",
+    "last_updated_age_days": null
   },
   {
     "organisation": "European Patent Office",
@@ -9556,27 +9563,28 @@
     "target_roles": "Policy, programme, political affairs — recruits directly, no EPSO concours",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://ncia.nato.int",
+    "careers_url": "https://www.ncia.nato.int/careers",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: European & international institutions"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 6,
+    "careers_score": 14,
     "careers_reasons": [
       "careers-shaped path (+5)",
-      "domain unrelated to this org (-10)",
+      "domain matches org name (+4)",
       "search snippet mentions jobs (+2)",
       "search rank #1 (+3)",
-      "page text has 4 job signal(s) (+6)"
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=NCIA+Brussels+jobs+vacancies+careers"
+    "search_url": "https://www.google.com/search?q=NCIA+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "NSPA (NATO Support and Procurement Agency)",
@@ -11288,8 +11296,8 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://iom.impactpool.org",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "careers_url": "https://www.iom.int/work-with-us",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
     "last_updated_trust": "none",
@@ -11299,13 +11307,13 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": true,
-    "careers_score": -38,
+    "careers_score": 12,
     "careers_reasons": [
       "careers-shaped path (+4)",
       "domain matches org name (+4)",
       "search snippet mentions jobs (+2)",
       "search rank #2 (+2)",
-      "fetch failed (HTTP 403)"
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
     "search_url": "https://www.google.com/search?q=site%3Aiom.impactpool.org+jobs+OR+vacancies+OR+careers",
     "last_updated_age_days": null
@@ -11591,12 +11599,12 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -59,
+    "careers_score": -5,
     "careers_reasons": [
+      "careers-shaped path (+4)",
       "domain unrelated to this org (-10)",
       "search rank #3 (+1)",
-      "no careers path or ATS — capped below threshold",
-      "fetch failed (HTTP 403)"
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
     "search_url": "https://www.google.com/search?q=OCHA+Brussels+Brussels+jobs+vacancies+careers"
   },
@@ -11905,27 +11913,28 @@
     "target_roles": "Policy, programme, research; consultancy and roster contracts",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://undp.org",
+    "careers_url": "https://www.undp.org/careers",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: international organisations"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": true,
-    "careers_score": 4,
+    "careers_score": 14,
     "careers_reasons": [
       "careers-shaped path (+5)",
-      "domain unrelated to this org (-10)",
+      "domain matches org name (+4)",
       "search snippet mentions jobs (+2)",
-      "search rank #3 (+1)",
-      "page text has 4 job signal(s) (+6)"
+      "search rank #1 (+3)",
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=UNDP+UN+Development+Programme+careers+vacancies+official+site"
+    "search_url": "https://www.google.com/search?q=UNDP+UN+Development+Programme+careers+vacancies+official+site",
+    "last_updated_age_days": null
   },
   {
     "organisation": "UNDP Brussels",
@@ -12157,27 +12166,27 @@
     "target_roles": "Comms, advocacy",
     "priority": 1,
     "eu_nationality": "No",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://unhcr.org",
+    "careers_url": "https://www.unhcr.org/be/nl-be/over-ons/vacatures",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Sarah's target list"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 4,
+    "careers_score": 10,
     "careers_reasons": [
       "careers-shaped path (+5)",
-      "domain unrelated to this org (-10)",
-      "search snippet mentions jobs (+2)",
+      "domain matches org name (+4)",
       "search rank #3 (+1)",
-      "page text has 4 job signal(s) (+6)"
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=UNHCR+-+Representation+to+the+EU+Brussels+jobs+vacancies+careers"
+    "search_url": "https://www.google.com/search?q=UNHCR+-+Representation+to+the+EU+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "UNICEF (UN Children's Fund)",
@@ -12337,28 +12346,28 @@
     "target_roles": "Policy, programme, research",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://unrwa.org",
+    "careers_url": "https://www.unrwa.org/careers",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: international organisations"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -1,
+    "careers_score": 14,
     "careers_reasons": [
-      "domain unrelated to this org (-10)",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
       "search snippet mentions jobs (+2)",
-      "search rank #3 (+1)",
-      "no careers path or ATS — capped below threshold",
-      "page text has 1 job signal(s) (+2)",
-      "page title says careers (+4)"
+      "search rank #1 (+3)",
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=UNRWA+UN+Relief+and+Works+Agency+for+Palestine+Refugees+careers+vacancies+official+site"
+    "search_url": "https://www.google.com/search?q=UNRWA+UN+Relief+and+Works+Agency+for+Palestine+Refugees+careers+vacancies+official+site",
+    "last_updated_age_days": null
   },
   {
     "organisation": "United Nations Volunteers (UNV)",
@@ -14058,13 +14067,13 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -41,
+    "careers_score": 9,
     "careers_reasons": [
       "domain matches org name (+4)",
       "matches the sheet's known domain (+5)",
       "search rank #2 (+2)",
       "no careers path or ATS — capped below threshold",
-      "fetch failed (HTTP 0)"
+      "page blocks scrapers (HTTP 0) — not verified"
     ],
     "search_url": "https://www.google.com/search?q=site%3Aautreterre.org+jobs+OR+vacancies+OR+careers"
   },
@@ -15468,27 +15477,28 @@
     "target_roles": "Comms",
     "priority": 3,
     "eu_nationality": "No",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://equineteurope.org",
+    "careers_url": "https://equineteurope.org/vacancies/",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Sarah's target list"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -36,
+    "careers_score": 14,
     "careers_reasons": [
       "careers-shaped path (+5)",
       "domain matches org name (+4)",
       "search snippet mentions jobs (+2)",
       "search rank #1 (+3)",
-      "fetch failed (HTTP 403)"
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=Equinet+Brussels+jobs+vacancies+careers"
+    "search_url": "https://www.google.com/search?q=Equinet+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Eurochild",
@@ -15586,12 +15596,12 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -58,
+    "careers_score": -8,
     "careers_reasons": [
       "domain unrelated to this org (-10)",
       "search rank #2 (+2)",
       "no careers path or ATS — capped below threshold",
-      "fetch failed (HTTP 403)"
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
     "search_url": "https://www.google.com/search?q=European+Network+on+Statelessness+Brussels+jobs+vacancies+careers"
   },
@@ -16361,27 +16371,28 @@
     "target_roles": "Comms, advocacy",
     "priority": 2,
     "eu_nationality": "No",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://europe.ippf.org",
+    "careers_url": "https://europe.ippf.org/jobs-and-opportunities/vacancies",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Sarah's target list"
     ],
     "phd_relevant": false,
     "latam_relevant": true,
     "remote_friendly": false,
-    "careers_score": -37,
+    "careers_score": 13,
     "careers_reasons": [
       "careers-shaped path (+5)",
       "domain matches org name (+4)",
       "search snippet mentions jobs (+2)",
       "search rank #2 (+2)",
-      "fetch failed (HTTP 403)"
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=IPPF+European+Network+Brussels+jobs+vacancies+careers"
+    "search_url": "https://www.google.com/search?q=IPPF+European+Network+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "ITECO",
@@ -17324,15 +17335,13 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -41,
+    "careers_score": 0,
     "careers_reasons": [
-      "domain matches org name (+4)",
-      "matches the sheet's known domain (+5)",
-      "Brussels/EU domain signal (+2)",
+      "careers-shaped path (+5)",
+      "domain unrelated to this org (-10)",
       "search snippet mentions jobs (+2)",
       "search rank #1 (+3)",
-      "no careers path or ATS — capped below threshold",
-      "fetch failed (HTTP 404)"
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
     "search_url": "https://www.google.com/search?q=site%3Amoc.be+jobs+OR+vacancies+OR+careers"
   },
@@ -18846,25 +18855,27 @@
     "priority": null,
     "eu_nationality": "",
     "homepage": "https://wapainternational.org",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "careers_url": "https://www.wapa.gov/jobs/vacancies/",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "CNCD-11.11.11 member organisations"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 9,
+    "careers_score": 13,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain matches org name (+4)",
-      "matches the sheet's known domain (+5)",
-      "search rank #3 (+1)",
-      "no careers path or ATS — capped below threshold"
+      "search snippet mentions jobs (+2)",
+      "search rank #2 (+2)",
+      "page blocks scrapers (HTTP 0) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=site%3Awapainternational.org+jobs+OR+vacancies+OR+careers"
+    "search_url": "https://www.google.com/search?q=site%3Awapainternational.org+jobs+OR+vacancies+OR+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "WSM (Wereldsolidariteit / Solidarite Mondiale)",
@@ -18962,14 +18973,14 @@
     "phd_relevant": false,
     "latam_relevant": true,
     "remote_friendly": false,
-    "careers_score": -47,
+    "careers_score": 3,
     "careers_reasons": [
       "careers-shaped subdomain (+5)",
       "careers-shaped path (+5)",
       "domain unrelated to this org (-10)",
       "search snippet mentions jobs (+2)",
       "search rank #3 (+1)",
-      "fetch failed (HTTP 0)"
+      "page blocks scrapers (HTTP 0) — not verified"
     ],
     "search_url": "https://www.google.com/search?q=World+Vision+Brussels+Brussels+jobs+vacancies+careers"
   },
@@ -19575,13 +19586,13 @@
     "phd_relevant": false,
     "latam_relevant": true,
     "remote_friendly": false,
-    "careers_score": -50,
+    "careers_score": -6,
     "careers_reasons": [
-      "careers-shaped path (+5)",
       "domain unrelated to this org (-10)",
       "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "fetch failed (HTTP 522)"
+      "search rank #2 (+2)",
+      "no careers path or ATS — capped below threshold",
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
     "search_url": "https://www.google.com/search?q=Konrad-Adenauer-Stiftung+European+Office+Brussels+jobs+vacancies+careers"
   },
@@ -20390,28 +20401,29 @@
     "target_roles": "Policy Officer, Policy Adviser, Communications, Advocacy, Project Manager",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://brusselsairlines.com",
+    "careers_url": "https://www.brusselsairlines.com/be/en/jobs",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: EU trade associations"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -10,
+    "careers_score": 16,
     "careers_reasons": [
-      "bare homepage, no careers path (-8)",
-      "domain unrelated to this org (-10)",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
       "search snippet mentions jobs (+2)",
-      "search rank #2 (+2)",
-      "no careers path or ATS — capped below threshold",
-      "page title says careers (+4)"
+      "search rank #1 (+3)",
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=Airlines+for+Europe+Brussels+jobs+vacancies+careers"
+    "search_url": "https://www.google.com/search?q=Airlines+for+Europe+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "BEUC",
@@ -21235,12 +21247,12 @@
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -42,
+    "careers_score": -38,
     "careers_reasons": [
+      "careers-shaped path (+4)",
       "domain matches org name (+4)",
       "search snippet mentions jobs (+2)",
       "search rank #2 (+2)",
-      "no careers path or ATS — capped below threshold",
       "fetch failed (HTTP 404)"
     ],
     "search_url": "https://www.google.com/search?q=Eurodiaconia+Brussels+jobs+vacancies+careers"
@@ -22676,26 +22688,28 @@
     "target_roles": "Policy adviser, international officer, campaigns",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://etui.org",
+    "careers_url": "https://www.etui.org/about-etui/tenders-vacancies",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: trade unions and employer bodies"
     ],
     "phd_relevant": false,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": -5,
+    "careers_score": 14,
     "careers_reasons": [
-      "domain unrelated to this org (-10)",
+      "careers-shaped path (+5)",
+      "domain matches org name (+4)",
+      "search snippet mentions jobs (+2)",
       "search rank #1 (+3)",
-      "no careers path or ATS — capped below threshold",
-      "page text has 1 job signal(s) (+2)"
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=ETUI+Brussels+jobs+vacancies+careers"
+    "search_url": "https://www.google.com/search?q=ETUI+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "FEB / VBO",
@@ -23545,11 +23559,13 @@
     "phd_relevant": true,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 5,
+    "careers_score": 7,
     "careers_reasons": [
-      "official EU / intergovernmental domain (+3)",
-      "search rank #2 (+2)",
-      "no careers path or ATS — capped below threshold"
+      "domain matches org name (+4)",
+      "Brussels/EU domain signal (+2)",
+      "search rank #3 (+1)",
+      "no careers path or ATS — capped below threshold",
+      "page blocks scrapers (HTTP 0) — not verified"
     ],
     "search_url": "https://www.google.com/search?q=MigratieMuseum+Migration+Brussels+jobs+vacancies+careers"
   },
@@ -23566,29 +23582,28 @@
     "target_roles": "Lecturing, project support, administration",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://odisee.be",
+    "careers_url": "https://www.odisee.be/vacatures",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: Belgian university colleges"
     ],
     "phd_relevant": true,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 9,
+    "careers_score": 13,
     "careers_reasons": [
-      "bare homepage, no careers path (-8)",
+      "careers-shaped path (+5)",
       "domain matches org name (+4)",
-      "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "no careers path or ATS — capped below threshold",
-      "page text has 2 job signal(s) (+4)",
-      "page title says careers (+4)"
+      "Brussels/EU domain signal (+2)",
+      "search rank #2 (+2)",
+      "page blocks scrapers (HTTP 403) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=Odisee+Brussels+jobs+vacancies+careers"
+    "search_url": "https://www.google.com/search?q=Odisee+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "Red Star Line Museum",
@@ -23637,27 +23652,28 @@
     "target_roles": "Research, administration, project support",
     "priority": null,
     "eu_nationality": "",
-    "homepage": "",
-    "careers_url": "",
-    "careers_confidence": "none",
+    "homepage": "https://rma.ac.be",
+    "careers_url": "https://rma.ac.be/en/jobs",
+    "careers_confidence": "medium",
     "last_updated": "",
     "last_updated_source": "",
-    "last_updated_trust": "",
+    "last_updated_trust": "none",
     "sources": [
       "Regional registry: Belgian universities"
     ],
     "phd_relevant": true,
     "latam_relevant": false,
     "remote_friendly": false,
-    "careers_score": 9,
+    "careers_score": 12,
     "careers_reasons": [
+      "careers-shaped path (+5)",
       "domain matches org name (+4)",
       "Brussels/EU domain signal (+2)",
-      "search snippet mentions jobs (+2)",
-      "search rank #1 (+3)",
-      "no careers path or ATS — capped below threshold"
+      "search rank #3 (+1)",
+      "page blocks scrapers (HTTP 0) — not verified"
     ],
-    "search_url": "https://www.google.com/search?q=Royal+Military+Academy+Brussels+jobs+vacancies+careers"
+    "search_url": "https://www.google.com/search?q=Royal+Military+Academy+Brussels+jobs+vacancies+careers",
+    "last_updated_age_days": null
   },
   {
     "organisation": "UCLouvain",
