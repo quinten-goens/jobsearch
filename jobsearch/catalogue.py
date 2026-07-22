@@ -385,11 +385,119 @@ def merge(*groups: list[dict]) -> list[dict]:
                     cur["type"] = rec.get("type") or cur["type"]
                 elif not cur.get(field) and val:
                     cur[field] = val
-    return list(by_key.values())
+    return dedup_by_domain(list(by_key.values()))
 
 
 def _from_registry_row(rec: dict) -> bool:
     return any("registry" in s.lower() for s in rec.get("sources", []))
+
+
+# Domains where genuinely distinct organisations legitimately co-exist -- EU
+# institutions, shared recruitment portals, embassy platforms. Two orgs sharing
+# one of these is NOT a duplicate (the LatAm missions all use eeas.europa.eu;
+# Council and European Council share consilium).
+SHARED_INFRA = (
+    "europa.eu", "eeas", "consilium", "eu-careers", "gov.", "diplomatie",
+    "un.org", "taleo.net", "greenhouse.io", "smartrecruiters", "recruitee",
+    "workday", "jobs.brussels", "talentfinder", "linkedin",
+)
+
+
+# Words too generic to signal "same org" on their own.
+_DEDUP_STOP = {
+    "european", "europe", "eu", "belgian", "belgium", "brussels", "international",
+    "association", "federation", "network", "office", "the", "for", "and", "de",
+    "of", "van", "und", "group", "council", "committee", "union", "institute",
+    "organisation", "organization", "services", "affairs", "nv", "asbl", "vzw",
+    "aisbl", "sa", "company", "companies", "digital",
+}
+
+
+def _name_tokens(name: str) -> set[str]:
+    """Significant words + any parenthetical acronym, for same-org matching.
+
+    Unlike norm() (which joins into one blob), this splits on words so 'VRT'
+    matches the '(VRT)' inside a long official name.
+    """
+    low = name.lower()
+    words = set(re.findall(r"[a-z0-9]{3,}", low))
+    # Parenthetical acronyms: "... (VRT)" -> "vrt"; also uppercase runs.
+    for m in re.findall(r"\(([a-z0-9]{2,8})\)", low):
+        words.add(m)
+    return {w for w in words if w not in _DEDUP_STOP}
+
+
+def _dedup_domain(rec: dict) -> str:
+    from urllib.parse import urlparse
+
+    u = rec.get("homepage") or rec.get("careers_url") or ""
+    try:
+        d = urlparse(u).netloc.lower().replace("www.", "")
+    except ValueError:
+        return ""
+    if not d or any(s in d for s in SHARED_INFRA):
+        return ""  # no domain, or shared infra -> not a dedup key
+    return d
+
+
+def _is_curated(rec: dict) -> bool:
+    """Sheet or registry entries are richer than Register ones; they survive."""
+    return any(("target list" in s.lower() or "registry" in s.lower())
+               for s in rec.get("sources", []))
+
+
+def dedup_by_domain(orgs: list[dict]) -> list[dict]:
+    """Second pass: merge same-org-different-name records that share a domain.
+
+    Name-based merge misses e.g. 'VRT' vs 'De Vlaamse Radio- en
+    Televisieomroeporganisatie (VRT)'. Two records on the same (non-shared-
+    infra) domain whose names share a real word are the same org: keep the
+    curated one, fold the other's provenance in.
+    """
+    by_domain: dict[str, list[dict]] = {}
+    keep = []
+    for rec in orgs:
+        d = _dedup_domain(rec)
+        if d:
+            by_domain.setdefault(d, []).append(rec)
+        else:
+            keep.append(rec)
+
+    for d, recs in by_domain.items():
+        if len(recs) == 1:
+            keep.append(recs[0])
+            continue
+        # Group by overlapping name tokens; distinct orgs on the same real
+        # domain (rare, but possible) stay separate.
+        merged: list[dict] = []
+        for rec in recs:
+            toks = _name_tokens(rec["organisation"])
+            hit = None
+            for m in merged:
+                # Same domain + a shared significant word or acronym == same org.
+                # BUT if both were deliberately entered by a human as separate
+                # curated orgs (OSCE vs its ODIHR office; OSF vs OSEPI), respect
+                # that split -- only auto-merge when at least one side is an
+                # auto-harvested Register/directory entry.
+                if toks & _name_tokens(m["organisation"]) and not (
+                        _is_curated(rec) and _is_curated(m)):
+                    hit = m
+                    break
+            if hit is None:
+                merged.append(rec)
+            else:
+                # Same org: prefer the curated record, fold sources.
+                winner, loser = (rec, hit) if (_is_curated(rec)
+                                               and not _is_curated(hit)) else (hit, rec)
+                winner["sources"] = sorted(set(winner.get("sources", []))
+                                           | set(loser.get("sources", [])))
+                for f, v in loser.items():
+                    if f != "sources" and not winner.get(f) and v:
+                        winner[f] = v
+                if winner is rec:  # replace hit in-place
+                    merged[merged.index(hit)] = rec
+        keep.extend(merged)
+    return keep
 
 
 def main() -> None:
