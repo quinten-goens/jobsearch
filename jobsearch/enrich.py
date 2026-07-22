@@ -57,6 +57,8 @@ def enrich_one(rec: dict) -> dict:
         rec["openings_count"] = o["count"]
         rec["openings_titles"] = o["titles"]
         rec["openings_checked_at"] = datetime.now(timezone.utc).isoformat()
+        # Fit is computed at load time in the app (from the stored titles), so
+        # re-tuning the profile never needs a re-scan.
     return rec
 
 

@@ -73,6 +73,16 @@ def load_catalogue() -> pd.DataFrame:
     )
     if "openings_titles" not in df:
         df["openings_titles"] = [[] for _ in range(len(df))]
+
+    # Fit is scored at load time from the stored titles, so re-tuning the
+    # profile never needs a re-scan. Cheap: a keyword scan per title.
+    from jobsearch.fit import score_openings
+
+    fit = df["openings_titles"].apply(lambda ts: score_openings(ts or []))
+    df["fit_score"] = fit.apply(lambda x: x["best_score"])
+    df["fit_band"] = fit.apply(lambda x: x["best_band"])
+    df["fit_best_title"] = fit.apply(lambda x: x["best_title"])
+    df["fit_strong"] = fit.apply(lambda x: x["strong"])
     df["has_careers"] = df["careers_url"].astype(bool)
     return df
 
@@ -136,6 +146,12 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
              "hiring on their own site — the ones worth applying to before the "
              "job boards fill up.",
     )
+    good_fit_only = st.sidebar.checkbox(
+        "Only openings that fit me", value=False,
+        help="Show only organisations whose current openings match Sarah's "
+             "profile — policy / international relations, Latin America / "
+             "Spanish, or research / PhD, at the right level (not senior).",
+    )
 
     st.sidebar.caption("Careers page link")
     link_choice = st.sidebar.radio(
@@ -171,6 +187,9 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
         f = f[f["openings_state"] == "has_openings"]
     elif openings_choice == "Hide 'no openings'":
         f = f[f["openings_state"] != "no_openings"]
+    if good_fit_only:
+        # A strong or possible match among the org's current openings.
+        f = f[f["fit_band"].isin(["strong", "possible"])]
     conf = f["careers_confidence"].replace("", "none")
     if link_choice == "Only links we're sure about":
         f = f[conf == "high"]
@@ -190,9 +209,13 @@ def page_organisations():
 
     k1, k2, k3, k4 = st.columns(4)
     k1.metric("Shown", len(f))
-    k2.metric("With careers page", int(f["has_careers"].sum()))
-    k3.metric("Hiring now", int((f["openings_state"] == "has_openings").sum()),
+    k2.metric("Hiring now", int((f["openings_state"] == "has_openings").sum()),
               help="Organisations with live openings on their own careers page.")
+    fits = f[(f["openings_state"] == "has_openings")
+             & f["fit_band"].isin(["strong", "possible"])]
+    k3.metric("Hiring + fits you", len(fits),
+              help="Hiring now AND at least one opening matches Sarah's "
+                   "profile. Her best next actions.")
     k4.metric("Reviewed", int(f["reviewed"].sum()))
 
     if f.empty:
@@ -231,12 +254,15 @@ def page_organisations():
                    f"{uncheck} un-reviewed (page updated).")
         st.rerun()
 
-    # Hiring-now first (that's the point), then unreviewed, then by name.
+    # Best next actions first: hiring AND fits her, ranked by fit score; then
+    # other hiring orgs; then the rest. Unreviewed above reviewed within a tier.
     view = f.copy()
     view["_hiring"] = (view["openings_state"] == "has_openings").astype(int)
+    view["_fit_here"] = (view["_hiring"]
+                         * view["fit_band"].isin(["strong", "possible"]).astype(int))
     view = view.sort_values(
-        ["_hiring", "reviewed", "organisation"],
-        ascending=[False, True, True],
+        ["_fit_here", "_hiring", "fit_score", "reviewed", "organisation"],
+        ascending=[False, False, False, True, True],
     ).reset_index(drop=True)
     # One editable table. Reviewed is a tickable checkbox; everything else is
     # read-only. Sarah works entirely here -- no detail panel, no button wall.
@@ -252,11 +278,18 @@ def page_organisations():
             return "— none now"
         return "?"  # unknown / not checked
 
+    FIT_TAG = {"strong": "★ ", "possible": "· ", "weak": "", "none": "",
+               "unknown": ""}
+    best_opening = [
+        (FIT_TAG.get(b, "") + t) if t else ""
+        for b, t in zip(view["fit_band"], view["fit_best_title"])
+    ]
     table = pd.DataFrame({
         "Reviewed": view["reviewed"].tolist(),
         "Organisation": view["organisation"].tolist(),
         "Openings": [_openings_label(s, c) for s, c in
                      zip(view["openings_state"], view["openings_count"])],
+        "Best-matched opening": best_opening,
         "Sector": view["sector"].tolist(),
         "Where": view["base"].tolist(),
         "Languages": view["languages"].tolist(),
@@ -284,6 +317,10 @@ def page_organisations():
                 help="🟢 = live openings on their own careers page right now. "
                      "'— none now' = page says nothing open. '?' = we couldn't "
                      "read it (often a JavaScript site — worth a manual look)."),
+            "Best-matched opening": st.column_config.TextColumn(
+                width="large",
+                help="The current opening that best fits Sarah's profile. "
+                     "★ = strong fit, · = possible fit."),
             "Sector": st.column_config.TextColumn(width="medium"),
             "Where": st.column_config.TextColumn(width="small"),
             "Careers page": st.column_config.LinkColumn(
