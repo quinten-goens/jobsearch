@@ -6,6 +6,9 @@ __pycache__/
 **/__pycache__/
 *.pyc
 data/
+# ...but keep the catalogue: it's baked to /app/seed as the first-boot seed for
+# the /app/data volume (which starts empty). Un-exclude it after excluding data/.
+!data/catalogue.json
 conv/
 .git/
 .gitignore

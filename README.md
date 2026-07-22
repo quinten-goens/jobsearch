@@ -116,7 +116,16 @@ Two things the deployment needs:
 - **A volume mounted at `/app/data`.** The HTTP cache and, crucially, the
   content-hash freshness baseline live there. Without a persistent volume every
   run looks like a "first scan" and can't date the metadata-less pages by change
-  (see below) — the whole point of running daily.
+  (see below) — the whole point of running daily. In Dokploy: *Advanced →
+  Volumes → Add Mount*, type **Volume**, mount path `/app/data`.
+
+  The volume starts empty, but you don't need to seed it by hand: the image bakes
+  a copy of `catalogue.json` at `/app/seed` (outside the volume, so the mount
+  can't hide it), and `docker-entrypoint.sh` copies it into `/app/data` on the
+  **first** boot only. Later boots keep the live catalogue that `refresh` has been
+  updating in place. To ship a fresh catalogue, rebuild the image (it re-bakes the
+  current `data/catalogue.json`) and clear the volume, or just `docker cp` a new
+  one in.
 
 The base image is browser-free (the daily refresh is HTTP-only). If you also run
 the job-board scrape (`jobsearch.pipeline`) in-container, add

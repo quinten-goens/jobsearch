@@ -28,7 +28,14 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY jobsearch/ ./jobsearch/
 COPY app.py ./
 
-# The pipeline caches HTTP responses and writes catalogue.json under /app/data.
+# Seed catalogue, baked at /app/seed -- OUTSIDE the volume, so a mounted (empty)
+# /app/data volume can't shadow it. The entrypoint copies it into the volume on
+# first boot only; `jobsearch.refresh` updates the live copy in place thereafter.
+COPY data/catalogue.json /app/seed/catalogue.json
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+
+# The refresh caches HTTP responses and updates catalogue.json under /app/data.
 # Mount a volume here in Dokploy so the content-hash freshness baseline and the
 # cache survive restarts -- otherwise every run looks like a "first scan".
 RUN mkdir -p /app/data/cache
@@ -36,7 +43,7 @@ VOLUME ["/app/data"]
 
 ENV PYTHONUNBUFFERED=1
 
-# Idle by default: the container is a ready-to-use runtime, and the scheduler
-# decides when work happens. tini reaps zombies and forwards signals.
-ENTRYPOINT ["tini", "--"]
+# tini reaps zombies and forwards signals; the entrypoint seeds the volume, then
+# CMD idles so the scheduler always has a live container to exec into.
+ENTRYPOINT ["tini", "--", "/usr/local/bin/docker-entrypoint.sh"]
 CMD ["sleep", "infinity"]
