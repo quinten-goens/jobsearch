@@ -51,8 +51,30 @@ searches** and then returns empty results rather than an error — so it needs a
 .venv/bin/python -m jobsearch.directories  # NGO federations -> directory_orgs.json
 .venv/bin/python -m jobsearch.catalogue    # merge all three -> catalogue.json
 .venv/bin/python -m jobsearch.enrich       # careers page + freshness per org
-.venv/bin/streamlit run app.py             # browse it
+.venv/bin/python -m jobsearch.pb_schema    # create PocketBase collections (once)
+.venv/bin/python -m jobsearch.pb_sync      # push catalogue.json -> PocketBase
+.venv/bin/streamlit run app.py             # browse it (reads live from PocketBase)
 ```
+
+## Storage: PocketBase
+
+The app reads and writes a hosted PocketBase (PocketHost) instance, which is the
+source of truth. Three collections:
+
+- **organisations** — one row per org, stable identity + metadata.
+- **url_versions** — every careers URL a discovery run has found. A refresh
+  appends a new version and supersedes the old one; nothing is deleted, so the
+  full history of how a URL changed is kept.
+- **url_checks** — a timestamped log of what the user did in the GUI (marked a
+  link good/wrong/dead, applied).
+
+The heavy discovery work (`enrich`) still writes `catalogue.json` locally, and
+`pb_sync` pushes it up. This keeps the slow compute decoupled from PocketHost's
+**1,000-requests/hour limit** — everything to PocketBase goes through the batch
+API, so a full 665-org sync is a handful of calls, not thousands.
+
+Credentials live in `.env`: `PH_ADMIN_*` for schema creation, `PH_*` for the
+app's day-to-day reads and writes.
 
 Jobs (secondary):
 
