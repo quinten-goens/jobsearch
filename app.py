@@ -273,10 +273,6 @@ def page_organisations():
     # One editable table. Reviewed is a tickable checkbox; everything else is
     # read-only. Sarah works entirely here -- no detail panel, no button wall.
     # The org id rides along as a hidden column so we can map edits back.
-    # Plain-language link quality instead of a raw score.
-    LINK_LABEL = {"high": "✓ Checked", "medium": "Best guess",
-                  "none": "Not found", "": "Not found"}
-
     def _openings_label(state, count):
         if state == "has_openings":
             return f"🟢 {count} open" if count else "🟢 hiring"
@@ -290,6 +286,9 @@ def page_organisations():
         (FIT_TAG.get(b, "") + t) if t else ""
         for b, t in zip(view["fit_band"], view["fit_best_title"])
     ]
+    # Trimmed to the essentials Sarah acts on day-to-day. The dropped fields
+    # (location, languages, page-date, link-quality) are still in the sidebar
+    # filters and the CSV download.
     table = pd.DataFrame({
         "Reviewed": view["reviewed"].tolist(),
         "Organisation": view["organisation"].tolist(),
@@ -297,11 +296,6 @@ def page_organisations():
                      zip(view["openings_state"], view["openings_count"])],
         "Best-matched opening": best_opening,
         "Sector": view["sector"].tolist(),
-        "Where": view["base"].tolist(),
-        "Languages": view["languages"].tolist(),
-        "Page last changed": view["last_updated"].replace("", "—").tolist(),
-        "Link": [LINK_LABEL.get(c, "Not found")
-                 for c in view["careers_confidence"]],
         "Careers page": view["careers_url"].tolist(),
         "Search instead": view["search_url"].tolist(),
         "_id": view["id"].tolist(),
@@ -328,7 +322,6 @@ def page_organisations():
                 help="The current opening that best fits Sarah's profile. "
                      "★ = strong fit, · = possible fit."),
             "Sector": st.column_config.TextColumn(width="medium"),
-            "Where": st.column_config.TextColumn(width="small"),
             "Careers page": st.column_config.LinkColumn(
                 "Careers page", display_text="Open ↗", width="small",
                 help="The page where this organisation lists its jobs."),
@@ -336,15 +329,6 @@ def page_organisations():
                 "Search instead", display_text="Search ↗", width="small",
                 help="A Google search for their jobs — use this when we "
                      "couldn't find the page, or the link looks wrong."),
-            "Page last changed": st.column_config.TextColumn(
-                width="small",
-                help="When the careers page was last updated, where the site "
-                     "tells us. A dash means the site doesn't say."),
-            "Link": st.column_config.TextColumn(
-                width="small",
-                help="'✓ Checked' = we found the real careers page and "
-                     "verified it. 'Best guess' = likely right, worth a "
-                     "glance. 'Not found' = use the Search instead link."),
         },
         key="org_editor",
     )
