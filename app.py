@@ -322,6 +322,7 @@ def page_organisations():
         "Best-matched opening": best_opening,
         "Sector": view["sector"].tolist(),
         "Careers page": view["careers_url"].tolist(),
+        "Updated": pd.to_datetime(view["last_updated"], errors="coerce"),
         "Search instead": view["search_url"].tolist(),
         "_id": view["id"].tolist(),
     })
@@ -350,6 +351,10 @@ def page_organisations():
             "Careers page": st.column_config.LinkColumn(
                 "Careers page", display_text="Open ↗", width="small",
                 help="The page where this organisation lists its jobs."),
+            "Updated": st.column_config.DateColumn(
+                "Updated", width="small", format="DD MMM YYYY",
+                help="When the careers page last changed. Blank means we "
+                     "couldn't read a date — it may still be recent."),
             "Search instead": st.column_config.LinkColumn(
                 "Search instead", display_text="Search ↗", width="small",
                 help="A Google search for their jobs — use this when we "
