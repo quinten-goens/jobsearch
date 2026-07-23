@@ -64,8 +64,9 @@ def load_catalogue() -> pd.DataFrame:
     for col in ("organisation", "sector", "category", "type", "base",
                 "languages", "description", "why_fits", "target_roles",
                 "careers_url", "careers_confidence", "homepage",
-                "last_updated", "last_updated_trust", "search_url",
-                "version_id", "last_check_verdict", "last_check_at", "id"):
+                "last_updated", "last_updated_source", "last_updated_trust",
+                "search_url", "version_id", "last_check_verdict",
+                "last_check_at", "id"):
         if col not in df:
             df[col] = ""
         df[col] = df[col].fillna("")
@@ -106,6 +107,13 @@ def load_catalogue() -> pd.DataFrame:
         df["openings_new_at"] = ""
     df["openings_new_at"] = df["openings_new_at"].fillna("")
     df["has_new"] = df["openings_new_titles"].apply(lambda x: bool(x))
+
+    # "The page changed but we couldn't read a specific new title." The content
+    # hash moved since the last scan (last_updated_source == "hash" is set only
+    # when the fingerprint differed), so something happened on the page -- worth
+    # a look even without a parsed title. This is the weaker sibling of has_new:
+    # a change signal, not a vacancy signal.
+    df["page_changed"] = df["last_updated_source"].fillna("") == "hash"
 
     # Fit is scored at load time from the stored titles, so re-tuning the
     # profile never needs a re-scan. Cheap: a keyword scan per title.
@@ -563,57 +571,100 @@ def page_coverage():
 
 # ----------------------------------------------------------------- what's new
 def page_whats_new():
+    from jobsearch.fit import score_openings
+
     st.title("What's new")
-    st.caption("Openings that appeared since the last time each organisation "
-               "was checked — the off-board jobs, seen early, before the boards "
-               "fill up. Best-fitting first.")
+    st.caption("Pages that moved since the last scan — the off-board jobs, seen "
+               "early, before the boards fill up. New openings first, then pages "
+               "that changed without a readable job title.")
     cat = load_catalogue()
+
     new = cat[cat["has_new"]].copy()
-    if new.empty:
+    # Pages whose content changed but where we couldn't parse a specific new
+    # title -- exclude any already shown above (a page can have both).
+    changed = cat[cat["page_changed"] & ~cat["has_new"]].copy()
+
+    if new.empty and changed.empty:
         st.info("Nothing new since the last scan. Hit **Refresh** on the "
                 "Organisations page (or re-run discovery) to check again.")
         st.stop()
 
-    # Rank by fit of the newly-appeared titles.
-    from jobsearch.fit import score_openings
-    new["_newfit"] = new["openings_new_titles"].apply(
-        lambda ts: score_openings(ts or [])["best_score"])
-    new = new.sort_values("_newfit", ascending=False)
+    k1, k2 = st.columns(2)
+    k1.metric("New openings", len(new))
+    k2.metric("Pages changed (no title read)", len(changed))
 
-    st.metric("Organisations with new openings", len(new))
-    if st.button("Mark all as seen"):
-        for _, r in new.iterrows():
-            if r["version_id"]:
-                try:
-                    store.clear_new_openings(r["version_id"])
-                except Exception:
-                    pass
-        load_catalogue.clear()
-        st.rerun()
+    # --- 1. New openings, ranked by fit of the newly-appeared titles ---------
+    if not new.empty:
+        new["_newfit"] = new["openings_new_titles"].apply(
+            lambda ts: score_openings(ts or [])["best_score"])
+        new = new.sort_values("_newfit", ascending=False)
 
-    for _, r in new.iterrows():
-        with st.container(border=True):
-            c1, c2 = st.columns([4, 1])
-            with c1:
-                st.markdown(f"**{r['organisation']}** · {r['sector']}"
-                            + (f" · {r['base']}" if r['base'] else ""))
-                for t in r["openings_new_titles"]:
-                    fit = score_openings([t])["scored"][0]
-                    tag = ("★" if fit["band"] == "strong"
-                           else "·" if fit["band"] == "possible" else " ")
-                    st.markdown(f"&nbsp;&nbsp;{tag} 🆕 {t}", unsafe_allow_html=True)
-            with c2:
-                if r["careers_url"]:
-                    st.link_button("Open ↗", r["careers_url"],
-                                   use_container_width=True)
-                if r["version_id"] and st.button(
-                        "Seen", key=f"seen_{r['id']}", use_container_width=True):
+        st.subheader("🆕 New openings")
+        if st.button("Mark all as seen"):
+            for _, r in new.iterrows():
+                if r["version_id"]:
                     try:
                         store.clear_new_openings(r["version_id"])
-                        load_catalogue.clear()
-                        st.rerun()
-                    except Exception as e:
-                        st.error(str(e))
+                    except Exception:
+                        pass
+            load_catalogue.clear()
+            st.rerun()
+
+        for _, r in new.iterrows():
+            with st.container(border=True):
+                c1, c2 = st.columns([4, 1])
+                with c1:
+                    st.markdown(f"**{r['organisation']}** · {r['sector']}"
+                                + (f" · {r['base']}" if r['base'] else ""))
+                    for t in r["openings_new_titles"]:
+                        fit = score_openings([t])["scored"][0]
+                        tag = ("★" if fit["band"] == "strong"
+                               else "·" if fit["band"] == "possible" else " ")
+                        st.markdown(f"&nbsp;&nbsp;{tag} 🆕 {t}",
+                                    unsafe_allow_html=True)
+                with c2:
+                    if r["careers_url"]:
+                        st.link_button("Open ↗", r["careers_url"],
+                                       use_container_width=True)
+                    if r["version_id"] and st.button(
+                            "Seen", key=f"seen_{r['id']}",
+                            use_container_width=True):
+                        try:
+                            store.clear_new_openings(r["version_id"])
+                            load_catalogue.clear()
+                            st.rerun()
+                        except Exception as e:
+                            st.error(str(e))
+
+    # --- 2. Pages that changed, but with no readable new title ---------------
+    if not changed.empty:
+        # Put orgs already showing openings first (a change on a hiring page is
+        # the strongest signal), then the rest, most recently changed on top.
+        changed["_hiring"] = (changed["openings_state"]
+                              == "has_openings").astype(int)
+        changed = changed.sort_values(
+            ["_hiring", "last_updated"], ascending=[False, False])
+
+        st.subheader("📝 Pages that changed")
+        st.caption("The page's content moved since we last saw it, but we "
+                   "couldn't extract a specific new job title — worth a manual "
+                   "look. Hiring pages first.")
+        for _, r in changed.iterrows():
+            with st.container(border=True):
+                c1, c2 = st.columns([4, 1])
+                with c1:
+                    hiring = (" · 🟢 has openings"
+                              if r["openings_state"] == "has_openings" else "")
+                    st.markdown(f"**{r['organisation']}** · {r['sector']}"
+                                + (f" · {r['base']}" if r['base'] else "")
+                                + hiring)
+                    when = r["last_updated"] or "recently"
+                    st.markdown(f"&nbsp;&nbsp;📝 page changed — {when}",
+                                unsafe_allow_html=True)
+                with c2:
+                    if r["careers_url"]:
+                        st.link_button("Open ↗", r["careers_url"],
+                                       use_container_width=True)
 
 
 # ----------------------------------------------------------------- navigation

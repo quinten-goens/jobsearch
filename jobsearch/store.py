@@ -31,6 +31,7 @@ def _flatten(org: dict, version: dict | None) -> dict:
     rec["careers_score"] = v.get("score", 0)
     rec["careers_reasons"] = v.get("reasons") or []
     rec["last_updated"] = v.get("last_updated", "")
+    rec["last_updated_source"] = v.get("last_updated_source", "")
     rec["last_updated_trust"] = v.get("last_updated_trust", "")
     rec["last_updated_age_days"] = v.get("last_updated_age_days")
     rec["version_id"] = v.get("id", "")
