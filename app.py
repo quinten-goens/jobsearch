@@ -574,19 +574,49 @@ def page_whats_new():
     from jobsearch.fit import score_openings
 
     st.title("What's new")
-    st.caption("Pages that moved since the last scan — the off-board jobs, seen "
-               "early, before the boards fill up. New openings first, then pages "
-               "that changed without a readable job title.")
+    st.caption("Pages that moved recently — the off-board jobs, seen early, "
+               "before the boards fill up. New openings first, then pages that "
+               "changed without a readable job title.")
     cat = load_catalogue()
+
+    # How far back to look. "Since last scan" keeps the original behaviour (only
+    # what the most recent refresh surfaced); the day windows widen it to
+    # everything whose change date falls in the last N days.
+    window = st.radio(
+        "Show changes from", ["Since last scan", "Today", "Last 2 days",
+                              "Last 3 days", "Last 7 days"],
+        index=3, horizontal=True,
+        help="'Since last scan' is only what the latest refresh found. The day "
+             "windows show everything that changed in that period.",
+    )
 
     new = cat[cat["has_new"]].copy()
     # Pages whose content changed but where we couldn't parse a specific new
     # title -- exclude any already shown above (a page can have both).
     changed = cat[cat["page_changed"] & ~cat["has_new"]].copy()
 
+    # Apply the day window to each section, on its own change-date field:
+    # new openings by when the title appeared, changed pages by the change date.
+    if window != "Since last scan":
+        days = {"Today": 0, "Last 2 days": 2, "Last 3 days": 3,
+                "Last 7 days": 7}[window]
+        cutoff = pd.Timestamp(date.today(), tz="UTC") - pd.Timedelta(days=days)
+
+        def within(df, col):
+            if df.empty:
+                return df
+            dt = pd.to_datetime(df[col], errors="coerce", utc=True)
+            return df[dt >= cutoff]
+
+        new = within(new, "openings_new_at")
+        changed = within(changed, "last_updated")
+
     if new.empty and changed.empty:
-        st.info("Nothing new since the last scan. Hit **Refresh** on the "
-                "Organisations page (or re-run discovery) to check again.")
+        msg = ("Nothing new since the last scan."
+               if window == "Since last scan"
+               else f"Nothing changed in the selected window ({window.lower()}).")
+        st.info(msg + " Hit **Refresh** on the Organisations page (or re-run "
+                "discovery) to check again.")
         st.stop()
 
     k1, k2 = st.columns(2)
