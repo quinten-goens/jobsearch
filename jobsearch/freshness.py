@@ -208,9 +208,16 @@ def last_updated(url: str, *, prev_hash: str = "",
             return {"date": "", "source": "hash-seeded", "age_days": None,
                     "trust": "none", "hash": cur_hash}
         # prev_hash exists and (given the override above) equals cur_hash:
-        # unchanged, so it's as old as we last recorded it.
+        # unchanged since last time.
         if prev_date:
-            date_str, source = prev_date, "hash"
+            date_str, source = prev_date, "hash"  # as old as we last recorded it
+        else:
+            # Unchanged but we never had a date for it (a metadata-less page whose
+            # first scan only seeded). Keep it seeded -- a stable baseline with no
+            # date yet -- rather than blanking the source, so the fingerprint is
+            # preserved and a *future* change still flips it to "hash".
+            return {"date": "", "source": "hash-seeded", "age_days": None,
+                    "trust": "none", "hash": cur_hash}
 
     if not date_str:
         out = _empty()
