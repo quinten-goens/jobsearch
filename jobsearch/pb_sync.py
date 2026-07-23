@@ -115,19 +115,31 @@ def main() -> None:
         org = orgs_by_key[norm(r["organisation"])]
         current = cur_by_org.get(org["id"])
         if current and current.get("url") == url:
-            # URL unchanged, but openings change while the URL stays the same
-            # -- that's the whole point of the off-board signal. Refresh the
-            # openings snapshot on the existing version rather than skipping.
-            if r.get("openings_checked_at"):
+            # URL unchanged (the common case), but the openings AND the content
+            # fingerprint still move while the URL stays the same -- that's the
+            # whole point of the off-board signal. Refresh both on the existing
+            # version rather than skipping. Persisting content_hash here is
+            # essential: change detection compares this scan's hash to the one we
+            # stored last time, so if we don't store it on every scan of every
+            # (unchanged-URL) page, the baseline never accumulates and no change
+            # is ever detected.
+            if r.get("openings_checked_at") or r.get("content_hash"):
+                body = {
+                    "openings_state": r.get("openings_state") or "unknown",
+                    "openings_count": int(r.get("openings_count") or 0),
+                    "openings_titles": r.get("openings_titles") or [],
+                    "openings_checked_at": r.get("openings_checked_at"),
+                    "last_updated": r.get("last_updated") or "",
+                    "last_updated_source": r.get("last_updated_source") or "",
+                    "last_updated_trust": r.get("last_updated_trust") or "",
+                    "last_updated_age_days": r.get("last_updated_age_days"),
+                    "content_hash": r.get("content_hash") or "",
+                    "content_hash_at": r.get("content_hash_at") or None,
+                }
                 openings_ops.append({
                     "method": "PATCH",
                     "path": f"/api/collections/url_versions/records/{current['id']}",
-                    "body": {
-                        "openings_state": r.get("openings_state") or "unknown",
-                        "openings_count": int(r.get("openings_count") or 0),
-                        "openings_titles": r.get("openings_titles") or [],
-                        "openings_checked_at": r.get("openings_checked_at"),
-                    }})
+                    "body": body})
             continue
         if current:
             supersede_ops.append({
