@@ -50,7 +50,7 @@ SERIES = ["#2a78d6", "#008300", "#e87ba4"]
 
 
 # PocketBase is the source of truth. Cache briefly so a rerun isn't a network
-# round-trip, but short enough that a check or refresh shows up promptly.
+# round-trip, but short enough that a review tick shows up promptly.
 @st.cache_data(ttl=60)
 def load_catalogue() -> pd.DataFrame:
     try:
@@ -189,7 +189,8 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
         "Reviewed", ["All", "Not yet reviewed", "Reviewed"],
         label_visibility="collapsed",
         help="'Reviewed' means you've looked at that organisation's careers "
-             "page. A refresh un-ticks it if the page has changed since.",
+             "page. The nightly re-check un-ticks it if the page has changed "
+             "since.",
     )
 
     st.sidebar.caption("Openings")
@@ -278,37 +279,11 @@ def page_organisations():
         st.info("No organisations match these filters.")
         st.stop()
 
-    ref_col, dl_col = st.columns([3, 1])
-    with ref_col:
-        st.caption(
-            "Tick **Reviewed** once you've looked at a careers page. "
-            "**Refresh** re-checks the page — if it's changed since you "
-            "reviewed it, the tick clears itself."
-        )
-    with dl_col:
-        do_refresh = st.button(
-            f"🔄 Refresh these {len(f)}", use_container_width=True,
-            disabled=len(f) > 2500,
-            help="Re-check every organisation shown (≤2500). Larger sweeps: "
-                 "python -m jobsearch.enrich.",
-        )
-
-    if do_refresh:
-        prog = st.progress(0.0, "Refreshing…")
-        changed = uncheck = 0
-        rows = f.to_dict("records")
-        for i, rr in enumerate(rows, 1):
-            try:
-                res = store.refresh_org(rr)
-                changed += bool(res.get("changed"))
-                uncheck += bool(res.get("unreviewed"))
-            except Exception:
-                pass
-            prog.progress(i / len(rows), f"{i}/{len(rows)}…")
-        load_catalogue.clear()
-        st.success(f"Refreshed {len(rows)} — {changed} URLs changed, "
-                   f"{uncheck} un-reviewed (page updated).")
-        st.rerun()
+    st.caption(
+        "Tick **Reviewed** once you've looked at a careers page. Pages are "
+        "re-checked automatically every night — if one has changed since you "
+        "reviewed it, the tick clears itself so it comes back to your attention."
+    )
 
     # Best next actions first: hiring AND fits her, ranked by fit score; then
     # other hiring orgs; then the rest. Unreviewed above reviewed within a tier.
@@ -579,14 +554,14 @@ def page_whats_new():
                "changed without a readable job title.")
     cat = load_catalogue()
 
-    # How far back to look. "Since last scan" keeps the original behaviour (only
-    # what the most recent refresh surfaced); the day windows widen it to
+    # How far back to look. "Since last check" keeps the original behaviour (only
+    # what the most recent nightly check surfaced); the day windows widen it to
     # everything whose change date falls in the last N days.
     window = st.radio(
-        "Show changes from", ["Since last scan", "Today", "Last 2 days",
+        "Show changes from", ["Since last check", "Today", "Last 2 days",
                               "Last 3 days", "Last 7 days"],
         index=3, horizontal=True,
-        help="'Since last scan' is only what the latest refresh found. The day "
+        help="'Since last check' is only what last night's check found. The day "
              "windows show everything that changed in that period.",
     )
 
@@ -597,7 +572,7 @@ def page_whats_new():
 
     # Apply the day window to each section, on its own change-date field:
     # new openings by when the title appeared, changed pages by the change date.
-    if window != "Since last scan":
+    if window != "Since last check":
         days = {"Today": 0, "Last 2 days": 2, "Last 3 days": 3,
                 "Last 7 days": 7}[window]
         cutoff = pd.Timestamp(date.today(), tz="UTC") - pd.Timedelta(days=days)
@@ -612,11 +587,11 @@ def page_whats_new():
         changed = within(changed, "last_updated")
 
     if new.empty and changed.empty:
-        msg = ("Nothing new since the last scan."
-               if window == "Since last scan"
+        msg = ("Nothing new since last night's check."
+               if window == "Since last check"
                else f"Nothing changed in the selected window ({window.lower()}).")
-        st.info(msg + " Hit **Refresh** on the Organisations page (or re-run "
-                "discovery) to check again.")
+        st.info(msg + " Pages are re-checked automatically every night, so "
+                "check back tomorrow.")
         st.stop()
 
     k1, k2 = st.columns(2)
