@@ -57,6 +57,10 @@ def require_password() -> None:
 # needed, which keeps colour alone safe to read.
 SERIES = ["#2a78d6", "#008300", "#e87ba4"]
 
+# How long a changed page stays in "What's new". Comfortably covers the widest
+# day-window selector (7 days) with headroom, and keeps the list bounded.
+PAGE_CHANGED_DAYS = 14
+
 
 # PocketBase is the source of truth. Cache briefly so a rerun isn't a network
 # round-trip, but short enough that a review tick shows up promptly.
@@ -75,7 +79,8 @@ def load_catalogue() -> pd.DataFrame:
                 "careers_url", "careers_confidence", "homepage",
                 "last_updated", "last_updated_source", "last_updated_trust",
                 "search_url", "version_id", "last_check_verdict",
-                "last_check_at", "page_text", "openings_deadline", "id"):
+                "last_check_at", "page_text", "openings_deadline",
+                "changed_at", "id"):
         if col not in df:
             df[col] = ""
         df[col] = df[col].fillna("")
@@ -117,12 +122,17 @@ def load_catalogue() -> pd.DataFrame:
     df["openings_new_at"] = df["openings_new_at"].fillna("")
     df["has_new"] = df["openings_new_titles"].apply(lambda x: bool(x))
 
-    # "The page changed but we couldn't read a specific new title." The content
-    # hash moved since the last scan (last_updated_source == "hash" is set only
-    # when the fingerprint differed), so something happened on the page -- worth
-    # a look even without a parsed title. This is the weaker sibling of has_new:
-    # a change signal, not a vacancy signal.
-    df["page_changed"] = df["last_updated_source"].fillna("") == "hash"
+    # "The page changed but we couldn't read a specific new title." Driven by
+    # changed_at, which is stamped only when a scan actually detected a change
+    # and never re-stamped afterwards -- so an entry ages out instead of being
+    # renewed nightly. (last_updated_source == "hash" can't be used here: it
+    # stays "hash" on later unchanged scans, which made every page that ever
+    # changed stick in this list forever.) The weaker sibling of has_new: a
+    # change signal, not a vacancy signal.
+    _changed_dt = pd.to_datetime(df["changed_at"], errors="coerce", utc=True)
+    _cutoff = pd.Timestamp(date.today(), tz="UTC") - pd.Timedelta(
+        days=PAGE_CHANGED_DAYS)
+    df["page_changed"] = _changed_dt.notna() & (_changed_dt >= _cutoff)
 
     df["has_careers"] = df["careers_url"].astype(bool)
     return df
@@ -729,7 +739,7 @@ def page_whats_new():
             return df[dt >= cutoff]
 
         new = within(new, "openings_new_at")
-        changed = within(changed, "last_updated")
+        changed = within(changed, "changed_at")
 
     if new.empty and changed.empty:
         msg = ("Nothing new since last night's check."
@@ -804,7 +814,7 @@ def page_whats_new():
             changed["_hiring"] = (changed["openings_state"]
                                   == "has_openings").astype(int)
             changed = changed.sort_values(
-                ["_hiring", "last_updated"], ascending=[False, False])
+                ["_hiring", "changed_at"], ascending=[False, False])
 
             st.caption("The page's content moved since we last saw it, but no "
                        "specific new job title could be read — worth a manual "
@@ -816,7 +826,7 @@ def page_whats_new():
                         hiring = (" · 🟢 has openings"
                                   if r["openings_state"] == "has_openings"
                                   else "")
-                        when = r["last_updated"] or "recently"
+                        when = (r["changed_at"] or "")[:10] or "recently"
                         st.markdown(f"**{r['organisation']}**  \n"
                                     f"<span style='color:grey'>{r['sector']}"
                                     + (f" · {r['base']}" if r['base'] else "")

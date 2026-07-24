@@ -51,6 +51,7 @@ def _version_body(rec: dict, org_id: str, run_id: str) -> dict:
         "openings_checked_at": rec.get("openings_checked_at") or None,
         "content_hash": rec.get("content_hash") or "",
         "content_hash_at": rec.get("content_hash_at") or None,
+        "changed_at": rec.get("changed_at") or None,
         "page_text": rec.get("page_text") or "",
         "run_id": run_id,
         "superseded": False,
@@ -140,6 +141,11 @@ def main() -> None:
                     "content_hash_at": r.get("content_hash_at") or None,
                     "page_text": r.get("page_text") or "",
                 }
+                # Only write changed_at when we have one -- patching it as None
+                # on an unchanged scan would wipe the stored change date and
+                # resurrect the "renewed every night" bug this fixes.
+                if r.get("changed_at"):
+                    body["changed_at"] = r["changed_at"]
                 openings_ops.append({
                     "method": "PATCH",
                     "path": f"/api/collections/url_versions/records/{current['id']}",

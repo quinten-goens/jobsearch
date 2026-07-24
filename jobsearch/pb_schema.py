@@ -142,6 +142,9 @@ def url_versions_spec(org_cid: str) -> dict:
             # Content fingerprint: lets us date metadata-less pages by change.
             _text("content_hash", maxSize=64),
             _date("content_hash_at"),
+            # When the content actually last changed (set only on a detected
+            # change, never re-stamped) -- what "What's new" filters and ages on.
+            _date("changed_at"),
             # The page's visible text, for keyword search over real page content
             # (latest scan only). ~3 KB typical; PocketBase text fields default
             # to a 5000-char cap, so raise it explicitly via `max`.

@@ -183,7 +183,12 @@ def _lastmod_for_url(soup: BeautifulSoup, target: str) -> str:
 
 def last_updated(url: str, *, prev_hash: str = "",
                  prev_date: str = "") -> dict:
-    """{'date', 'source', 'age_days', 'trust', 'hash'}.
+    """{'date', 'source', 'age_days', 'trust', 'hash', 'changed_at'}.
+
+    `changed_at` is today's date *only* when this scan detected a real content
+    change, else "". It answers "when did this page actually change?", which
+    `date` cannot: `date` is re-derived every scan, so it can't age. Callers
+    persist changed_at and carry the stored value forward when it comes back "".
 
     `prev_hash` / `prev_date` are the content fingerprint and date we recorded
     on the last scan. When the page exposes no metadata date of its own, they
@@ -204,8 +209,12 @@ def last_updated(url: str, *, prev_hash: str = "",
     if cur_hash and prev_hash and cur_hash != prev_hash:
         today = datetime.now(timezone.utc).date().isoformat()
         # The content moved since we last saw it: the page is fresh, full stop.
+        # `changed_at` is set ONLY here -- it's the "this page really changed"
+        # stamp the UI filters on. Every other path returns "" so the caller
+        # carries the previously stored value forward, keeping the date stable
+        # instead of re-stamping it on every scan.
         return {"date": today, "source": "hash", "age_days": 0,
-                "trust": "high", "hash": cur_hash}
+                "trust": "high", "hash": cur_hash, "changed_at": today}
 
     # No content change (or no baseline yet): fall back to whatever date the page
     # publishes about itself, best source first.
@@ -228,7 +237,7 @@ def last_updated(url: str, *, prev_hash: str = "",
             # First time we've fingerprinted it -- no baseline to compare, so we
             # can't claim a date yet. We still return the hash to seed next scan.
             return {"date": "", "source": "hash-seeded", "age_days": None,
-                    "trust": "none", "hash": cur_hash}
+                    "trust": "none", "hash": cur_hash, "changed_at": ""}
         # prev_hash exists and (given the override above) equals cur_hash:
         # unchanged since last time.
         if prev_date:
@@ -239,7 +248,7 @@ def last_updated(url: str, *, prev_hash: str = "",
             # date yet -- rather than blanking the source, so the fingerprint is
             # preserved and a *future* change still flips it to "hash".
             return {"date": "", "source": "hash-seeded", "age_days": None,
-                    "trust": "none", "hash": cur_hash}
+                    "trust": "none", "hash": cur_hash, "changed_at": ""}
 
     if not date_str:
         out = _empty()
@@ -262,9 +271,10 @@ def last_updated(url: str, *, prev_hash: str = "",
     trust = {"jsonld": "high", "meta": "high", "sitemap": "medium",
              "hash": "medium", "http": "low"}.get(source, "none")
     return {"date": date_str, "source": source, "age_days": age,
-            "trust": trust, "hash": cur_hash}
+            "trust": trust, "hash": cur_hash, "changed_at": ""}
 
 
 def _empty() -> dict:
     return {"date": "", "source": "", "age_days": None, "trust": "none",
+            "changed_at": "",
             "hash": ""}

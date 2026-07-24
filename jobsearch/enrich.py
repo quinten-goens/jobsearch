@@ -66,6 +66,11 @@ def recheck_page(rec: dict) -> dict:
     if f.get("hash"):
         rec["content_hash"] = f["hash"]
         rec["content_hash_at"] = datetime.now(timezone.utc).isoformat()
+    # Only stamp changed_at when this scan actually detected a change; otherwise
+    # leave whatever we stored before, so the first-detected date stays put and
+    # the entry can age out of "What's new" instead of being renewed nightly.
+    if f.get("changed_at"):
+        rec["changed_at"] = f["changed_at"]
 
     # Same fetch is cached, so this is nearly free: does the page have live
     # openings right now? This is the off-board signal Sarah cares about most.

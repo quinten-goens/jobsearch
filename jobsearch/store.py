@@ -44,6 +44,7 @@ def _flatten(org: dict, version: dict | None) -> dict:
     rec["openings_new_at"] = v.get("openings_new_at", "")
     rec["content_hash"] = v.get("content_hash", "")
     rec["content_hash_at"] = v.get("content_hash_at", "")
+    rec["changed_at"] = v.get("changed_at", "")
     rec["page_text"] = v.get("page_text", "")
     # Review state comes straight off the org row.
     rec["reviewed"] = bool(org.get("reviewed"))
