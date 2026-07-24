@@ -397,6 +397,34 @@ def page_organisations():
         load_catalogue.clear()
         st.rerun()
 
+    # --- why these fit you: the reasoning behind the top matches --------------
+    # The table shows the ★/· fit tags; this explains them. Scoped to the orgs
+    # that are hiring AND fit, ranked by fit, so it stays short and relevant.
+    from jobsearch.fit import score_openings
+
+    fits_here = view[(view["openings_state"] == "has_openings")
+                     & view["fit_band"].isin(["strong", "possible"])]
+    if not fits_here.empty:
+        with st.expander(f"💡 Why these {min(len(fits_here), 25)} fit you"):
+            st.caption("The reasoning behind the fit ranking — which of your "
+                       "angles each opening matches.")
+            for _, r in fits_here.head(25).iterrows():
+                scored = score_openings(r["openings_titles"] or [])["scored"]
+                # Best-matched openings first, weak/none dropped.
+                good = sorted(
+                    [s for s in scored if s["band"] in ("strong", "possible")],
+                    key=lambda s: s["score"], reverse=True)[:4]
+                st.markdown(f"**{r['organisation']}** · {r['sector']}")
+                for s in good:
+                    tag = "★" if s["band"] == "strong" else "·"
+                    why = ", ".join(s["reasons"]) or "matches your profile"
+                    st.markdown(f"&nbsp;&nbsp;{tag} **{s['title']}** — {why}",
+                                unsafe_allow_html=True)
+                if r.get("why_fits"):
+                    st.markdown(f"&nbsp;&nbsp;<span style='color:grey'>Note: "
+                                f"{r['why_fits']}</span>", unsafe_allow_html=True)
+                st.divider()
+
     st.download_button(
         "Download as CSV", view.to_csv(index=False).encode(),
         file_name="brussels_organisations.csv", mime="text/csv",
