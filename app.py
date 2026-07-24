@@ -9,12 +9,21 @@ supporting tab, and every organisation carries the context needed to judge it.
 import hmac
 import json
 from datetime import date, datetime
+from urllib.parse import urlparse
 
 import pandas as pd
 import streamlit as st
 
 from jobsearch.config import JOBS_JSON, _secret
 from jobsearch import store
+
+
+def _domain(url: str) -> str:
+    """Bare domain of a careers URL (no scheme, no www), '' if unparseable."""
+    try:
+        return urlparse(url or "").netloc.lower().replace("www.", "")
+    except ValueError:
+        return ""
 
 st.set_page_config(page_title="Brussels job search", page_icon="🇧🇪", layout="wide")
 
@@ -569,6 +578,48 @@ def page_whats_new():
         help="'Since last check' is only what last night's check found. The day "
              "windows show everything that changed in that period.",
     )
+
+    # --- filters (apply to both sections) -----------------------------------
+    cat = cat.copy()
+    cat["_domain"] = cat["careers_url"].apply(_domain)
+
+    fc1, fc2, fc3 = st.columns(3)
+    with fc1:
+        sectors = st.multiselect(
+            "Organisation sector",
+            sorted(v for v in cat["sector"].unique() if v),
+            help="Show only these sectors.")
+    with fc2:
+        categories = st.multiselect(
+            "Category", sorted(v for v in cat["category"].unique() if v),
+            help="Finer organisation category.")
+    with fc3:
+        types = st.multiselect(
+            "Type", sorted(v for v in cat["type"].unique() if v),
+            help="Most granular organisation type.")
+
+    # Domain exclude: options are labelled with their count and ordered by it,
+    # so the domains that flood the page (eu-careers, eeas, euractiv…) sit at the
+    # top and are easy to spot and drop. Picking one hides all its pages here.
+    dom_counts = cat.loc[cat["_domain"] != "", "_domain"].value_counts()
+    dom_labels = {f"{d} ({n})": d for d, n in dom_counts.items()}
+    hide_labels = st.multiselect(
+        "Hide these domains",
+        list(dom_labels.keys()),  # already count-ordered by value_counts()
+        help="Domains that show up a lot (shared EU careers portals, etc.). "
+             "Select any to hide all their pages from this view — handy for "
+             "clearing out euractiv/epso/eu-careers noise. Hidden here only; "
+             "nothing is deleted.")
+    hidden_domains = {dom_labels[l] for l in hide_labels}
+
+    if sectors:
+        cat = cat[cat["sector"].isin(sectors)]
+    if categories:
+        cat = cat[cat["category"].isin(categories)]
+    if types:
+        cat = cat[cat["type"].isin(types)]
+    if hidden_domains:
+        cat = cat[~cat["_domain"].isin(hidden_domains)]
 
     new = cat[cat["has_new"]].copy()
     # Pages whose content changed but where we couldn't parse a specific new
