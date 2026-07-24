@@ -78,6 +78,12 @@ def recheck_page(rec: dict) -> dict:
     rec["openings_checked_at"] = datetime.now(timezone.utc).isoformat()
     # Fit is computed at load time in the app (from the stored titles), so
     # re-tuning the profile never needs a re-scan.
+
+    # Store the page's visible text so Sarah can keyword-search the actual page
+    # content, not just the title we parsed. Same cached fetch again -- free.
+    from .freshness import page_text
+
+    rec["page_text"] = page_text(rec["careers_url"])
     return rec
 
 

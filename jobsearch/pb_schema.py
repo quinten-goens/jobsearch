@@ -55,18 +55,31 @@ def _select(name, values):
 
 
 def _ensure_fields(pb: "PB", name: str, spec_fields: list[dict]) -> None:
-    """Add any spec field the live collection is missing, without touching the
-    existing ones. Makes the schema self-healing: new fields (content_hash,
-    openings_new_*) land on a collection that already holds data, instead of
+    """Add any spec field the live collection is missing, and reconcile the
+    `max` on text fields that already exist. Makes the schema self-healing: new
+    fields land on a collection that already holds data, and a raised text cap
+    (e.g. page_text 5000->20000) is applied to the live field too, instead of
     silently failing to write."""
     coll = next(c for c in pb.list_collections() if c["name"] == name)
-    have = {f["name"] for f in coll.get("fields", coll.get("schema", []))}
-    missing = [f for f in spec_fields if f["name"] not in have]
-    if not missing:
+    fields = list(coll.get("fields", coll.get("schema", [])))
+    by_name = {f["name"]: f for f in fields}
+
+    added, retuned = [], []
+    for spec in spec_fields:
+        if spec["name"] not in by_name:
+            fields.append(spec)
+            added.append(spec["name"])
+        elif spec.get("max") and by_name[spec["name"]].get("max") != spec["max"]:
+            by_name[spec["name"]]["max"] = spec["max"]
+            retuned.append(spec["name"])
+
+    if not added and not retuned:
         return
-    fields = list(coll.get("fields", coll.get("schema", []))) + missing
     pb.update_collection(coll["id"], {"fields": fields})
-    print(f"  {name}: added {', '.join(f['name'] for f in missing)}")
+    if added:
+        print(f"  {name}: added {', '.join(added)}")
+    if retuned:
+        print(f"  {name}: raised max on {', '.join(retuned)}")
 
 
 def organisations_spec() -> dict:
@@ -128,6 +141,10 @@ def url_versions_spec(org_cid: str) -> dict:
             # Content fingerprint: lets us date metadata-less pages by change.
             _text("content_hash", maxSize=64),
             _date("content_hash_at"),
+            # The page's visible text, for keyword search over real page content
+            # (latest scan only). ~3 KB typical; PocketBase text fields default
+            # to a 5000-char cap, so raise it explicitly via `max`.
+            _text("page_text", max=20000),
             _text("run_id"),          # which discovery sweep produced it
             _bool("superseded"),      # false only for the newest per org
             _date("discovered_at"),

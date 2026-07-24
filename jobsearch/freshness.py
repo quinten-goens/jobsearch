@@ -66,17 +66,39 @@ def content_hash(url: str) -> str:
     return _hash_html(r["text"])
 
 
-def _hash_html(html: str) -> str:
+def _visible_text(html: str) -> str:
+    """The page's visible text with chrome removed -- the shared basis for both
+    the content hash and the searchable page text."""
     soup = BeautifulSoup(html, "lxml")
     # Drop the chrome that shifts independently of the content we care about.
     for tag in soup(["script", "style", "nav", "footer", "header", "noscript"]):
         tag.decompose()
-    text = soup.get_text(" ", strip=True).lower()
-    text = _VOLATILE.sub("", text)
+    return re.sub(r"\s+", " ", soup.get_text(" ", strip=True)).strip()
+
+
+def _hash_html(html: str) -> str:
+    # Lower-case and strip volatile tokens (session ids, clocks) so a re-render
+    # with no content change hashes identically. That volatility handling is a
+    # hashing concern only -- search wants the raw visible text (see page_text).
+    text = _VOLATILE.sub("", _visible_text(html).lower())
     text = re.sub(r"\s+", " ", text).strip()
     if not text:
         return ""
     return hashlib.sha256(text.encode("utf-8", "ignore")).hexdigest()
+
+
+# Cap stored page text so a pathological page can't bloat the row. 20k chars is
+# ~20 KB, far more than any careers page's meaningful copy, and still tiny in
+# PocketBase terms.
+PAGE_TEXT_MAX = 20_000
+
+
+def page_text(url: str) -> str:
+    """The careers page's visible text, for keyword search. '' if unreadable."""
+    r = fetch(url)
+    if not r["ok"] or not r["text"]:
+        return ""
+    return _visible_text(r["text"])[:PAGE_TEXT_MAX]
 
 META_KEYS = (
     ("meta", {"property": "article:modified_time"}),

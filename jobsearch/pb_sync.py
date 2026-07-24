@@ -50,6 +50,7 @@ def _version_body(rec: dict, org_id: str, run_id: str) -> dict:
         "openings_checked_at": rec.get("openings_checked_at") or None,
         "content_hash": rec.get("content_hash") or "",
         "content_hash_at": rec.get("content_hash_at") or None,
+        "page_text": rec.get("page_text") or "",
         "run_id": run_id,
         "superseded": False,
         "discovered_at": datetime.now(timezone.utc).isoformat(),
@@ -135,6 +136,7 @@ def main() -> None:
                     "last_updated_age_days": r.get("last_updated_age_days"),
                     "content_hash": r.get("content_hash") or "",
                     "content_hash_at": r.get("content_hash_at") or None,
+                    "page_text": r.get("page_text") or "",
                 }
                 openings_ops.append({
                     "method": "PATCH",
@@ -142,10 +144,12 @@ def main() -> None:
                     "body": body})
             continue
         if current:
+            # Supersede the old version and clear its page_text: only the latest
+            # scrape is searchable, so we don't keep stale text on history rows.
             supersede_ops.append({
                 "method": "PATCH",
                 "path": f"/api/collections/url_versions/records/{current['id']}",
-                "body": {"superseded": True}})
+                "body": {"superseded": True, "page_text": ""}})
         create_ops.append({
             "method": "POST",
             "path": "/api/collections/url_versions/records",

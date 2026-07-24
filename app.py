@@ -75,7 +75,7 @@ def load_catalogue() -> pd.DataFrame:
                 "careers_url", "careers_confidence", "homepage",
                 "last_updated", "last_updated_source", "last_updated_trust",
                 "search_url", "version_id", "last_check_verdict",
-                "last_check_at", "id"):
+                "last_check_at", "page_text", "id"):
         if col not in df:
             df[col] = ""
         df[col] = df[col].fillna("")
@@ -161,7 +161,11 @@ def load_jobs() -> tuple[pd.DataFrame, str]:
 def org_filters(df: pd.DataFrame) -> pd.DataFrame:
     """Shared filter controls, rendered in the sidebar."""
     st.sidebar.subheader("Filter")
-    q = st.sidebar.text_input("Search", placeholder="name, description, role…")
+    q = st.sidebar.text_input(
+        "Search", placeholder="name, role, or a word on the page…",
+        help="Matches the organisation name, description and roles — and the "
+             "text of the careers page itself, so you can find a keyword "
+             "(e.g. 'Spanish', 'secondment') anywhere on the page.")
     sectors = st.sidebar.multiselect("Sector", sorted(df["sector"].unique()))
 
     # One-click "see everything": bypasses the recency filter entirely. Most of
@@ -229,9 +233,11 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
 
     f = df
     if q:
+        # Match name/description/roles/type AND the careers page's own text, so a
+        # keyword search reaches into the actual page content, not just metadata.
         blob = (f["organisation"] + " " + f["description"] + " " +
-                f["target_roles"] + " " + f["type"])
-        f = f[blob.str.contains(q, case=False, na=False)]
+                f["target_roles"] + " " + f["type"] + " " + f["page_text"])
+        f = f[blob.str.contains(q, case=False, na=False, regex=False)]
     if sectors:
         f = f[f["sector"].isin(sectors)]
     if reviewed == "Reviewed":
@@ -842,10 +848,10 @@ def page_guide():
             "freshness, openings, and what’s new. You never press refresh; just "
             "come back and it’s current.")
         + _guide_card(
-            "🔎", "Search & filters",
-            "Search organisation names, descriptions and roles, then narrow by "
-            "sector, freshness, ‘hiring now’, or ‘only openings that fit me’ — "
-            "combine them to jump straight to your best next actions.")
+            "🔎", "Search the page text",
+            "The Search box matches names, descriptions and roles — and the text "
+            "of the careers page itself, so you can find a keyword (‘Spanish’, "
+            "‘secondment’) anywhere on the page, not just in the title.")
         + '</div>', unsafe_allow_html=True)
 
     st.subheader("Reading the table")
