@@ -583,20 +583,12 @@ def page_whats_new():
     cat = cat.copy()
     cat["_domain"] = cat["careers_url"].apply(_domain)
 
-    fc1, fc2, fc3 = st.columns(3)
+    fc1, fc2 = st.columns(2)
     with fc1:
-        sectors = st.multiselect(
-            "Organisation sector",
-            sorted(v for v in cat["sector"].unique() if v),
-            help="Show only these sectors.")
-    with fc2:
         categories = st.multiselect(
-            "Category", sorted(v for v in cat["category"].unique() if v),
-            help="Finer organisation category.")
-    with fc3:
-        types = st.multiselect(
-            "Type", sorted(v for v in cat["type"].unique() if v),
-            help="Most granular organisation type.")
+            "Organisation category",
+            sorted(v for v in cat["category"].unique() if v),
+            help="The organisation category. Show only these.")
 
     # Domain exclude: options are labelled with their count and ordered by it,
     # so the domains that flood the page (eu-careers, eeas, euractiv…) sit at the
@@ -612,12 +604,8 @@ def page_whats_new():
              "nothing is deleted.")
     hidden_domains = {dom_labels[l] for l in hide_labels}
 
-    if sectors:
-        cat = cat[cat["sector"].isin(sectors)]
     if categories:
         cat = cat[cat["category"].isin(categories)]
-    if types:
-        cat = cat[cat["type"].isin(types)]
     if hidden_domains:
         cat = cat[~cat["_domain"].isin(hidden_domains)]
 
