@@ -124,16 +124,26 @@ def load_catalogue() -> pd.DataFrame:
     # a change signal, not a vacancy signal.
     df["page_changed"] = df["last_updated_source"].fillna("") == "hash"
 
-    # Fit is scored at load time from the stored titles, so re-tuning the
-    # profile never needs a re-scan. Cheap: a keyword scan per title.
+    df["has_careers"] = df["careers_url"].astype(bool)
+    return df
+
+
+def apply_fit(df: pd.DataFrame, dims: dict | None = None) -> pd.DataFrame:
+    """Score fit from the stored opening titles, honouring Sarah's dimension
+    toggles. Kept out of the cached loader so changing a toggle re-ranks live
+    without a re-scan -- it's just a cheap keyword pass per title."""
     from jobsearch.fit import score_openings
 
-    fit = df["openings_titles"].apply(lambda ts: score_openings(ts or []))
+    if df.empty:
+        for c in ("fit_score", "fit_band", "fit_best_title", "fit_strong"):
+            df[c] = [] if c != "fit_score" else []
+        return df
+    fit = df["openings_titles"].apply(lambda ts: score_openings(ts or [], dims))
+    df = df.copy()
     df["fit_score"] = fit.apply(lambda x: x["best_score"])
     df["fit_band"] = fit.apply(lambda x: x["best_band"])
     df["fit_best_title"] = fit.apply(lambda x: x["best_title"])
     df["fit_strong"] = fit.apply(lambda x: x["strong"])
-    df["has_careers"] = df["careers_url"].astype(bool)
     return df
 
 
@@ -270,6 +280,40 @@ def org_filters(df: pd.DataFrame) -> pd.DataFrame:
     return f
 
 
+FIT_DIM_LABELS = {
+    "policy": "Policy / advocacy",
+    "latam": "Latin America / Spanish",
+    "research": "Research / PhD",
+    "comms": "Comms & adjacent roles",
+    "seniority": "Penalise senior roles",
+}
+
+
+@st.cache_data(ttl=60)
+def _load_fit_dims() -> dict:
+    from jobsearch.fit import DEFAULT_DIMS
+    saved = store.get_setting("fit_dims") or {}
+    return {**DEFAULT_DIMS, **saved}
+
+
+def fit_dims_control() -> dict:
+    """Sidebar toggles for what counts as a good fit, persisted in PocketBase so
+    the choice sticks across sessions. Returns the active dims dict."""
+    current = _load_fit_dims()
+    with st.sidebar.expander("⚙️ Tune what fits me"):
+        st.caption("Turn a dimension off to stop it affecting the fit ranking.")
+        new = {}
+        for key, label in FIT_DIM_LABELS.items():
+            new[key] = st.checkbox(label, value=current[key], key=f"fitdim_{key}")
+        if new != current:
+            try:
+                store.set_setting("fit_dims", new)
+                _load_fit_dims.clear()
+            except Exception as e:
+                st.error(f"Couldn't save: {e}")
+    return new
+
+
 # ------------------------------------------------------------ organisations
 def page_organisations():
     st.title("Organisations")
@@ -277,6 +321,8 @@ def page_organisations():
     if cat.empty:
         st.warning("No catalogue yet — run `python -m jobsearch.catalogue`.")
         st.stop()
+    dims = fit_dims_control()
+    cat = apply_fit(cat, dims)
     f = org_filters(cat)
 
     k1, k2, k3, k4 = st.columns(4)
@@ -409,7 +455,8 @@ def page_organisations():
             st.caption("The reasoning behind the fit ranking — which of your "
                        "angles each opening matches.")
             for _, r in fits_here.head(25).iterrows():
-                scored = score_openings(r["openings_titles"] or [])["scored"]
+                scored = score_openings(
+                    r["openings_titles"] or [], dims)["scored"]
                 # Best-matched openings first, weak/none dropped.
                 good = sorted(
                     [s for s in scored if s["band"] in ("strong", "possible")],
@@ -595,6 +642,12 @@ def page_coverage():
 # ----------------------------------------------------------------- what's new
 def page_whats_new():
     from jobsearch.fit import score_openings
+    import functools
+
+    dims = _load_fit_dims()
+    # Honour Sarah's fit toggles here too, so ranking is consistent with the
+    # Organisations page.
+    score_openings = functools.partial(score_openings, dims=dims)
 
     st.title("What's new")
     st.caption("Careers pages that moved recently — the off-board jobs, seen "

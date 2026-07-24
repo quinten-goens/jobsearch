@@ -175,6 +175,22 @@ def url_checks_spec(org_cid: str, uv_cid: str) -> dict:
     }
 
 
+def app_settings_spec() -> dict:
+    """A tiny key -> JSON store for user-tunable settings (e.g. fit toggles),
+    so preferences persist across sessions and devices."""
+    return {
+        "name": "app_settings",
+        "type": "base",
+        "fields": [
+            _text("key", required=True, maxSize=100),
+            _json("value"),
+        ],
+        "indexes": [
+            "CREATE UNIQUE INDEX idx_settings_key ON app_settings (key)",
+        ],
+    }
+
+
 def _cid(pb: PB, name: str) -> str:
     for c in pb.list_collections():
         if c["name"] == name:
@@ -216,6 +232,13 @@ def main() -> None:
         pb.create_collection(url_checks_spec(org_cid, uv_cid))
         print("  url_checks: created")
 
+    # 3c. app_settings (fit toggles etc.)
+    if pb.collection_exists("app_settings"):
+        print("  app_settings: exists")
+    else:
+        pb.create_collection(app_settings_spec())
+        print("  app_settings: created")
+
     # 3b. API access rules. Base collections are superuser-only by default,
     # which blocks the app's regular PH_USR account. These rules are
     # deliberately open (""), i.e. public read/write without auth: the data is
@@ -227,6 +250,9 @@ def main() -> None:
         "url_versions": {"listRule": "", "viewRule": "",
                          "createRule": "", "updateRule": ""},
         "url_checks": {"listRule": "", "viewRule": "", "createRule": ""},
+        # Sarah reads and writes her own settings (fit toggles) from the app.
+        "app_settings": {"listRule": "", "viewRule": "",
+                         "createRule": "", "updateRule": ""},
     }
     for c in pb.list_collections():
         if c["name"] in RULES:

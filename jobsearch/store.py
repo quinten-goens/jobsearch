@@ -106,6 +106,27 @@ def set_reviewed(org_id: str, reviewed: bool, current_url: str = "",
     return admin.update_record("organisations", org_id, body)
 
 
+def get_setting(key: str, default=None, pb: PB | None = None):
+    """Read a persisted app setting (e.g. fit toggles). Returns `default` if
+    unset or unreachable."""
+    pb = pb or PB()
+    try:
+        rec = pb.find_one("app_settings", f'key="{key}"')
+    except Exception:
+        return default
+    return rec.get("value") if rec else default
+
+
+def set_setting(key: str, value, pb: PB | None = None) -> None:
+    """Persist an app setting, creating or updating the single row for `key`."""
+    pb = pb or PB()
+    existing = pb.find_one("app_settings", f'key="{key}"')
+    if existing:
+        pb.update_record("app_settings", existing["id"], {"value": value})
+    else:
+        pb.create_record("app_settings", {"key": key, "value": value})
+
+
 def clear_new_openings(version_id: str) -> None:
     """Dismiss the 'new openings' flag once Sarah has seen it."""
     _admin_pb().update_record("url_versions", version_id,

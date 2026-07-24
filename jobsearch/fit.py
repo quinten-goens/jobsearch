@@ -69,8 +69,21 @@ def _has(text: str, terms) -> bool:
     return any(t in text for t in terms)
 
 
-def score_title(title: str) -> dict:
-    """0-100 fit score for one opening title, with reasons."""
+# The fit dimensions Sarah can toggle on/off. Each maps to a keyword group and
+# its point contribution; turning one off removes both its points and its
+# reason. Defaults are all-on -- the profile as originally tuned.
+DIMENSIONS = ("policy", "latam", "research", "comms", "seniority")
+DEFAULT_DIMS = {d: True for d in DIMENSIONS}
+
+
+def score_title(title: str, dims: dict | None = None) -> dict:
+    """0-100 fit score for one opening title, with reasons.
+
+    `dims` toggles the scoring dimensions on/off (see DIMENSIONS); None means
+    all on. A dimension that's off contributes neither points nor a reason, so
+    Sarah can, say, stop rewarding comms roles or stop penalising senior ones.
+    """
+    d = {**DEFAULT_DIMS, **(dims or {})}
     t = (title or "").lower()
     if not t or len(t) < 3:
         return {"score": 0, "reasons": [], "band": "unknown"}
@@ -79,21 +92,22 @@ def score_title(title: str) -> dict:
     reasons = []
 
     # Topic match -- strong-fit areas.
-    if _has(t, POLICY):
+    if d["policy"] and _has(t, POLICY):
         score += 28
         reasons.append("policy / advocacy role")
-    if _has(t, LATAM):
+    if d["latam"] and _has(t, LATAM):
         score += 25
         reasons.append("Latin America / Spanish angle")
-    if _has(t, RESEARCH):
+    if d["research"] and _has(t, RESEARCH):
         score += 22
         reasons.append("research / PhD track")
-    if _has(t, SECONDARY):
+    if d["comms"] and _has(t, SECONDARY):
         score += 12
         reasons.append("adjacent area she's qualified for")
 
-    # Seniority -- she's 2-5 years in.
-    if _has(t, TOO_SENIOR):
+    # Seniority -- she's 2-5 years in. The penalty is a toggle; the mid/junior
+    # level signals always apply (they're not what "seniority filter" means).
+    if d["seniority"] and _has(t, TOO_SENIOR):
         score -= 30
         reasons.append("likely too senior")
     elif _has(t, MID):
@@ -114,7 +128,7 @@ def score_title(title: str) -> dict:
     return {"score": score, "reasons": reasons, "band": band}
 
 
-def score_openings(titles: list[str]) -> dict:
+def score_openings(titles: list[str], dims: dict | None = None) -> dict:
     """Aggregate fit across an org's openings.
 
     Returns the best title's score/band, plus how many openings are a strong
@@ -123,7 +137,7 @@ def score_openings(titles: list[str]) -> dict:
     if not titles:
         return {"best_score": 0, "best_band": "none", "best_title": "",
                 "strong": 0, "possible": 0, "scored": []}
-    scored = [{"title": t, **score_title(t)} for t in titles]
+    scored = [{"title": t, **score_title(t, dims)} for t in titles]
     scored.sort(key=lambda s: -s["score"])
     top = scored[0]
     return {
