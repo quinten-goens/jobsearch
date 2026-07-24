@@ -563,39 +563,32 @@ def page_whats_new():
     from jobsearch.fit import score_openings
 
     st.title("What's new")
-    st.caption("Pages that moved recently — the off-board jobs, seen early, "
-               "before the boards fill up. New openings first, then pages that "
-               "changed without a readable job title.")
+    st.caption("Careers pages that moved recently — the off-board jobs, seen "
+               "early, before the boards fill up.")
     cat = load_catalogue()
-
-    # How far back to look. "Since last check" keeps the original behaviour (only
-    # what the most recent nightly check surfaced); the day windows widen it to
-    # everything whose change date falls in the last N days.
-    window = st.radio(
-        "Show changes from", ["Since last check", "Today", "Last 2 days",
-                              "Last 3 days", "Last 7 days"],
-        index=3, horizontal=True,
-        help="'Since last check' is only what last night's check found. The day "
-             "windows show everything that changed in that period.",
-    )
-
-    # --- filters (apply to both sections) -----------------------------------
     cat = cat.copy()
     cat["_domain"] = cat["careers_url"].apply(_domain)
 
-    fc1, fc2 = st.columns(2)
-    with fc1:
-        categories = st.multiselect(
-            "Organisation category",
-            sorted(v for v in cat["category"].unique() if v),
-            help="The organisation category. Show only these.")
+    # --- filters live in the sidebar, like the Organisations page ------------
+    st.sidebar.subheader("Filter")
+    window = st.sidebar.radio(
+        "Show changes from", ["Since last check", "Today", "Last 2 days",
+                              "Last 3 days", "Last 7 days"],
+        index=3,
+        help="'Since last check' is only what last night's check found. The day "
+             "windows show everything that changed in that period.",
+    )
+    categories = st.sidebar.multiselect(
+        "Organisation category",
+        sorted(v for v in cat["category"].unique() if v),
+        help="The organisation category. Show only these.")
 
     # Domain exclude: options are labelled with their count and ordered by it,
     # so the domains that flood the page (eu-careers, eeas, euractiv…) sit at the
     # top and are easy to spot and drop. Picking one hides all its pages here.
     dom_counts = cat.loc[cat["_domain"] != "", "_domain"].value_counts()
     dom_labels = {f"{d} ({n})": d for d, n in dom_counts.items()}
-    hide_labels = st.multiselect(
+    hide_labels = st.sidebar.multiselect(
         "Hide these domains",
         list(dom_labels.keys()),  # already count-ordered by value_counts()
         help="Domains that show up a lot (shared EU careers portals, etc.). "
@@ -638,82 +631,93 @@ def page_whats_new():
                 "check back tomorrow.")
         st.stop()
 
-    k1, k2 = st.columns(2)
-    k1.metric("New openings", len(new))
-    k2.metric("Pages changed (no title read)", len(changed))
+    # Two tabs so each signal is its own scannable view, with counts in the
+    # label -- rather than one long scroll past both sections.
+    tab_new, tab_changed = st.tabs(
+        [f"🆕 New openings ({len(new)})",
+         f"📝 Pages changed ({len(changed)})"])
 
-    # --- 1. New openings, ranked by fit of the newly-appeared titles ---------
-    if not new.empty:
-        new["_newfit"] = new["openings_new_titles"].apply(
-            lambda ts: score_openings(ts or [])["best_score"])
-        new = new.sort_values("_newfit", ascending=False)
+    # --- tab 1: new openings, ranked by fit of the newly-appeared titles -----
+    with tab_new:
+        if new.empty:
+            st.info("No new openings in this window.")
+        else:
+            new["_newfit"] = new["openings_new_titles"].apply(
+                lambda ts: score_openings(ts or [])["best_score"])
+            new = new.sort_values("_newfit", ascending=False)
 
-        st.subheader("🆕 New openings")
-        if st.button("Mark all as seen"):
-            for _, r in new.iterrows():
-                if r["version_id"]:
-                    try:
-                        store.clear_new_openings(r["version_id"])
-                    except Exception:
-                        pass
-            load_catalogue.clear()
-            st.rerun()
-
-        for _, r in new.iterrows():
-            with st.container(border=True):
-                c1, c2 = st.columns([4, 1])
-                with c1:
-                    st.markdown(f"**{r['organisation']}** · {r['sector']}"
-                                + (f" · {r['base']}" if r['base'] else ""))
-                    for t in r["openings_new_titles"]:
-                        fit = score_openings([t])["scored"][0]
-                        tag = ("★" if fit["band"] == "strong"
-                               else "·" if fit["band"] == "possible" else " ")
-                        st.markdown(f"&nbsp;&nbsp;{tag} 🆕 {t}",
-                                    unsafe_allow_html=True)
-                with c2:
-                    if r["careers_url"]:
-                        st.link_button("Open ↗", r["careers_url"],
-                                       use_container_width=True)
-                    if r["version_id"] and st.button(
-                            "Seen", key=f"seen_{r['id']}",
-                            use_container_width=True):
+            st.caption("A job title appeared that wasn't there at the last "
+                       "check. Best-fitting first — ★ strong, · possible.")
+            if st.button("Mark all as seen", key="mark_all_new"):
+                for _, r in new.iterrows():
+                    if r["version_id"]:
                         try:
                             store.clear_new_openings(r["version_id"])
-                            load_catalogue.clear()
-                            st.rerun()
-                        except Exception as e:
-                            st.error(str(e))
+                        except Exception:
+                            pass
+                load_catalogue.clear()
+                st.rerun()
 
-    # --- 2. Pages that changed, but with no readable new title ---------------
-    if not changed.empty:
-        # Put orgs already showing openings first (a change on a hiring page is
-        # the strongest signal), then the rest, most recently changed on top.
-        changed["_hiring"] = (changed["openings_state"]
-                              == "has_openings").astype(int)
-        changed = changed.sort_values(
-            ["_hiring", "last_updated"], ascending=[False, False])
+            for _, r in new.iterrows():
+                with st.container(border=True):
+                    c1, c2 = st.columns([5, 1])
+                    with c1:
+                        st.markdown(f"**{r['organisation']}**  \n"
+                                    f"<span style='color:grey'>{r['sector']}"
+                                    + (f" · {r['base']}" if r['base'] else "")
+                                    + "</span>", unsafe_allow_html=True)
+                        for t in r["openings_new_titles"]:
+                            fit = score_openings([t])["scored"][0]
+                            tag = ("★" if fit["band"] == "strong"
+                                   else "·" if fit["band"] == "possible" else " ")
+                            st.markdown(f"&nbsp;&nbsp;{tag} 🆕 {t}",
+                                        unsafe_allow_html=True)
+                    with c2:
+                        if r["careers_url"]:
+                            st.link_button("Open ↗", r["careers_url"],
+                                           use_container_width=True)
+                        if r["version_id"] and st.button(
+                                "Seen", key=f"seen_{r['id']}",
+                                use_container_width=True):
+                            try:
+                                store.clear_new_openings(r["version_id"])
+                                load_catalogue.clear()
+                                st.rerun()
+                            except Exception as e:
+                                st.error(str(e))
 
-        st.subheader("📝 Pages that changed")
-        st.caption("The page's content moved since we last saw it, but we "
-                   "couldn't extract a specific new job title — worth a manual "
-                   "look. Hiring pages first.")
-        for _, r in changed.iterrows():
-            with st.container(border=True):
-                c1, c2 = st.columns([4, 1])
-                with c1:
-                    hiring = (" · 🟢 has openings"
-                              if r["openings_state"] == "has_openings" else "")
-                    st.markdown(f"**{r['organisation']}** · {r['sector']}"
-                                + (f" · {r['base']}" if r['base'] else "")
-                                + hiring)
-                    when = r["last_updated"] or "recently"
-                    st.markdown(f"&nbsp;&nbsp;📝 page changed — {when}",
-                                unsafe_allow_html=True)
-                with c2:
-                    if r["careers_url"]:
-                        st.link_button("Open ↗", r["careers_url"],
-                                       use_container_width=True)
+    # --- tab 2: pages that changed, but with no readable new title -----------
+    with tab_changed:
+        if changed.empty:
+            st.info("No changed pages in this window.")
+        else:
+            # Hiring pages first (a change there is the strongest signal), then
+            # the rest, most recently changed on top.
+            changed["_hiring"] = (changed["openings_state"]
+                                  == "has_openings").astype(int)
+            changed = changed.sort_values(
+                ["_hiring", "last_updated"], ascending=[False, False])
+
+            st.caption("The page's content moved since we last saw it, but no "
+                       "specific new job title could be read — worth a manual "
+                       "look. Hiring pages first.")
+            for _, r in changed.iterrows():
+                with st.container(border=True):
+                    c1, c2 = st.columns([5, 1])
+                    with c1:
+                        hiring = (" · 🟢 has openings"
+                                  if r["openings_state"] == "has_openings"
+                                  else "")
+                        when = r["last_updated"] or "recently"
+                        st.markdown(f"**{r['organisation']}**  \n"
+                                    f"<span style='color:grey'>{r['sector']}"
+                                    + (f" · {r['base']}" if r['base'] else "")
+                                    + hiring + f" · changed {when}</span>",
+                                    unsafe_allow_html=True)
+                    with c2:
+                        if r["careers_url"]:
+                            st.link_button("Open ↗", r["careers_url"],
+                                           use_container_width=True)
 
 
 # ----------------------------------------------------------------- navigation
