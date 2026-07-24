@@ -12,7 +12,11 @@ import sys
 import urllib.parse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from bs4 import BeautifulSoup
+import warnings
+
+from bs4 import BeautifulSoup, XMLParsedAsHTMLWarning
+
+warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
 
 from .config import BRAVE_API_KEY, DATA, ORGS_JSON
 from .http import fetch
@@ -30,20 +34,25 @@ HIGH_THRESHOLD = 18
 # "travailler-chez-nous" -- and a fixed list of literals misses most of them.
 PATH_HINTS = [
     (r"vacanc|vacature", 5),
-    (r"career|carriere|carrière", 5),
+    (r"career|carriere|carrière|karriere|karriere?n", 5),
     (r"/jobs?\b|/jobs?/|job-?(openings?|offers?|board)", 5),
-    (r"werken[-_]?(bij|voor)|werk-bij", 5),
+    (r"werken[-_]?(bij|voor)|werk-bij|werk[-_]?mee", 5),
     (r"offres?[-_]?d?[-_]?emploi|emploi", 4),
     (r"travailler[-_]?(chez|pour)", 4),
-    (r"work[-_]?(with|for)[-_]?us|join[-_]?(us|our[-_]team)", 4),
+    (r"work[-_]?(with|for)[-_]?us|join[-_]?(us|our[-_]team|the[-_]team)", 4),
     (r"recruit|rekrut", 4),
-    (r"empleo|trabaja", 4),
+    # Spanish (LatAm-angle orgs) and richer German.
+    (r"empleo|trabaja|ofertas?[-_]?de[-_]?empleo|bolsa[-_]?de[-_]?trabajo"
+     r"|vacantes?", 4),
+    (r"stellenangebote?|offene[-_]?stellen|stellen\b|stellenmarkt|bewerbung", 4),
     (r"openings?|hiring|employment", 4),
     (r"open[-_]?positions?|positions?[-_]?open|current[-_]?positions?", 4),
-    (r"traineeship|internship|stage\b", 4),
+    (r"traineeship|internship|stage\b|praktikum|prakti(k|ca)", 4),
+    (r"mitarbeiter[-_]?(in|gesucht)|jobangebote?", 4),  # DE "staff wanted"
     (r"opportunit", 3),
-    (r"rejoignez|solliciteren", 3),
-    (r"human[-_]?resources|ressources[-_]?humaines", 3),
+    (r"rejoignez|rejoindre|nous[-_]?rejoindre|solliciteren|solliciteer"
+     r"|postuler|bewerben", 3),
+    (r"human[-_]?resources|ressources[-_]?humaines|personal(abteilung)?", 3),
     (r"at[-_]?your[-_]?service", 2),  # europarl's careers section lives here
 ]
 
@@ -54,6 +63,31 @@ BODY_HINTS = [
     "apply by", "closing date", "cv and cover letter", "motivation letter",
     "postuler", "candidature", "solliciteren", "vacature",
 ]
+
+# Membership / B2B "join the association" language. Many federations' most
+# prominent "join" page is about member *organisations* joining, not about
+# them hiring staff -- and it scores on the same "join us" path words. When this
+# language dominates and there's no real job signal, penalise (don't hard-reject:
+# a genuine careers page can also mention membership). EN/FR/NL/DE/ES.
+MEMBERSHIP_HINTS = [
+    "become a member", "become member", "join our network", "join the network",
+    "join our association", "membership benefits", "why become a member",
+    "why join", "our members", "member organisations", "member organizations",
+    "membership fee", "apply for membership", "membership application",
+    "partner with us", "member benefits", "join as a member", "our membership",
+    "devenir membre", "adhésion", "adherer", "adhérer", "nos membres",
+    "devenez membre", "cotisation", "rejoindre le réseau",
+    "word lid", "lid worden", "lidmaatschap", "onze leden", "lid van",
+    "mitglied werden", "mitgliedschaft", "unsere mitglieder", "beitritt",
+    "hazte socio", "hágase socio", "membresía", "nuestros miembros",
+    "asóciate", "afiliación",
+]
+# URL paths that are clearly about joining as a member, not a careers page.
+MEMBERSHIP_PATHS = re.compile(
+    r"member(ship)?s?\b|become[-_]?a?[-_]?member|join[-_]?(as|us[-_]as)"
+    r"|devenir[-_]?membre|adhesion|adh[eé]rer|lidmaatschap|lid[-_]?worden"
+    r"|mitglied|mitgliedschaft|beitritt|hazte[-_]?socio|membres[ií]a"
+    r"|our[-_]?members|nos[-_]?membres|onze[-_]?leden", re.I)
 
 # Aggregators: real pages, but not the org's own careers page.
 AGGREGATORS = (
@@ -306,8 +340,11 @@ def verify_page(url: str) -> tuple[int, list[str], str]:
         why.append(f"page text has {len(hits)} job signal(s) (+{pts})")
 
     title = (soup.title.get_text(strip=True) if soup.title else "").lower()
-    if any(k in title for k in ("job", "vacanc", "career", "emploi", "work with us",
-                                "vacature", "empleo", "recruit")):
+    title_is_careers = any(
+        k in title for k in ("job", "vacanc", "career", "carrière", "emploi",
+                             "work with us", "vacature", "empleo", "recruit",
+                             "karriere", "stellen"))
+    if title_is_careers:
         score += 4
         why.append("page title says careers (+4)")
 
@@ -316,6 +353,32 @@ def verify_page(url: str) -> tuple[int, list[str], str]:
                                "no vacancies at this time", "pas d'offre")):
         score += 2
         why.append("explicitly lists zero openings — still the right page (+2)")
+
+    # Membership / B2B "join the association" pages score on the same "join us"
+    # words but are about member *organisations* joining, not this org hiring.
+    # Penalise when that language is present AND the page carries no real job
+    # signal. Two guards against false penalties: a genuine careers page keeps
+    # its job hits, and a page whose URL/title already says "careers" is a
+    # careers page (federations mention "our members" in their copy) -- never
+    # penalise those. The URL being membership-shaped strengthens a real hit.
+    parsed = urllib.parse.urlparse(r["url"])
+    path = parsed.path
+    # Careers-shaped URL: a careers subdomain (careers.x.eu, jobs.x.int) or a
+    # careers-shaped path -- same signals score_candidate rewards. A membership
+    # penalty must never fire on one.
+    careers_url = bool(
+        re.match(r"^(careers?|jobs?|vacan|emploi|recruit|werken)", parsed.netloc)
+        or any(re.search(pat, path.lower()) for pat, _ in PATH_HINTS))
+    if not hits and not title_is_careers and not careers_url:
+        mem_hits = [m for m in MEMBERSHIP_HINTS if m in text]
+        mem_path = bool(MEMBERSHIP_PATHS.search(path))
+        if mem_hits:
+            pts = 6 if (mem_path or len(mem_hits) >= 3) else 4
+            score -= pts
+            why.append(f"membership / B2B 'join us' page, no job signal (-{pts})")
+        elif mem_path:
+            score -= 4
+            why.append("membership-shaped URL, no job signal (-4)")
 
     return score, why, r["url"]
 
@@ -352,13 +415,24 @@ def name_variants(name: str) -> list[str]:
 # Careers paths to try directly on an org's own domain, before spending a
 # search. Ordered most- to least-common across EU/BE org sites. Multilingual.
 PROBE_PATHS = (
+    # English
     "/careers", "/careers/", "/en/careers", "/jobs", "/jobs/", "/en/jobs",
-    "/vacancies", "/vacancies/", "/vacatures", "/nl/vacatures", "/emplois",
-    "/fr/emplois", "/offres-emploi", "/work-with-us", "/join-us", "/join",
+    "/vacancies", "/work-with-us", "/join-us", "/join", "/join-the-team",
     "/about/careers", "/about-us/careers", "/about-us/jobs", "/get-involved/jobs",
     "/opportunities", "/recruitment", "/jobs-and-careers", "/career",
-    "/stellenangebote", "/karriere", "/empleo", "/trabaja-con-nosotros",
-    "/lavora-con-noi", "/en/about-us/vacancies", "/about/jobs", "/hr/vacancies",
+    "/en/about-us/vacancies", "/about/jobs", "/hr/vacancies", "/current-vacancies",
+    # Dutch (Flanders / Brussels)
+    "/vacatures", "/nl/vacatures", "/vacatures/", "/werken-bij", "/nl/jobs",
+    "/jobs-nl", "/werk", "/nl/vacature",
+    # French (Wallonia / Brussels)
+    "/emplois", "/fr/emplois", "/offres-emploi", "/offres-d-emploi",
+    "/fr/offres-d-emploi", "/carrieres", "/fr/jobs", "/nous-rejoindre",
+    "/travailler-chez-nous", "/recrutement",
+    # German (Ostbelgien / EU institutions)
+    "/stellenangebote", "/karriere", "/offene-stellen", "/stellen", "/de/karriere",
+    # Spanish (LatAm-angle orgs)
+    "/empleo", "/trabaja-con-nosotros", "/ofertas-de-empleo", "/es/empleo",
+    "/trabaja", "/vacantes",
 )
 
 
