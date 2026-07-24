@@ -133,19 +133,18 @@ def main() -> None:
                     "openings_titles": r.get("openings_titles") or [],
                     "openings_deadline": r.get("openings_deadline") or "",
                     "openings_checked_at": r.get("openings_checked_at"),
-                    "last_updated": r.get("last_updated") or "",
-                    "last_updated_source": r.get("last_updated_source") or "",
-                    "last_updated_trust": r.get("last_updated_trust") or "",
                     "last_updated_age_days": r.get("last_updated_age_days"),
-                    "content_hash": r.get("content_hash") or "",
-                    "content_hash_at": r.get("content_hash_at") or None,
-                    "page_text": r.get("page_text") or "",
                 }
-                # Only write changed_at when we have one -- patching it as None
-                # on an unchanged scan would wipe the stored change date and
-                # resurrect the "renewed every night" bug this fixes.
-                if r.get("changed_at"):
-                    body["changed_at"] = r["changed_at"]
+                # Never blank a stored value with an empty one. A partial or
+                # stale catalogue (a run that didn't reach this org, a fresh
+                # volume) carries no hash/text for most rows -- writing "" then
+                # destroys the change-detection baseline for every page it
+                # didn't scan. Only write what we actually have.
+                for field in ("last_updated", "last_updated_source",
+                              "last_updated_trust", "content_hash",
+                              "content_hash_at", "page_text", "changed_at"):
+                    if r.get(field):
+                        body[field] = r[field]
                 openings_ops.append({
                     "method": "PATCH",
                     "path": f"/api/collections/url_versions/records/{current['id']}",
