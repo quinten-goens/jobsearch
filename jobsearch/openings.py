@@ -177,6 +177,72 @@ def _walk_jobpostings(data) -> list[dict]:
     return found
 
 
+# "Apply by <date>" cue words across the catalogue's languages, used to find a
+# deadline printed in the page text when there's no structured JobPosting.
+_DEADLINE_CUE = re.compile(
+    r"(deadline|apply by|applications? close|closing date|last day to apply"
+    r"|date limite|clôture|date de clôture|postuler avant|candidature.{0,15}avant"
+    r"|sluitingsdatum|uiterlijk|solliciteer voor"
+    r"|bewerbungsfrist|bewerbungsschluss|frist"
+    r"|fecha límite|plazo|hasta el|antes del"
+    r"|scadenza|entro il)", re.I)
+# A date near that cue: 31/12/2026, 2026-12-31, or "31 December 2026" (+ FR/NL/…).
+_DATE_NEAR = re.compile(
+    r"(\d{4}-\d{2}-\d{2})"
+    r"|(\d{1,2}[/.\-]\d{1,2}[/.\-]\d{2,4})"
+    r"|(\d{1,2}\s+[A-Za-zÀ-ÿ]{3,12}\s+\d{4})", re.I)
+
+
+def _norm_deadline(raw: str) -> str:
+    """Best-effort ISO date from a matched date string; '' if not parseable."""
+    from datetime import datetime
+    raw = raw.strip()
+    m = re.match(r"(\d{4})-(\d{2})-(\d{2})", raw)
+    if m:
+        return m.group(0)
+    m = re.match(r"(\d{1,2})[/.\-](\d{1,2})[/.\-](\d{2,4})", raw)
+    if m:
+        d, mo, y = m.groups()
+        y = ("20" + y) if len(y) == 2 else y
+        try:
+            return datetime(int(y), int(mo), int(d)).date().isoformat()
+        except ValueError:
+            return ""
+    for fmt in ("%d %B %Y", "%d %b %Y"):
+        try:
+            return datetime.strptime(raw, fmt).date().isoformat()
+        except ValueError:
+            continue
+    return ""
+
+
+def _deadline_from_html(html: str, body: str) -> str:
+    """Application deadline for the soonest opening, if the page states one.
+
+    Prefers schema.org JobPosting `validThrough` (structured, reliable); falls
+    back to a date sitting next to a 'deadline / apply by' cue in the text.
+    Returns an ISO date, or '' when no deadline is readable.
+    """
+    # 1. JSON-LD validThrough -- the structured, trustworthy source.
+    found = []
+    for m in re.finditer(r'"validThrough"\s*:\s*"([^"]{6,40})"', html):
+        iso = _norm_deadline(m.group(1)[:10])
+        if iso:
+            found.append(iso)
+    if found:
+        return min(found)  # soonest upcoming deadline is the one that matters
+
+    # 2. A date near a deadline cue in the visible text.
+    for cue in _DEADLINE_CUE.finditer(body):
+        window = body[cue.start(): cue.start() + 80]
+        dm = _DATE_NEAR.search(window)
+        if dm:
+            iso = _norm_deadline(dm.group(0))
+            if iso:
+                return iso
+    return ""
+
+
 def _titles_from_links(soup: BeautifulSoup) -> list[str]:
     seen, out = set(), []
     for a in soup.find_all("a", href=True):
@@ -198,11 +264,12 @@ def _titles_from_links(soup: BeautifulSoup) -> list[str]:
 def detect(url: str) -> dict:
     """Return {state, count, titles, note}. Never raises."""
     if not url:
-        return {"state": UNKNOWN, "count": 0, "titles": [], "note": "no url"}
+        return {"state": UNKNOWN, "count": 0, "titles": [], "deadline": "",
+                "note": "no url"}
     r = fetch(url)
     if not r["ok"]:
         # Blocked (403/429) or gone -- can't read it, so unknown.
-        return {"state": UNKNOWN, "count": 0, "titles": [],
+        return {"state": UNKNOWN, "count": 0, "titles": [], "deadline": "",
                 "note": f"couldn't read page (HTTP {r['status']})"}
 
     html = r["text"]
@@ -219,16 +286,16 @@ def detect(url: str) -> dict:
 
     if titles:
         return {"state": HAS, "count": len(titles), "titles": titles[:25],
-                "note": ""}
+                "deadline": _deadline_from_html(html, body), "note": ""}
 
     # 3. No titles found. Does the page SAY it's empty?
     if EMPTY_STATE.search(body):
-        return {"state": NONE, "count": 0, "titles": [],
+        return {"state": NONE, "count": 0, "titles": [], "deadline": "",
                 "note": "page says no openings right now"}
 
     # 4. Couldn't find openings and no "we're empty" note: genuinely unclear
     #    (often JS-rendered with no readable payload).
-    return {"state": UNKNOWN, "count": 0, "titles": [],
+    return {"state": UNKNOWN, "count": 0, "titles": [], "deadline": "",
             "note": "couldn't tell from the page — worth a manual look"}
 
 

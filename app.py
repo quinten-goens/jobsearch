@@ -75,7 +75,7 @@ def load_catalogue() -> pd.DataFrame:
                 "careers_url", "careers_confidence", "homepage",
                 "last_updated", "last_updated_source", "last_updated_trust",
                 "search_url", "version_id", "last_check_verdict",
-                "last_check_at", "page_text", "id"):
+                "last_check_at", "page_text", "openings_deadline", "id"):
         if col not in df:
             df[col] = ""
         df[col] = df[col].fillna("")
@@ -366,6 +366,21 @@ def page_organisations():
             return "— none now"
         return "?"  # unknown / not checked
 
+    def _deadline_label(iso: str) -> str:
+        if not iso:
+            return ""
+        d = pd.to_datetime(iso, errors="coerce")
+        if pd.isna(d):
+            return ""
+        left = (d.normalize() - pd.Timestamp(date.today())).days
+        if left < 0:
+            return "closed"
+        if left == 0:
+            return "⏳ today"
+        if left <= 7:
+            return f"⏳ {left}d left"
+        return d.strftime("%d %b")
+
     FIT_TAG = {"strong": "★ ", "possible": "· ", "weak": "", "none": "",
                "unknown": ""}
     best_opening = [
@@ -381,6 +396,7 @@ def page_organisations():
         "Openings": [_openings_label(s, c) for s, c in
                      zip(view["openings_state"], view["openings_count"])],
         "Best-matched opening": best_opening,
+        "Deadline": [_deadline_label(d) for d in view["openings_deadline"]],
         "Sector": view["sector"].tolist(),
         "Careers page": view["careers_url"].tolist(),
         "Updated": pd.to_datetime(view["last_updated"], errors="coerce"),
@@ -408,6 +424,11 @@ def page_organisations():
                 width="large",
                 help="The current opening that best fits Sarah's profile. "
                      "★ = strong fit, · = possible fit."),
+            "Deadline": st.column_config.TextColumn(
+                width="small",
+                help="Application deadline when the page states one (⏳ = "
+                     "closing within a week). Blank when no deadline was "
+                     "readable — many off-board pages don't publish one."),
             "Sector": st.column_config.TextColumn(width="medium"),
             "Careers page": st.column_config.LinkColumn(
                 "Careers page", display_text="Open ↗", width="small",

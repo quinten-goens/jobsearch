@@ -39,6 +39,7 @@ def _flatten(org: dict, version: dict | None) -> dict:
     rec["openings_state"] = v.get("openings_state", "")
     rec["openings_count"] = v.get("openings_count") or 0
     rec["openings_titles"] = v.get("openings_titles") or []
+    rec["openings_deadline"] = v.get("openings_deadline", "")
     rec["openings_new_titles"] = v.get("openings_new_titles") or []
     rec["openings_new_at"] = v.get("openings_new_at", "")
     rec["content_hash"] = v.get("content_hash", "")

@@ -134,6 +134,7 @@ def url_versions_spec(org_cid: str) -> dict:
                     ["has_openings", "no_openings", "unknown"]),
             _num("openings_count"),
             _json("openings_titles"),
+            _text("openings_deadline", maxSize=20),  # ISO date, best-effort
             _date("openings_checked_at"),
             # Titles that appeared since the last scan -- the "What's new" flag.
             _json("openings_new_titles"),

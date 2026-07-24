@@ -75,6 +75,7 @@ def recheck_page(rec: dict) -> dict:
     rec["openings_state"] = o["state"]
     rec["openings_count"] = o["count"]
     rec["openings_titles"] = o["titles"]
+    rec["openings_deadline"] = o.get("deadline") or ""
     rec["openings_checked_at"] = datetime.now(timezone.utc).isoformat()
     # Fit is computed at load time in the app (from the stored titles), so
     # re-tuning the profile never needs a re-scan.
