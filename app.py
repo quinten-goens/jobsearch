@@ -720,6 +720,156 @@ def page_whats_new():
                                            use_container_width=True)
 
 
+# ----------------------------------------------------------------- guide
+# A stylish, self-contained overview of what every page and feature does, so
+# Sarah (and anyone new) can orient without a manual. Pure presentation: styled
+# HTML cards that read in both light and dark themes.
+GUIDE_CSS = """
+<style>
+.guide-hero {
+    padding: 1.6rem 1.8rem; border-radius: 16px; margin-bottom: 1.4rem;
+    background: linear-gradient(135deg, #2a78d6 0%, #1b4f8f 100%);
+    color: #fff;
+}
+.guide-hero h2 { margin: 0 0 .3rem 0; font-size: 1.5rem; color:#fff; }
+.guide-hero p  { margin: 0; opacity: .92; font-size: .98rem; }
+.guide-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem; margin: .4rem 0 1.6rem 0;
+}
+.guide-card {
+    border: 1px solid rgba(128,128,128,.25); border-radius: 14px;
+    padding: 1.1rem 1.2rem; background: rgba(128,128,128,.05);
+    transition: border-color .15s ease;
+}
+.guide-card:hover { border-color: rgba(42,120,214,.6); }
+.guide-card .ic { font-size: 1.5rem; line-height: 1; }
+.guide-card h4 { margin: .5rem 0 .35rem 0; font-size: 1.05rem; }
+.guide-card p  { margin: 0; font-size: .9rem; opacity: .82; line-height: 1.5; }
+.guide-card .tag {
+    display: inline-block; margin-top: .6rem; padding: .12rem .5rem;
+    font-size: .72rem; border-radius: 20px; font-weight: 600;
+    background: rgba(42,120,214,.15); color: #2a78d6;
+}
+.guide-legend {
+    border: 1px solid rgba(128,128,128,.25); border-radius: 14px;
+    padding: 1rem 1.2rem; background: rgba(128,128,128,.05);
+}
+.guide-legend .row { display: flex; gap: .7rem; align-items: baseline;
+    padding: .3rem 0; font-size: .9rem; }
+.guide-legend .row b { min-width: 118px; }
+.guide-legend .row span { opacity: .82; }
+@media (prefers-color-scheme: dark) {
+    .guide-card .tag { color:#7fb2f0; background: rgba(127,178,240,.15); }
+}
+</style>
+"""
+
+
+def _guide_card(icon: str, title: str, body: str, tag: str = "") -> str:
+    tag_html = f'<div class="tag">{tag}</div>' if tag else ""
+    return (f'<div class="guide-card"><div class="ic">{icon}</div>'
+            f'<h4>{title}</h4><p>{body}</p>{tag_html}</div>')
+
+
+def page_guide():
+    st.markdown(GUIDE_CSS, unsafe_allow_html=True)
+    st.markdown(
+        '<div class="guide-hero"><h2>🇧🇪 Brussels job search — a guide</h2>'
+        '<p>Everything this tool does, and how to use it. The point: surface a '
+        'small number of openings genuinely worth applying to — including the '
+        '<b>off-board</b> ones on organisations’ own pages, before the job '
+        'boards fill up.</p></div>',
+        unsafe_allow_html=True)
+
+    st.subheader("The pages")
+    st.markdown(
+        '<div class="guide-grid">'
+        + _guide_card(
+            "🏢", "Organisations",
+            "The heart of the tool. Every organisation, its careers page, and "
+            "whether it’s hiring right now — fit-ranked so the best matches for "
+            "your profile sit at the top. Work entirely from this one table.",
+            "start here")
+        + _guide_card(
+            "🆕", "What’s new",
+            "Openings and pages that changed recently — the early-warning view. "
+            "New job titles first, then pages whose content moved without a "
+            "readable title. Filter by day window, category, or hide noisy "
+            "domains.", "check daily")
+        + _guide_card(
+            "📊", "Sectors",
+            "How the catalogue breaks down by sector and location, and how well "
+            "each sector’s careers pages are covered. A birds-eye view.")
+        + _guide_card(
+            "💼", "Jobs",
+            "Live postings scraped from the job boards (EuroBrussels, Euractiv). "
+            "The on-board complement to the off-board Organisations view — with "
+            "deadlines and ‘closing soon’.")
+        + _guide_card(
+            "🔍", "Coverage",
+            "How the catalogue was built and where it’s weak — stale pages, "
+            "organisations with no careers page found — so you know what to "
+            "trust.")
+        + '</div>', unsafe_allow_html=True)
+
+    st.subheader("Key features")
+    st.markdown(
+        '<div class="guide-grid">'
+        + _guide_card(
+            "🎯", "Fit ranking",
+            "Each opening is scored against your profile — policy / "
+            "international relations, Latin America / Spanish, research / PhD — "
+            "and penalised if too senior. ★ = strong fit, · = possible fit.")
+        + _guide_card(
+            "🟢", "Openings detection",
+            "We read each careers page to tell whether it has live openings "
+            "<i>right now</i> — the off-board signal. 🟢 hiring, ‘— none now’, "
+            "or ‘?’ when we couldn’t read it (worth a manual look).")
+        + _guide_card(
+            "✓", "Reviewed + auto-untick",
+            "Tick an organisation once you’ve looked at its page. The nightly "
+            "check re-reads it — if the page changed since you reviewed it, the "
+            "tick clears itself so it comes back to your attention.")
+        + _guide_card(
+            "📅", "Freshness",
+            "‘Updated’ shows when a careers page last changed. For pages that "
+            "don’t publish a date, we detect changes ourselves by fingerprinting "
+            "the content — so even undated pages get a freshness signal.")
+        + _guide_card(
+            "🌙", "Nightly refresh",
+            "Every night the whole catalogue is re-checked automatically — "
+            "freshness, openings, and what’s new. You never press refresh; just "
+            "come back and it’s current.")
+        + _guide_card(
+            "🔎", "Search & filters",
+            "Search organisation names, descriptions and roles, then narrow by "
+            "sector, freshness, ‘hiring now’, or ‘only openings that fit me’ — "
+            "combine them to jump straight to your best next actions.")
+        + '</div>', unsafe_allow_html=True)
+
+    st.subheader("Reading the table")
+    st.markdown(
+        '<div class="guide-legend">'
+        '<div class="row"><b>🟢 3 open</b><span>Live openings on their own '
+        'careers page right now.</span></div>'
+        '<div class="row"><b>— none now</b><span>Page says nothing is open.'
+        '</span></div>'
+        '<div class="row"><b>?</b><span>We couldn’t read the page (often a '
+        'JavaScript site) — worth a manual look.</span></div>'
+        '<div class="row"><b>★ title</b><span>Strong fit for your profile.'
+        '</span></div>'
+        '<div class="row"><b>· title</b><span>Possible fit.</span></div>'
+        '<div class="row"><b>Open ↗</b><span>Go straight to the careers page.'
+        '</span></div>'
+        '<div class="row"><b>Search ↗</b><span>A Google search for their jobs — '
+        'use it when we couldn’t find the page.</span></div>'
+        '</div>', unsafe_allow_html=True)
+
+    st.caption("Tip: turn on ‘Only openings that fit me’ and ‘Has openings now’ "
+               "in the sidebar to jump straight to your best next actions.")
+
+
 # ----------------------------------------------------------------- navigation
 # Proper Streamlit multipage nav (not a radio): each page is its own entry in
 # the sidebar, with the browser URL and back/forward working per page.
@@ -746,5 +896,6 @@ nav = st.navigation([
     st.Page(page_sectors, title="Sectors", icon="📊"),
     st.Page(page_jobs, title="Jobs", icon="💼"),
     st.Page(page_coverage, title="Coverage", icon="🔍"),
+    st.Page(page_guide, title="Guide", icon="📖"),
 ])
 nav.run()
